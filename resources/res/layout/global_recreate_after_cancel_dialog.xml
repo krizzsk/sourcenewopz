@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_recreate_order_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:includeFontPadding="false"/>
+            <TextView android:textSize="18sp" android:textColor="@color/color_333333" android:id="@+id/tv_recreate_order_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:includeFontPadding="false"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="30dp">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#666666" android:gravity="center" android:id="@+id/tv_recreate_order_neg" android:background="@drawable/global_cancel_reason_no_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/global_cancel_intercept_no" android:layout_weight="1"/>
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="?attr/submit_btn_text_color_selector" android:gravity="center" android:id="@+id/tv_recreate_order_pos" android:background="?attr/submit_btn_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="23dp" android:text="@string/global_cancel_intercept_yes" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

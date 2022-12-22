@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/customer_iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_36px" android:layout_marginTop="@dimen/customer_26px" android:src="@drawable/customer_ic_black_close"/>
+    <TextView android:textSize="@dimen/customer_42px" android:textStyle="bold" android:textColor="@color/rf_color_gery_1_0_000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_36px" android:layout_marginTop="@dimen/customer_45px" android:text="@string/customer_security_title"/>
+    <View android:background="@color/customer_color_0B000000" android:layout_width="match_parent" android:layout_height="@dimen/customer_1px" android:layout_marginLeft="@dimen/customer_36px" android:layout_marginTop="@dimen/customer_44px"/>
+    <com.didi.app.nova.support.view.recyclerview.view.NovaRecyclerView android:id="@+id/customer_rv_security_method" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/customer_ll_security_caution" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_35px" android:layout_marginTop="@dimen/customer_28px" android:layout_marginRight="@dimen/customer_35px">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customer_6px" android:src="@drawable/customer_icon_caution"/>
+        <TextView android:textSize="@dimen/customer_24px" android:textColor="@color/rf_color_gery_3_60_999999" android:id="@+id/customer_tv_security_method_caution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_12px"/>
+    </LinearLayout>
+</LinearLayout>

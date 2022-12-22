@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape>
+            <solid android:color="@color/ggk_color_FFFFFF"/>
+            <corners android:radius="@dimen/rf_dimen_50"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/entrega_home_order_list" android:left="@dimen/rf_dimen_20" android:top="@dimen/rf_dimen_20" android:right="@dimen/rf_dimen_20" android:bottom="@dimen/rf_dimen_20"/>
+</layer-list>

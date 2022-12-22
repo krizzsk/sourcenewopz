@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/im_15_dp" android:textColor="@color/white" android:gravity="center" android:background="@drawable/im_popup_center_selector" android:paddingBottom="@dimen/im_3_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/im_pop_delete"/>
+</LinearLayout>

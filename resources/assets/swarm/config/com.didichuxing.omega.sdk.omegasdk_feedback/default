@@ -1,0 +1,7 @@
+{
+    "appType" : 1,
+    "toggles" : {
+        "feedback" : "Omega_Feedback_Toggle_v5",
+        "huidu" : "ZhongCe_GatedLaunch_Toggle_v5"
+    }
+}

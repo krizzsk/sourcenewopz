@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/fusion_debug_cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消"/>
+            <Button android:id="@+id/fusion_debug_ok_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="完成" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="是否打开log调试窗口:"/>
+            <CheckBox android:id="@+id/fusion_debug_log_checkBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:checked="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/w_common_sdk_net_error_view_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/w_common_sdk_net_error_icon" android:scaleType="center"/>
+    <TextView android:textSize="14sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/w_common_sdk_retry_title"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/w_common_sdk_net_error_view_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+        <ImageView android:background="@drawable/w_common_sdk_net_refresh_icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="18sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/w_common_sdk_retry"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_timepicker_icon" android:layout_width="24dp" android:layout_height="24dp" android:scaleType="fitXY"/>
+        <TextView android:textSize="@dimen/_12sp" android:textColor="@color/g_color_666666" android:id="@+id/tv_timepicker_item_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+    </LinearLayout>
+    <View android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/divider" android:background="#050a121a" android:visibility="gone" android:layout_width="1dp" android:layout_height="39dp"/>
+</LinearLayout>

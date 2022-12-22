@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="#ffffff"/>
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape>
+            <solid android:color="#e5e5e5"/>
+            <corners android:radius="@dimen/report_button_corner"/>
+        </shape>
+    </item>
+    <item android:state_focused="false">
+        <shape>
+            <solid android:color="#f5f5f5"/>
+            <corners android:radius="@dimen/report_button_corner"/>
+        </shape>
+    </item>
+</selector>

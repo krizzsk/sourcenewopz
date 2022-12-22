@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.didichuxing.cardscan.view.OverlayView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/left_top_btn" android:background="@drawable/cardscan_back_btn_bg" android:layout_width="53dp" android:layout_height="53dp" android:layout_marginLeft="8dp" android:layout_marginTop="18dp"/>
+    <TextView android:textSize="21sp" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/title_tv" android:layout_width="wrap_content" android:layout_height="53dp" android:layout_marginTop="18dp" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="16sp" android:textColor="#ff999999" android:gravity="center" android:id="@+id/bottom_btn" android:background="@drawable/cardscan_bottom_btn_bg" android:layout_width="match_parent" android:layout_height="46dp" android:layout_margin="18dp" android:layout_alignParentBottom="true"/>
+</com.didichuxing.cardscan.view.OverlayView>

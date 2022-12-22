@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/tips_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textStyle="normal|bold|italic" android:textColor="@color/white" android:id="@+id/guide_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="24dp" android:layout_marginRight="10dp" android:layout_marginBottom="24dp" android:text="Didi offers you more services,Didi offers you more services,Didi offers you more services,Didi offers you more servicesDidi offers you more services,Didi offers you more services" android:layout_toLeftOf="@+id/guide_get" android:layout_alignParentStart="true"/>
+        <Button android:textSize="12sp" android:textColor="#ff8040" android:id="@+id/guide_get" android:background="@drawable/gudie_getbtn_bg" android:layout_width="70dp" android:layout_height="30dp" android:text="get" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="16dp" style="?android:attr/borderlessButtonStyle"/>
+    </RelativeLayout>
+</RelativeLayout>

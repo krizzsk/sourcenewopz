@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/gbankcard_retry_dialog_root_view_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:layout_marginBottom="14dp" android:src="@drawable/gbandcard_camera_permission_dialog_header_icon"/>
+    <TextView android:textSize="14sp" android:textColor="@color/df_main_text_color2" android:id="@+id/dialog_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/gbankcard_ocr_ask_camera_premission_dialog_msg" android:lineSpacingExtra="5dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    <View android:background="@color/df_view_divider_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="26dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:textSize="16sp" android:textColor="@color/df_main_text_color2" android:id="@+id/dialog_left_btn" android:background="@null" android:layout_width="0dp" android:layout_height="50dp" android:text="@string/gbankcard_ocr_ask_camera_premission_dialog_left_btn_text" android:layout_weight="1" android:textAllCaps="false"/>
+        <View android:background="@color/df_view_divider_color" android:layout_width="1px" android:layout_height="match_parent"/>
+        <Button android:textSize="16sp" android:textColor="#ff7f41" android:id="@+id/dialog_right_btn" android:background="@null" android:layout_width="0dp" android:layout_height="50dp" android:text="@string/gbankcard_ocr_ask_camera_premission_dialog_right_btn_text" android:layout_weight="1" android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

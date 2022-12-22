@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="54dp" android:layout_marginRight="54dp">
+    <ListView android:id="@+id/main_list" android:background="#ffffffff" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:divider="@null" android:dividerHeight="0dp"/>
+    <View android:id="@+id/up" android:background="@drawable/one_fastframe_list_bg_up" android:layout_width="match_parent" android:layout_height="15dp"/>
+    <View android:id="@+id/down" android:background="@drawable/one_fastframe_list_bg_down" android:layout_width="match_parent" android:layout_height="15dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

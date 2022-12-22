@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#181b20" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/pix_photo_input_title" android:layout_width="match_parent" android:layout_height="@dimen/wallet_dp_52">
+            <ImageView android:id="@+id/title_back" android:padding="@dimen/wallet_dp_5" android:layout_width="@dimen/wallet_dp_28" android:layout_height="@dimen/wallet_dp_28" android:layout_marginLeft="@dimen/wallet_dp_11" android:src="@drawable/pix_photo_input_icon_back_light" android:layout_centerVertical="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/photo_scan_button" android:background="@drawable/pix_photo_input_upload" android:layout_width="@dimen/wallet_dp_68" android:layout_height="@dimen/wallet_dp_29" android:layout_marginRight="@dimen/wallet_dp_16" android:text="@string/GRider_payment_Upload_ORZR" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/wallet_dp_16" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/cs_photo_input" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/error_layout" android:background="#cc0a121a" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/error_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GRider_payment_Didn_t_HzNP"/>
+        <TextView android:textSize="15sp" android:textColor="@color/white" android:id="@+id/error_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_dp_15" android:layout_marginTop="@dimen/wallet_dp_5" android:layout_marginRight="@dimen/wallet_dp_15" android:text="@string/GRider_payment_Click_on_jFmY"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.android.didi.safetoolkit.widget.topbarview.TopBarView android:id="@+id/basic_tool_bar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize"/>
+    <FrameLayout android:id="@+id/basic_rootlayout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

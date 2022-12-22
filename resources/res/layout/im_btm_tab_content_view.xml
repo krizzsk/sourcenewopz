@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="start" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:textDirection="locale" android:textAlignment="viewStart">
+    <ImageView android:layout_gravity="center" android:id="@+id/im_tab_icon" android:layout_width="@dimen/im_20_dp" android:layout_height="@dimen/im_20_dp" android:scaleType="centerInside"/>
+    <TextView android:textSize="15dp" android:textColor="@color/im_btm_tab_txt_selector" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/im_tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_1_dp" android:maxLines="1" android:layout_marginStart="@dimen/im_1_dp"/>
+    <View android:id="@+id/im_tab_dot" android:background="@drawable/im_red_circle_bg" android:visibility="gone" android:layout_width="6dp" android:layout_height="6dp"/>
+</merge>

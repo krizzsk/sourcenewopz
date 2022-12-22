@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/biz_bar_expand_bg" android:background="#b30a121a" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/biz_bar_expand_blank" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/biz_bar_expand_container" android:background="@drawable/new_ui_biz_nav_bar_expend_bg_top_coner" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:orientation="vertical" android:background="@drawable/new_ui_biz_nav_bar_expend_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:layout_gravity="center_horizontal" android:background="#1a0a121a" android:layout_width="40dp" android:layout_height="3dp" android:layout_marginTop="5dp"/>
+                <GridView android:id="@+id/biz_bar_expand_main_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:numColumns="4"/>
+            </FrameLayout>
+            <GridView android:id="@+id/biz_bar_expand_more_container" android:background="#fff3f4f5" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:numColumns="4"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

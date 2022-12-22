@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/wallet_color_F3F4F5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/pix_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/wallet_dp_52">
+        <ImageView android:layout_gravity="center" android:id="@+id/pix_toolbar_left_back_iv" android:padding="@dimen/wallet_dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/w_common_sdk_back_icon"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/pix_key_migrate_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/pix_toolbar"/>
+    <include android:id="@+id/pix_net_error_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/wallet_dp_52" android:layout_below="@+id/pix_toolbar" layout="@layout/w_common_sdk_net_error_view"/>
+</RelativeLayout>

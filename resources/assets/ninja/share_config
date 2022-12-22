@@ -1,0 +1,14 @@
+{
+    "COPYLINK_SHARE":[
+       "com.didi.onekeyshare.wrapper.CopyLinkPlatform"
+    ],
+    "EMAIL_SHARE":[
+       "com.didi.onekeyshare.wrapper.EmailPlatform"
+    ],
+    "SAVEIMAGE_SHARE":[
+       "com.didi.onekeyshare.wrapper.SaveImagePlatForm"
+    ],
+    "INTERNATIONAL_SHARE":[
+       "com.didi.onekeyshare.wrapper.InternationalPlatform"
+    ]
+}

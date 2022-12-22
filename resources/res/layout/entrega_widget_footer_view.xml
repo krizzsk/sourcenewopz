@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_footer" android:paddingTop="@dimen/rf_dimen_40" android:paddingBottom="@dimen/rf_dimen_60" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/rf_dimen_28" android:textColor="@color/rf_color_gery_3_60_999999" android:layout_gravity="center_horizontal" android:id="@+id/tv_footer_desc" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <View android:id="@+id/customer_footer_view_loading_stub" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/rf_dimen_42"/>
+        <com.didi.entrega.customer.widget.loading.LottieLoadingView android:layout_gravity="center_horizontal" android:id="@+id/loading_dot_view" android:layout_width="wrap_content" android:layout_height="@dimen/rf_dimen_26" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/rf_lottie_loading_brand"/>
+        <TextView android:textSize="@dimen/rf_dimen_28" android:textColor="@color/rf_color_brands_1_100" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_footer_button_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rf_dimen_32"/>
+        <View android:id="@+id/customer_footer_view_cart_stub" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/rf_dimen_150"/>
+    </LinearLayout>
+</RelativeLayout>

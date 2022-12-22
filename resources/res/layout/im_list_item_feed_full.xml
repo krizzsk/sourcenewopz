@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="vertical" android:paddingLeft="@dimen/im_20_dp" android:paddingRight="@dimen/im_20_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/im_20_dp" android:paddingEnd="@dimen/im_20_dp">
+    <TextView android:textSize="@dimen/im_14_sp" android:textColor="#333333" android:id="@+id/im_feed_full_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_20_dp"/>
+    <TextView android:textSize="@dimen/im_12_sp" android:textColor="#999999" android:id="@+id/im_feed_full_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_4_dp" android:lineSpacingExtra="@dimen/im_3_dp"/>
+    <TextView android:textSize="@dimen/im_12_sp" android:textColor="#fc9153" android:id="@+id/im_feed_full_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_4_dp" android:text="@string/im_feed_full_text"/>
+    <View android:layout_width="0dp" android:layout_height="@dimen/im_20_dp"/>
+    <View android:id="@+id/im_feed_btm_line" android:background="#19000000" android:layout_width="match_parent" android:layout_height="@dimen/im_0.5_dp"/>
+</LinearLayout>

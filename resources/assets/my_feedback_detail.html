@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="./lib/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/detail.css">
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container-fluid">
+
+    <div class="row" style="margin-top: 15px; margin-bottom: 20px;">
+        <div class="col-md-12">
+            <div class="deal-info clearfix">
+                <div class="date-info" id="date-info"> 2016-02-03  </div>
+                <div class="deal-status" id="state-info"> 已处理 </div>
+            </div>
+            <div class="col-md-12 reason-container" id="content-info">
+                testtesttesttesttesttest
+            </div>
+        </div>
+    </div>
+    <div id="photos">
+
+    </div>
+</div>
+<script>
+    (function () {
+                var dateInfoNode = document.getElementById('date-info');
+                var stateInfoNode = document.getElementById('state-info');
+                var contentInfoNode = document.getElementById('content-info');
+                var photosNode = document.getElementById('photos');
+
+
+                var setAllData = function (data) {
+                    if (!data) {
+                        return;
+                    }
+                    data = JSON.parse(data);
+                    dateInfoNode.innerHTML = data.ts;
+                    stateInfoNode.innerHTML = data.state;
+                    contentInfoNode.innerHTML = data.content;
+
+                    var imgs = data.imgs;
+
+                    var html = '';
+                    for (var i = 0, len = imgs.length; i < len; i++) {
+                        var item = imgs[i];
+                        html += ''
+                             + '<div class="row" style="margin-bottom: 20px;">'
+                             + '<div class="col-xs-8 col-xs-offset-2">'
+                             + '<img width="100%" src="' + item + '"/>'
+                             + '</div>'
+                             + '</div>';
+                    }
+                    photosNode.innerHTML = html;
+                };
+                window.fdwa_setAllData = setAllData;
+                FeedbackDetailJs.setAllData();
+
+            })();
+</script>
+</body>
+</html>

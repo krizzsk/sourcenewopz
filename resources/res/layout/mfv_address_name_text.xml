@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.didi.map.global.flow.scene.order.serving.components.MapStrokeTextView android:textSize="12sp" android:textStyle="bold" android:textColor="#333333" android:ellipsize="end" android:id="@+id/tv_address_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="148dp" android:maxLines="4" android:layout_centerVertical="true" android:layout_marginStart="10dp" app:stroke_color="@color/map_stroke_text_view_color" app:stroke_width="@dimen/map_stroke_text_view_width"/>
+</LinearLayout>

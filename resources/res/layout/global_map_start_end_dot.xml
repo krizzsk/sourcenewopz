@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/start_or_dest_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="30dp">
+        <LinearLayout android:id="@+id/star_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:layout_gravity="center_vertical" android:id="@+id/v_start_img" android:background="@drawable/global_from_point_bg" android:layout_width="7dp" android:layout_height="7dp"/>
+            <TextView android:textSize="16sp" android:textColor="@color/ggk_color_333333" android:layout_gravity="center_vertical" android:id="@+id/tv_start_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="18dp" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/destination_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:layout_gravity="center_vertical" android:id="@+id/v_end_img" android:background="@drawable/global_to_point_bg" android:layout_width="7dp" android:layout_height="7dp"/>
+            <TextView android:textSize="16sp" android:textColor="@color/ggk_color_333333" android:layout_gravity="center_vertical" android:id="@+id/tv_end_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="18dp" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

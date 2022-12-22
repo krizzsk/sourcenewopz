@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="84dp" android:layout_height="wrap_content">
+    <com.didi.beatles.p099im.views.imageView.IMNetworkImageView android:layout_gravity="center" android:id="@+id/im_func_item_iv" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="22dp" android:scaleType="center" android:layout_centerHorizontal="true"/>
+    <View android:id="@+id/im_func_item_dot" android:background="@drawable/im_red_circle_bg" android:visibility="gone" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginLeft="67dp" android:layout_marginTop="17dp" android:layout_marginStart="67dp"/>
+    <TextView android:textSize="12dp" android:textColor="@color/im_color_5d5d61" android:id="@+id/im_func_item_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:maxLines="2" android:layout_below="@+id/im_func_item_iv" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

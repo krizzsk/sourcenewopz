@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#b0000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didichuxing.omega.sdk.feedback.wheelUi.Wheel android:id="@+id/simple_picker" android:background="@color/afanty_white" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:aftextColor="@color/afanty_dark_gray" app:aftextSize="20sp"/>
+    <RelativeLayout android:id="@+id/action_button" android:background="@color/afanty_white" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/simple_picker">
+        <TextView android:textSize="16sp" android:textColor="@color/afanty_light_gray" android:id="@+id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="@string/afanty_cancel_button" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/afanty_light_gray" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_centerInParent="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/afanty_orange" android:id="@+id/yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:text="@string/afanty_ok_button" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/bar_top_line" android:layout_width="match_parent" android:layout_height="2dp" android:layout_above="@+id/action_button"/>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="@dimen/rui_top_navigator_height">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_top_base_navigator_left_button_container" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    <rui.RUIText android:textStyle="bold" android:textColor="@color/rui_color_grey_1" android:layout_gravity="center" android:id="@+id/rui_t_top_base_navigator_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/rui_text_normal"/>
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@+id/ll_top_base_navigator_right_button_container" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+</FrameLayout>

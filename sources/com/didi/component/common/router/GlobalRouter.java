@@ -1,0 +1,47 @@
+package com.didi.component.common.router;
+
+public interface GlobalRouter {
+    public static final String CALL_911 = "/call_911";
+    public static final String EDIT_ROUTE = "/editroute";
+    public static final String HOST_PUBLIC = "one";
+    public static final String HOST_RIDE = "ride";
+    public static final String HOST_XENGINE = "xengine";
+    public static final String OPENIM = "/openim";
+    public static final String OPEN_PAY_METHOD_LIST = "/change_payment";
+    public static final String PAGE_CAR_CHECK = "/feedbackVehicle";
+    public static final String PAGE_COMPANY_SELECT = "/company/company_select";
+    public static final String PAGE_CONTACTS_MANAGER = "/page/contacts_manager";
+    public static final String PAGE_CREATE_ORDER_BLOCK_CANCEL = "/interceptorder/cancel";
+    public static final String PAGE_CREATE_ORDER_BLOCK_CONTINUE = "/interceptorder/continue";
+    public static final String PAGE_GLOBAL_PAYWAY = "/payway/global_pay_method_list";
+    public static final String PAGE_INVITATION = "/InviteFriends";
+    public static final String PAGE_PAY_ADD_CARD = "/pay/add_card";
+    public static final String PAGE_PAY_METHOD_LIST = "/pay/pay_method_list";
+    public static final String PAGE_PROMO_CODE = "/promoCode";
+    public static final String PAGE_SPLITFARE_INVITE = "/splitfare/invite";
+    public static final String PAGE_SPLIT_FARE_CONTACTS = "/page/split_fare_contacts";
+    public static final String PAGE_WEBPAGE = "/webpage";
+    public static final String PARAM_FROM = "from";
+    public static final String PARAM_ICON = "icon";
+    public static final String PARAM_MESSAGE = "message";
+    public static final String PARAM_ORDER_ID = "orderId";
+    public static final String PARAM_REQUEST_CODE = "requestCode";
+    public static final String PARAM_SHAR = "/share_trip";
+    public static final String PARAM_SPLIT_FARE_ADDED = "split_fare_added";
+    public static final String PARAM_THRESHOLD = "threshold";
+    public static final String PARAM_TITLE = "title";
+    public static final String PATH_PREORDER_INTERCEPT = "/expo_intercept";
+    public static final String PATH_SELECT_SEAT = "/select_seat";
+    public static final String PATH_SUBSTITUTE_CALL = "/form_operation";
+    public static final String PATH_TICKET_DETAIL = "/ticket_detail";
+    public static final String PAYMENT = "/globalpayment";
+    public static final String QUERY_MSG_COUNT = "/queryMsgCount";
+    public static final String RESOURCE_ID = "resource_id";
+    public static final String SCHEME = "GuaranaOneTravel|GlobalOneTravel|globalOneTravel|taxis99OneTravel|pay99|pay99logic";
+    public static final String SCHEME_BRAZIL = "taxis99OneTravel";
+    public static final String SCHEME_DEEPLINK = "globalOneTravel|taxis99OneTravel";
+    public static final String SCHEME_GLOBAL = "globalOneTravel";
+    public static final String SCHEME_VERIFY = "GlobalCommonVerify";
+    public static final String WAIT_CANCEL_ORDER = "/cancelorder";
+    public static final String WAIT_NONE = "/none";
+}

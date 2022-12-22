@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="@dimen/wallet_balance_item_height">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_balance_item_title_margin_top" android:layout_toLeftOf="@+id/ll_balance_activity_list_item_right" android:layout_centerVertical="true" android:layout_toStartOf="@+id/ll_balance_activity_list_item_right">
+        <TextView android:textSize="@dimen/wallet_balance_list_item_title" android:textColor="@color/wallet_common_black" android:ellipsize="end" android:gravity="start" android:id="@+id/tv_balance_activity_list_item_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false"/>
+        <TextView android:textSize="@dimen/wallet_balance_list_item_date" android:textColor="@color/wallet_common_grey" android:gravity="start" android:id="@+id/tv_balance_activity_list_item_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_balance_activity_list_item_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <TextView android:textSize="@dimen/wallet_balance_list_item_amount" android:gravity="start" android:layout_gravity="end" android:id="@+id/tv_balance_activity_list_item_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+        <TextView android:textSize="@dimen/wallet_balance_list_item_date" android:textColor="@color/wallet_common_grey" android:gravity="start" android:layout_gravity="end" android:id="@+id/tv_balance_activity_list_item_trans_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+    </LinearLayout>
+</RelativeLayout>

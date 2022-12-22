@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/customer_fl_activity_landing_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.app.nova.support.view.pullToRefresh.NovaPullRefreshLayout android:id="@+id/customer_custom_activity_pull_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.didi.app.nova.support.view.recyclerview.view.NovaRecyclerView android:id="@+id/customer_rv_topic_feed" android:background="@color/rf_color_v2_grey2_10_a100" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0dp"/>
+            <FrameLayout android:id="@+id/customer_fl_title_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </com.didi.app.nova.support.view.pullToRefresh.NovaPullRefreshLayout>
+    <com.didi.soda.home.widget.LandingFloatLayout android:id="@+id/customer_home_topic_recycle_float" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/rf_dimen_100"/>
+</FrameLayout>

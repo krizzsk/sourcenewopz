@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/icon" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="20dp"/>
+    <rui.RUIText android:textSize="@dimen/rui_text_icon_small" android:textColor="@color/rui_color_grey_3" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/close" android:padding="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rui_icon_delete_02" app:rui_text_typefaceType="2"/>
+    <ImageView android:id="@+id/header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

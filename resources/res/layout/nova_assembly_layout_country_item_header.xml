@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="@dimen/nova_assembly_28dp">
+    <TextView android:textSize="@dimen/nova_assembly_font_18sp" android:textColor="@color/assembly_unit_color_00" android:gravity="center_vertical" android:id="@+id/tv_name" android:background="@color/assembly_unit_color_F7F7F7" android:paddingLeft="@dimen/nova_assembly_20dp" android:layout_width="match_parent" android:layout_height="@dimen/nova_assembly_28dp"/>
+</LinearLayout>

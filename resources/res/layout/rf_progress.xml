@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ProgressBar android:id="@+id/rf_pb_progress" android:layout_width="0dp" android:layout_height="@dimen/rf_dimen_8" android:progressDrawable="@drawable/rf_layer_progress" android:layout_weight="1" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+    <com.didi.rfusion.widget.RFTextView android:textSize="@dimen/f_11_app_24_pad_14" android:textColor="@color/rf_color_gery_1_0_000000" android:id="@+id/rf_tv_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rf_dimen_24" app:rf_font_flavor="3"/>
+</merge>

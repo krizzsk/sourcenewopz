@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.didi.rfusion.widget.tab.RFScroller android:id="@+id/rf_tab_bar_original" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0"/>
+    <View android:id="@+id/rf_tab_bar_shade_start" android:background="@drawable/rf_shape_tab_bar_shade_left" android:visibility="gone" android:layout_width="@dimen/rf_dimen_48" android:layout_height="@dimen/rf_dimen_0" app:layout_constraintBottom_toBottomOf="@+id/rf_tab_bar_original" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/rf_tab_bar_original"/>
+    <View android:id="@+id/rf_tab_bar_shade_end" android:background="@drawable/rf_shape_tab_bar_shade_right" android:visibility="gone" android:layout_width="@dimen/rf_dimen_48" android:layout_height="@dimen/rf_dimen_0" app:layout_constraintBottom_toBottomOf="@+id/rf_tab_bar_original" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="@+id/rf_tab_bar_original"/>
+</merge>

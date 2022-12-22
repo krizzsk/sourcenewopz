@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/df_act_view_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/df_act_view_bg_color" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/df_main_text_size_normal" android:textColor="@color/df_main_text_color2" android:gravity="center" android:id="@+id/user_agreement_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/df_guide_user_agreement_title"/>
+        <TextView android:textSize="@dimen/df_main_text_size_small" android:textColor="@color/df_main_text_color2" android:id="@+id/user_agreement_contents" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/df_guide_user_agreement_text"/>
+    </LinearLayout>
+</ScrollView>

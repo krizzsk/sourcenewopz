@@ -1,0 +1,23 @@
+{
+  "busi_payments": [
+    {
+      "tag": 1024,
+      "msg": "Cash",
+      "icon_url": "",
+      "channelID": 153,
+      "isOffline": 1,
+      "isSigned": 0,
+      "isSelected": 0,
+      "show_msg": "",
+      "disabled": 0,
+      "card": "",
+      "card_org": "",
+      "text": "",
+      "business_url": "",
+      "business_const_set": 0,
+      "company_pay_msg": ""
+    }
+  ],
+  "business_msg": "",
+  "is_region": 1
+}

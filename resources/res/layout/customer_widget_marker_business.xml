@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/customer_ic_view_map_business" android:layout_width="@dimen/customer_88px" android:layout_height="@dimen/customer_104px">
+    <ImageView android:id="@+id/customer_iv_business_marker" android:background="@drawable/customer_ic_order_business_logo_default" android:layout_width="@dimen/customer_34px" android:layout_height="@dimen/customer_34px" android:layout_marginTop="@dimen/customer_10px" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:id="@+id/view_holder_fee" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:background="?attr/global_pay_method_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10"/>
+    <ImageView android:layout_gravity="end" android:layout_width="74dp" android:layout_height="90dp" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_22" android:src="@drawable/global_cashier_com_icon_conn" android:scaleType="fitXY"/>
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="29dp" android:layout_marginTop="@dimen/dp_28" android:layout_marginRight="29dp" android:layout_marginBottom="@dimen/dp_5">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10">
+            <ImageView android:id="@+id/icon_group" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_18" android:scaleType="fitXY"/>
+            <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="?attr/global_cashier_submit_btn_text_color_selector" android:id="@+id/name_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/card_channel_container" android:background="@drawable/shape_radius_corner_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_marginBottom="18dp" android:animateLayoutChanges="true" app:divider="@drawable/global_cashier_card_item_divider" app:dividerPadding="@dimen/dp_20" app:showDividers="middle"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

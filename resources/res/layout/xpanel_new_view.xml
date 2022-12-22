@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/xp_bg_view" android:layout_width="match_parent" android:layout_height="0dp">
+        <View android:background="@drawable/xp_bg" android:layout_width="match_parent" android:layout_height="100dp"/>
+        <View android:background="#fafbfc" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/xp_bg_back_msg" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="-20dp" app:cardBackgroundColor="#f3f4f5" app:cardCornerRadius="20dp" app:cardElevation="0dp" app:cardMaxElevation="0dp"/>
+    <com.didiglobal.xpanelnew.view.widget.XpScrollView android:id="@+id/xp_scroll_view" android:paddingTop="97dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:id="@+id/xp_cell_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.didiglobal.xpanelnew.view.widget.XpScrollView>
+    <View android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/xp_scroll_mark" android:background="@drawable/xp_scroll_mark_bg" android:layout_width="40dp" android:layout_height="3dp"/>
+</FrameLayout>

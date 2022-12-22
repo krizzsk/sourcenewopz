@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.beatles.p099im.plugin.robot.widget.IMRobotPraiseView android:id="@+id/im_plugin_robot_praise_view" android:background="@drawable/im_plugin_robot_panel_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/im_plugin_robot_bottom_bar"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/im_plugin_robot_bottom_bar" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="5dp" android:layout_alignParentBottom="true" android:layout_marginStart="5dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/im_plugin_robot_bottom_recyclerView" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <Button android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/im_plugin_robot_bottom_button" android:background="#ff7c46" android:layout_width="75dp" android:layout_height="match_parent" android:text="@string/im_plugin_robot_praise_send"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/robot_panel_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/robot_panel_loading_iv" android:layout_width="72dp" android:layout_height="70dp" android:scaleType="centerCrop"/>
+        <TextView android:textSize="13sp" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/im_plugin_robot_loading"/>
+    </LinearLayout>
+    <ViewStub android:id="@+id/robot_panel_error_stub" android:layout="@layout/im_plugin_robot_card_error_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+</RelativeLayout>

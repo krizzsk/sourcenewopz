@@ -1,0 +1,46 @@
+package com.didichuxing.afanty.common.utils;
+
+public class Constants {
+    public static final String AFANTY_CONFIG_TOGGLE_NAME = "AfantyConfig";
+    public static final String CUSTOM_INFO = "custom_info";
+    public static final String DEFAULT_ENCODING = "UTF-8";
+    public static final String DOMAIN_WHITELIST_KEY = "domain_whitelist";
+    public static final String FEEDBACK_SEQ = "f_seq";
+    public static final String JSON_BUSINESS_ID = "businessId";
+    public static final String JSON_CITY_ID = "cityId";
+    public static final String JSON_KEY_APP_NAME = "an";
+    public static final String JSON_KEY_APP_VERSION = "av";
+    public static final String JSON_KEY_APP_VERSION_NUMBER = "avn";
+    public static final String JSON_KEY_BRAND = "b";
+    public static final String JSON_KEY_CARRIER = "carrier";
+    public static final String JSON_KEY_COUNTRY_CODE = "ccc";
+    public static final String JSON_KEY_HUIDU_ID = "huiduid";
+    public static final String JSON_KEY_IMSI = "imsi";
+    public static final String JSON_KEY_LANG = "lang";
+    public static final String JSON_KEY_LATITUDE = "lat";
+    public static final String JSON_KEY_LOGCAT = "logcat";
+    public static final String JSON_KEY_LONGITUDE = "lng";
+    public static final String JSON_KEY_MEM_INFO = "mi";
+    public static final String JSON_KEY_MODEL = "m";
+    public static final String JSON_KEY_NET_TYPE = "nt";
+    public static final String JSON_KEY_NEW_APP_VERSION = "nav";
+    public static final String JSON_KEY_OMEGA_ID = "oid";
+    public static final String JSON_KEY_OS_TYPE = "ot";
+    public static final String JSON_KEY_OS_VERSION = "ov";
+    public static final String JSON_KEY_OS_VERSION_NUMBER = "ovn";
+    public static final String JSON_KEY_PHONE = "pn";
+    public static final String JSON_KEY_PHONE_COUNTRY_CODE = "pcc";
+    public static final String JSON_KEY_PHONE_TIME = "pt";
+    public static final String JSON_KEY_RECORD_ID = "rid";
+    public static final String JSON_KEY_SCREENSHOTS = "screenshots";
+    public static final String JSON_KEY_SCREEN_INFO = "si";
+    public static final String JSON_KEY_SCREEN_SIZE = "ss";
+    public static final String JSON_KEY_SEQ = "seq";
+    public static final String JSON_KEY_SYS_MEM_INFO = "smi";
+    public static final String JSON_KEY_USER_ID = "uid";
+    public static final String LOG_TAG = "omegasdk";
+    public static final String TIYAN_URL_PRE_KEY = "tiyan_url_pre";
+    public static final String UPLOAD_HEADER_MSG_ID = "msgid";
+    public static final String UPLOAD_HEADER_OMEGA_ID = "oid";
+    public static final String UPLOAD_HEADER_PHONE = "phone";
+}

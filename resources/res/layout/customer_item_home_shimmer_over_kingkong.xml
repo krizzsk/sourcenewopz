@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/rf_dimen_32" android:paddingRight="@dimen/rf_dimen_32" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/customer_custom_shimmer_kk1" android:background="@drawable/customer_shape_bg_shimmer_28corner" android:layout_width="@dimen/rf_dimen_386" android:layout_height="@dimen/rf_dimen_40" android:layout_marginBottom="@dimen/rf_dimen_30"/>
+    <View android:id="@+id/customer_custom_shimmer_kk2" android:background="@drawable/customer_shape_bg_shimmer_28corner" android:layout_width="match_parent" android:layout_height="@dimen/rf_dimen_88" android:layout_marginBottom="@dimen/rf_dimen_32"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rf_dimen_32">
+        <View android:id="@+id/customer_custom_shimmer_kk3" android:background="@drawable/customer_shape_bg_shimmer_40corner" android:layout_width="@dimen/rf_dimen_148" android:layout_height="@dimen/rf_dimen_170" android:layout_marginRight="@dimen/rf_dimen_20"/>
+        <View android:id="@+id/customer_custom_shimmer_kk4" android:background="@drawable/customer_shape_bg_shimmer_40corner" android:layout_width="@dimen/rf_dimen_148" android:layout_height="@dimen/rf_dimen_170" android:layout_marginRight="@dimen/rf_dimen_20"/>
+        <View android:id="@+id/customer_custom_shimmer_kk5" android:background="@drawable/customer_shape_bg_shimmer_40corner" android:layout_width="@dimen/rf_dimen_148" android:layout_height="@dimen/rf_dimen_170" android:layout_marginRight="@dimen/rf_dimen_20"/>
+        <View android:id="@+id/customer_custom_shimmer_kk6" android:background="@drawable/customer_shape_bg_shimmer_40corner" android:layout_width="@dimen/rf_dimen_148" android:layout_height="@dimen/rf_dimen_170" android:layout_marginRight="@dimen/rf_dimen_20"/>
+        <View android:id="@+id/customer_custom_shimmer_kk7" android:background="@drawable/customer_shape_bg_shimmer_40corner" android:layout_width="@dimen/rf_dimen_148" android:layout_height="@dimen/rf_dimen_170" android:layout_marginRight="@dimen/rf_dimen_20"/>
+    </LinearLayout>
+</LinearLayout>

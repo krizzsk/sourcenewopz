@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/global_new_ui_home_card_bg" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:maxHeight="110.5dp" android:baselineAligned="false" android:minHeight="90dp" android:contentDescription="@null">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/tv_content" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="12sp" android:textColor="#919599" android:ellipsize="end" android:id="@+id/tv_sub_content" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" app:drawableEndCompat="@drawable/mtg_info_icon_selector"/>
+            <com.didi.component.common.widget.CircleImageView android:layout_gravity="center" android:id="@+id/iv_sub_icon" android:visibility="gone" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginStart="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_accept" android:background="@drawable/mtg_accept_button_selector" android:layout_width="80dp" android:layout_height="30dp" android:layout_marginStart="2dp" android:layout_marginEnd="10dp">
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#ffffff" android:layout_gravity="center" android:id="@+id/tv_accept_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/im_9_sp" android:textStyle="bold" android:textColor="#dadcde" android:layout_gravity="center" android:id="@+id/tv_accept_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+    </LinearLayout>
+</LinearLayout>

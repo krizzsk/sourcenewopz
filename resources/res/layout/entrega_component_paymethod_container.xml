@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/customer_custom_pay_method_rv" android:background="@color/rf_color_gery_7_97_F5F5F7" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.entrega.customer.widget.StatusBarView android:id="@+id/customer_custom_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.didi.entrega.customer.widget.text.IconTextView android:textColor="@color/entrega_selector_33_to_99" android:id="@+id/customer_iv_close" android:text="@string/customer_common_icon_back" style="@style/IconFountTitleBar"/>
+    <com.didi.entrega.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/rf_dimen_font_48" android:textStyle="bold" android:textColor="@color/rf_color_gery_1_0_000000" android:paddingLeft="@dimen/rf_dimen_32" android:paddingRight="@dimen/rf_dimen_40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rf_dimen_10" android:text="@string/FoodC_order_Payment_Method_FhGy"/>
+    <ScrollView android:paddingTop="@dimen/rf_dimen_24" android:paddingBottom="@dimen/rf_dimen_40" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/rf_dimen_30" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:id="@+id/customer_ll_item_group" android:paddingLeft="@dimen/rf_dimen_24" android:paddingRight="@dimen/rf_dimen_24" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ScrollView>
+</LinearLayout>

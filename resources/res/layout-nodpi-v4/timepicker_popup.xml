@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rl_root" android:background="@drawable/common_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.didi.sdk.view.timepicker.TimePickerView android:id="@+id/time_picker" android:background="@android:color/white" android:paddingLeft="16dp" android:paddingRight="16dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/frameworktitle_bar"/>
+    <FrameLayout android:id="@+id/frameworktitle_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.didi.sdk.view.titlebar.CommonPopupTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/containertitle_bar" android:paddingLeft="18dp" android:paddingRight="18dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp">
+            <ImageView android:id="@+id/imageClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_dialog_btn_close_selector" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/title_bar2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_toLeftOf="@+id/imageClose" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/common_timepop_confirm_button" android:gravity="center" android:id="@+id/tv_confirm2" android:background="@drawable/btn_orangeshape_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="18dp" android:layout_marginTop="15dp" android:layout_marginRight="18dp" android:layout_marginBottom="13dp" android:text="@string/confirm" android:layout_below="@+id/time_picker"/>
+</RelativeLayout>

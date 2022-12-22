@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/pix_page_light_shade_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.sdk.view.titlebar.CommonTitleBar android:id="@+id/page_titlebar" android:tag="@string/common_titlebar_id" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/qr_code_detail_parent" android:paddingLeft="@dimen/wallet_dp_10" android:paddingRight="@dimen/wallet_dp_10" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+</LinearLayout>

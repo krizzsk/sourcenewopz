@@ -1,0 +1,6 @@
+{
+    "toggles" : {
+        "catchlog" : "Push_Catch_AppData_v5",
+        "wifiupload" : "WIFI_UPLOAD_LOG_v5"
+    }
+}

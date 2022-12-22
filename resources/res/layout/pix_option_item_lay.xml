@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/option_check_img" android:layout_width="@dimen/ggk_dimen_18dp" android:layout_height="@dimen/ggk_dimen_18dp" android:src="@drawable/w_common_icon_unchecked" android:scaleType="centerInside" android:layout_weight="0"/>
+    <TextView android:textSize="@dimen/wallet_sp_16" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@+id/option_item_name_tv" android:paddingTop="6dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1"/>
+</LinearLayout>

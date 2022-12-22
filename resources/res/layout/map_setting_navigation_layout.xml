@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/map_setting_title_view"/>
+    <ScrollView android:background="@color/map_setting_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+            <RelativeLayout android:id="@+id/map_setting_item_nav" style="@style/map_setting_item_style">
+                <ImageView android:id="@+id/arrow_icon" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/map_setting_arrow_selector" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+                <TextView android:textSize="14dp" android:textColor="@color/map_setting_item_tail_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/map_setting_nav_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:layout_toStartOf="@+id/arrow_icon" style="@style/map_setting_item_tail_text"/>
+                <TextView android:textSize="16dp" android:textColor="@color/map_setting_item_text" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="@string/map_setting_navigation_selected" android:singleLine="true" android:textDirection="locale" android:textAlignment="viewStart" android:layout_marginEnd="10dp" android:layout_toStartOf="@+id/map_setting_nav_text" android:layout_alignParentStart="true"/>
+            </RelativeLayout>
+            <View style="@style/map_setting_item_line_style"/>
+            <RelativeLayout style="@style/map_setting_item_style">
+                <ImageView android:id="@+id/map_setting_open_navigation" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/map_setting_on_off_selected" android:layout_alignParentEnd="true"/>
+                <TextView android:textSize="16dp" android:textColor="@color/map_setting_item_text" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/map_setting_nav_open_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/map_setting_navigation_on" android:singleLine="true" android:textDirection="locale" android:textAlignment="viewStart" android:layout_marginEnd="10dp" android:layout_toStartOf="@+id/map_setting_open_navigation" android:layout_alignParentStart="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/map_setting_nav_voice_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View style="@style/map_setting_item_line_style"/>
+                <RelativeLayout style="@style/map_setting_item_style">
+                    <ImageView android:id="@+id/map_setting_voice_switch" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/map_setting_on_off_selected" android:layout_alignParentEnd="true"/>
+                    <TextView android:textSize="16dp" android:textColor="@color/map_setting_item_text" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/map_setting_nav_voice" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/map_setting_nav_voice" android:singleLine="true" android:textDirection="locale" android:textAlignment="viewStart" android:layout_marginEnd="10dp" android:layout_toStartOf="@+id/map_setting_voice_switch" android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/map_setting_nav_day_night_mode_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/map_setting_bg" android:layout_width="match_parent" android:layout_height="16dp"/>
+                <TextView android:gravity="center_vertical" android:id="@+id/map_setting_nav_day_night_mode_title" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/map_setting_nav_day_night_mode" android:paddingStart="18dp" android:paddingEnd="18dp" style="@style/map_setting_item_text_style"/>
+                <com.didi.map.setting.global.MapSettingNavDayNightView android:id="@+id/map_setting_nav_day_night_mode_toggle" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="18dp" android:layout_marginTop="15dp" android:layout_marginRight="18dp" android:layout_marginBottom="15dp" android:layout_marginStart="18dp" android:layout_marginEnd="18dp"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/map_setting_traffic_bar_switch_panel" android:paddingTop="15dp" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:paddingStart="18dp" android:paddingEnd="18dp">
+                <ImageView android:id="@+id/map_setting_traffic_bar_switch" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/map_setting_on_off_selected" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+                <TextView android:textSize="16sp" android:textColor="@color/map_setting_item_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/GDriver_TrafficBar_Road_conditions_dyCC" android:layout_centerVertical="true" android:layout_marginEnd="6dp" android:layout_toStartOf="@+id/map_setting_traffic_bar_switch"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

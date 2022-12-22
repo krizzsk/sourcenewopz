@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/im_session_pop" android:paddingLeft="@dimen/im_6_dp" android:paddingRight="@dimen/im_6_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/im_6_dp" android:paddingEnd="@dimen/im_6_dp"/>

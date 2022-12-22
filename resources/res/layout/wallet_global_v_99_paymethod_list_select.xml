@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/layout_title_bar" android:background="#f3f4f5" android:layout_width="match_parent" android:layout_height="52dp">
+        <ImageView android:id="@+id/iv_close" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="56dp" android:layout_height="20dp" android:src="@drawable/_99_page_close" android:layout_centerVertical="true" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/tv_payment_method_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/one_payment_global_paylist_title" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ViewStub android:id="@+id/vs_payment_method_head" android:layout="@layout/wallet_global_v_99_paymethod_head" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:background="#f3f4f5" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_paymethod_container" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_empty" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/font_size_small" android:textColor="@color/light_gray" android:gravity="center" android:id="@+id/tv_agent_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/one_payment_global_net_empty_tip" android:singleLine="false" android:drawableTop="@drawable/one_payment_network_error" android:drawablePadding="50px" android:contentDescription="@string/one_payment_global_net_empty_tip"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

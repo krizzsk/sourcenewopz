@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <CheckBox android:gravity="center" android:id="@+id/ggk_dialog_checkbox" android:padding="18dp" android:layout_width="50dp" android:layout_height="50dp" android:button="@null" android:drawableLeft="@drawable/ggk_checkbox_multiple_selector"/>
+    <TextView android:textSize="12sp" android:textColor="#ff666666" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/ggk_dialog_checkbox_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-13dp" android:maxLines="1"/>
+</LinearLayout>

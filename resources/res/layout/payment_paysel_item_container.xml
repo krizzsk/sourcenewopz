@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="?attr/payment_paysel_group_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/payment_paysel_main_group_icon_dollar" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/payment_list_group_main_title_container" android:layout_width="wrap_content" android:layout_height="54dp">
+            <ImageView android:id="@+id/gpay_method_list_group_icon" android:layout_width="24dp" android:layout_height="15dp" android:layout_marginLeft="18dp" android:scaleType="fitCenter" android:layout_centerVertical="true" android:layout_marginStart="18dp"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@drawable/one_payment_global_paymethod_text_color_selector" android:gravity="start" android:id="@+id/gpay_method_list_group_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10dp"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.LinearLayoutCompat android:id="@+id/payment_list_group_main" android:background="@drawable/one_payment_pay_method_list_group_bg_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_below="@+id/payment_list_group_main_title_container" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" app:divider="@drawable/payment_paysel_item_divider"/>
+    </RelativeLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/payment_list_group_other" android:background="@drawable/payment_paysel_other_group_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:divider="@drawable/payment_paysel_item_divider"/>
+</merge>

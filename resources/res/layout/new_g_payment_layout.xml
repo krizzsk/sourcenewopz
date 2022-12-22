@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.didi.unifiedPay.component.widget.RootLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:orientation="vertical" android:id="@+id/g_payment_root" android:background="@drawable/new_g_title_bg_shape" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <global.didi.pay.newview.NewGlobalPayTitleView android:id="@+id/g_payment_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:id="@+id/g_payment_center" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="30dp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/g_payment_content" android:paddingBottom="4.5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <global.didi.pay.newview.NewGlobalPaymentFeeView android:id="@+id/g_payment_fee" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="40dp"/>
+                <global.didi.pay.newview.NewGlobalPaymentMerchantView android:id="@+id/g_payment_merchant" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <global.didi.pay.newview.NewGlobalPaymentDeductionView android:id="@+id/g_payment_deduction" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <global.didi.pay.newview.NewGlobalPaymentBillAmountView android:id="@+id/g_payment_layout_bill_amount" android:background="@drawable/oc_view_selector" android:paddingLeft="30dp" android:paddingRight="25dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="30dp" android:paddingEnd="25dp"/>
+                <global.didi.pay.newview.NewGlobalPaymentTransactionFeeView android:id="@+id/g_payment_layout_trans_fee" android:background="@drawable/oc_view_selector" android:paddingLeft="30dp" android:paddingRight="25dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="30dp" android:paddingEnd="25dp"/>
+                <global.didi.pay.newview.NewGlobalPaymentBalanceView android:id="@+id/g_payment_layout_balance" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <global.didi.pay.newview.NewGlobalPaymentChannelView android:id="@+id/g_payment_layout_paymentcheck" android:background="@drawable/oc_view_selector" android:paddingLeft="30dp" android:paddingRight="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="30dp" android:paddingEnd="25dp"/>
+                <global.didi.pay.newview.NewGlobalPaymentInstallmentView android:id="@+id/g_payment_layout_installment" android:background="@drawable/oc_view_selector" android:paddingLeft="30dp" android:paddingRight="25dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="30dp" android:paddingEnd="25dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/g_payment_net_error_icon" android:background="@drawable/new_g_net_error" android:layout_width="124dp" android:layout_height="124dp" android:layout_marginTop="18dp" android:layout_marginBottom="12.5dp" android:scaleType="fitEnd"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <global.didi.pay.newview.pix.NewGlobalPaymentPixCodeView android:id="@+id/g_payment_pix_code" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <global.didi.pay.newview.pix.NewGlobalPaymentPixPrepayView android:id="@+id/g_payment_pix_prepay" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <global.didi.pay.newview.NewGlobalPaymentStateView android:id="@+id/g_payment_state" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+</com.didi.unifiedPay.component.widget.RootLinearLayout>

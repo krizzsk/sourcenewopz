@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="#f3f4f8" android:padding="24dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/merchant_sdk_loading_view" android:layout_width="126dp" android:layout_height="126dp" android:src="@drawable/global_cashier_retry_icon"/>
+    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginRight="@dimen/dp_40" android:text="@string/Wallet_App_V2_Please_confirm_Pdiy" android:layout_marginStart="@dimen/dp_40" android:layout_marginEnd="@dimen/dp_40"/>
+    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/btn_retry" android:background="@drawable/global_cashier_retry_btn_bg" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_22" android:text="Retry" android:includeFontPadding="false" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.didi.global.globalgenerickit.dialog.GGKRoundImageView android:id="@+id/ggk_dialog_head_image" android:layout_width="match_parent" android:layout_height="96dp" android:scaleType="centerCrop" app:left_top_radius="@dimen/ggk_dimen_radius" app:right_top_radius="@dimen/ggk_dimen_radius"/>
+</LinearLayout>

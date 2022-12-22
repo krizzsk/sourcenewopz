@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/customer_layout_success" android:background="@color/rf_color_white_100_FFFFFF" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/customer_download_progress_image" android:layout_width="@dimen/customer_400px" android:layout_height="@dimen/customer_400px" android:layout_marginTop="@dimen/customer_80px"/>
+            <TextView android:textSize="@dimen/customer_text_size_44px" android:textColor="@color/rf_color_gery_1_0_000000" android:gravity="center" android:id="@+id/customer_layout_success_email_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_60px" android:layout_marginTop="@dimen/customer_88px" android:layout_marginRight="@dimen/customer_60px" android:text="@string/customer_receipt_sent"/>
+            <TextView android:textSize="@dimen/customer_text_size_32px" android:textColor="@color/rf_color_gery_2_40_666666" android:gravity="center" android:id="@+id/customer_layout_success_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_60px" android:layout_marginTop="@dimen/customer_28px" android:layout_marginRight="@dimen/customer_60px" android:text="@string/customer_receipt_sent_to" android:lineSpacingExtra="@dimen/customer_4px"/>
+            <View android:layout_width="0dp" android:layout_height="@dimen/customer_40px"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.didi.rfusion.widget.button.RFMainButton android:layout_gravity="bottom" android:id="@+id/customer_custom_common_success_confirm" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_40px" android:layout_marginRight="@dimen/customer_40px" android:layout_marginBottom="@dimen/customer_40px" app:rf_btn_spec="0"/>
+</LinearLayout>

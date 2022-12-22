@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="90dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/bubble_top_bar_layout" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="85dp">
+        <ImageView android:id="@+id/bubble_top_bar_arrow" android:paddingLeft="10dp" android:paddingTop="12dp" android:paddingRight="10dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/bubble_navi_arrow"/>
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/g_color_333333" android:gravity="center" android:id="@+id/bubble_top_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bubble_top_view_title"/>
+    </LinearLayout>
+    <View android:background="@drawable/bubble_navi_shadow" android:layout_width="match_parent" android:layout_height="5dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

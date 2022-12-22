@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/view_holder_fee" android:background="@drawable/otherbg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/third_channel_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20" app:divider="@drawable/global_cashier_card_item_divider" app:dividerPadding="@dimen/dp_20" app:showDividers="middle"/>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/ggk_dialog_bg" android:layout_width="267dp" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+    <include android:id="@+id/ggk_dialog_head_image_include" android:visibility="gone" layout="@layout/dialog_head_image_layout"/>
+    <include android:id="@+id/ggk_dialog_title_include" android:visibility="gone" layout="@layout/dialog_title_layout"/>
+    <include android:id="@+id/ggk_dialog_subtitle_include" android:visibility="gone" layout="@layout/dialog_subtitle_layout"/>
+    <include android:id="@+id/ggk_dialog_subcontent_include" android:visibility="gone" layout="@layout/dialog_subcontent_layout"/>
+    <include android:id="@+id/ggk_dialog_content_include" android:visibility="gone" layout="@layout/dialog_content_layout"/>
+    <include android:id="@+id/ggk_dialog_checkbox_include" android:visibility="gone" layout="@layout/dialog_checkbox_layout"/>
+    <include android:id="@+id/ggk_dialog_edit_include" android:visibility="gone" layout="@layout/dialog_edit_layout"/>
+    <include android:id="@+id/ggk_dialog_description_include" android:visibility="gone" layout="@layout/dialog_description_layout"/>
+    <include android:id="@+id/ggk_dialog_btn_include" android:visibility="gone" layout="@layout/dialog_btn_layout"/>
+</LinearLayout>

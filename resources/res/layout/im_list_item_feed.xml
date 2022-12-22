@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/im_20_dp">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@+id/feed_title_layout" android:layout_width="match_parent" android:layout_height="@dimen/im_50_dp">
+        <com.didi.beatles.p099im.views.imageView.IMCircleImageView android:id="@+id/feed_title_avatar" android:layout_width="@dimen/im_30_dp" android:layout_height="@dimen/im_30_dp" android:layout_marginLeft="@dimen/im_20_dp" android:scaleType="centerCrop" android:layout_marginStart="@dimen/im_20_dp"/>
+        <TextView android:textSize="@dimen/im_14_sp" android:textColor="#333333" android:id="@+id/feed_title_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_8_dp" android:layout_weight="1" android:layout_marginStart="@dimen/im_8_dp"/>
+        <TextView android:textSize="@dimen/im_12_sp" android:textColor="#999999" android:id="@+id/feed_title_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/im_20_dp" android:layout_marginEnd="@dimen/im_20_dp"/>
+    </LinearLayout>
+    <View android:background="#19000000" android:layout_width="match_parent" android:layout_height="@dimen/im_0.5_dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/feed_item_group" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

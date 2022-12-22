@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/cl_hybrid_root" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.didi.soda.web.widgets.WebPageTitleBar android:id="@+id/web_title_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+        <FrameLayout android:id="@+id/web_page_fl_container" android:background="@android:color/transparent" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/web_title_bar"/>
+        <FrameLayout android:id="@+id/web_page_title_container" android:background="@android:color/transparent" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/web_page_ll_error" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/web_title_bar" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+            <ImageView android:id="@+id/soda_web_page_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75dp" android:src="@drawable/nova_assembly_icon_load_error"/>
+            <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#666666" android:id="@+id/web_page_tv_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#999999" android:id="@+id/web_page_tv_error_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/soda_web_page_retry"/>
+            <FrameLayout android:id="@+id/soda_web_customer_error_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/common_title_bar_line" android:background="@color/assembly_unit_color_19000000" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/assembly_1px" android:layout_below="@+id/web_title_bar"/>
+    </RelativeLayout>
+</FrameLayout>

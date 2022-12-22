@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar_main" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:minHeight="?attr/actionBarSize">
+        <ImageView android:layout_gravity="center" android:id="@+id/image_title_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/one_fastframe_logo_default" android:layout_centerInParent="true"/>
+        <TextView android:textSize="@dimen/one_fastframe_txt_large" android:textColor="@color/one_fastframe_text_dark" android:layout_gravity="center" android:id="@+id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/layout_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <TextView android:textSize="@dimen/one_fastframe_txt_middle" android:textColor="@drawable/one_fastframe_btn_menu_text" android:gravity="center" android:layout_gravity="right" android:id="@+id/txt_menu" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="?attr/actionBarSize"/>
+    </androidx.appcompat.widget.Toolbar>
+    <View android:id="@+id/view_toolbar_line" android:background="@color/one_fastframe_background_deep" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/toolbar_main"/>
+    <FrameLayout android:id="@+id/layout_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/view_toolbar_line"/>
+    <ViewStub android:id="@+id/viewstub_empty" android:layout="@layout/one_fastframe_activity_empty" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/view_toolbar_line"/>
+</RelativeLayout>

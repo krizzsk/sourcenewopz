@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="@dimen/customer_8px"/>
+            <solid android:color="@color/rf_color_brands_2_72_31B77E"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/customer_bg_share_coupon_btn"/>
+</selector>

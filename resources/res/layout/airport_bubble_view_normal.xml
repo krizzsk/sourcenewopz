@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/outline_white" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="15dp" android:paddingEnd="15dp">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/layout_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iconleft" android:background="@drawable/default_airport_pic" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginEnd="4dp"/>
+        <TextView android:textSize="@dimen/font_size_small" android:textColor="#333333" android:layout_gravity="center_vertical" android:id="@+id/mainBubbleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Global_Rider_airport_short_term_parking_Go_to_Inxs" style="@style/Map.TextViewStyle.TextDirection"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iconright" android:background="@drawable/poi_one_address_arrow_right" android:layout_width="16dp" android:layout_height="16dp" android:layout_margin="4dp"/>
+    </LinearLayout>
+</FrameLayout>

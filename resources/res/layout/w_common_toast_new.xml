@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/w_common_toast_new_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:minHeight="62dp">
+        <ImageView android:id="@+id/toast_icon_iv" android:focusableInTouchMode="false" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="-4dp"/>
+        <TextView android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/toast_msg_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_toRightOf="@+id/toast_icon_iv" android:layout_centerVertical="true" android:lineSpacingExtra="5dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+    </RelativeLayout>
+</FrameLayout>

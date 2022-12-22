@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/lego_color_FFFFFF" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/title_bar_layout" android:layout_width="match_parent" android:layout_height="52dp">
+        <ImageView android:id="@+id/title_bar_back_img" android:padding="16dp" android:layout_width="52dp" android:layout_height="52dp" android:src="@drawable/g_common_back_arrow"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/lego_color_000000" android:id="@+id/title_bar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerInParent="true" android:layout_marginStart="52dp" android:layout_marginEnd="52dp"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/list_layout" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:background="@drawable/g_common_search_bg" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+            <ImageView android:layout_gravity="center_vertical" android:padding="10dp" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/g_common_search_icon" android:layout_marginStart="4dp"/>
+            <EditText android:textSize="14sp" android:textColor="@color/lego_color_000000" android:textColorHint="@color/lego_color_919599" android:id="@+id/search_et" android:background="@null" android:layout_width="match_parent" android:layout_height="48dp" android:singleLine="true" android:maxLength="20" android:textCursorDrawable="@drawable/g_comon_cursor_drawable"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv" android:background="@color/lego_color_F8F9FA" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="10dp" android:layout_weight="1"/>
+        <LinearLayout android:id="@+id/bottom_layout" android:background="@color/lego_color_FFFFFF" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:translationZ="100dp">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="?attr/submit_btn_text_color_selector" android:gravity="center" android:id="@+id/bottom_btn" android:background="?attr/submit_btn_bg_new_selector" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

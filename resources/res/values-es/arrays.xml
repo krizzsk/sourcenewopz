@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="afanty_avatar_menu">
+        <item>fotos</item>
+        <item>Seleccione el álbum de fotos del teléfono móvil</item>
+    </array>
+    <array name="bts_im_dates">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miércoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+        <item>Sábado</item>
+        <item>Domingo</item>
+    </array>
+    <array name="df_appeal_doc_type_cdt">
+        <item>Toma una foto de tu identificación oficial (INE/IFE):</item>
+        <item>La identificación debe verse clara y completa</item>
+        <item>Tu foto en la identificación debe verse clara y completa</item>
+        <item>Debe verse bien iluminada y sin reflejos</item>
+    </array>
+    <array name="df_appeal_doc_type_passport">
+        <item>Toma una foto de tu pasaporte:</item>
+        <item>El pasaporte debe verse claro y completo</item>
+        <item>Tu foto en el pasaporte debe verse clara y completa</item>
+        <item>Debe verse bien iluminada y sin reflejos</item>
+    </array>
+    <array name="df_appeal_driver_license_g1">
+        <item>Toma una foto de tu licencia de conducir:</item>
+        <item>La licencia de conducir debe verse clara y completa</item>
+        <item>Tu foto en la licencia de conducir debe verse clara y completa</item>
+        <item>Debe verse bien iluminada y sin reflejos</item>
+    </array>
+    <array name="df_appeal_self_photo">
+        <item>Tómate una foto de la cintura para arriba:</item>
+        <item>Debe ser clara, completa y no debe ser una foto de otra foto</item>
+        <item>Asegúrate de que la foto esté bien iluminada</item>
+        <item>No uses lentes o sombrero</item>
+    </array>
+    <array name="im_default_word_list">
+        <item>¡Hola! Estoy en el punto de encuentro. Por favor, dirígete a la ubicación indicada por el GPS.</item>
+        <item>Llego pronto, espera un momento.</item>
+        <item>¿Cuánto tiempo demora en llegar aquí?</item>
+        <item>Estoy aquí. ¿Dónde estás?</item>
+    </array>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="start" android:id="@+id/onemessage_view_btn" android:textDirection="locale" android:textAlignment="viewStart">
+    <ImageView android:background="@color/im_op_gray_line" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/im_40_dp">
+        <TextView android:textSize="@dimen/im_12_sp" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/detail_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_15_dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/im_15_dp"/>
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/detail_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_4_dp" android:layout_toRightOf="@+id/detail_tv" android:layout_centerVertical="true" android:layout_marginStart="@dimen/im_4_dp" android:layout_toEndOf="@+id/detail_tv"/>
+    </RelativeLayout>
+</merge>

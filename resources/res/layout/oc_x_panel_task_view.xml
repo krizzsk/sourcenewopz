@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/oc_x_panel_title_layout" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/oc_color_000000" android:ellipsize="end" android:id="@+id/oc_x_panel_title_txt" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="14dp" android:maxLines="2" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/oc_color_FFFFFF" android:id="@+id/oc_x_panel_task_detail_btn" android:paddingLeft="12dp" android:paddingTop="6dp" android:paddingRight="12dp" android:paddingBottom="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:maxLines="1"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/oc_color_666666" android:id="@+id/oc_x_panel_task_description" android:paddingLeft="18dp" android:paddingRight="18dp" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/oc_x_pane_task_container" android:paddingLeft="18dp" android:paddingRight="18dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.didichuxing.xpanel.global.models.taskoperation.TaskContentView android:id="@+id/oc_x_pane_task_content" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.didichuxing.xpanel.global.models.taskoperation.TaskBottomView android:id="@+id/oc_x_pane_task_bottom" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</merge>

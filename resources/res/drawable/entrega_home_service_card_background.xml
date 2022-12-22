@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="@dimen/rf_dimen_40" android:topRightRadius="@dimen/rf_dimen_40"/>
+            <gradient android:startColor="@color/entrega_home_service_card_end_color" android:endColor="@color/entrega_home_service_card_start_color" android:angle="180" android:type="linear"/>
+        </shape>
+    </item>
+</layer-list>

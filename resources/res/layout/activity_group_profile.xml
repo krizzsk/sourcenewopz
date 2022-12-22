@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/im_color_recyclerview_back" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.beatles.p099im.views.titlebar.CommonTitleBar android:id="@+id/group_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/im_40_dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/profile_recyclerview" android:background="@color/white" android:paddingLeft="@dimen/im_20_dp" android:paddingRight="0dp" android:paddingBottom="@dimen/im_14_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/group_title_bar" android:paddingStart="@dimen/im_20_dp" android:paddingEnd="0dp"/>
+    <RelativeLayout android:id="@+id/name_ly" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/im_63_dp" android:layout_marginTop="@dimen/im_10_dp" android:layout_below="@+id/profile_recyclerview">
+        <View android:background="@color/im_gray_line" android:layout_width="match_parent" android:layout_height="@dimen/im_0.5_dp"/>
+        <View android:background="@color/im_gray_line" android:layout_width="match_parent" android:layout_height="@dimen/im_0.5_dp" android:layout_alignParentBottom="true"/>
+        <TextView android:textColor="@color/im_op_black_deep" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_22_dp" android:text="@string/im_group_name" android:layout_centerVertical="true" android:layout_marginStart="@dimen/im_22_dp"/>
+        <TextView android:textSize="@dimen/im_17_sp" android:textColor="#969799" android:gravity="center" android:id="@+id/im_group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/im_20_dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/im_20_dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/im_63_dp" android:layout_marginTop="@dimen/im_10_dp" android:layout_below="@+id/name_ly">
+        <View android:background="@color/im_gray_line" android:layout_width="match_parent" android:layout_height="@dimen/im_0.5_dp"/>
+        <View android:background="@color/im_gray_line" android:layout_width="match_parent" android:layout_height="@dimen/im_0.5_dp" android:layout_alignParentBottom="true"/>
+        <TextView android:textColor="@color/im_op_black_deep" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_22_dp" android:text="@string/im_no_disturb" android:layout_centerVertical="true" android:layout_marginStart="@dimen/im_22_dp"/>
+        <com.didi.beatles.p099im.views.IMSlideSwitch android:gravity="center" android:id="@+id/forbid_slide_switch" android:layout_width="@dimen/im_42_dp" android:layout_height="@dimen/im_23_dp" android:layout_marginRight="@dimen/im_20_dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/im_20_dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</RelativeLayout>

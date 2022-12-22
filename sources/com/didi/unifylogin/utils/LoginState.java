@@ -1,0 +1,54 @@
+package com.didi.unifylogin.utils;
+
+import java.io.Serializable;
+
+public enum LoginState implements Serializable {
+    STATE_UNKNOWN(-1),
+    STATE_CODE(0),
+    STATE_PASSWORD(1),
+    STATE_INPUT_PHONE(2),
+    STATE_NEW_PHONE(3),
+    STATE_CONFIRM_PHONE(4),
+    STATE_NEW_CODE(5),
+    STATE_CAPTCHA(6),
+    STATE_SET_PWD(7),
+    STATE_PRE_SET_PWD(8),
+    STATE_VERIFY_OLD_PWD(9),
+    STATE_PRE_SET_CELL(10),
+    STATE_PRE_RETRIEVE(11),
+    STATE_FORGET_CELL(12),
+    STATE_CANCEL(13),
+    STATE_INFO_ACTION(14),
+    STATE_CERTIFICATION(15),
+    STATE_VERIFY_EMAIL(16),
+    STATE_PRE_SET_EMAIL(17),
+    STATE_NEW_EMAIL(18),
+    STATE_EMAIL_CODE(19),
+    STATE_BIND_THIRD_PHONE(20),
+    STATE_THIRD_PARTY_SET(21),
+    STATE_EMAIL_ACTION(22),
+    STATE_NAME_ACTION(23),
+    STATE_PRE_CERTIFICATION(24),
+    STATE_SETCELL_ERROR(25),
+    STATE_CONFIRM_SNATCH(26),
+    STATE_PRE_FACE(27),
+    STATE_DELETE_ACCOUNT_REASON(28),
+    STATE_DELETE_ACCOUNT_FAILED(29),
+    STATE_DELETE_ACCOUNT_MANUAL(30),
+    STATE_DELETE_ACCOUNT_FAILED_TEXT_STYLE(29),
+    STATE_EMAIL_REGISTER_CODE(31),
+    STATE_EMAIL_REGISTER_OR_LOGIN(32),
+    STATE_SET_PWD_BY_EMAIL(33),
+    STATE_LOGIN_PWD_BY_EMAIL(34),
+    STATE_LOGIN_CHANGE_PHONE_INPUT_CPF(35);
+    
+    private int stateNum;
+
+    private LoginState(int i) {
+        this.stateNum = i;
+    }
+
+    public int getStateNum() {
+        return this.stateNum;
+    }
+}

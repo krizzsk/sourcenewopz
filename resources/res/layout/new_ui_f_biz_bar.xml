@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/biz_nav_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/biz_nav_divider" android:background="#0d0a121a" android:layout_width="match_parent" android:layout_height="1px"/>
+        <com.didi.sdk.home.bizbar.BizNavLayout android:id="@+id/biz_nav_layout" android:background="@color/new_ui_biz_nav_background" android:layout_width="match_parent" android:layout_height="@dimen/new_ui_biz_nav_bar_height"/>
+    </FrameLayout>
+</FrameLayout>

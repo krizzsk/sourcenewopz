@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/pay_way_default_rv" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/pay_way_default_lv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/pay_way_default_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_way_add" android:layout_marginEnd="10dp"/>
+        <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@drawable/payway_default_text_color_selector_new" android:id="@+id/pay_way_default_tv_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/pay_way_title" android:maxLines="2"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/iv_img" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/payway_payment_right_arrow"/>
+</FrameLayout>

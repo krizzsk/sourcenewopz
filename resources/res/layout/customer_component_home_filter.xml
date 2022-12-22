@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:orientation="vertical" android:id="@+id/customer_ll_home_header_float" android:paddingBottom="@dimen/rf_dimen_24" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <View android:layout_width="match_parent" android:layout_height="@dimen/customer_home_search_height"/>
+    </FrameLayout>
+    <Space android:id="@+id/customer_ll_item_top_align" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginBottom="@dimen/rf_dimen_24" app:layout_constraintBottom_toBottomOf="@+id/customer_ll_home_header_float"/>
+    <FrameLayout android:id="@+id/customer_ll_home_binder_float" android:layout_width="0dp" android:layout_height="@dimen/rf_dimen_120" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/customer_ll_item_top_align"/>
+    <View android:id="@+id/customer_ll_home_float_shadow_view" android:background="@drawable/customer_filter_bar_shadow" android:visibility="gone" android:layout_width="0dp" android:layout_height="@dimen/rf_dimen_20" android:alpha="0.5" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/customer_ll_home_binder_float"/>
+    <FrameLayout android:id="@+id/customer_fl_home_filter_shimmer_container" android:visibility="gone" android:clickable="true" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/customer_ll_home_binder_float"/>
+</merge>

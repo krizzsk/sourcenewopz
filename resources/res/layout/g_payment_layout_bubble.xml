@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:paddingLeft="16dp" android:paddingTop="11dp" android:paddingRight="16dp" android:paddingBottom="11dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+    <FrameLayout android:id="@+id/left_icon" android:visibility="gone" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginStart="5dp" android:layout_marginEnd="5dp"/>
+    <TextView android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/center_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/close_btn" android:padding="5dp" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp" android:layout_marginStart="5dp"/>
+</LinearLayout>

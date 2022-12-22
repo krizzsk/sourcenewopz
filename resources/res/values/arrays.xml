@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="BRAZIL_PACKAGES">
+        <item>com.xiaojukeji.didi.brazil.customer</item>
+        <item>com.taxis99</item>
+        <item>com.app99.driver</item>
+    </array>
+    <array name="GLOBAL_PACKAGES">
+        <item>com.xiaojukeji.didi.global.customer</item>
+        <item>com.didiglobal.passenger</item>
+        <item>com.didiglobal.driver</item>
+        <item>com.didiglobal.driver.au</item>
+        <item>com.didiglobal.driver.ru</item>
+        <item>com.didiglobal.driver.de</item>
+    </array>
+    <array name="TEST_PACKAGES">
+        <item>com.didi.unified.pay.test</item>
+    </array>
+    <array name="afanty_avatar_menu">
+        <item>Camera</item>
+        <item>Choose from Album</item>
+    </array>
+    <array name="auth_package_name">
+        <item>com.pay99.wallet</item>
+    </array>
+    <array name="auth_signature">
+        <item />
+    </array>
+    <array name="avatar_menu">
+        <item>Camera</item>
+        <item>Album</item>
+    </array>
+    <array name="brazil_lang_array">
+        <item>  Português; pt-BR;  </item>
+        <item>  English; en-US;  </item>
+    </array>
+    <array name="bts_im_dates">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </array>
+    <array name="colors">
+        <item>#1affffff</item>
+        <item>#ffffffff</item>
+    </array>
+    <array name="df_appeal_additional_docs">
+        <item>Carteira de identidade (RG)</item>
+        <item>@string/df_appeal_additional_doc_option2</item>
+        <item>@string/df_appeal_additional_doc_option3</item>
+        <item>@string/df_appeal_additional_doc_option4</item>
+    </array>
+    <array name="df_appeal_doc_type_RG">
+        <item>Please take photos of the front and back side of your ID card (RG). Photos should be:</item>
+        <item>@string/df_appeal_doc_photo_common_req1</item>
+        <item>@string/df_appeal_doc_photo_common_req2</item>
+        <item>@string/df_appeal_doc_photo_common_req3</item>
+    </array>
+    <array name="df_appeal_doc_type_cdr">
+        <item>Please take a photo of your Reservista. Photo should:</item>
+        <item>@string/df_appeal_doc_photo_common_req1</item>
+        <item>@string/df_appeal_doc_photo_common_req2</item>
+        <item>@string/df_appeal_doc_photo_common_req3</item>
+    </array>
+    <array name="df_appeal_doc_type_cdt">
+        <item>Please take a photo of your Work and Social Security Card (CTPS). Photo should:</item>
+        <item>@string/df_appeal_doc_photo_common_req1</item>
+        <item>@string/df_appeal_doc_photo_common_req2</item>
+        <item>@string/df_appeal_doc_photo_common_req3</item>
+    </array>
+    <array name="df_appeal_doc_type_passport">
+        <item>Please take a photo of your passport. Photo should:</item>
+        <item>@string/df_appeal_doc_photo_common_req1</item>
+        <item>@string/df_appeal_doc_photo_common_req2</item>
+        <item>@string/df_appeal_doc_photo_common_req3</item>
+    </array>
+    <array name="df_appeal_driver_license_g1">
+        <item>Please upload a photo of your driver&apos;s license (CHN). Photo should be:</item>
+        <item>Clear and complete</item>
+        <item>Clearly show all information, including your picture</item>
+        <item>Well-lit and not contain glare or reflections</item>
+    </array>
+    <array name="df_appeal_driver_license_g2_qr">
+        <item>Upload a photo of the QR code on the back of your driver&apos;s license (CHN). Please ensure:</item>
+        <item>QR code is clear and not blurry</item>
+        <item>Photo is well-lit and doesn&apos;t have glare or reflections</item>
+        <item />
+    </array>
+    <array name="df_appeal_id_card_highlights">
+        <item>正反面</item>
+        <item>身份证号</item>
+        <item>有效期</item>
+    </array>
+    <array name="df_appeal_self_photo">
+        <item>Take a clear photo gives waist up:</item>
+        <item>Please take off your glasses and/or hat</item>
+        <item>Photo must be clear, show your whole face, and not be a photo of another photo</item>
+        <item>Photo should be taken with good lighting</item>
+    </array>
+    <array name="df_take_photo_act_confirm_notes">
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+    </array>
+    <array name="global_week_list">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </array>
+    <array name="gplus_colors">
+        <item>@color/oc_color_FC9153</item>
+    </array>
+    <array name="gua_gplus_colors">
+        <item>@color/oc_color_00B0FF</item>
+    </array>
+    <array name="im_default_word_list">
+        <item>Hello, my location is accurate. Please find me through your navigator</item>
+        <item>I&apos;ll be there shortly, please wait</item>
+        <item>How long will you take to arrive?</item>
+        <item>I’m here, where are you?</item>
+    </array>
+    <array name="lang_array">
+        <item>  Español; es-MX;  </item>
+        <item>  日本語; ja-JP;  </item>
+        <item>  English; en-US;  </item>
+        <item>  Español(Colombia); es-CO;  </item>
+        <item>  Español(Perú); es-PE;  </item>
+        <item>  Español(Chile); es-CL;  </item>
+        <item>  Español(Argentina); es-AR;  </item>
+        <item>  Español(Panamá); es-PA;  </item>
+        <item>  Español(Costa Rica); es-CR;  </item>
+        <item>  Русский (Russia); ru-RU;  </item>
+        <item>  ;العربية (مصر) ar-EG;  </item>
+    </array>
+    <array name="lang_array_apollo">
+        <item>  Español; es-MX;  </item>
+        <item>  日本語; ja-JP;  </item>
+        <item>  English; en-US;  </item>
+        <item>  Español(Colombia); es-CO;  </item>
+        <item>  Español(Perú); es-PE;  </item>
+        <item>  Español(Chile); es-CL;  </item>
+        <item>  Español(Argentina); es-AR;  </item>
+        <item>  Español(Panamá); es-PA;  </item>
+        <item>  Español(Costa Rica); es-CR;  </item>
+        <item>  Русский (Russia); ru-RU;  </item>
+        <item>  ;(مصر) عربي ar-EG;  </item>
+    </array>
+    <array name="role_value">
+        <item>角色</item>
+        <item>RD</item>
+        <item>QA</item>
+    </array>
+    <array name="sex">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+    <array name="topic_preset_sizes">
+        <item>@dimen/customer_text_size_32px</item>
+        <item>@dimen/customer_text_size_36px</item>
+    </array>
+    <array name="wallet_balance_interest_months">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sept</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </array>
+</resources>

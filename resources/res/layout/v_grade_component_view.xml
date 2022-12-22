@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/menu_item_selector" android:paddingLeft="@dimen/sidebar_sub_page_item_padding" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_height">
+        <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center_vertical" android:id="@+id/sidebar_grade_item_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/sidebar_sub_page_item_padding"/>
+        <View android:id="@+id/sidebar_grade_item_bg" android:layout_width="wrap_content" android:layout_height="@dimen/setting_item_height" android:layout_alignLeft="@+id/sidebar_grade_item_icon" android:layout_alignParentRight="true"/>
+        <ImageView android:id="@+id/sidebar_grade_item_icon" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginRight="4dp" android:layout_toLeftOf="@+id/sidebar_grade_item_desc" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="#999999" android:id="@+id/sidebar_grade_item_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sidebar_sub_page_item_padding" android:maxWidth="150dp" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <View android:id="@+id/divider" android:background="@color/setting_item_divider" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

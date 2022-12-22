@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/mfv_address_name_dot_out" android:layout_width="5dp" android:layout_height="5dp" android:layout_centerInParent="true"/>
+        <ImageView android:background="@drawable/mfv_address_name_dot_inner" android:layout_width="3dp" android:layout_height="3dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

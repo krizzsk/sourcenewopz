@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/im_plugin_error_icon" android:layout_width="70dp" android:layout_height="70dp" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/im_plugin_error_icon" android:layout_centerHorizontal="true">
+            <TextView android:textSize="14dp" android:textColor="#666666" android:id="@+id/im_plugin_error_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/im_plugin_robot_error_tip"/>
+            <TextView android:textSize="14dp" android:textColor="#ff7d41" android:id="@+id/im_plugin_error_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/im_plugin_robot_error_refresh" android:layout_marginStart="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

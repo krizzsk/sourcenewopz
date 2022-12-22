@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/inlineRejectLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/wallet_dp_24" android:layout_marginRight="@dimen/wallet_dp_24" android:layout_marginBottom="@dimen/wallet_dp_24">
+    <ScrollView android:id="@+id/rejectContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="80dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.jumio.sdk.views.JumioRejectView android:id="@+id/rejectView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="148dp" app:layout_constraintBottom_toTopOf="0"/>
+            <TextView android:textSize="@dimen/wallet_sp_20" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/reject_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="38dp" android:text="Please try again" app:layout_constraintTop_toBottomOf="@+id/rejectContainer"/>
+            <TextView android:textSize="@dimen/wallet_sp_16" android:textColor="@color/black" android:id="@+id/reject_sub_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Make sure your card is physically present, all details are clear to read with no blur or glare " app:layout_constraintTop_toBottomOf="@+id/confirm_title"/>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:gravity="center" android:id="@+id/rejectScan" android:layout_width="match_parent" android:layout_height="@dimen/wallet_dp_52" android:text="@string/Fintech_Payment_Integration__nREV" app:layout_constraintBottom_toBottomOf="0" style="@style/wallet_kyc_confirm_button_style"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

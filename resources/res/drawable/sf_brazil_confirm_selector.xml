@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_pressed="true" android:drawable="@drawable/sf_brazil_commit_rect_bg_pressed"/>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/sf_common_button_radius"/>
+            <solid android:color="#eeeeee"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/sf_brazil_commit_rect_bg"/>
+</selector>

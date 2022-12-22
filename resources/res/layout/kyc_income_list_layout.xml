@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="right" android:id="@+id/close_view" android:layout_width="@dimen/wallet_dp_30" android:layout_height="@dimen/wallet_dp_30" android:layout_margin="@dimen/wallet_dp_10" android:src="@drawable/popup_icon_close_def"/>
+    <com.didi.payment.kycservice.widget.WalletWheelView android:id="@+id/income_wheelView" android:background="@color/trans" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

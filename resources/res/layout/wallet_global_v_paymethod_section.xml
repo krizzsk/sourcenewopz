@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@+id/ll_paymethod_title" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="18dp" android:layout_marginStart="18dp">
+        <TextView android:textSize="19dp" android:textStyle="bold" android:textColor="@color/black" android:gravity="start" android:id="@+id/tv_paymethod_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/iv_paymethod_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/wallet_global_main_list_help_icon" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_paymethod_entry_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:gravity="start" android:background="#0a000000" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@+id/ll_addpay" android:background="@drawable/one_payment_base_common_item_bg_selector" android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:src="@drawable/wallet_paymethod_add" android:layout_marginStart="18dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginStart="17dp">
+            <TextView android:textSize="16dp" android:textColor="#ff7725" android:gravity="start" android:id="@+id/tv_addpay_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12dp" android:textColor="#999999" android:gravity="start" android:id="@+id/tv_addpay_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

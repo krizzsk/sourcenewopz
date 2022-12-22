@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/fl_scene_container" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/login_unify_fragment_phone_container" android:visibility="gone" layout="@layout/login_unify_fragment_phone"/>
+    <include layout="@layout/login_unify_fragment_pre_phone"/>
+</FrameLayout>

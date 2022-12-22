@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/oc_iv_fail_state_icon" android:layout_width="50dp" android:layout_height="50dp" android:src="@mipmap/icon_canceltrip"/>
+    <TextView android:textSize="14sp" android:textColor="@color/oc_color_666666" android:id="@+id/oc_tv_fail_state_str" android:paddingLeft="60dp" android:paddingRight="60dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:paddingStart="60dp" android:paddingEnd="60dp"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/oc_ll_fail_state_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+        <TextView android:textSize="12sp" android:textColor="@color/oc_color_999999" android:gravity="center" android:id="@+id/oc_tv_fail_state_cancle" android:background="@drawable/oc_failed_state_cancle_selector" android:layout_width="@dimen/oc_fail_state_text_width" android:layout_height="@dimen/oc_fail_state_text_height" android:layout_marginRight="10dp" android:text="@string/oc_fail_state_cancel" android:layout_marginEnd="10dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/oc_color_FC9153" android:gravity="center" android:id="@+id/oc_tv_fail_state_ok" android:background="@drawable/oc_failed_state_ok_selector" android:layout_width="@dimen/oc_fail_state_text_width" android:layout_height="@dimen/oc_fail_state_text_height" android:text="@string/oc_fail_state_retry"/>
+    </LinearLayout>
+</LinearLayout>

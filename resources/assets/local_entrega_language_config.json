@@ -1,0 +1,53 @@
+{
+  "supportList": {
+    "99": [{
+      "lang": "en-US"
+    }, {
+      "lang": "pt-BR"
+    }],
+    "global": [{
+      "lang": "en-US"
+    }, {
+      "lang": "es-MX"
+    }]
+  },
+  "languageConfig": {
+    "en": {
+      "US": {
+        "lang": "en-US",
+        "locale": "en_US"
+      },
+      "default": {
+        "lang": "en-US",
+        "locale": "en_US"
+      }
+    },
+    "es": {
+      "MX": {
+        "lang": "es-MX",
+        "locale": "es_MX"
+      },
+
+      "default": {
+        "lang": "es-MX",
+        "locale": "es_MX"
+      }
+    },
+    "pt": {
+      "BR": {
+        "lang": "pt-BR",
+        "locale": "pt_BR"
+      },
+      "default": {
+        "lang": "pt-BR",
+        "locale": "pt_BR"
+      }
+    },
+    "default": {
+      "default": {
+        "lang": "en-US",
+        "locale": "en_US"
+      }
+    }
+  }
+}

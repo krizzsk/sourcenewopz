@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lego_dimen_30dp" android:layout_marginRight="@dimen/lego_dimen_30dp" android:layout_marginBottom="@dimen/lego_dimen_24sp">
+    <TextView android:textSize="@dimen/lego_dimen_20sp" android:textStyle="bold" android:textColor="?attr/global_secondary_button_text_color_selector" android:ellipsize="end" android:gravity="center" android:id="@+id/ggk_drawer_btn_cancel" android:background="?attr/global_overall_secondary_button_selector" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="0dp" android:layout_height="52dp" android:singleLine="true" android:layout_weight="1"/>
+    <View android:id="@+id/g_bottom_pop_interval_view" android:layout_width="@dimen/lego_dimen_16dp" android:layout_height="0dp"/>
+    <FrameLayout android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1">
+        <TextView android:textSize="@dimen/lego_dimen_20sp" android:textStyle="bold" android:textColor="?attr/global_main_button_text_color_selector" android:ellipsize="end" android:gravity="center" android:id="@+id/ggk_drawer_btn_ok" android:background="?attr/global_overall_main_button_selector" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="52dp" android:singleLine="true"/>
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/ggk_drawer_btn_ok_lottie" android:background="?attr/global_overall_main_button_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="52dp" app:lottie_rawRes="?attr/button_loading_json"/>
+    </FrameLayout>
+</LinearLayout>

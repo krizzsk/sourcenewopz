@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/op_ride_status_layout" android:background="@drawable/global_op_ride_status_shape" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@null">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" android:layout_centerInParent="true">
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/op_ride_status_title_text" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:includeFontPadding="false"/>
+        <TextView android:textSize="12sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/op_ride_status_content_text" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.didi.soda.customer.widget.StatusBarView android:id="@+id/customer_custom_status_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0"/>
+    <com.didi.soda.home.widget.HeaderEmbedPlaceView android:id="@+id/customer_view_home_filter_embed_place" android:layout_width="1dp" android:layout_height="@dimen/customer_topgun_home_embed_address_offset"/>
+    <com.didi.soda.home.topgun.widget.HeaderAddressLayout android:id="@+id/customer_rl_home_feed_address" android:paddingBottom="@dimen/customer_20px" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customer_24px"/>
+    <FrameLayout android:id="@+id/customer_ll_home_float_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/customer_ll_home_float_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/customer_ll_home_search" android:background="@drawable/customer_shape_home_search_topgun" android:paddingLeft="@dimen/rf_dimen_24" android:paddingRight="@dimen/rf_dimen_24" android:layout_width="match_parent" android:layout_height="@dimen/customer_home_search_height" android:layout_marginLeft="@dimen/customer_32px" android:layout_marginRight="@dimen/customer_32px">
+                <com.didi.rfusion.widget.RFIconView android:textSize="@dimen/rf_dimen_28" android:textColor="@color/rf_color_v2_neutral_4_40" android:id="@+id/iconv_search_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rf_icon_v3_outlined_search"/>
+                <AdapterViewFlipper android:id="@+id/customer_vf_home_search_hint" android:layout_width="match_parent" android:layout_height="match_parent" android:flipInterval="4000" android:autoStart="true" android:layout_marginStart="@dimen/rf_dimen_18"/>
+            </LinearLayout>
+            <com.didi.soda.home.topgun.widget.HeaderCoordinationView android:id="@+id/customer_custom_coordination_view" android:layout_width="0dp" android:layout_height="0dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/customer_rl_home_special_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.didi.soda.home.topgun.widget.HeaderSpecialImage android:id="@+id/customer_rl_home_special_image" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="600dp">
+    <Button android:textSize="16sp" android:textColor="#999999" android:id="@+id/btn_cancel" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/global_share_cancel_btn_text" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/line" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/btn_cancel">
+        <View android:background="#1a000000" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/contacts_layout" android:background="@android:color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/frame">
+        <TextView android:textSize="@dimen/ms_18sp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="23dp" android:layout_marginBottom="22dp" android:text="@string/global_share_trusted_contacts"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_contracts" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:id="@+id/divider" android:background="#1a000000" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/frame" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/line">
+        <com.didi.onekeyshare.view.ShareViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/layout_dot" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp"/>
+    </FrameLayout>
+    <com.didi.onekeyshare.view.ShareInstructView android:id="@+id/share_instr_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="170dp" android:layout_above="@+id/frame"/>
+</RelativeLayout>

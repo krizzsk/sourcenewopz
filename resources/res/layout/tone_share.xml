@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/tone_share_root" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/tone_share_anim_bg" android:background="@color/tone_share_dialog_share_common_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/tone_share_bottom_container" android:background="@color/tone_share_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/share_ll_row_first" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20dp" android:layout_marginBottom="@dimen/_20dp"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/share_ll_row_second" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_20dp" android:layout_below="@+id/share_ll_row_first"/>
+        <View android:id="@+id/tone_share_view_line" android:background="@color/tone_share_dialog_share_bottom_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/share_ll_row_second"/>
+        <TextView android:textSize="@dimen/_16sp" android:textColor="@color/tone_share_cancel_button" android:gravity="center" android:id="@+id/share_cancel" android:background="@drawable/tone_share_btn_cancel_selector" android:layout_width="match_parent" android:layout_height="@dimen/_50dp" android:text="@string/tone_share_cancel" android:layout_below="@+id/tone_share_view_line"/>
+    </RelativeLayout>
+</RelativeLayout>

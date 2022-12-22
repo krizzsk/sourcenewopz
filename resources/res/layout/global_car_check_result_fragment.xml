@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center" android:id="@+id/car_check_result_img" android:visibility="gone" android:layout_width="64dp" android:layout_height="79dp" android:layout_marginTop="100dp" android:src="@drawable/global_car_check_response" android:scaleType="fitCenter"/>
+    <TextView android:textSize="18sp" android:textColor="@color/g_color_333333" android:ellipsize="end" android:gravity="center" android:id="@+id/car_check_result_tips" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/global_car_check_success" android:maxLines="3" android:layout_marginStart="27dp" android:layout_marginEnd="27dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/car_check_error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="150dp">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="126dp" android:layout_height="126dp" android:src="@drawable/global_pe_pay_fare_error" android:scaleType="fitCenter"/>
+            <TextView android:textSize="14sp" android:textColor="@color/pe_color_999999" android:gravity="center" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pe_pay_fare_details_error"/>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.5dp">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="5.3dp" android:src="@drawable/global_pe_pay_fare_refresh" android:scaleType="fitCenter"/>
+            <TextView android:textSize="18sp" android:textColor="@color/pe_color_666666" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/car_check_reload" android:paddingBottom="4dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

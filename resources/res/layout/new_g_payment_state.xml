@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="63dp">
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/g_payment_process_icon" android:visibility="gone" android:layout_width="63dp" android:layout_height="63dp" app:lottie_autoPlay="true" app:lottie_fileName="pay_loading.json" app:lottie_loop="true"/>
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/g_payment_success_icon" android:visibility="gone" android:layout_width="63dp" android:layout_height="63dp" app:lottie_autoPlay="true" app:lottie_fileName="pay_success.json" app:lottie_loop="true"/>
+    <global.didi.pay.newview.NewGlobalPaymentSubmitView android:id="@+id/g_payment_submit" android:layout_width="match_parent" android:layout_height="52dp"/>
+</LinearLayout>

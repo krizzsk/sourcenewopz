@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:paddingTop="17dp" android:paddingBottom="17dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="#ff000000" android:id="@+id/tv_status_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="99Pay Discounts"/>
+    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+    <ImageView android:id="@+id/iv_unified_pay_status_card_icon" android:layout_width="30dp" android:layout_height="18dp" android:src="@drawable/g_ic_payment_paytype_visa" android:layout_marginEnd="5dp"/>
+    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ff00ccaa" android:id="@+id/tv_status_item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="- R$ 5.00"/>
+</LinearLayout>

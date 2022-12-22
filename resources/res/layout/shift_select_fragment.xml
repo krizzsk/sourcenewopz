@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@+id/cl_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:layout_scrollFlags="1">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="3">
+                <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/tv_min_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="56dp" android:layout_marginStart="20dp"/>
+                <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:layout_collapseMode="1">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/btn_back" android:padding="16dp" android:layout_width="52dp" android:layout_height="52dp" android:src="@drawable/icon_minibus_back"/>
+                        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/tv_max_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <com.google.android.material.tabs.TabLayout android:id="@+id/rv_data" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="8dp" android:layout_marginStart="-9dp" app:tabGravity="2" app:tabIndicator="@drawable/indicator" app:tabIndicatorColor="@color/tab_layout_text_selected_color" app:tabMaxWidth="150dp" app:tabMinWidth="110dp" app:tabMode="0" app:tabPaddingEnd="15dp" app:tabPaddingStart="15dp" app:tabPaddingTop="0dp" app:tabRippleColor="@android:color/transparent"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <ImageView android:background="@drawable/icon_shift_select_table_bottom_shadow_bg" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <androidx.viewpager2.widget.ViewPager2 android:id="@+id/vp_frequency" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/minibus_shift_select_viewpager_mt"/>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_bottom_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/minibus_shift_select_CoordinatorLayout_mb">
+        <ImageView android:id="@+id/iv_bottom_content_shadow" android:background="@drawable/minibus_shift_select_bottom_shadow" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="#919599" android:id="@+id/tv_hint_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginBottom="10dp" android:layout_marginStart="39dp" android:layout_marginEnd="39dp"/>
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="?attr/global_main_button_text_color_selector" android:gravity="center" android:id="@+id/btn_next" android:background="?attr/global_overall_main_button_selector" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginBottom="24dp" android:text="@string/GRider_page_Next_step_eUhZ" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_loading" android:background="#ffffff" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <ImageView android:id="@+id/btn_back_loading" android:padding="16dp" android:layout_width="52dp" android:layout_height="52dp" android:src="@drawable/icon_minibus_back"/>
+        <include android:id="@+id/v_global_load_first" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" layout="@layout/global_loading_view"/>
+        <include android:id="@+id/v_global_load_second" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" layout="@layout/global_loading_view"/>
+    </LinearLayout>
+    <include android:id="@+id/ll_net_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/seat_select_load_timeout_layout"/>
+    <include android:id="@+id/ll_no_frequency" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/no_frequency"/>
+</LinearLayout>

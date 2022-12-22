@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/layout_retry" android:background="#f0f0f0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/font_size_small" android:textColor="@color/light_gray" android:gravity="center" android:id="@+id/tv_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/one_payment_global_net_empty_tip" android:drawableTop="@drawable/one_payment_network_error" android:drawablePadding="17dp" android:textDirection="locale"/>
+</LinearLayout>

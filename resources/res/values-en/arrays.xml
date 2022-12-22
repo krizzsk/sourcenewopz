@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="df_appeal_additional_docs">
+        <item>ID Card</item>
+        <item>@string/df_appeal_additional_doc_option2</item>
+        <item>@string/df_appeal_additional_doc_option3</item>
+        <item>@string/df_appeal_additional_doc_option4</item>
+    </array>
+    <array name="df_appeal_doc_type_RG">
+        <item>Please take photos of the front and back side of your ID card (RG). Photos should be:</item>
+        <item>@string/df_appeal_doc_photo_common_req1</item>
+        <item>@string/df_appeal_doc_photo_common_req2</item>
+        <item>@string/df_appeal_doc_photo_common_req3</item>
+    </array>
+    <array name="df_appeal_doc_type_cdr">
+        <item>Please take a photo of your Reservista. Photo should:</item>
+        <item>@string/df_appeal_doc_photo_common_req1</item>
+        <item>@string/df_appeal_doc_photo_common_req2</item>
+        <item>@string/df_appeal_doc_photo_common_req3</item>
+    </array>
+    <array name="df_appeal_doc_type_cdt">
+        <item>Please take a photo of your Work and Social Security Card (CTPS). Photo should:</item>
+        <item>@string/df_appeal_doc_photo_common_req1</item>
+        <item>@string/df_appeal_doc_photo_common_req2</item>
+        <item>@string/df_appeal_doc_photo_common_req3</item>
+    </array>
+    <array name="df_appeal_doc_type_passport">
+        <item>Please take a photo of your passport. Photo should:</item>
+        <item>@string/df_appeal_doc_photo_common_req1</item>
+        <item>@string/df_appeal_doc_photo_common_req2</item>
+        <item>@string/df_appeal_doc_photo_common_req3</item>
+    </array>
+    <array name="df_appeal_driver_license_g1">
+        <item>Please upload a photo of your driver&apos;s license (CHN). Photo should be:</item>
+        <item>Clear and complete</item>
+        <item>Clearly show all information, including your picture</item>
+        <item>Well-lit and not contain glare or reflections</item>
+    </array>
+    <array name="df_appeal_driver_license_g2_qr">
+        <item>Upload a photo of the QR code on the back of your driver&apos;s license (CHN). Please ensure:</item>
+        <item>QR code is clear and not blurry</item>
+        <item>Photo is well-lit and doesn&apos;t have glare or reflections</item>
+        <item />
+    </array>
+    <array name="df_appeal_self_photo">
+        <item>Take a clear photo gives waist up:</item>
+        <item>Please take off your glasses and/or hat</item>
+        <item>Photo must be clear, show your whole face, and not be a photo of another photo</item>
+        <item>Photo should be taken with good lighting</item>
+    </array>
+    <array name="df_take_photo_act_confirm_notes">
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+    </array>
+</resources>

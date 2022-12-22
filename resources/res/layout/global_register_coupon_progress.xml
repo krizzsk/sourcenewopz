@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.didi.component.common.view.RegisterProgressView android:id="@+id/g_register_progress_view" android:layout_width="match_parent" android:layout_height="14dp" android:layout_marginLeft="58dp" android:layout_marginRight="58dp" app:register_progress_view_all_step="3" app:register_progress_view_indicator_icon="@drawable/global_coupon_icon"/>
+    <TextView android:textSize="9sp" android:textStyle="bold" android:textColor="#fe803e" android:id="@+id/g_register_coupon_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="-16dp" android:text="@string/global_register_coupon_progress_tip" android:layout_below="@+id/g_register_progress_view" android:layout_alignRight="@+id/g_register_progress_view" android:textAllCaps="true"/>
+</RelativeLayout>

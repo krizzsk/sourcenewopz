@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/customer_rl_main_page_container" android:background="@color/rf_color_v2_grey2_10_a100" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.soda.customer.widget.StatusBarView android:id="@+id/customer_status_bar_padding" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/customer_fl_feed_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/customer_fl_filter_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/customer_fl_loading_container" android:layout_width="match_parent" android:layout_height="@dimen/customer_110px" android:layout_below="@+id/customer_status_bar_padding"/>
+    <FrameLayout android:id="@+id/customer_cart_container" android:tag="@string/customer_cart_container_tag" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/rf_dimen_n10"/>
+    <FrameLayout android:id="@+id/customer_fl_title_bar_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/customer_fl_home_web_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/customer_fl_title_bar_container"/>
+    <FrameLayout android:id="@+id/customer_fl_home_task_bub" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/customer_fl_home_nonsuport_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/customer_fl_no_address_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:tag="@string/customer_dialog_container_tag" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/customer_1px"/>
+</RelativeLayout>

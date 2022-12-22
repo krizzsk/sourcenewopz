@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/im_recommond_ll" android:background="@drawable/im_four_corner_bg_selector" android:layout_width="@dimen/im_80_dp" android:layout_height="@dimen/im_80_dp">
+    <com.didi.beatles.p099im.views.imageView.IMNetworkImageView android:layout_gravity="center" android:id="@+id/im_recommond_iv" android:layout_width="@dimen/im_60_dp" android:layout_height="@dimen/im_60_dp"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+{
+    "bundle-name": "feedback",
+    "bundle-description": "feedback sdk bundle",
+    "bundle-symbolicName": "com.didichuxing.omega.sdk.omegasdk_feedback",
+    "bundle-activator": "com.didichuxing.omega.sdk.feedback.FeedbackActivator",
+    "bundle-version": "0.0.17"
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="54dp">
+    <View android:id="@+id/item_divider_line_view" android:background="#0a000000" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="@dimen/page_level_margin" android:layout_alignParentTop="true"/>
+    <Space android:id="@+id/left_space" android:visibility="gone" android:layout_width="@dimen/wallet_dp_20" android:layout_height="1px"/>
+    <TextView android:textSize="@dimen/wallet_sp_16" android:textStyle="bold" android:textColor="@color/wallet_color_gray_disable_light" android:gravity="center" android:id="@+id/pix_contact_head_icon_tv" android:background="@drawable/circle_gray_light_bg_r15" android:visibility="visible" android:layout_width="30dp" android:layout_height="30dp" android:layout_toRightOf="@+id/left_space" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/pix_contact_head_icon_img" android:layout_width="30dp" android:layout_height="30dp" android:scaleType="centerInside" android:layout_toRightOf="@+id/left_space" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/pix_trans_contact_container_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/pix_contact_head_icon_img" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/wallet_sp_14" android:textColor="@color/black" android:id="@+id/pix_contact_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/wallet_sp_12" android:id="@+id/pix_key_value_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/wallet_sp_12" android:gravity="center" android:id="@+id/child_count_tv" android:background="@drawable/pix_small_circle_bg" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/pix_trans_contact_container_ll" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/expand_indicator_img" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/pix_icon_indicator_expand_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

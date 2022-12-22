@@ -1,0 +1,7 @@
+{
+  "entry": "com.wujie.dimina.bridge.plugin.contact.ContactSubJSBridge",
+  "permissions":
+    {
+      "scope.contact": "android.permission.WRITE_CONTACTS"
+    }
+}

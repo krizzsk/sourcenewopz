@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16dp" android:textColor="#333333" android:gravity="center" android:id="@+id/text_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="18dp" android:layout_marginRight="10dp" android:maxLines="1" android:includeFontPadding="false"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="285dp" android:layout_marginTop="19dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="14dp" android:textColor="#666666" android:id="@+id/text_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:includeFontPadding="false" android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/link_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="3dp">
+        <TextView android:textSize="12dp" android:textColor="#fffc9153" android:id="@+id/text_link_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/one_login_str_law_link" android:maxLines="1"/>
+    </LinearLayout>
+</LinearLayout>

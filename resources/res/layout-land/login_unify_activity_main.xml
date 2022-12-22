@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/login_unify_pad_background" android:paddingLeft="?attr/login_unify_pad_padding" android:paddingRight="?attr/login_unify_pad_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/fl_fragment" android:background="@color/white" android:paddingLeft="@dimen/login_unify_dimen_15dp" android:paddingRight="@dimen/login_unify_dimen_15dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

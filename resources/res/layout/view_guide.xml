@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="314dp" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/lLayout_bg" android:background="@mipmap/alert_bg" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="314dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="18dp" android:textColor="@color/alert_text_color" android:gravity="center_horizontal" android:id="@+id/guide_title_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="37dp" android:text="@string/guide_title"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="30dp">
+            <TextView android:textSize="13dp" android:textColor="@color/alert_text_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/guide_1"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <ImageView android:id="@+id/phone_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@mipmap/move_phone_bg"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp">
+                <TextView android:textSize="13dp" android:textColor="@color/alert_text_color" android:id="@+id/guide_2_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_2"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="10dp" android:src="@mipmap/guide2_bg"/>
+            </LinearLayout>
+            <Button android:textSize="14dp" android:textColor="@color/alert_text_color" android:id="@+id/guide_cancle" android:background="@drawable/guide_yes_selector" android:paddingLeft="72dp" android:paddingTop="10dp" android:paddingRight="72dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/guide_yes"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.didi.hawaii.p118ar.view.GirdBackGround android:padding="10dp" android:layout_width="0dp" android:layout_height="0dp" android:layout_alignLeft="@+id/lLayout_bg" android:layout_alignTop="@+id/lLayout_bg" android:layout_alignRight="@+id/lLayout_bg" android:layout_alignBottom="@+id/lLayout_bg"/>
+</RelativeLayout>

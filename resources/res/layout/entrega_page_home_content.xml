@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/entrega_rl_main_page_container" android:background="@color/rf_color_white_100_FFFFFF" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.entrega.customer.widget.StatusBarView android:id="@+id/entrega_status_bar_padding" android:background="@color/entrega_customer_color_transparent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/entrega_fl_title_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/entrega_status_bar_padding"/>
+    <FrameLayout android:id="@+id/entrega_fl_feed_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/entrega_fl_loading_container" android:layout_width="match_parent" android:layout_height="@dimen/rf_dimen_110" android:layout_below="@+id/entrega_fl_title_bar_container"/>
+    <FrameLayout android:id="@+id/entrega_fl_home_web_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/entrega_status_bar_padding"/>
+    <FrameLayout android:id="@+id/entrega_fl_home_nonsuport_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/entrega_fl_no_address_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/entrega_fl_shimmer_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/entrega_status_bar_padding"/>
+    <FrameLayout android:tag="@string/entrega_dialog_container_tag" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/rf_dimen_1"/>
+</RelativeLayout>

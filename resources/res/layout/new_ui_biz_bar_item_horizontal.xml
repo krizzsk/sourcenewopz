@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/biz_bar_item" android:layout_width="wrap_content" android:layout_height="70dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/biz_bar_item_icon" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/biz_bar_nav_icon_default"/>
+        <TextView android:textSize="12sp" android:textColor="#ff919599" android:layout_gravity="center_vertical" android:id="@+id/biz_bar_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="Ride"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/biz_bar_item_red_point" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="14dp" android:layout_marginLeft="22dp" android:layout_marginBottom="14dp"/>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_unify_dimen_20dp" android:layout_marginRight="@dimen/login_unify_dimen_20dp" android:layout_marginStart="@dimen/login_unify_dimen_20dp" android:layout_marginEnd="@dimen/login_unify_dimen_20dp">
+        <TextView android:id="@+id/tv_title" android:text="@string/login_unify_pre_change_cell_title" style="@style/LoginUnifyTiTileStyle"/>
+        <TextView android:id="@+id/tv_sub_title" style="@style/LoginUnifySubTiTileStyle"/>
+        <TextView android:textSize="@dimen/login_unify_dimen_14dp" android:textColor="?attr/login_unify_fragment_tips_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_unify_dimen_22dp" android:text="@string/login_unify_pre_change_cell_tips" android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+    <com.didi.unifylogin.utils.customview.LoginNextButton android:enabled="true" android:id="@+id/btn_next" android:layout_marginLeft="@dimen/login_unify_dimen_20dp" android:layout_marginRight="@dimen/login_unify_dimen_20dp" android:text="@string/login_unify_pre_change_cell_next" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/login_unify_dimen_20dp" android:layout_marginEnd="@dimen/login_unify_dimen_20dp" style="?attr/login_unify_style_btn_text"/>
+</RelativeLayout>

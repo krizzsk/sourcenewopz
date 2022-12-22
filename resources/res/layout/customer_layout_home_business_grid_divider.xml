@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/customer_widget_icon_text_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.didi.soda.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/rf_dimen_font_32" android:textColor="@color/rf_color_v2_neutral_2_80" android:ellipsize="end" android:id="@+id/customer_custom_business_divider_content" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="-2dp" android:singleLine="true" app:fontFlavor="0"/>
+</FrameLayout>

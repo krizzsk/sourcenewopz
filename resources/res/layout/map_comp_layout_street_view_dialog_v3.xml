@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/cardView" android:layout_width="match_parent" android:layout_height="245dp" app:cardBackgroundColor="#b3000000" app:cardCornerRadius="20dp" app:cardElevation="0dp">
+        <FrameLayout android:id="@+id/map_street_load_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:id="@+id/map_street_load_status_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25dp" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/map_street_loading_bar" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:indeterminate="false" android:indeterminateTint="#ffffff"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/map_street_image_container" android:background="@drawable/map_comp_shape_street_dialog_bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/streetImg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        </FrameLayout>
+        <ImageView android:layout_gravity="end" android:id="@+id/closeImg" android:layout_width="30dp" android:layout_height="30dp" android:layout_margin="10dp" android:src="@drawable/map_comp_ic_street_dialog_close"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/line_bottom_view" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tipsTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/GRider_view2_The_driver_pQXa" style="@style/Map.TextViewStyle.TextDirection"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/lin_issue_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+                <TextView android:textSize="10sp" android:textColor="#d4d7d9" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/issueTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:text="@string/GRider_view2_Problem_reporting_yCxH" style="@style/Map.TextViewStyle.TextDirection"/>
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/map_comp_ic_street_view_arrow"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

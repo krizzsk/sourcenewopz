@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:background="@drawable/payment_paysel_other_group_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/paysel_other_items_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/wallet_dp_10" app:divider="@drawable/payment_paysel_item_divider" app:dividerPadding="@dimen/wallet_dp_20" app:showDividers="middle"/>
+</FrameLayout>

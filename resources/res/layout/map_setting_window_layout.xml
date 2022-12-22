@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#80000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/shade_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <RelativeLayout android:id="@+id/map_setting_window_layout" android:background="@drawable/map_setting_window_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ViewStub android:id="@+id/map_setting_window_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:id="@+id/divider" android:background="@color/map_setting_item_line_bg" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/map_setting_window_title"/>
+        <com.didi.map.setting.global.NavListView android:orientation="vertical" android:id="@+id/map_setting_window_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/divider"/>
+        <View android:background="@color/map_setting_item_line_bg" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/map_setting_window_view"/>
+    </RelativeLayout>
+    <include android:id="@+id/yandex_tip_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/map_setting_yandex_tip_view"/>
+</LinearLayout>

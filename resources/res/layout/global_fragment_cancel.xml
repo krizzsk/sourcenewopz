@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/oc_root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/global_title_back_btn"/>
+    <RelativeLayout android:id="@+id/global_cancel_service_component_container" android:background="@android:color/transparent" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true">
+        <com.didi.component.Component android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:name="@string/component_reset_location"/>
+        <com.didi.component.Component android:layout_width="match_parent" android:layout_height="match_parent" app:name="@string/component_xpanel"/>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/global_cancel_service_popup_container" android:focusable="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/global_cancel_service_popup_mask" android:background="#6625262d" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/global_cancel_service_popup_content_container" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.didi.component.ComponentStub android:id="@+id/component_stub" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

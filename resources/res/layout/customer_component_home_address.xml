@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/rf_color_white_100_FFFFFF" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/customer_iv_home_address_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/customer_img_topgun_abnormal_no_result"/>
+        <TextView android:textSize="@dimen/customer_text_size_36px" android:textStyle="bold" android:textColor="@color/rf_color_gery_1_0_000000" android:gravity="center" android:id="@+id/customer_tv_home_address_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_80px" android:layout_marginTop="@dimen/customer_6px" android:layout_marginRight="@dimen/customer_80px"/>
+        <TextView android:textSize="@dimen/customer_text_size_26px" android:textColor="@color/rf_color_gery_1_0_000000" android:gravity="center" android:id="@+id/customer_tv_home_address_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_80px" android:layout_marginTop="@dimen/customer_7px" android:layout_marginRight="@dimen/customer_80px"/>
+        <com.didi.rfusion.widget.button.RFMainButton android:id="@+id/customer_tv_home_address_select" android:layout_width="@dimen/customer_560px" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customer_68px"/>
+        <com.didi.rfusion.widget.button.RFGhostButton android:id="@+id/customer_tv_home_address_unselect" android:layout_width="@dimen/customer_560px" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customer_24px"/>
+    </LinearLayout>
+</RelativeLayout>

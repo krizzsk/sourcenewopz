@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/g_color_6625262D" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:paddingLeft="18dp" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/g_driver_info_pop_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/global_open_ride_driver_info_pop_title" android:layout_weight="1"/>
+            <ImageView android:id="@+id/g_driver_info_pop_close" android:paddingLeft="14dp" android:paddingTop="2dp" android:paddingRight="18dp" android:paddingBottom="14dp" android:layout_width="47dp" android:layout_height="31dp" android:src="@drawable/g_open_ride_close_img"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/g_open_ride_driver_info_bg" android:layout_width="match_parent" android:layout_height="86dp" android:layout_marginLeft="12dp" android:layout_marginTop="20dp" android:layout_marginRight="12dp">
+            <com.didi.component.common.widget.CircleImageView android:id="@+id/g_driver_head_img" android:layout_width="46dp" android:layout_height="46dp" android:layout_marginLeft="18dp" android:layout_marginTop="18dp" android:layout_marginBottom="18dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="18dp">
+                <TextView android:textSize="14sp" android:textColor="#000000" android:id="@+id/g_driver_info_name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:textSize="12sp" android:textColor="@color/g_color_666666" android:id="@+id/g_driver_info_num" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="?attr/submit_btn_text_color_selector" android:gravity="center" android:id="@+id/g_driver_info_pop_btn" android:background="?attr/submit_btn_bg_selector" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="18dp" android:layout_marginTop="28dp" android:layout_marginRight="18dp" android:layout_marginBottom="18dp" android:text="@string/global_open_ride_driver_info_pop_btn"/>
+    </LinearLayout>
+</RelativeLayout>

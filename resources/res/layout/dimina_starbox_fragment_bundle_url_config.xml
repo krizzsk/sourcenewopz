@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.dimina.starbox.p107ui.widget.TitleView android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/dm_kit_mp_node_bundle_url"/>
+    <EditText android:id="@+id/et_host" android:background="@color/white" android:layout_width="match_parent" android:layout_height="100dp"/>
+    <TextView android:textColor="@color/white" android:id="@+id/tv_save" android:background="@color/dk_color_0070BB" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:text="点击保存" style="@style/DK.Text"/>
+    <TextView android:textColor="@color/gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:text="用于自定义配置包管理Node服务的IP地址，点击保存后下次启用包管理服务即可生效"/>
+    <TextView android:textColor="@color/gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:text="线上环境：pkg-manage.chengxinyouxuan.com"/>
+    <TextView android:textColor="@color/gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:text="预发环境：10.195.2.8:8080"/>
+    <TextView android:textColor="@color/gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:text="测试环境：api-kylin-xg02.intra.xiaojukeji.com/cx_pkg_manage"/>
+</LinearLayout>

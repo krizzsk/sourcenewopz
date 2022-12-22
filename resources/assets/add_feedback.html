@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="./lib/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/form.css">
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row wheel1">
+        <div class="col-md-12">
+            <div class="dropdown" id="wheel1">
+                <div class="dropdown-text" id="wheel1-text"></div>
+                <div class="dropdown-chevron-down"></div>
+                <div class="dropdown-chevron-down-mask"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row wheel2">
+        <div class="col-md-12">
+            <div class="dropdown" id="wheel2">
+                <div class="dropdown-text" id="wheel2-text"></div>
+                <div class="dropdown-chevron-down"></div>
+                <div class="dropdown-chevron-down-mask"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row desc">
+        <div class="col-md-12">
+            <textarea class="form-control textarea" id="desc" maxlength="300" placeholder=""></textarea>
+        </div>
+    </div>
+
+    <div class="row screenshot">
+        <div class="col-md-12">
+            <div id="screenshot-container">
+            </div>
+
+            <div id="add-screenshot">
+                <div class="horizontal"></div>
+                <div class="vertical"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row send">
+        <div class="col-xs-12">
+            <button class="btn btn-lg col-xs-12 disabled" id="send"></button>
+        </div>
+    </div>
+</div>
+<script>
+            (function () {
+                var getScreenshot = function () {
+                    //alert(AddFeedbackJs + ',' +AddFeedbackJs.getScreenShot);
+                    AddFeedbackJs.getScreenShot();//获取截图
+
+                };
+
+                var getHint = function () {
+                    AddFeedbackJs.getHint();//获取提示语
+                };
+                var setScreenshot = function (data) {
+                    var arr = data.split('|||');
+                    var screenshotItemNode = document.createElement('div');
+                    screenshotItemNode.className = 'screenshot-item';
+                    var screenshotCutNode = document.createElement('div');
+                    screenshotCutNode.className = 'screenshot-cut';
+                    var screenshotRemoveNode = document.createElement('div');
+                    screenshotRemoveNode.className = 'screenshot-remove';
+                    var div = document.createElement('div');
+                    screenshotRemoveNode.appendChild(div);
+                    screenshotItemNode.appendChild(screenshotCutNode);
+                    screenshotItemNode.appendChild(screenshotRemoveNode);
+                    screenshotCutNode.style.backgroundImage = 'url(' + arr[1] + ')';
+                    screenshotRemoveNode.setAttribute('sid', arr[0]);
+                    screenshotContainerNode.appendChild(screenshotItemNode);
+                    screenshotRemoveNode.onclick = function () {
+                        AddFeedbackJs.removephoto(arr[0]);//回调删除接口
+                        addScreenshotNode.style.display = 'inline-block';
+                        screenshotContainerNode.removeChild(screenshotItemNode);
+                    };
+                    if (screenshotContainerNode.children.length >= 2) {
+                        addScreenshotNode.style.display = 'none';
+                    }
+                };
+                var initDescPlaceHolder = function (placeholder) {
+                    descNode.setAttribute('placeholder', placeholder);
+                };
+                var setwheel1Text = function (data) {
+                    wheel1TextNode.innerHTML = data;
+                    updateSendStatus();
+                };
+                var setwheel2Text = function (data) {
+                    wheel2TextNode.innerHTML = data;
+                    updateSendStatus();
+                };
+                var setsendButtonText = function (data) {
+                    sendButtonNode.innerHTML = data;
+                };
+
+                var updateSendStatus = function () {
+                    if (checkSendStatus()) {
+                        sendNode.className = sendNode.className.replace(/disabled/, 'btn-warning');
+                    } else {
+                        sendNode.className = sendNode.className.replace(/btn\-warning/, 'disabled');
+                    }
+                }
+
+                var checkSendStatus = function () {
+                    return wheel1TextNode.innerHTML.replace(/^\s+|\s+$/, '') !== '请选择问题归属'
+                        && descNode.value.replace(/^\s+|\s+$/, '').length;
+                };
+
+                var wheel1Node = document.getElementById('wheel1');
+                var wheel2Node = document.getElementById('wheel2');
+                var wheel1TextNode = document.getElementById('wheel1-text');
+                var wheel2TextNode = document.getElementById('wheel2-text');
+                var sendButtonNode = document.getElementById('send');
+                var screenshotContainerNode = document.getElementById('screenshot-container');
+                var screenshotCutNode = document.getElementById('screenshot-cut');
+                var descNode = document.getElementById('desc');
+                var addScreenshotNode = document.getElementById('add-screenshot');
+                var sendNode = document.getElementById('send');
+
+                wheel1Node.onclick = function () {
+                    if (wheel1TextNode.innerHTML === '(空)') {
+                        return;
+                    }
+                    AddFeedbackJs.getwheel1();
+                    //wheel1TextNode.innerHTML = '同步后端数据';
+                    //wheel2TextNode.innerHTML = '级联更新';
+                };
+                wheel2Node.onclick = function () {
+                    if (wheel2TextNode.innerHTML === '(空)') {
+                        return;
+                    }
+                    AddFeedbackJs.getwheel2();
+                    //wheel2TextNode.innerHTML = '点击了';
+                };
+                descNode.oninput = updateSendStatus;
+                descNode.onpropertychange = updateSendStatus;
+                addScreenshotNode.onclick = function () {
+                    //setScreenshot('aaa|||https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2016-02-29/7f54029e614f918708ce47176edd6676.jpg');
+
+                    AddFeedbackJs.addphoto();//添加相册图片
+                };
+                sendNode.onclick = function () {
+                    //alert('send');
+                    if (this.className.indexOf('disabled') > -1) {
+                        return;
+                    }
+                    AddFeedbackJs.sendmessage(descNode.value.replace(/^s+|s+$/g, ''));
+                };
+                //initDescPlaceHolder('ads');
+                window.fwa_initDescPlaceHolder = initDescPlaceHolder;//修改提示语
+                window.fwa_setScreenshot = setScreenshot;//设置图片内容
+                window.fwa_setwheel1Text = setwheel1Text;
+                window.fwa_setwheel2Text = setwheel2Text;
+                window.fwa_setsendButtonText = setsendButtonText;
+                //alert('onload');
+                getScreenshot();//主动获取截图
+                getHint();
+                updateSendStatus();
+            })();
+        </script>
+</body>
+</html>

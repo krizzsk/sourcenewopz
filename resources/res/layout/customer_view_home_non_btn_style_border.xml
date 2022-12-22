@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.didi.rfusion.widget.button.RFGhostButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/customer_home_non_border_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/customer_26px" app:rf_btn_spec="0"/>

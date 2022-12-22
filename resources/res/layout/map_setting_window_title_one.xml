@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/map_setting_window_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/map_setting_title_container" android:layout_width="match_parent" android:layout_height="120dp">
+        <RelativeLayout android:id="@+id/map_setting_window_ll" android:layout_width="match_parent" android:layout_height="60dp">
+            <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="#333333" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/map_setting_window_tv" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/map_setting_window_title" android:textDirection="locale" android:textAlignment="viewStart" android:layout_marginStart="16dp" android:layout_toStartOf="@+id/map_setting_window_close" android:layout_alignParentStart="true"/>
+            <FrameLayout android:id="@+id/map_setting_window_close" android:layout_width="48dp" android:layout_height="match_parent" android:layout_marginEnd="4dp" android:layout_alignParentEnd="true">
+                <ImageView android:layout_gravity="center" android:layout_width="13dp" android:layout_height="13dp" android:src="@drawable/map_setting_close_selected"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <View android:id="@+id/map_setting_item_line" android:background="@color/map_setting_item_line_bg_opacity8" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@+id/map_setting_window_ll"/>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/map_setting_remember_container" android:layout_width="match_parent" android:layout_height="60dp" android:layout_below="@+id/map_setting_item_line" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/map_setting_view_remember_nav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/map_setting_switch_off" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+            <TextView android:textSize="16dp" android:textColor="#333333" android:gravity="start" android:id="@+id/map_setting_window_remember_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/map_setting_window_remember" android:layout_centerVertical="true" android:textDirection="locale" android:textAlignment="viewStart" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:layout_toStartOf="@+id/map_setting_view_remember_nav"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

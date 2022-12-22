@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#f3f4f5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/toolbar_main" android:layout_width="match_parent" android:layout_height="52dp">
+        <ImageView android:id="@+id/close_icon" android:background="@drawable/back_icon_selector" android:layout_width="16dp" android:layout_height="16dp" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#ff000000" android:layout_gravity="center" android:id="@+id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GRider_Sug_2020_favoritePage_noneTitle" android:layout_centerInParent="true" style="@style/Map.TextViewStyle.TextDirection"/>
+        <TextView android:textSize="14sp" android:textColor="#ff000000" android:gravity="center" android:id="@+id/txt_menu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="10dp" android:paddingEnd="18dp" android:layout_alignParentEnd="true" style="@style/Map.TextViewStyle.TextDirection"/>
+    </RelativeLayout>
+    <View android:id="@+id/line" android:background="#1a000000" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/toolbar_main"/>
+    <androidx.core.widget.NestedScrollView android:background="#f3f4f5" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/line">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_content" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.didi.addressnew.widget.SwipeMenuLayout android:id="@+id/home_sweep" android:background="@drawable/poi_one_address_item_selector" android:layout_width="match_parent" android:layout_height="wrap_content" app:isClickMenuAndClose="true" app:isEnableSwipe="true" app:isOpenChoke="false">
+                <RelativeLayout android:id="@+id/home_layout" android:background="@drawable/poi_one_address_item_selector" android:layout_width="match_parent" android:layout_height="67dp">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/image_home" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/sug_icon_home" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_alignParentStart="true"/>
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="22dp" android:layout_toStartOf="@+id/home_arrow" android:layout_toEndOf="@+id/image_home">
+                        <TextView android:textSize="16sp" android:textColor="#000000" android:gravity="center" android:id="@+id/add_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GRider_Sug_2020_sidebar_title_addHome" android:singleLine="true" android:includeFontPadding="false" style="@style/Map.TextViewStyle.TextDirection"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/home_content_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/setting_work_home_line_one" android:textColor="#000000" android:gravity="start" android:id="@+id/home_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GRider_Sug_2020_home" android:singleLine="true" android:includeFontPadding="false" style="@style/Map.TextViewStyle.TextDirection"/>
+                            <TextView android:textSize="@dimen/setting_work_home_line_two" android:gravity="start" android:id="@+id/home_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Center Park " android:singleLine="true" android:includeFontPadding="false" style="@style/Map.TextViewStyle.TextDirection"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <ImageView android:id="@+id/home_arrow" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/poi_one_address_arrow_right" android:layout_centerVertical="true" android:layout_marginStart="4dp" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="#00ffffff" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/poi_one_address_text_light" android:gravity="center" android:id="@+id/home_delete" android:background="@drawable/red_delete_bg" android:layout_width="94dp" android:layout_height="66dp" android:text="@string/GRider_Sug_2020_delete" android:maxLines="1" android:contentDescription=" " style="@style/Map.TextViewStyle.TextDirection"/>
+                </LinearLayout>
+            </com.didi.addressnew.widget.SwipeMenuLayout>
+            <FrameLayout android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="1px">
+                <View android:background="#0b0a121a" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="64dp"/>
+            </FrameLayout>
+            <com.didi.addressnew.widget.SwipeMenuLayout android:id="@+id/work_sweep" android:background="@drawable/poi_one_address_item_selector" android:layout_width="match_parent" android:layout_height="wrap_content" app:isClickMenuAndClose="true" app:isEnableSwipe="true" app:isOpenChoke="false">
+                <RelativeLayout android:id="@+id/work_layout" android:background="@drawable/poi_one_address_item_selector" android:layout_width="match_parent" android:layout_height="67dp">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/image_work" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/sug_icon_work" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_alignParentStart="true"/>
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="22dp" android:layout_toStartOf="@+id/work_arrow" android:layout_toEndOf="@+id/image_work">
+                        <TextView android:textSize="16sp" android:textColor="#000000" android:gravity="center" android:id="@+id/add_work" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GRider_Sug_2020_sidebar_title_addwork" android:singleLine="true" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_toEndOf="@+id/image_work" style="@style/Map.TextViewStyle.TextDirection"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/work_content_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/setting_work_home_line_one" android:textColor="#000000" android:gravity="start" android:id="@+id/work_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GRider_Sug_2020_work" android:singleLine="true" android:includeFontPadding="false" style="@style/Map.TextViewStyle.TextDirection"/>
+                            <TextView android:textSize="@dimen/setting_work_home_line_two" android:gravity="start" android:id="@+id/work_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Center Park " android:singleLine="true" android:includeFontPadding="false" style="@style/Map.TextViewStyle.TextDirection"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <ImageView android:id="@+id/work_arrow" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/poi_one_address_arrow_right" android:layout_centerVertical="true" android:layout_marginStart="4dp" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/poi_one_address_text_light" android:gravity="center" android:id="@+id/work_delete" android:background="@drawable/red_delete_bg" android:layout_width="94dp" android:layout_height="67dp" android:text="@string/GRider_Sug_2020_delete" android:maxLines="1" android:contentDescription=" " style="@style/Map.TextViewStyle.TextDirection"/>
+                </LinearLayout>
+            </com.didi.addressnew.widget.SwipeMenuLayout>
+            <View android:id="@+id/gap" android:background="#090a121a" android:layout_width="match_parent" android:layout_height="10dp"/>
+            <LinearLayout android:background="#f3f4f5" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.didi.addressnew.framework.fragmentmarket.favorite.FavoriteListView android:id="@+id/favorite_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

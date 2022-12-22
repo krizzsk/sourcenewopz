@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/new_estimate_detail_pop_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="550dp">
+        <com.didi.component.common.view.CustomeViewPager android:id="@+id/car_detail_pages" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="111dp" app:isScroll="true" app:isWrapContent="false"/>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/estimate_detail_F8F9FA_bg" android:layout_width="match_parent" android:layout_height="111dp">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/car_detail_dots" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+            <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="?attr/global_main_button_text_color_selector" android:gravity="center" android:id="@+id/car_detail_select_btn" android:background="?attr/global_overall_main_button_selector" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginLeft="24dp" android:layout_marginTop="20dp" android:layout_marginRight="24dp"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/car_detail_close_ic" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/car_detail_popup_close_ic"/>
+    </FrameLayout>
+</LinearLayout>

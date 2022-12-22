@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/popup_list" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:id="@+id/left_btn" android:background="@drawable/im_left_popup_seletor" android:text="@string/im_pop_copy" style="@style/imPopup"/>
+    <TextView android:id="@+id/middle_btn" android:background="@drawable/im_middle_popup_seletor" android:text="@string/im_pop_delete" android:layout_toRightOf="@+id/left_btn" android:layout_toEndOf="@+id/left_btn" style="@style/imPopup"/>
+    <RelativeLayout android:id="@+id/right_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_1_dp" android:layout_toRightOf="@+id/middle_btn" android:layout_marginStart="@dimen/im_1_dp" android:layout_toEndOf="@+id/middle_btn">
+        <TextView android:id="@+id/right_btn" android:background="@drawable/im_right_popup_selector" android:layout_marginLeft="0dp" android:text="@string/im_add_this_commom_word" android:layout_marginStart="0dp" style="@style/imPopup"/>
+        <com.didi.beatles.p099im.views.widget.TriangleView android:layout_width="@dimen/im_13_dp" android:layout_height="@dimen/im_8_dp" android:layout_marginLeft="@dimen/im_15_dp" android:layout_below="@+id/right_btn" android:layout_alignLeft="@+id/right_btn" android:layout_marginStart="@dimen/im_15_dp" android:layout_alignStart="@+id/right_btn" app:tr_color="@color/im_color_popup_normal" app:tr_direction="3"/>
+    </RelativeLayout>
+</RelativeLayout>

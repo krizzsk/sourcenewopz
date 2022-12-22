@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:textSize="14sp" android:layout_gravity="center" android:id="@+id/dimina_image_button_bt" android:background="@null" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:textAllCaps="false" style="@style/DiminaNavigationBarButton"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/dimina_image_button_iv" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/dimina_common_title_bar_btn_back_selector" android:minWidth="18dp" android:minHeight="18dp"/>
+</LinearLayout>

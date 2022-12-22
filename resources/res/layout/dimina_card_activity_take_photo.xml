@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.cameraview.CameraView android:id="@+id/camera" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/photo" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <com.didi.dimina.container.secondparty.jsmodule.jsbridge.photo.PreviewCover android:layout_gravity="center" android:id="@+id/takePhoto_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside"/>
+    <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:id="@+id/take_layout" android:layout_width="66dp" android:layout_height="match_parent" android:layout_marginRight="15dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:src="@drawable/dimina_camera_close"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/takePhoto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dimina_camera_take_selector"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/pics" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:src="@drawable/dimina_camera_pics"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:id="@+id/retake_layout" android:visibility="gone" android:layout_width="66dp" android:layout_height="match_parent" android:layout_marginRight="15dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/accept" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:src="@drawable/dimina_camera_confirm"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/retake" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:src="@drawable/dimina_camera_retake"/>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="69dp" android:layout_marginRight="148dp" android:layout_marginBottom="15dp">
+        <TextView android:textSize="12dp" android:textColor="@color/white" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="111"/>
+    </FrameLayout>
+</FrameLayout>

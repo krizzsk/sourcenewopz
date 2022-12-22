@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/sa_activity_bgcolor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didiglobal.p205sa.biz.weight.tkrefreshlayout.TwinklingRefreshLayout android:id="@+id/activity_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/activity_panel_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.didiglobal.p205sa.biz.weight.tkrefreshlayout.TwinklingRefreshLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/activity_title_container" android:background="@color/sa_activity_bgcolor" android:layout_width="match_parent" android:layout_height="72dp">
+        <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="#000" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:text="@string/GRider_batch1__cCkp" android:layout_alignParentBottom="true" android:layout_marginStart="20dp"/>
+        <TextView android:textSize="14sp" android:textColor="@android:color/black" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/GRider_batch1__vVBE" android:layout_alignParentBottom="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <include android:id="@+id/activity_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/activity_title_container" layout="@layout/activity_component_panel_loadview"/>
+    <ViewStub android:id="@+id/empty_container" android:layout="@layout/activity_error_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/activity_title_container"/>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/customer_fl_cart_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.rfusion.widget.RFIconView android:textColor="@color/entrega_selector_33_to_99" android:id="@+id/customer_iv_close" android:text="@string/rf_icon_back" style="@style/IconFountTitleBar"/>
+    <com.didi.entrega.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/rf_dimen_font_48" android:textStyle="bold" android:textColor="@color/rf_color_gery_1_0_000000" android:id="@+id/customer_tv_pos_list_title" android:paddingLeft="@dimen/rf_dimen_32" android:paddingRight="@dimen/rf_dimen_30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rf_dimen_10" android:text="@string/FoodC_order_Payment_Method_FhGy"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/customer_rv_pos_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/rf_dimen_54" android:overScrollMode="never"/>
+</LinearLayout>

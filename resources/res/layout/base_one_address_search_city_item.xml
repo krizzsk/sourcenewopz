@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/search_group" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/base_one_address_pinned_header"/>
+    <TextView android:textSize="14sp" android:textColor="#333333" android:gravity="center_vertical" android:id="@+id/search_city_name" android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_below="@+id/search_group"/>
+    <View android:background="#10000000" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

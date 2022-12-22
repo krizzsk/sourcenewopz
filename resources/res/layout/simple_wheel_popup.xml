@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.didi.sdk.view.titlebar.CommonPopupTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentTop="true"/>
+    <com.didi.sdk.view.wheel.Wheel android:id="@+id/wheel_simple" android:background="#ffffff" android:paddingTop="50dp" android:paddingBottom="50dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar" app:textColor="#333333" app:textSize="20dp"/>
+</RelativeLayout>

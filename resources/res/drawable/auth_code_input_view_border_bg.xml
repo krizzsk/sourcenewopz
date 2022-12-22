@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="2dp"/>
+            <stroke android:width="1dp" android:color="@color/wallet_color_FF8040"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="2dp"/>
+            <stroke android:width="1dp" android:color="#cccccc"/>
+        </shape>
+    </item>
+    <item android:state_active="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="2dp"/>
+            <stroke android:width="1dp" android:color="#50000000"/>
+        </shape>
+    </item>
+</selector>

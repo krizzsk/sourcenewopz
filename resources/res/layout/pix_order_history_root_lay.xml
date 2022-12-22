@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/pix_page_light_shade_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.sdk.view.titlebar.CommonTitleBar android:id="@+id/pix_transfer_history_titlebar" android:layout_width="match_parent" android:layout_height="46dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/trans_history_ry" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_below="@+id/pix_transfer_history_titlebar"/>
+    <TextView android:textSize="@dimen/wallet_sp_12" android:textColor="@color/oc_color_999999" android:gravity="center" android:id="@+id/no_more_orders_tv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_dp_20" android:text="@string/Global_Rider_BR_PAX_Wallet_Release1_Already_vRgb" android:layout_below="@+id/trans_history_ry"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/trans_history_empty_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/trans_history_empty_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/one_fastframe_empty_icon" android:layout_centerInParent="true"/>
+        <TextView android:id="@+id/trans_history_empty_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18sp" android:text="@string/cs_history_list_empty_text" android:layout_below="@+id/trans_history_empty_iv" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

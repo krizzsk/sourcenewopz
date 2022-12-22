@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/icon" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="16dp" android:layout_marginTop="14dp" android:layout_marginBottom="14dp"/>
+        <TextView android:ellipsize="end" android:gravity="left" android:layout_gravity="center_vertical" android:id="@+id/name" android:layout_width="0dp" android:layout_marginLeft="12dp" android:layout_marginRight="16dp" android:maxLines="1" android:layout_weight="1" style="@style/DK.TextBig.Darker"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/dimina_starbox_more_icon"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" style="@style/DK.Divider"/>
+</FrameLayout>

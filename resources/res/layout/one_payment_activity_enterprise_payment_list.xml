@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/one_payment_layout_title_bar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.didi.sdk.global.indexbar.widget.SearchView android:id="@+id/search_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/search_view">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+            <com.didi.sdk.global.indexbar.widget.SideBar android:id="@+id/side_bar" android:visibility="gone" android:layout_width="22dp" android:layout_height="466dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_search_no_result" android:paddingBottom="200dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/one_payment_global_search_no_result"/>
+                <TextView android:textSize="14sp" android:textColor="@color/one_payment_gray_99" android:gravity="center_horizontal" android:id="@+id/tv_search_no_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <include layout="@layout/one_payment_layout_retry"/>
+    </RelativeLayout>
+</LinearLayout>

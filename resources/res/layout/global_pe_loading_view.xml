@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center" android:id="@+id/oc_dot_loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:src="@drawable/global_pe_loading_animation"/>
+    <View android:layout_gravity="center" android:id="@+id/oc_loading_mask" android:background="#f5f5f5" android:layout_width="68dp" android:layout_height="12dp"/>
+    <com.didi.component.common.view.RichTextView android:textSize="16sp" android:textColor="@color/pe_color_666666" android:gravity="center" android:layout_gravity="center" android:id="@+id/oc_loading_error_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pe_evaluate_entrance_load_error"/>
+</FrameLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.didi.component.evaluate.EvaluateRootContainer xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/global_evaluate" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/oc_evaluate_root_container" android:background="@drawable/global_evaluate_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginLeft="18dp" android:layout_marginRight="18dp">
+            <TextView android:textSize="20sp" android:textColor="@color/oc_color_000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/global_new_evaluate_complete_title" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/close_button" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/global_evaluate_close_button" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/oc_color_19000000" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <com.didi.component.evaluate.view.NewEvaluateScrollView android:id="@+id/evaluate_scroll_view" android:paddingBottom="12dp" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:paddingTop="26dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/evaluate_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="18dp">
+                    <ImageView android:id="@+id/driver_image" android:layout_width="49dp" android:layout_height="49dp" android:src="@drawable/global_xp_driver_car_default_avatar"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp">
+                        <com.didi.component.evaluate.view.widget.NewFiveStarEvaluatedView android:id="@+id/five_star_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@+id/evalute_refine_guide" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <com.google.android.flexbox.FlexboxLayout android:id="@+id/evaluate_tag_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" app:alignContent="0" app:alignItems="2" app:flexDirection="0" app:flexWrap="1" app:justifyContent="2" app:showDivider="3"/>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/evaluate_content_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="30dp" android:layout_marginRight="18dp">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/new_evaluate_complete_content_icon"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/oc_color_000000" android:gravity="center_horizontal" android:id="@+id/evaluate_content" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/evaluate_tips_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="30dp" android:layout_marginRight="18dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/oc_color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/global_new_evaluate_complete_tips_title"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/oc_color_000000" android:id="@+id/tips_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp"/>
+                        <TextView android:textSize="30sp" android:textStyle="bold" android:textColor="@color/oc_color_000000" android:id="@+id/tips_fee" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.didi.component.evaluate.view.NewEvaluateScrollView>
+        <include layout="@layout/global_new_evaluate_unmatch_layout"/>
+    </LinearLayout>
+</com.didi.component.evaluate.EvaluateRootContainer>

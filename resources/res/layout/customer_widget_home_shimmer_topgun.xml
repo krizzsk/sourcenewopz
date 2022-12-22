@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/rf_color_gery_7_97_F5F5F7" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.soda.customer.widget.StatusBarView android:id="@+id/customer_custom_status_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/customer_topgun_home_embed_address_offset">
+        <include layout="@layout/widget_customer_home_skeleton_topgun"/>
+    </LinearLayout>
+</LinearLayout>

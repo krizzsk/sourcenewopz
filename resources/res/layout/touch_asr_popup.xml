@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/dd_asr_background" android:layout_width="200dp" android:layout_height="155dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="102dp" android:layout_height="65dp" android:layout_marginTop="24dp" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/leftWave" android:layout_width="20dp" android:layout_height="match_parent" android:src="@drawable/dd_asr_left_now1" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/mic" android:layout_width="50dp" android:layout_height="match_parent" android:src="@drawable/dd_asr_mic" android:layout_centerHorizontal="true"/>
+            <ImageView android:id="@+id/rightWave" android:layout_width="20dp" android:layout_height="match_parent" android:src="@drawable/dd_asr_right_now1" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <EditText android:textSize="14sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/speech_partial_view" android:background="@null" android:layout_width="168dp" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="" android:maxLines="2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:lineSpacingExtra="6sp"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:oneshot="false">
+    <item android:duration="100" android:drawable="@drawable/im_robot_panel_praise_playing003"/>
+    <item android:duration="200" android:drawable="@drawable/im_robot_panel_praise_playing001"/>
+    <item android:duration="200" android:drawable="@drawable/im_robot_panel_praise_playing002"/>
+    <item android:duration="200" android:drawable="@drawable/im_robot_panel_praise_playing003"/>
+</animation-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/customer_tv_unflod_container" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_42px" android:layout_marginRight="@dimen/customer_42px" app:layout_gravity="center">
+    <View android:layout_width="match_parent" android:layout_height="@dimen/rf_dimen_28"/>
+    <com.didi.soda.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/rf_dimen_font_24" android:textColor="@color/rf_color_v2_grey1_4_a40" android:id="@+id/customer_tv_disclaimer" android:paddingBottom="@dimen/rf_dimen_40" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontFlavor="0"/>
+    <View android:layout_width="match_parent" android:layout_height="@dimen/rf_dimen_8"/>
+</LinearLayout>

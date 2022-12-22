@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <size android:width="@dimen/rui_edit_text_cursor_width"/>
+    <solid android:color="@color/rui_color_brands_orange"/>
+</shape>

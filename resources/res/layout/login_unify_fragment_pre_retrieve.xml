@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_unify_dimen_20dp" android:layout_marginRight="@dimen/login_unify_dimen_20dp" android:layout_marginStart="@dimen/login_unify_dimen_20dp" android:layout_marginEnd="@dimen/login_unify_dimen_20dp">
+        <TextView android:id="@+id/tv_title" android:text="@string/login_unify_pre_retrive_phone_title" style="@style/LoginUnifyTiTileStyle"/>
+        <TextView android:id="@+id/tv_sub_title" android:text="@string/login_unify_pre_retrive_phone_sub_title" style="@style/LoginUnifySubTiTileStyle"/>
+        <com.didi.unifylogin.utils.customview.LoginNextButton android:enabled="true" android:id="@+id/btn_not_get" android:layout_marginTop="@dimen/login_unify_dimen_80dp" android:text="@string/login_unify_pre_retrive_not_receive_code" style="?attr/login_unify_style_btn_text"/>
+        <com.didi.unifylogin.utils.customview.LoginNextButton android:enabled="true" android:id="@+id/btn_forget_cell" android:layout_marginTop="@dimen/login_unify_dimen_10dp" android:text="@string/login_unify_pre_retrive_forget_login_phone" style="?attr/login_unify_style_btn_text"/>
+    </LinearLayout>
+</RelativeLayout>

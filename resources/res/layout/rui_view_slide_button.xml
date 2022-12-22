@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <rui.RUIButton android:id="@+id/rui_b_slide_operate" android:visibility="gone" style="@style/RUIButton"/>
+    <rui.RUILoadingButton android:id="@+id/rui_lb_slide_loading" style="@style/RUILoadingButton"/>
+    <rui.internal.shimmer.ShimmerTextView android:textColor="@color/rui_color_white" android:gravity="center" android:id="@+id/rui_t_slide_text" android:paddingLeft="@dimen/rui_slide_button_text_left_padding" android:paddingRight="@dimen/rui_button_static_horizontal_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:drawableLeft="@drawable/rui_icon_slide_button_arrow" app:rui_text_maxTextLength="8" style="@style/rui_text_normal"/>
+</merge>

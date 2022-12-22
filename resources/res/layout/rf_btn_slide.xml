@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rf_view_background" android:background="@drawable/rf_shape_bg_btn_slide" android:layout_width="match_parent" android:layout_height="@dimen/rf_btn_slide_height">
+    <com.didi.rfusion.widget.loading.RFLottieLoadingView android:layout_gravity="center" android:id="@+id/rf_llv_loading" android:visibility="gone" android:layout_width="@dimen/rf_btn_slide_loading_size" android:layout_height="@dimen/rf_btn_slide_loading_size" android:scaleType="fitCenter" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/rf_lottie_loading_white"/>
+    <RelativeLayout android:id="@+id/rf_rl_foreground" android:background="@drawable/rf_selector_fg_btn_slide" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/rf_icon_arrow" android:layout_width="@dimen/rf_btn_slide_arrow_size" android:layout_height="@dimen/rf_btn_slide_arrow_size" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginStart="@dimen/rf_btn_slide_arrow_margin_left"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/rf_ll_content" android:paddingLeft="@dimen/rf_btn_slide_text_margin_left" android:paddingRight="@dimen/rf_btn_slide_text_margin_right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.didi.rfusion.widget.RFTextView android:textSize="@dimen/f_07_app_36_pad_24" android:textColor="@color/rf_color_button_text" android:ellipsize="end" android:gravity="center" android:id="@+id/rf_tv_text" android:layout_width="@dimen/rf_dimen_0" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" app:rf_font_flavor="2"/>
+            <com.didi.rfusion.widget.RFTextView android:textSize="@dimen/f_07_app_36_pad_24" android:textColor="@color/rf_color_button_text" android:id="@+id/rf_tv_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rf_dimen_2" app:rf_font_flavor="2"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

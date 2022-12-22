@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/webview_container" android:background="#f3f4f5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.sdk.webview.BaseWebView android:id="@+id/web_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="44dp"/>
+    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/web_error_view" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="44dp">
+        <ImageView android:id="@+id/web_error_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp"/>
+        <TextView android:textSize="@dimen/font_size_large" android:textColor="@color/gray" android:gravity="center" android:id="@+id/web_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    <com.didi.sdk.webview.WebTitleBar android:id="@+id/web_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+</RelativeLayout>

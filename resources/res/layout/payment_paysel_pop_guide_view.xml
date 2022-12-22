@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/payment_paysel_guide" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="@dimen/wallet_dp_16" android:layout_marginRight="@dimen/wallet_dp_10" android:layout_marginBottom="@dimen/wallet_dp_6" android:text="@string/GRider_1_Balance_preferred_bVoR" android:layout_marginStart="@dimen/wallet_dp_16" android:layout_marginEnd="@dimen/wallet_dp_10"/>
+</FrameLayout>

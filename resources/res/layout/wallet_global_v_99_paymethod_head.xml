@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center|start" android:background="#ffebef" android:paddingLeft="12dp" android:paddingTop="6dp" android:paddingRight="9dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12dp" android:paddingEnd="9dp">
+    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ff4060" android:id="@+id/tv_paymethod_head_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Your 99Pay account is frozen infinitely. Click for more details" android:layout_weight="1" android:layout_marginEnd="5dp"/>
+    <ImageView android:id="@+id/tv_paymethod_head_arrow" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/g_ic_payment_method_head_arrow"/>
+</LinearLayout>

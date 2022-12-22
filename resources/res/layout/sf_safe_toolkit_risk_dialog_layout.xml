@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/sf_safe_toolkit_risk_dialog_bg" android:paddingTop="21dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="18dp" android:paddingEnd="18dp">
+    <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="start" android:id="@+id/risk_dialog_content_tv" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginBottom="16dp" android:maxLines="2"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16sp" android:textColor="@color/g_color_1478FF" android:id="@+id/risk_dialog_ok_btn" android:background="@drawable/safe_toolkit_risk_dialog_btn" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="18dp" android:layout_marginBottom="11dp" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle"/>
+        <Button android:textSize="16sp" android:textColor="@color/g_color_1478FF" android:id="@+id/risk_dialog_danger_btn" android:background="@drawable/safe_toolkit_risk_dialog_btn" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginBottom="18dp" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="center" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bubble_2_pic" android:adjustViewBounds="true"/>
+        <Button android:textSize="12sp" android:textStyle="bold" android:textColor="#62cc2e" android:id="@+id/btn_bubble_ok" android:background="@drawable/btn_dialog_ok" android:layout_width="70dp" android:layout_height="30dp" android:layout_marginTop="42dp" android:text="@string/Wallet_App_process_Got_it_fkMQ" android:includeFontPadding="false" android:fontFamily="@font/bold" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</FrameLayout>

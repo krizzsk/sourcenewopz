@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/customer_cl_image_root_view" android:background="@color/rf_color_gery_13_0_B3000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/customer_ll_title_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.didi.soda.customer.widget.StatusBarView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.didi.soda.customer.widget.text.IconTextView android:textSize="@dimen/customer_48px" android:textColor="@color/rf_color_white_100_FFFFFF" android:id="@+id/customer_cl_preview_image_back" android:padding="@dimen/customer_10px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_16px" android:layout_marginTop="@dimen/customer_6px" android:text="@string/customer_common_icon_closed"/>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/customer_iv_evaluate_preview_image" android:layout_width="match_parent" android:layout_height="0dp" android:scaleType="centerCrop" app:layout_constraintDimensionRatio="1:1" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

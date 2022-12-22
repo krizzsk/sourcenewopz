@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_captcha" android:background="@color/login_unify_color_captcha_bg" android:layout_width="match_parent" android:layout_height="@dimen/login_unify_dimen_100dp">
+            <ImageView android:id="@+id/image_captcha" android:layout_width="@dimen/login_unify_dimen_230dp" android:layout_height="@dimen/login_unify_dimen_55dp" android:src="@drawable/login_unify_img_captcha_default" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout android:id="@+id/ll_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_unify_dimen_14dp" android:layout_below="@+id/rl_captcha" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="@dimen/login_unify_dimen_12dp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_unify_str_captcha_refresh"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

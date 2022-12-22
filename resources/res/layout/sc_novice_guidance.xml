@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/banner_container" android:background="@drawable/tap_here_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+        <TextView android:textSize="20sp" android:textStyle="normal|bold|italic" android:textColor="#ffffffff" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:text="@string/GRider_call_Click_here_EZuj" android:layout_weight="1" android:layout_marginStart="24dp"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#ffff8040" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tv_get" android:background="@drawable/tap_here_get_bg" android:layout_width="70dp" android:layout_height="30dp" android:text="@string/GRider_call_well_RsMj" android:layout_marginStart="10dp" android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+    <View android:id="@+id/v_triangle" android:background="@drawable/triangle_bg" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginBottom="-4dp" android:layout_marginStart="85dp"/>
+    <FrameLayout android:id="@+id/select_container" android:layout_width="wrap_content" android:layout_height="84dp" android:paddingStart="10dp" android:paddingEnd="4dp">
+        <include android:id="@+id/rl_hollowed_out" layout="@layout/select_passenger_horizontal"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/anycar_select_container" android:paddingTop="4.5dp" android:paddingBottom="4.5dp" android:layout_width="wrap_content" android:layout_height="69dp" android:paddingStart="5dp" android:paddingEnd="5dp">
+        <include android:id="@+id/anycar_rl_hollowed_out" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" layout="@layout/select_passenger"/>
+    </FrameLayout>
+</LinearLayout>

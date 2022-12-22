@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/rui_button_corner_radius"/>
+            <gradient android:startColor="@color/rui_color_gradient_yellow_start_press" android:endColor="@color/rui_color_gradient_yellow_end_press" android:angle="0"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/rui_button_corner_radius"/>
+            <solid android:color="@color/rui_color_EEEEEE"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/rui_button_corner_radius"/>
+            <gradient android:startColor="@color/rui_color_gradient_yellow_start" android:endColor="@color/rui_color_gradient_yellow_end" android:angle="0"/>
+        </shape>
+    </item>
+</selector>

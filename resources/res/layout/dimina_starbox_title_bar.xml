@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:layout_gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/left_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+        <TextView android:textColor="@color/dk_color_337CC4" android:layout_gravity="center_vertical" android:id="@+id/left_text" android:visibility="gone" style="@style/DK.TextBig"/>
+    </LinearLayout>
+    <TextView android:id="@+id/title" android:visibility="gone" style="@style/DK.TitleBar"/>
+    <FrameLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <CheckBox android:layout_gravity="right|center_vertical|center_horizontal|center" android:visibility="gone" android:layout_marginRight="15dp" style="@style/DK.CheckBox"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/right_icon" android:padding="5dp" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="15dp" android:scaleType="fitXY"/>
+        <TextView android:layout_gravity="center_vertical" android:id="@+id/right_text" android:visibility="gone" android:layout_marginRight="10dp" style="@style/DK.Text.Normal"/>
+    </FrameLayout>
+</merge>

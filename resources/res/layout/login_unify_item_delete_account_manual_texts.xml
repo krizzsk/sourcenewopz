@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_unify_dimen_10dp">
+    <View android:id="@+id/tv_point" android:background="@drawable/login_unify_shape_delete_account_item_point" android:layout_width="@dimen/login_unify_dimen_5dp" android:layout_height="@dimen/login_unify_dimen_5dp" android:layout_marginTop="@dimen/login_unify_dimen_8dp" android:layout_marginRight="@dimen/login_unify_dimen_10dp" android:layout_marginEnd="@dimen/login_unify_dimen_10dp"/>
+    <TextView android:id="@+id/tv_title" android:layout_toRightOf="@+id/tv_point" android:layout_toEndOf="@+id/tv_point" style="@style/LoginUnifyDeleteAccountSubTitleStyle"/>
+    <TextView android:textSize="@dimen/login_unify_dimen_12dp" android:textStyle="bold" android:textColor="@color/loginunify_color_item_des" android:id="@+id/tv_des" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_unify_dimen_4dp" android:layout_below="@+id/tv_tag" android:layout_alignLeft="@+id/tv_tag" android:layout_alignStart="@+id/tv_tag"/>
+</RelativeLayout>

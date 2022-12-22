@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.didi.beatles.p099im.views.imageView.IMCircleImageView android:id="@+id/circle_iv" android:layout_width="@dimen/im_list_chat_head_size" android:layout_height="@dimen/im_list_chat_head_size" android:src="@drawable/bts_im_general_default_avatar" android:scaleType="fitXY"/>
+    <com.didi.beatles.p099im.views.IMProfileTextView android:textSize="@dimen/im_10_sp" android:textColor="@color/white" android:id="@+id/profile_tv" android:paddingLeft="@dimen/im_2_dp" android:paddingRight="0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/im_14_dp" android:layout_alignBottom="@+id/circle_iv" android:paddingStart="@dimen/im_2_dp" android:paddingEnd="0dp"/>
+</RelativeLayout>

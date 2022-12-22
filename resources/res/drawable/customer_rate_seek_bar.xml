@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@android:id/background" android:drawable="@drawable/customer_icon_evaluation_star_hollow"/>
+    <item android:id="@android:id/secondaryProgress" android:drawable="@drawable/customer_icon_evaluation_star_gray"/>
+    <item android:id="@android:id/progress" android:drawable="@drawable/customer_icon_evaluation_star_gray"/>
+    <item android:id="@+id/fullProgress" android:drawable="@drawable/customer_skin_ic_evaluation_star"/>
+</layer-list>

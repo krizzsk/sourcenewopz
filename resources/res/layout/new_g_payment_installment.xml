@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="52dp">
+    <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="#000000" android:gravity="start" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/GRider_installment_Instalment_mosN" android:layout_weight="1"/>
+    <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/g_payment_paytype_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:includeFontPadding="false" android:layout_marginStart="10dp"/>
+        </LinearLayout>
+        <TextView android:textSize="12dp" android:textColor="#ff00ccaa" android:layout_gravity="center" android:id="@+id/g_payment_paytype_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:lines="1" android:includeFontPadding="false"/>
+    </LinearLayout>
+    <TextView android:id="@+id/g_payment_red_point" android:background="@drawable/wallet_global_paymethod_bg_red_circle" android:visibility="gone" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="10dp" android:layout_marginStart="10dp"/>
+    <ImageView android:background="@drawable/new_g_icon_channel_right_arrow" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="4dp" android:layout_marginStart="4dp"/>
+</LinearLayout>

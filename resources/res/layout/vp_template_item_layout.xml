@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/vp_template_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/vp_layout_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textColor="@color/lego_color_000000" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/vp_template_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70dp" android:layout_marginStart="39dp" android:layout_marginEnd="39dp"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@+id/vp_template_btn_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textColor="@color/lego_color_40_0A121A" android:id="@+id/vp_template_btn" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/vp_template_btn_arrow" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/right_arrow" android:layout_marginStart="1dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

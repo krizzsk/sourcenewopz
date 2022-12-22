@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/oc_rl_root_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.sdk.view.titlebar.CommonTitleBar android:id="@+id/oc_title_bar" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentTop="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:src="@drawable/global_regular_taxi_guide_meter_p"/>
+        <TextView android:textSize="20sp" android:textColor="@color/color_4A4A4A" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginTop="30dp" android:layout_marginRight="17dp" android:text="@string/global_regular_taxi_guide_tips_title"/>
+        <TextView android:textSize="16sp" android:textColor="@color/g_color_999999" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginTop="10dp" android:layout_marginRight="17dp" android:text="@string/global_regular_taxi_guide_tips_content"/>
+    </LinearLayout>
+    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/oc_confirm_btn" android:background="@drawable/regular_taxi_guide_button_bg_selector" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" android:text="@string/global_regular_taxi_guide_confirm_btn" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

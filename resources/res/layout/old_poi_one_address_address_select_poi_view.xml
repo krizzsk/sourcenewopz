@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/select_poi_layout" android:background="@drawable/old_poi_one_address_item_selector" android:layout_width="match_parent" android:layout_height="55dp">
+        <ImageView android:id="@+id/selecticon" android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/select_poi" android:layout_centerVertical="true" android:layout_marginStart="26dp"/>
+        <TextView android:textSize="14sp" android:textColor="#333333" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/global_sug_set_address_on_map" android:layout_centerVertical="true" android:layout_marginStart="8dp" android:layout_toEndOf="@+id/selecticon" style="@style/Map.TextViewStyle.TextDirection"/>
+        <View android:background="@color/poi_one_address_line_bg" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true" android:layout_marginStart="18dp" android:layout_marginEnd="18dp"/>
+    </RelativeLayout>
+</LinearLayout>

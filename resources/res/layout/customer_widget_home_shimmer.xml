@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/rf_color_white_100_FFFFFF" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.soda.customer.widget.ShimmerLayout android:id="@+id/customer_sl_shimmer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/customer_shape_bg_shimmer_4corner" android:paddingBottom="@dimen/customer_240px" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/customer_80px">
+                <com.didi.soda.customer.widget.StatusBarView android:id="@+id/customer_custom_status_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <include layout="@layout/widget_customer_home_skeleton"/>
+        </LinearLayout>
+    </com.didi.soda.customer.widget.ShimmerLayout>
+</LinearLayout>

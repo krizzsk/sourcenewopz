@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingLeft="@dimen/rf_dimen_32" android:paddingRight="@dimen/rf_dimen_32" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rf_dimen_200">
+    <View android:id="@+id/entrega_view_shimmer_enter1" android:background="@drawable/entrega_shape_bg_shimmer_40corner" android:layout_width="match_parent" android:layout_height="@dimen/rf_dimen_431" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

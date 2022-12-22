@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <gradient android:startColor="@color/safety_god_start_detection_btn_start" android:endColor="@color/safety_god_start_detection_btn_end" android:angle="360" android:gradientRadius="7dp"/>
+    <corners android:radius="7dp"/>
+</shape>

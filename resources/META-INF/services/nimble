@@ -1,0 +1,7 @@
+in:com.didi.sdk.data.UserDataGenerator
+in:com.didi.sdk.apollo.ApolloDataGenerator
+in:com.didi.sdk.data.AppDataGenerator
+in:com.didi.sdk.data.CityDataGenerator
+in:com.didi.sdk.data.CitySelectDataGenerator
+in:com.didi.sdk.data.LocationDataGenerator2
+in:com.didi.sdk.data.UserDataGenerator

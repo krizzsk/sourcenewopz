@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="customer_business_exceed_sale_amount">
+        <item quantity="one">Discounted product limited to 1 article, the additional orders will be charged with original price</item>
+        <item quantity="other">Discounted product limited to %d articles, the additional orders will be charged with original price</item>
+    </plurals>
+    <plurals name="customer_business_goods_add_num_restriction">
+        <item quantity="one">Only 1 more of the same item can be ordered</item>
+        <item quantity="other">Up to %d of this item can be ordered</item>
+    </plurals>
+    <plurals name="customer_business_goods_sub_item_num_restriction">
+        <item quantity="one">Limit 1</item>
+        <item quantity="other">Limit %d</item>
+    </plurals>
+    <plurals name="customer_business_goods_sub_item_num_restriction_fixed">
+        <item quantity="one">Select 1</item>
+        <item quantity="other">Select %d</item>
+    </plurals>
+    <plurals name="customer_goods_buy_gift_amount_tip">
+        <item quantity="one">Add 1 more to get 1 free</item>
+        <item quantity="other">Add 1 more to get %d free</item>
+    </plurals>
+    <plurals name="customer_goods_buy_gift_received_tip">
+        <item quantity="one">Got 1 free item</item>
+        <item quantity="other">Got %d free items</item>
+    </plurals>
+    <plurals name="customer_goods_purchase_add_num">
+        <item quantity="one">Add 1</item>
+        <item quantity="other">Add %d</item>
+    </plurals>
+    <plurals name="customer_order_eta">
+        <item quantity="one">1 Minute</item>
+        <item quantity="other">%dmin(s)</item>
+    </plurals>
+    <plurals name="customer_put_away">
+        <item quantity="one">Collapse All (1)</item>
+        <item quantity="other">Collapse All (%d)</item>
+    </plurals>
+    <plurals name="customer_search_out_of_delivery_title">
+        <item quantity="one">&lt;font color=&apos;#FF7A45&apos;&gt;One&lt;/font&gt; of &lt;font color=&apos;#FF7A45&apos;&gt;%2$s&lt;/font&gt; out of delivery</item>
+        <item quantity="other">&lt;font color=&apos;#FF7A45&apos;&gt;%1$d&lt;/font&gt; of &lt;font color=&apos;#FF7A45&apos;&gt;%2$s&lt;/font&gt; out of delivery</item>
+    </plurals>
+    <plurals name="customer_show_all">
+        <item quantity="one">View All (1)</item>
+        <item quantity="other">View All (%d)</item>
+    </plurals>
+    <plurals name="customer_show_all_shop">
+        <item quantity="one">View All Stores (1)</item>
+        <item quantity="other">View All Stores (%d)</item>
+    </plurals>
+    <plurals name="customer_show_all_sold_out">
+        <item quantity="one">Show all sold out items (1)</item>
+        <item quantity="other">Show all sold out items (%d)</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+</resources>

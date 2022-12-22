@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_operate" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_unify_dimen_20dp" android:layout_marginRight="@dimen/login_unify_dimen_20dp" android:layout_marginStart="@dimen/login_unify_dimen_20dp" android:layout_marginEnd="@dimen/login_unify_dimen_20dp">
+        <TextView android:id="@+id/tv_title" android:text="@string/login_unify_pre_set_email_title" style="@style/LoginUnifyTiTileStyle"/>
+        <TextView android:id="@+id/tv_sub_title" android:layout_marginTop="@dimen/login_unify_dimen_14dp" style="@style/LoginUnifySubTiTileStyle"/>
+        <TextView android:textSize="@dimen/login_unify_dimen_14dp" android:textColor="@color/login_unify_pre_set_email_tip" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_unify_dimen_14dp"/>
+        <TextView android:textSize="@dimen/login_unify_dimen_14dp" android:id="@+id/tv_activate" android:visibility="gone" android:layout_marginTop="@dimen/login_unify_dimen_14dp" android:text="@string/login_unify_resend_email" style="@style/LoginUnifyThemeTextStyle"/>
+        <com.didi.unifylogin.utils.customview.LoginNextButton android:enabled="true" android:id="@+id/btn_next" android:layout_marginTop="@dimen/login_unify_dimen_30dp" android:text="@string/login_unify_pre_change_email_next" style="?attr/login_unify_style_btn_text"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/rl_error" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/login_unify_dimen_20dp" android:layout_marginRight="@dimen/login_unify_dimen_20dp" android:layout_marginStart="@dimen/login_unify_dimen_20dp" android:layout_marginEnd="@dimen/login_unify_dimen_20dp">
+        <TextView android:id="@+id/tv_error_title" android:text="@string/login_unify_set_email_net_error_title" style="@style/LoginUnifyTiTileStyle"/>
+        <TextView android:id="@+id/tv_error_sub_title" android:layout_marginTop="@dimen/login_unify_dimen_14dp" android:text="@string/login_unify_set_email_net_error_content" style="@style/LoginUnifySubTiTileStyle"/>
+        <com.didi.unifylogin.utils.customview.LoginNextButton android:enabled="true" android:id="@+id/btn_error_retry" android:layout_marginTop="@dimen/login_unify_dimen_30dp" android:text="@string/login_unify_set_email_net_error_btn" style="?attr/login_unify_style_btn_text"/>
+    </LinearLayout>
+</RelativeLayout>

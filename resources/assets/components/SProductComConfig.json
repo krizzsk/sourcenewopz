@@ -1,0 +1,2605 @@
+{
+  "errno": 0,
+  "errmsg": "",
+  "curtime": 1505124270,
+  "ver": "0.0.1",
+  "data": {
+    "baseConf": [
+      {
+        "bid": "mexico_common",
+        "none": [],
+        "lockscreen": [
+          {
+            "cid": 10074,
+            "open": "1",
+            "cname": "global_xengine"
+          },
+          {
+            "cid": 10002,
+            "open": "1",
+            "cname": "ride_status"
+          },
+          {
+            "cid": 10013,
+            "open": "1",
+            "cname": "driver_bar"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          }
+        ],
+        "home": [
+          {
+            "cid": 10038,
+            "open": "1",
+            "cname": "open_ride"
+          }
+        ],
+        "confirm": [
+          {
+            "cid": 10073,
+            "open": "1",
+            "cname": "config"
+          },
+          {
+            "cid": 10095,
+            "open": "1",
+            "cname": "select_seat"
+          },
+          {
+            "cid": 10074,
+            "open": "1",
+            "cname": "global_xengine"
+          },
+          {
+            "cid": 10004,
+            "open": "1",
+            "cname": "estimate"
+          },
+          {
+            "cid": 10005,
+            "open": "1",
+            "cname": "payway"
+          },
+          {
+            "cid": 10012,
+            "open": "1",
+            "cname": "service"
+          },
+          {
+            "cid": 10019,
+            "open": "1",
+            "cname": "unenable_city"
+          },
+          {
+            "cid": 10011,
+            "open": "1",
+            "cname": "confirm_broading_point"
+          },
+          {
+            "cid": 10069,
+            "open": "1",
+            "cname": "confirm_update_address"
+          },
+          {
+            "cid": 10094,
+            "open": "1",
+            "cname": "estimate_pass"
+          },
+          {
+            "cid": 10075,
+            "open": "1",
+            "cname": "on_service_update_address"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          },
+          {
+            "cid": 10018,
+            "open": "1",
+            "cname": "group_form_container"
+          },
+          {
+            "cid": 10017,
+            "open": "1",
+            "cname": "reset_location"
+          },
+          {
+            "cid": 10016,
+            "open": "1",
+            "cname": "xpanel"
+          },
+          {
+            "cid": 10029,
+            "open": "1",
+            "cname": "pudo"
+          },
+          {
+            "cid": 10035,
+            "open": "1",
+            "cname": "seat_count"
+          },
+          {
+            "cid": 10037,
+            "open": "1",
+            "cname": "deeplink"
+          },
+          {
+            "cid": 10041,
+            "open": "1",
+            "cname": "guide_flow_bubble"
+          },
+          {
+            "cid": 10047,
+            "open": "1",
+            "cname": "dispatch_fee"
+          },
+          {
+            "cid": 10048,
+            "open": "1",
+            "cname": "bubble_layout"
+          },
+          {
+            "cid": 10049,
+            "open": "1",
+            "cname": "form_options"
+          },
+          {
+            "cid": 10050,
+            "open": "1",
+            "cname": "price_detail"
+          },
+          {
+            "cid": 10060,
+            "open": "1",
+            "cname": "split_fare"
+          },
+          {
+            "cid": 10065,
+            "open": "1",
+            "cname": "service_control_no_pay"
+          },
+          {
+            "cid": 10064,
+            "open": "1",
+            "cname": "service_control_card"
+          },
+          {
+            "cid": 10046,
+            "open": "1",
+            "cname": "company"
+          },
+          {
+            "cid": 10091,
+            "open": "1",
+            "cname": "memberpoint"
+          },
+          {
+            "cid": 10098,
+            "open": "1",
+            "cname": "substitute_call"
+          },
+          {
+            "cid": 10099,
+            "open": "1",
+            "cname": "form_common_item"
+          },
+          {
+            "cid": 10100,
+            "open": "1",
+            "cname": "pre_order_intercept_expo"
+          }
+        ],
+        "updatepickup": [
+          {
+            "cid": 10019,
+            "open": "1",
+            "cname": "unenable_city"
+          },
+          {
+            "cid": 10011,
+            "open": "1",
+            "cname": "confirm_broading_point"
+          },
+          {
+            "cid": 10069,
+            "open": "1",
+            "cname": "confirm_update_address"
+          },
+          {
+            "cid": 10094,
+            "open": "1",
+            "cname": "estimate_pass"
+          },
+          {
+            "cid": 10075,
+            "open": "1",
+            "cname": "on_service_update_address"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          },
+          {
+            "cid": 10018,
+            "open": "1",
+            "cname": "group_form_container"
+          },
+          {
+            "cid": 10017,
+            "open": "1",
+            "cname": "reset_location"
+          },
+          {
+            "cid": 10016,
+            "open": "1",
+            "cname": "xpanel"
+          },
+          {
+            "cid": 10012,
+            "open": "1",
+            "cname": "service"
+          }
+        ],
+        "trip": [
+          {
+            "cid": 10097,
+            "open": "1",
+            "cname": "travel_group_info_common"
+          },
+          {
+            "cid": 10085,
+            "open": "1",
+            "cname": "message"
+          },
+          {
+            "cid": 10083,
+            "open": "1",
+            "cname": "xpcard_progressManagement_card"
+          },
+          {
+            "cid": 10084,
+            "open": "1",
+            "cname": "cancel_panel"
+          },
+          {
+            "cid": 10088,
+            "open": "1",
+            "cname": "xpanel_carpool_matchtogo"
+          },
+          {
+            "cid": 10089,
+            "open": "1",
+            "cname": "xpanel_carpool_matchontrip"
+          },
+          {
+            "cid": 10002,
+            "open": "1",
+            "cname": "ride_status"
+          },
+          {
+            "cid": 10008,
+            "open": "1",
+            "cname": "operation_panel"
+          },
+          {
+            "cid": 10012,
+            "open": "1",
+            "cname": "service"
+          },
+          {
+            "cid": 10016,
+            "open": "1",
+            "cname": "xpanel"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          },
+          {
+            "cid": 10017,
+            "open": "1",
+            "cname": "reset_location"
+          },
+          {
+            "cid": 10040,
+            "open": "1",
+            "cname": "wait_or_not"
+          },
+          {
+            "cid": 10042,
+            "open": "1",
+            "cname": "travel_detail"
+          },
+          {
+            "cid": 10067,
+            "open": "1",
+            "cname": "safe_jarvis"
+          },
+          {
+            "cid": 10009,
+            "open": "1",
+            "cname": "evaluate_entrance"
+          },
+          {
+            "cid": 10015,
+            "open": "1",
+            "cname": "real_time_price"
+          },
+          {
+            "cid": 10029,
+            "open": "1",
+            "cname": "pudo"
+          },
+          {
+            "cid": 10013,
+            "open": "1",
+            "cname": "driver_bar"
+          },
+          {
+            "cid": 10022,
+            "open": "1",
+            "cname": "im_entrnace"
+          },
+          {
+            "cid": 10023,
+            "open": "1",
+            "cname": "phone_entrance"
+          },
+          {
+            "cid": 10036,
+            "open": "1",
+            "cname": "safe_toolkit"
+          },
+          {
+            "cid": 10011,
+            "open": "1",
+            "cname": "confirm_broading_point"
+          },
+          {
+            "cid": 10069,
+            "open": "1",
+            "cname": "confirm_update_address"
+          },
+          {
+            "cid": 10094,
+            "open": "1",
+            "cname": "estimate_pass"
+          },
+          {
+            "cid": 10075,
+            "open": "1",
+            "cname": "on_service_update_address"
+          },
+          {
+            "cid": 10039,
+            "open": "1",
+            "cname": "psg_invite_psg"
+          },
+          {
+            "cid": 10043,
+            "open": "1",
+            "cname": "travel_group_info"
+          },
+          {
+            "cid": 10045,
+            "open": "1",
+            "cname": "alert_card"
+          },
+          {
+            "cid": 10060,
+            "open": "1",
+            "cname": "split_fare"
+          },
+          {
+            "cid": 10044,
+            "open": "1",
+            "cname": "customer_service"
+          },
+          {
+            "cid": 10061,
+            "open": "1",
+            "cname": "travel_save_place"
+          },
+          {
+            "cid": 10066,
+            "open": "1",
+            "cname": "non_talking"
+          },
+          {
+            "cid": 10068,
+            "open": "1",
+            "cname": "wallet_float"
+          },
+          {
+            "cid": 10020,
+            "open": "1",
+            "cname": "pay_entrance"
+          },
+          {
+            "cid": 10027,
+            "open": "1",
+            "cname": "evaluate"
+          },
+          {
+            "cid": 10033,
+            "open": "1",
+            "cname": "evaluate_question"
+          },
+          {
+            "cid": 10021,
+            "open": "1",
+            "cname": "payment"
+          },
+          {
+            "cid": 10025,
+            "open": "1",
+            "cname": "red_packet"
+          },
+          {
+            "cid": 10072,
+            "open": "1",
+            "cname": "new_xpanel"
+          },
+          {
+            "cid": 10073,
+            "open": "1",
+            "cname": "config"
+          },
+          {
+            "cid": 10074,
+            "open": "1",
+            "cname": "global_xengine"
+          },
+          {
+            "cid": 10077,
+            "open": "1",
+            "cname": "evaluate_five_star_entrance"
+          },
+          {
+            "cid": 10078,
+            "open": "1",
+            "cname": "evaluate_question_entrance"
+          },
+          {
+            "cid": 10079,
+            "open": "1",
+            "cname": "travel_detail_v2"
+          },
+          {
+            "cid": 10080,
+            "open": "1",
+            "cname": "travel_group_info_v2"
+          },
+          {
+            "cid": 10082,
+            "open": "1",
+            "cname": "global_x_engine_order_detail_compat"
+          },
+          {
+            "cid": 10086,
+            "open": "1",
+            "cname": "xpanel_pax_pending_pay_card"
+          },
+          {
+            "cid": 10087,
+            "open": "1",
+            "cname": "travel_group_carpool_info"
+          },
+          {
+            "cid": 10092,
+            "open": "1",
+            "cname": "passenger_newXpanel+bargainingCard_logic+bargaining_card"
+          },
+          {
+            "cid": 10093,
+            "open": "1",
+            "cname": "xpanel_pax_boarding_modify_card"
+          },
+          {
+            "cid": 10096,
+            "open": "1",
+            "cname": "saving_center"
+          }
+        ]
+      },
+      {
+        "pid": 375,
+        "parent_bid": "mexico_common",
+        "none": [],
+        "home": [],
+        "confirm": [],
+        "updatepickup": [],
+        "trip": []
+      },
+      {
+        "bid": "japan_common",
+        "none": [],
+        "home": [
+          {
+            "cid": 10038,
+            "open": "1",
+            "cname": "open_ride"
+          }
+        ],
+        "lockscreen": [
+          {
+            "cid": 10074,
+            "open": "1",
+            "cname": "global_xengine"
+          },
+          {
+            "cid": 10002,
+            "open": "1",
+            "cname": "ride_status"
+          },
+          {
+            "cid": 10013,
+            "open": "1",
+            "cname": "driver_bar"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          }
+        ],
+        "confirm": [
+          {
+            "cid": 10004,
+            "open": "1",
+            "cname": "estimate"
+          },
+          {
+            "cid": 10074,
+            "open": "1",
+            "cname": "global_xengine"
+          },
+          {
+            "cid": 10073,
+            "open": "1",
+            "cname": "config"
+          },
+          {
+            "cid": 10005,
+            "open": "1",
+            "cname": "payway"
+          },
+          {
+            "cid": 10046,
+            "open": "1",
+            "cname": "company"
+          },
+          {
+            "cid": 10091,
+            "open": "1",
+            "cname": "memberpoint"
+          },
+          {
+            "cid": 10047,
+            "open": "1",
+            "cname": "dispatch_fee"
+          },
+          {
+            "cid": 10012,
+            "open": "1",
+            "cname": "service"
+          },
+          {
+            "cid": 10014,
+            "open": "1",
+            "cname": "time_picker"
+          },
+          {
+            "cid": 10019,
+            "open": "1",
+            "cname": "unenable_city"
+          },
+          {
+            "cid": 10011,
+            "open": "1",
+            "cname": "confirm_broading_point"
+          },
+          {
+            "cid": 10069,
+            "open": "1",
+            "cname": "confirm_update_address"
+          },
+          {
+            "cid": 10094,
+            "open": "1",
+            "cname": "estimate_pass"
+          },
+          {
+            "cid": 10075,
+            "open": "1",
+            "cname": "on_service_update_address"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          },
+          {
+            "cid": 10018,
+            "open": "1",
+            "cname": "group_form_container"
+          },
+          {
+            "cid": 10017,
+            "open": "1",
+            "cname": "reset_location"
+          },
+          {
+            "cid": 10016,
+            "open": "1",
+            "cname": "xpanel"
+          },
+          {
+            "cid": 10029,
+            "open": "1",
+            "cname": "pudo"
+          },
+          {
+            "cid": 10035,
+            "open": "1",
+            "cname": "seat_count"
+          },
+          {
+            "cid": 10037,
+            "open": "1",
+            "cname": "deeplink"
+          },
+          {
+            "cid": 10041,
+            "open": "1",
+            "cname": "guide_flow_bubble"
+          },
+          {
+            "cid": 10048,
+            "open": "1",
+            "cname": "bubble_layout"
+          },
+          {
+            "cid": 10049,
+            "open": "1",
+            "cname": "form_options"
+          },
+          {
+            "cid": 10050,
+            "open": "1",
+            "cname": "price_detail"
+          },
+          {
+            "cid": 10060,
+            "open": "1",
+            "cname": "split_fare"
+          },
+          {
+            "cid": 10065,
+            "open": "1",
+            "cname": "service_control_no_pay"
+          },
+          {
+            "cid": 10064,
+            "open": "1",
+            "cname": "service_control_card"
+          },
+          {
+            "cid": 10098,
+            "open": "1",
+            "cname": "substitute_call"
+          },
+          {
+            "cid": 10099,
+            "open": "1",
+            "cname": "form_common_item"
+          },
+          {
+            "cid": 10100,
+            "open": "1",
+            "cname": "pre_order_intercept_expo"
+          }
+        ],
+        "updatepickup": [
+          {
+            "cid": 10019,
+            "open": "1",
+            "cname": "unenable_city"
+          },
+          {
+            "cid": 10011,
+            "open": "1",
+            "cname": "confirm_broading_point"
+          },
+          {
+            "cid": 10069,
+            "open": "1",
+            "cname": "confirm_update_address"
+          },
+          {
+            "cid": 10094,
+            "open": "1",
+            "cname": "estimate_pass"
+          },
+          {
+            "cid": 10075,
+            "open": "1",
+            "cname": "on_service_update_address"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          },
+          {
+            "cid": 10018,
+            "open": "1",
+            "cname": "group_form_container"
+          },
+          {
+            "cid": 10017,
+            "open": "1",
+            "cname": "reset_location"
+          },
+          {
+            "cid": 10016,
+            "open": "1",
+            "cname": "xpanel"
+          },
+          {
+            "cid": 10012,
+            "open": "1",
+            "cname": "service"
+          }
+        ],
+        "trip": [
+          {
+            "cid": 10085,
+            "open": "1",
+            "cname": "message"
+          },
+          {
+            "cid": 10083,
+            "open": "1",
+            "cname": "xpcard_progressManagement_card"
+          },
+          {
+            "cid": 10084,
+            "open": "1",
+            "cname": "cancel_panel"
+          },
+          {
+            "cid": 10088,
+            "open": "1",
+            "cname": "xpanel_carpool_matchtogo"
+          },
+          {
+            "cid": 10089,
+            "open": "1",
+            "cname": "xpanel_carpool_matchontrip"
+          },
+          {
+            "cid": 10002,
+            "open": "1",
+            "cname": "ride_status"
+          },
+          {
+            "cid": 10008,
+            "open": "1",
+            "cname": "operation_panel"
+          },
+          {
+            "cid": 10012,
+            "open": "1",
+            "cname": "service"
+          },
+          {
+            "cid": 10016,
+            "open": "1",
+            "cname": "xpanel"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          },
+          {
+            "cid": 10017,
+            "open": "1",
+            "cname": "reset_location"
+          },
+          {
+            "cid": 10040,
+            "open": "1",
+            "cname": "wait_or_not"
+          },
+          {
+            "cid": 10042,
+            "open": "1",
+            "cname": "travel_detail"
+          },
+          {
+            "cid": 10067,
+            "open": "1",
+            "cname": "safe_jarvis"
+          },
+          {
+            "cid": 10009,
+            "open": "1",
+            "cname": "evaluate_entrance"
+          },
+          {
+            "cid": 10015,
+            "open": "1",
+            "cname": "real_time_price"
+          },
+          {
+            "cid": 10029,
+            "open": "1",
+            "cname": "pudo"
+          },
+          {
+            "cid": 10013,
+            "open": "1",
+            "cname": "driver_bar"
+          },
+          {
+            "cid": 10093,
+            "open": "1",
+            "cname": "xpanel_pax_boarding_modify_card"
+          },
+          {
+            "cid": 10022,
+            "open": "1",
+            "cname": "im_entrnace"
+          },
+          {
+            "cid": 10023,
+            "open": "1",
+            "cname": "phone_entrance"
+          },
+          {
+            "cid": 10036,
+            "open": "1",
+            "cname": "safe_toolkit"
+          },
+          {
+            "cid": 10011,
+            "open": "1",
+            "cname": "confirm_broading_point"
+          },
+          {
+            "cid": 10069,
+            "open": "1",
+            "cname": "confirm_update_address"
+          },
+          {
+            "cid": 10094,
+            "open": "1",
+            "cname": "estimate_pass"
+          },
+          {
+            "cid": 10075,
+            "open": "1",
+            "cname": "on_service_update_address"
+          },
+          {
+            "cid": 10039,
+            "open": "1",
+            "cname": "psg_invite_psg"
+          },
+          {
+            "cid": 10043,
+            "open": "1",
+            "cname": "travel_group_info"
+          },
+          {
+            "cid": 10045,
+            "open": "1",
+            "cname": "alert_card"
+          },
+          {
+            "cid": 10060,
+            "open": "1",
+            "cname": "split_fare"
+          },
+          {
+            "cid": 10044,
+            "open": "1",
+            "cname": "customer_service"
+          },
+          {
+            "cid": 10061,
+            "open": "1",
+            "cname": "travel_save_place"
+          },
+          {
+            "cid": 10066,
+            "open": "1",
+            "cname": "non_talking"
+          },
+          {
+            "cid": 10068,
+            "open": "1",
+            "cname": "wallet_float"
+          },
+          {
+            "cid": 10020,
+            "open": "1",
+            "cname": "pay_entrance"
+          },
+          {
+            "cid": 10027,
+            "open": "1",
+            "cname": "evaluate"
+          },
+          {
+            "cid": 10033,
+            "open": "1",
+            "cname": "evaluate_question"
+          },
+          {
+            "cid": 10021,
+            "open": "1",
+            "cname": "payment"
+          },
+          {
+            "cid": 10025,
+            "open": "1",
+            "cname": "red_packet"
+          },
+          {
+            "cid": 10072,
+            "open": "1",
+            "cname": "new_xpanel"
+          },
+          {
+            "cid": 10073,
+            "open": "1",
+            "cname": "config"
+          },
+          {
+            "cid": 10074,
+            "open": "1",
+            "cname": "global_xengine"
+          },
+          {
+            "cid": 10077,
+            "open": "1",
+            "cname": "evaluate_five_star_entrance"
+          },
+          {
+            "cid": 10078,
+            "open": "1",
+            "cname": "evaluate_question_entrance"
+          },
+          {
+            "cid": 10079,
+            "open": "1",
+            "cname": "travel_detail_v2"
+          },
+          {
+            "cid": 10080,
+            "open": "1",
+            "cname": "travel_group_info_v2"
+          },
+          {
+            "cid": 10081,
+            "open": "1",
+            "cname": "global_x_engine_new_order_compat"
+          },
+          {
+            "cid": 10082,
+            "open": "1",
+            "cname": "global_x_engine_order_detail_compat"
+          },
+          {
+            "cid": 10086,
+            "open": "1",
+            "cname": "xpanel_pax_pending_pay_card"
+          },
+          {
+            "cid": 10087,
+            "open": "1",
+            "cname": "travel_group_carpool_info"
+          },
+          {
+            "cid": 10090,
+            "open": "1",
+            "cname": "float_bar"
+          },
+          {
+            "cid": 10092,
+            "open": "1",
+            "cname": "passenger_newXpanel+bargainingCard_logic+bargaining_card"
+          },
+          {
+            "cid": 10096,
+            "open": "1",
+            "cname": "saving_center"
+          }
+        ]
+      },
+      {
+        "pid": 378,
+        "parent_bid": "japan_common",
+        "none": [],
+        "home": [],
+        "confirm": [],
+        "updatepickup": []
+      },
+      {
+        "pid": 21002,
+        "parent_bid": "japan_common",
+        "none": [],
+        "home": [],
+        "confirm": [],
+        "updatepickup": []
+      },
+      {
+        "pid": 21003,
+        "parent_bid": "japan_common",
+        "none": [],
+        "home": [],
+        "confirm": [],
+        "updatepickup": []
+      },
+      {
+        "pid": 21007,
+        "parent_bid": "japan_common",
+        "none": [],
+        "home": [],
+        "confirm": [],
+        "updatepickup": []
+      },
+      {
+        "pid": 21009,
+        "parent_bid": "japan_common",
+        "none": [],
+        "home": [],
+        "confirm": [],
+        "updatepickup": []
+      },
+      {
+        "pid": 21049,
+        "parent_bid": "japan_common",
+        "none": [
+        ],
+        "home": [
+        ],
+        "confirm": [
+        ],
+        "updatepickup": [
+        ]
+      },
+      {
+        "bid": "aus_common",
+        "none": [],
+        "home": [],
+        "lockscreen": [
+          {
+            "cid": 10074,
+            "open": "1",
+            "cname": "global_xengine"
+          },
+          {
+            "cid": 10002,
+            "open": "1",
+            "cname": "ride_status"
+          },
+          {
+            "cid": 10013,
+            "open": "1",
+            "cname": "driver_bar"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          }
+        ],
+        "confirm": [
+          {
+            "cid": 10004,
+            "open": "1",
+            "cname": "estimate"
+          },
+          {
+            "cid": 10073,
+            "open": "1",
+            "cname": "config"
+          },
+          {
+            "cid": 10074,
+            "open": "1",
+            "cname": "global_xengine"
+          },
+          {
+            "cid": 10005,
+            "open": "1",
+            "cname": "payway"
+          },
+          {
+            "cid": 10012,
+            "open": "1",
+            "cname": "service"
+          },
+          {
+            "cid": 10019,
+            "open": "1",
+            "cname": "unenable_city"
+          },
+          {
+            "cid": 10011,
+            "open": "1",
+            "cname": "confirm_broading_point"
+          },
+          {
+            "cid": 10069,
+            "open": "1",
+            "cname": "confirm_update_address"
+          },
+          {
+            "cid": 10094,
+            "open": "1",
+            "cname": "estimate_pass"
+          },
+          {
+            "cid": 10075,
+            "open": "1",
+            "cname": "on_service_update_address"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          },
+          {
+            "cid": 10018,
+            "open": "1",
+            "cname": "group_form_container"
+          },
+          {
+            "cid": 10017,
+            "open": "1",
+            "cname": "reset_location"
+          },
+          {
+            "cid": 10016,
+            "open": "1",
+            "cname": "xpanel"
+          },
+          {
+            "cid": 10029,
+            "open": "1",
+            "cname": "pudo"
+          },
+          {
+            "cid": 10035,
+            "open": "1",
+            "cname": "seat_count"
+          },
+          {
+            "cid": 10037,
+            "open": "1",
+            "cname": "deeplink"
+          },
+          {
+            "cid": 10041,
+            "open": "1",
+            "cname": "guide_flow_bubble"
+          },
+          {
+            "cid": 10047,
+            "open": "1",
+            "cname": "dispatch_fee"
+          },
+          {
+            "cid": 10048,
+            "open": "1",
+            "cname": "bubble_layout"
+          },
+          {
+            "cid": 10049,
+            "open": "1",
+            "cname": "form_options"
+          },
+          {
+            "cid": 10050,
+            "open": "1",
+            "cname": "price_detail"
+          },
+          {
+            "cid": 10065,
+            "open": "1",
+            "cname": "service_control_no_pay"
+          },
+          {
+            "cid": 10064,
+            "open": "1",
+            "cname": "service_control_card"
+          },
+          {
+            "cid": 10098,
+            "open": "1",
+            "cname": "substitute_call"
+          },
+          {
+            "cid": 10099,
+            "open": "1",
+            "cname": "form_common_item"
+          },
+          {
+            "cid": 10100,
+            "open": "1",
+            "cname": "pre_order_intercept_expo"
+          }
+        ],
+        "updatepickup": [
+          {
+            "cid": 10019,
+            "open": "1",
+            "cname": "unenable_city"
+          },
+          {
+            "cid": 10011,
+            "open": "1",
+            "cname": "confirm_broading_point"
+          },
+          {
+            "cid": 10069,
+            "open": "1",
+            "cname": "confirm_update_address"
+          },
+          {
+            "cid": 10094,
+            "open": "1",
+            "cname": "estimate_pass"
+          },
+          {
+            "cid": 10075,
+            "open": "1",
+            "cname": "on_service_update_address"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          },
+          {
+            "cid": 10018,
+            "open": "1",
+            "cname": "group_form_container"
+          },
+          {
+            "cid": 10017,
+            "open": "1",
+            "cname": "reset_location"
+          },
+          {
+            "cid": 10016,
+            "open": "1",
+            "cname": "xpanel"
+          },
+          {
+            "cid": 10012,
+            "open": "1",
+            "cname": "service"
+          }
+        ],
+        "trip": [
+          {
+            "cid": 10085,
+            "open": "1",
+            "cname": "message"
+          },
+          {
+            "cid": 10083,
+            "open": "1",
+            "cname": "xpcard_progressManagement_card"
+          },
+          {
+            "cid": 10084,
+            "open": "1",
+            "cname": "cancel_panel"
+          },
+          {
+            "cid": 10088,
+            "open": "1",
+            "cname": "xpanel_carpool_matchtogo"
+          },
+          {
+            "cid": 10089,
+            "open": "1",
+            "cname": "xpanel_carpool_matchontrip"
+          },
+          {
+            "cid": 10002,
+            "open": "1",
+            "cname": "ride_status"
+          },
+          {
+            "cid": 10008,
+            "open": "1",
+            "cname": "operation_panel"
+          },
+          {
+            "cid": 10012,
+            "open": "1",
+            "cname": "service"
+          },
+          {
+            "cid": 10016,
+            "open": "1",
+            "cname": "xpanel"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          },
+          {
+            "cid": 10017,
+            "open": "1",
+            "cname": "reset_location"
+          },
+          {
+            "cid": 10040,
+            "open": "1",
+            "cname": "wait_or_not"
+          },
+          {
+            "cid": 10042,
+            "open": "1",
+            "cname": "travel_detail"
+          },
+          {
+            "cid": 10067,
+            "open": "1",
+            "cname": "safe_jarvis"
+          },
+          {
+            "cid": 10009,
+            "open": "1",
+            "cname": "evaluate_entrance"
+          },
+          {
+            "cid": 10015,
+            "open": "1",
+            "cname": "real_time_price"
+          },
+          {
+            "cid": 10029,
+            "open": "1",
+            "cname": "pudo"
+          },
+          {
+            "cid": 10013,
+            "open": "1",
+            "cname": "driver_bar"
+          },
+          {
+            "cid": 10022,
+            "open": "1",
+            "cname": "im_entrnace"
+          },
+          {
+            "cid": 10023,
+            "open": "1",
+            "cname": "phone_entrance"
+          },
+          {
+            "cid": 10036,
+            "open": "1",
+            "cname": "safe_toolkit"
+          },
+          {
+            "cid": 10011,
+            "open": "1",
+            "cname": "confirm_broading_point"
+          },
+          {
+            "cid": 10069,
+            "open": "1",
+            "cname": "confirm_update_address"
+          },
+          {
+            "cid": 10094,
+            "open": "1",
+            "cname": "estimate_pass"
+          },
+          {
+            "cid": 10075,
+            "open": "1",
+            "cname": "on_service_update_address"
+          },
+          {
+            "cid": 10039,
+            "open": "1",
+            "cname": "psg_invite_psg"
+          },
+          {
+            "cid": 10043,
+            "open": "1",
+            "cname": "travel_group_info"
+          },
+          {
+            "cid": 10045,
+            "open": "1",
+            "cname": "alert_card"
+          },
+          {
+            "cid": 10060,
+            "open": "1",
+            "cname": "split_fare"
+          },
+          {
+            "cid": 10044,
+            "open": "1",
+            "cname": "customer_service"
+          },
+          {
+            "cid": 10061,
+            "open": "1",
+            "cname": "travel_save_place"
+          },
+          {
+            "cid": 10066,
+            "open": "1",
+            "cname": "non_talking"
+          },
+          {
+            "cid": 10068,
+            "open": "1",
+            "cname": "wallet_float"
+          },
+          {
+            "cid": 10020,
+            "open": "1",
+            "cname": "pay_entrance"
+          },
+          {
+            "cid": 10027,
+            "open": "1",
+            "cname": "evaluate"
+          },
+          {
+            "cid": 10033,
+            "open": "1",
+            "cname": "evaluate_question"
+          },
+          {
+            "cid": 10021,
+            "open": "1",
+            "cname": "payment"
+          },
+          {
+            "cid": 10025,
+            "open": "1",
+            "cname": "red_packet"
+          },
+          {
+            "cid": 10072,
+            "open": "1",
+            "cname": "new_xpanel"
+          },
+          {
+            "cid": 10073,
+            "open": "1",
+            "cname": "config"
+          },
+          {
+            "cid": 10074,
+            "open": "1",
+            "cname": "global_xengine"
+          },
+          {
+            "cid": 10077,
+            "open": "1",
+            "cname": "evaluate_five_star_entrance"
+          },
+          {
+            "cid": 10078,
+            "open": "1",
+            "cname": "evaluate_question_entrance"
+          },
+          {
+            "cid": 10030,
+            "open": "1",
+            "cname": "routeguide"
+          },
+          {
+            "cid": 10032,
+            "open": "1",
+            "cname": "danumber"
+          },
+          {
+            "cid": 10079,
+            "open": "1",
+            "cname": "travel_detail_v2"
+          },
+          {
+            "cid": 10080,
+            "open": "1",
+            "cname": "travel_group_info_v2"
+          },
+          {
+            "cid": 10082,
+            "open": "1",
+            "cname": "global_x_engine_order_detail_compat"
+          },
+          {
+            "cid": 10086,
+            "open": "1",
+            "cname": "xpanel_pax_pending_pay_card"
+          },
+          {
+            "cid": 10087,
+            "open": "1",
+            "cname": "travel_group_carpool_info"
+          },
+          {
+            "cid": 10092,
+            "open": "1",
+            "cname": "passenger_newXpanel+bargainingCard_logic+bargaining_card"
+          },
+          {
+            "cid": 10093,
+            "open": "1",
+            "cname": "xpanel_pax_boarding_modify_card"
+          },
+          {
+            "cid": 10096,
+            "open": "1",
+            "cname": "saving_center"
+          }
+        ]
+      },
+      {
+        "pid": 383,
+        "parent_bid": "aus_common",
+        "none": [],
+        "home": [],
+        "confirm": [],
+        "updatepickup": [],
+        "trip": []
+      },
+      {
+        "pid": 20002,
+        "parent_bid": "aus_common",
+        "none": [],
+        "home": [],
+        "confirm": [],
+        "updatepickup": [],
+      },
+      {
+        "bid": "russia_common",
+        "none": [],
+        "home": [],
+        "lockscreen": [
+          {
+            "cid": 10074,
+            "open": "1",
+            "cname": "global_xengine"
+          },
+          {
+            "cid": 10002,
+            "open": "1",
+            "cname": "ride_status"
+          },
+          {
+            "cid": 10013,
+            "open": "1",
+            "cname": "driver_bar"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          }
+        ],
+        "confirm": [
+          {
+            "cid": 10004,
+            "open": "1",
+            "cname": "estimate"
+          },
+          {
+            "cid": 10073,
+            "open": "1",
+            "cname": "config"
+          },
+          {
+            "cid": 10074,
+            "open": "1",
+            "cname": "global_xengine"
+          },
+          {
+            "cid": 10005,
+            "open": "1",
+            "cname": "payway"
+          },
+          {
+            "cid": 10046,
+            "open": "1",
+            "cname": "company"
+          },
+          {
+            "cid": 10091,
+            "open": "1",
+            "cname": "memberpoint"
+          },
+          {
+            "cid": 10012,
+            "open": "1",
+            "cname": "service"
+          },
+          {
+            "cid": 10014,
+            "open": "1",
+            "cname": "time_picker"
+          },
+          {
+            "cid": 10019,
+            "open": "1",
+            "cname": "unenable_city"
+          },
+          {
+            "cid": 10011,
+            "open": "1",
+            "cname": "confirm_broading_point"
+          },
+          {
+            "cid": 10069,
+            "open": "1",
+            "cname": "confirm_update_address"
+          },
+          {
+            "cid": 10094,
+            "open": "1",
+            "cname": "estimate_pass"
+          },
+          {
+            "cid": 10075,
+            "open": "1",
+            "cname": "on_service_update_address"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          },
+          {
+            "cid": 10018,
+            "open": "1",
+            "cname": "group_form_container"
+          },
+          {
+            "cid": 10017,
+            "open": "1",
+            "cname": "reset_location"
+          },
+          {
+            "cid": 10016,
+            "open": "1",
+            "cname": "xpanel"
+          },
+          {
+            "cid": 10029,
+            "open": "1",
+            "cname": "pudo"
+          },
+          {
+            "cid": 10035,
+            "open": "1",
+            "cname": "seat_count"
+          },
+          {
+            "cid": 10037,
+            "open": "1",
+            "cname": "deeplink"
+          },
+          {
+            "cid": 10041,
+            "open": "1",
+            "cname": "guide_flow_bubble"
+          },
+          {
+            "cid": 10048,
+            "open": "1",
+            "cname": "bubble_layout"
+          },
+          {
+            "cid": 10098,
+            "open": "1",
+            "cname": "substitute_call"
+          },
+          {
+            "cid": 10099,
+            "open": "1",
+            "cname": "form_common_item"
+          },
+          {
+            "cid": 10100,
+            "open": "1",
+            "cname": "pre_order_intercept_expo"
+          }
+        ],
+        "updatepickup": [
+          {
+            "cid": 10019,
+            "open": "1",
+            "cname": "unenable_city"
+          },
+          {
+            "cid": 10011,
+            "open": "1",
+            "cname": "confirm_broading_point"
+          },
+          {
+            "cid": 10069,
+            "open": "1",
+            "cname": "confirm_update_address"
+          },
+          {
+            "cid": 10094,
+            "open": "1",
+            "cname": "estimate_pass"
+          },
+          {
+            "cid": 10075,
+            "open": "1",
+            "cname": "on_service_update_address"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          },
+          {
+            "cid": 10018,
+            "open": "1",
+            "cname": "group_form_container"
+          },
+          {
+            "cid": 10017,
+            "open": "1",
+            "cname": "reset_location"
+          },
+          {
+            "cid": 10016,
+            "open": "1",
+            "cname": "xpanel"
+          },
+          {
+            "cid": 10012,
+            "open": "1",
+            "cname": "service"
+          }
+        ],
+        "trip": [
+          {
+            "cid": 10085,
+            "open": "1",
+            "cname": "message"
+          },
+          {
+            "cid": 10083,
+            "open": "1",
+            "cname": "xpcard_progressManagement_card"
+          },
+          {
+            "cid": 10084,
+            "open": "1",
+            "cname": "cancel_panel"
+          },
+          {
+            "cid": 10088,
+            "open": "1",
+            "cname": "xpanel_carpool_matchtogo"
+          },
+          {
+            "cid": 10089,
+            "open": "1",
+            "cname": "xpanel_carpool_matchontrip"
+          },
+          {
+            "cid": 10002,
+            "open": "1",
+            "cname": "ride_status"
+          },
+          {
+            "cid": 10008,
+            "open": "1",
+            "cname": "operation_panel"
+          },
+          {
+            "cid": 10012,
+            "open": "1",
+            "cname": "service"
+          },
+          {
+            "cid": 10016,
+            "open": "1",
+            "cname": "xpanel"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          },
+          {
+            "cid": 10017,
+            "open": "1",
+            "cname": "reset_location"
+          },
+          {
+            "cid": 10040,
+            "open": "1",
+            "cname": "wait_or_not"
+          },
+          {
+            "cid": 10042,
+            "open": "1",
+            "cname": "travel_detail"
+          },
+          {
+            "cid": 10067,
+            "open": "1",
+            "cname": "safe_jarvis"
+          },
+          {
+            "cid": 10009,
+            "open": "1",
+            "cname": "evaluate_entrance"
+          },
+          {
+            "cid": 10015,
+            "open": "1",
+            "cname": "real_time_price"
+          },
+          {
+            "cid": 10029,
+            "open": "1",
+            "cname": "pudo"
+          },
+          {
+            "cid": 10013,
+            "open": "1",
+            "cname": "driver_bar"
+          },
+          {
+            "cid": 10022,
+            "open": "1",
+            "cname": "im_entrnace"
+          },
+          {
+            "cid": 10023,
+            "open": "1",
+            "cname": "phone_entrance"
+          },
+          {
+            "cid": 10036,
+            "open": "1",
+            "cname": "safe_toolkit"
+          },
+          {
+            "cid": 10011,
+            "open": "1",
+            "cname": "confirm_broading_point"
+          },
+          {
+            "cid": 10069,
+            "open": "1",
+            "cname": "confirm_update_address"
+          },
+          {
+            "cid": 10094,
+            "open": "1",
+            "cname": "estimate_pass"
+          },
+          {
+            "cid": 10075,
+            "open": "1",
+            "cname": "on_service_update_address"
+          },
+          {
+            "cid": 10039,
+            "open": "1",
+            "cname": "psg_invite_psg"
+          },
+          {
+            "cid": 10043,
+            "open": "1",
+            "cname": "travel_group_info"
+          },
+          {
+            "cid": 10045,
+            "open": "1",
+            "cname": "alert_card"
+          },
+          {
+            "cid": 10060,
+            "open": "1",
+            "cname": "split_fare"
+          },
+          {
+            "cid": 10044,
+            "open": "1",
+            "cname": "customer_service"
+          },
+          {
+            "cid": 10061,
+            "open": "1",
+            "cname": "travel_save_place"
+          },
+          {
+            "cid": 10066,
+            "open": "1",
+            "cname": "non_talking"
+          },
+          {
+            "cid": 10068,
+            "open": "1",
+            "cname": "wallet_float"
+          },
+          {
+            "cid": 10020,
+            "open": "1",
+            "cname": "pay_entrance"
+          },
+          {
+            "cid": 10027,
+            "open": "1",
+            "cname": "evaluate"
+          },
+          {
+            "cid": 10033,
+            "open": "1",
+            "cname": "evaluate_question"
+          },
+          {
+            "cid": 10021,
+            "open": "1",
+            "cname": "payment"
+          },
+          {
+            "cid": 10025,
+            "open": "1",
+            "cname": "red_packet"
+          },
+          {
+            "cid": 10072,
+            "open": "1",
+            "cname": "new_xpanel"
+          },
+          {
+            "cid": 10073,
+            "open": "1",
+            "cname": "config"
+          },
+          {
+            "cid": 10074,
+            "open": "1",
+            "cname": "global_xengine"
+          },
+          {
+            "cid": 10077,
+            "open": "1",
+            "cname": "evaluate_five_star_entrance"
+          },
+          {
+            "cid": 10078,
+            "open": "1",
+            "cname": "evaluate_question_entrance"
+          },
+          {
+            "cid": 10030,
+            "open": "1",
+            "cname": "routeguide"
+          },
+          {
+            "cid": 10032,
+            "open": "1",
+            "cname": "danumber"
+          },
+          {
+            "cid": 10079,
+            "open": "1",
+            "cname": "travel_detail_v2"
+          },
+          {
+            "cid": 10080,
+            "open": "1",
+            "cname": "travel_group_info_v2"
+          },
+          {
+            "cid": 10082,
+            "open": "1",
+            "cname": "global_x_engine_order_detail_compat"
+          },
+          {
+            "cid": 10086,
+            "open": "1",
+            "cname": "xpanel_pax_pending_pay_card"
+          },
+          {
+            "cid": 10087,
+            "open": "1",
+            "cname": "travel_group_carpool_info"
+          },
+          {
+            "cid": 10092,
+            "open": "1",
+            "cname": "passenger_newXpanel+bargainingCard_logic+bargaining_card"
+          },
+          {
+            "cid": 10093,
+            "open": "1",
+            "cname": "xpanel_pax_boarding_modify_card"
+          },
+          {
+            "cid": 10096,
+            "open": "1",
+            "cname": "saving_center"
+          }
+        ]
+      },
+      {
+        "pid": 21011,
+        "parent_bid": "russia_common",
+        "none": [],
+        "home": [],
+        "confirm": [],
+        "updatepickup": [],
+        "trip": []
+      },
+      {
+        "bid": "brazil_common",
+        "none": [],
+        "home": [
+          {
+            "cid": 10038,
+            "open": "1",
+            "cname": "open_ride"
+          }
+        ],
+        "lockscreen": [
+          {
+            "cid": 10074,
+            "open": "1",
+            "cname": "global_xengine"
+          },
+          {
+            "cid": 10002,
+            "open": "1",
+            "cname": "ride_status"
+          },
+          {
+            "cid": 10013,
+            "open": "1",
+            "cname": "driver_bar"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          }
+        ],
+        "confirm": [
+          {
+            "cid": 10004,
+            "open": "1",
+            "cname": "estimate"
+          },
+          {
+            "cid": 10073,
+            "open": "1",
+            "cname": "config"
+          },
+          {
+            "cid": 10074,
+            "open": "1",
+            "cname": "global_xengine"
+          },
+          {
+            "cid": 10005,
+            "open": "1",
+            "cname": "payway"
+          },
+          {
+            "cid": 10012,
+            "open": "1",
+            "cname": "service"
+          },
+          {
+            "cid": 10019,
+            "open": "1",
+            "cname": "unenable_city"
+          },
+          {
+            "cid": 10011,
+            "open": "1",
+            "cname": "confirm_broading_point"
+          },
+          {
+            "cid": 10069,
+            "open": "1",
+            "cname": "confirm_update_address"
+          },
+          {
+            "cid": 10094,
+            "open": "1",
+            "cname": "estimate_pass"
+          },
+          {
+            "cid": 10075,
+            "open": "1",
+            "cname": "on_service_update_address"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          },
+          {
+            "cid": 10018,
+            "open": "1",
+            "cname": "group_form_container"
+          },
+          {
+            "cid": 10017,
+            "open": "1",
+            "cname": "reset_location"
+          },
+          {
+            "cid": 10016,
+            "open": "1",
+            "cname": "xpanel"
+          },
+          {
+            "cid": 10029,
+            "open": "1",
+            "cname": "pudo"
+          },
+          {
+            "cid": 10031,
+            "open": "1",
+            "cname": "ride_option"
+          },
+          {
+            "cid": 10035,
+            "open": "1",
+            "cname": "seat_count"
+          },
+          {
+            "cid": 10037,
+            "open": "1",
+            "cname": "deeplink"
+          },
+          {
+            "cid": 10041,
+            "open": "1",
+            "cname": "guide_flow_bubble"
+          },
+          {
+            "cid": 10047,
+            "open": "1",
+            "cname": "dispatch_fee"
+          },
+          {
+            "cid": 10048,
+            "open": "1",
+            "cname": "bubble_layout"
+          },
+          {
+            "cid": 10049,
+            "open": "1",
+            "cname": "form_options"
+          },
+          {
+            "cid": 10050,
+            "open": "1",
+            "cname": "price_detail"
+          },
+          {
+            "cid": 10065,
+            "open": "1",
+            "cname": "service_control_no_pay"
+          },
+          {
+            "cid": 10064,
+            "open": "1",
+            "cname": "service_control_card"
+          },
+          {
+            "cid": 10098,
+            "open": "1",
+            "cname": "substitute_call"
+          },
+          {
+            "cid": 10099,
+            "open": "1",
+            "cname": "form_common_item"
+          },
+          {
+            "cid": 10100,
+            "open": "1",
+            "cname": "pre_order_intercept_expo"
+          }
+        ],
+        "updatepickup": [
+          {
+            "cid": 10019,
+            "open": "1",
+            "cname": "unenable_city"
+          },
+          {
+            "cid": 10011,
+            "open": "1",
+            "cname": "confirm_broading_point"
+          },
+          {
+            "cid": 10069,
+            "open": "1",
+            "cname": "confirm_update_address"
+          },
+          {
+            "cid": 10094,
+            "open": "1",
+            "cname": "estimate_pass"
+          },
+          {
+            "cid": 10075,
+            "open": "1",
+            "cname": "on_service_update_address"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          },
+          {
+            "cid": 10018,
+            "open": "1",
+            "cname": "group_form_container"
+          },
+          {
+            "cid": 10017,
+            "open": "1",
+            "cname": "reset_location"
+          },
+          {
+            "cid": 10016,
+            "open": "1",
+            "cname": "xpanel"
+          },
+          {
+            "cid": 10012,
+            "open": "1",
+            "cname": "service"
+          }
+        ],
+        "trip": [
+          {
+            "cid": 10085,
+            "open": "1",
+            "cname": "message"
+          },
+          {
+            "cid": 10083,
+            "open": "1",
+            "cname": "xpcard_progressManagement_card"
+          },
+          {
+            "cid": 10084,
+            "open": "1",
+            "cname": "cancel_panel"
+          },
+          {
+            "cid": 10088,
+            "open": "1",
+            "cname": "xpanel_carpool_matchtogo"
+          },
+          {
+            "cid": 10089,
+            "open": "1",
+            "cname": "xpanel_carpool_matchontrip"
+          },
+          {
+            "cid": 10002,
+            "open": "1",
+            "cname": "ride_status"
+          },
+          {
+            "cid": 10008,
+            "open": "1",
+            "cname": "operation_panel"
+          },
+          {
+            "cid": 10012,
+            "open": "1",
+            "cname": "service"
+          },
+          {
+            "cid": 10016,
+            "open": "1",
+            "cname": "xpanel"
+          },
+          {
+            "cid": 10026,
+            "open": "1",
+            "cname": "map_flow"
+          },
+          {
+            "cid": 10017,
+            "open": "1",
+            "cname": "reset_location"
+          },
+          {
+            "cid": 10040,
+            "open": "1",
+            "cname": "wait_or_not"
+          },
+          {
+            "cid": 10042,
+            "open": "1",
+            "cname": "travel_detail"
+          },
+          {
+            "cid": 10067,
+            "open": "1",
+            "cname": "safe_jarvis"
+          },
+          {
+            "cid": 10009,
+            "open": "1",
+            "cname": "evaluate_entrance"
+          },
+          {
+            "cid": 10015,
+            "open": "1",
+            "cname": "real_time_price"
+          },
+          {
+            "cid": 10029,
+            "open": "1",
+            "cname": "pudo"
+          },
+          {
+            "cid": 10013,
+            "open": "1",
+            "cname": "driver_bar"
+          },
+          {
+            "cid": 10093,
+            "open": "1",
+            "cname": "xpanel_pax_boarding_modify_card"
+          },
+          {
+            "cid": 10022,
+            "open": "1",
+            "cname": "im_entrnace"
+          },
+          {
+            "cid": 10023,
+            "open": "1",
+            "cname": "phone_entrance"
+          },
+          {
+            "cid": 10036,
+            "open": "1",
+            "cname": "safe_toolkit"
+          },
+          {
+            "cid": 10011,
+            "open": "1",
+            "cname": "confirm_broading_point"
+          },
+          {
+            "cid": 10069,
+            "open": "1",
+            "cname": "confirm_update_address"
+          },
+          {
+            "cid": 10094,
+            "open": "1",
+            "cname": "estimate_pass"
+          },
+          {
+            "cid": 10075,
+            "open": "1",
+            "cname": "on_service_update_address"
+          },
+          {
+            "cid": 10039,
+            "open": "1",
+            "cname": "psg_invite_psg"
+          },
+          {
+            "cid": 10043,
+            "open": "1",
+            "cname": "travel_group_info"
+          },
+          {
+            "cid": 10045,
+            "open": "1",
+            "cname": "alert_card"
+          },
+          {
+            "cid": 10060,
+            "open": "1",
+            "cname": "split_fare"
+          },
+          {
+            "cid": 10044,
+            "open": "1",
+            "cname": "customer_service"
+          },
+          {
+            "cid": 10061,
+            "open": "1",
+            "cname": "travel_save_place"
+          },
+          {
+            "cid": 10066,
+            "open": "1",
+            "cname": "non_talking"
+          },
+          {
+            "cid": 10068,
+            "open": "1",
+            "cname": "wallet_float"
+          },
+          {
+            "cid": 10020,
+            "open": "1",
+            "cname": "pay_entrance"
+          },
+          {
+            "cid": 10027,
+            "open": "1",
+            "cname": "evaluate"
+          },
+          {
+            "cid": 10033,
+            "open": "1",
+            "cname": "evaluate_question"
+          },
+          {
+            "cid": 10021,
+            "open": "1",
+            "cname": "payment"
+          },
+          {
+            "cid": 10025,
+            "open": "1",
+            "cname": "red_packet"
+          },
+          {
+            "cid": 10072,
+            "open": "1",
+            "cname": "new_xpanel"
+          },
+          {
+            "cid": 10073,
+            "open": "1",
+            "cname": "config"
+          },
+          {
+            "cid": 10074,
+            "open": "1",
+            "cname": "global_xengine"
+          },
+          {
+            "cid": 10077,
+            "open": "1",
+            "cname": "evaluate_five_star_entrance"
+          },
+          {
+            "cid": 10078,
+            "open": "1",
+            "cname": "evaluate_question_entrance"
+          },
+          {
+            "cid": 10079,
+            "open": "1",
+            "cname": "travel_detail_v2"
+          },
+          {
+            "cid": 10080,
+            "open": "1",
+            "cname": "travel_group_info_v2"
+          },
+          {
+            "cid": 10081,
+            "open": "1",
+            "cname": "global_x_engine_new_order_compat"
+          },
+          {
+            "cid": 10082,
+            "open": "1",
+            "cname": "global_x_engine_order_detail_compat"
+          },
+          {
+            "cid": 10086,
+            "open": "1",
+            "cname": "xpanel_pax_pending_pay_card"
+          },
+          {
+            "cid": 10087,
+            "open": "1",
+            "cname": "travel_group_carpool_info"
+          },
+          {
+            "cid": 10090,
+            "open": "1",
+            "cname": "float_bar"
+          },
+          {
+            "cid": 10092,
+            "open": "1",
+            "cname": "passenger_newXpanel+bargainingCard_logic+bargaining_card"
+          },
+          {
+            "cid": 10096,
+            "open": "1",
+            "cname": "saving_center"
+          }
+        ]
+      },
+      {
+        "pid": 316,
+        "parent_bid": "brazil_common",
+        "none": [],
+        "home": [],
+        "confirm": [],
+        "updatepickup": [],
+        "trip": []
+      },
+      {
+        "pid": 326,
+        "parent_bid": "brazil_common",
+        "none": [],
+        "home": [],
+        "confirm": [],
+        "updatepickup": [],
+        "trip": []
+      },
+      {
+        "pid": 327,
+        "parent_bid": "brazil_common",
+        "none": [],
+        "home": [],
+        "confirm": [],
+        "updatepickup": [],
+        "trip": []
+      },
+      {
+        "pid": 20001,
+        "parent_bid": "brazil_common",
+        "none": [],
+        "home": [],
+        "confirm": [],
+        "updatepickup": [],
+        "trip": []
+      },
+      {
+        "pid": 21032,
+        "parent_bid": "brazil_common",
+        "none": [],
+        "home": [],
+        "confirm": [],
+        "updatepickup": [],
+        "trip": []
+      }
+    ]
+  }
+}

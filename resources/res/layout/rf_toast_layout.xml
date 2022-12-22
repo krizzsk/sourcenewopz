@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.didi.rfusion.widget.button.RFShadowLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/rf_dimen_248" app:rf_shadow_color="@color/rf_color_gery_15_0_0D000000" app:rf_shadow_corner_radius="@dimen/rf_dialog_corner_size" app:rf_shadow_elevation="@dimen/rf_dimen_80">
+    <FrameLayout android:id="@+id/rf_fl_toast_container" android:background="@drawable/rf_shape_bg_toast_light" android:paddingTop="@dimen/rf_toast_tb_padding" android:paddingBottom="@dimen/rf_toast_tb_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/rf_dimen_40" android:paddingEnd="@dimen/rf_dimen_40">
+        <com.didi.rfusion.widget.RFTextView android:textSize="@dimen/f_10_app_28_pad_16" android:textColor="@color/rf_color_gery_1_0_000000" android:layout_gravity="center" android:id="@+id/rf_tv_toast_msg" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxWidth="@dimen/rf_dimen_520"/>
+    </FrameLayout>
+</com.didi.rfusion.widget.button.RFShadowLayout>

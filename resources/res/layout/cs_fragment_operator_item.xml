@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/wallet_global_home_consume_item_bg" android:layout_width="match_parent" android:layout_height="130dp" android:layout_marginLeft="-3dp" android:layout_marginTop="-6dp" android:layout_marginRight="-3dp" android:layout_marginBottom="-6dp" android:layout_centerHorizontal="true">
+    <ImageView android:id="@+id/iv_operator_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp" android:scaleType="fitCenter"/>
+    <View android:id="@+id/v_operator_selected" android:background="@drawable/cs_frag_rv_cardview_selected_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

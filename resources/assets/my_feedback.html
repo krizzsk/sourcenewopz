@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="./lib/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/list.css">
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12" id="total-info"></div>
+    </div>
+    <div class="row" id="item-container">
+        <center><img src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAeAAD/4QN8aHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjUtYzAyMSA3OS4xNTQ5MTEsIDIwMTMvMTAvMjktMTE6NDc6MTYgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MTNiYzA5ZjQtNTQ2OC00MTM4LWFhN2EtZGZiNTNhZmVkNzMzIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkU1OEE1REVBRDdBRTExRTVBREE5RTFDQzBCM0MzRDYxIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkU1OEE1REU5RDdBRTExRTVBREE5RTFDQzBCM0MzRDYxIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOmUxY2UzZDk3LTg1NTUtNGMxMy05Nzg1LTg3MzQxMGZjMGViNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxM2JjMDlmNC01NDY4LTQxMzgtYWE3YS1kZmI1M2FmZWQ3MzMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwv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"/></center>
+    </div>
+</div>
+<script>
+            (function () {
+                var totalInfoNode = document.getElementById('total-info');
+                var itemContainerNode = document.getElementById('item-container');
+
+                var setTotalData = function (html) {
+                    totalInfoNode.innerHTML = html;
+                };
+                var setListData = function (list) {
+                    if (!list || !list.length) {
+                        return;
+                    }
+                    if (list) {
+                        list = JSON.parse(list);
+                    }
+
+                    var html = '';
+                    for (var i = 0, len = list.length; i < len; i++) {
+                        var item = list[i];
+                        html += ''
+                             + '<div class="col-md-12 reason-container">'
+                             //+ (item.red ? '<div></div>' : '')
+                             + item.content
+                             + '</div>'
+                             + '<div class="deal-info clearfix">'
+                             + '<div class="date-info">' + item.ts + '</div>'
+                             + '<div class="deal-status">' + item.state + '</div>'
+                             + '</div>';
+                    }
+
+                    itemContainerNode.innerHTML = html;
+                    var containers = itemContainerNode.getElementsByClassName('col-md-12');
+                    for (var i = 0; i < len; i++) {
+                        containers[i].onclick = (function (i) {
+                            var item = list[i];
+                            return function () {
+                                //alert(item.id);
+                                //这里是调起详情页的地方
+                                FeedbackListJs.showDetail(item.msgid);
+                                
+                            };
+                        })(i);
+                    }
+                };
+                var totalData = '本月打车数：0，BUG数：0，建议数：0';
+                var listData = [
+                    {
+                        content: '测试第一个原因',
+                        ts: '2016-01-02',
+                        state: '处理中',
+                        id: 'abc',
+
+
+                    },
+                    {
+                        content: '测试第一个原因',
+                        ts: '2016-01-02',
+                        state: '处理中',
+                        id: 'def'
+                    }
+
+                ];
+                //setTotalData(totalData);
+                //setListData(JSON.stringify(listData))
+                window.flwa_setTotalData = setTotalData;
+                window.flwa_setListData = setListData;
+                FeedbackListJs.getPersonInfoStr();
+                FeedbackListJs.getMyfeedbackListStr();
+            })();
+        </script>
+</body>
+</html>

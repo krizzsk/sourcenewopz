@@ -1,0 +1,20 @@
+package com.didi.address;
+
+public enum FromType {
+    HOME,
+    SETTING,
+    CONFIRM,
+    CONFIRM_NEW,
+    GET_ON,
+    DRIVING,
+    WAITRSP,
+    FROM_HOME_ROUTE_EDITOR,
+    FROM_CONFIRM_ROUTE_EDITOR,
+    ROUTE_EDITOR,
+    MAP_POINT_SELECT,
+    OPEN_RIDE,
+    OPEN_RIDE_CONFIRM,
+    OPEN_RIDE_ROUTE_EDIT,
+    CANOE_HOME,
+    CANOE_CONFIRM
+}

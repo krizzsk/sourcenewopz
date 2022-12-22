@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.sdk.view.titlebar.CommonTitleBar android:id="@+id/layout_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0"/>
+    <ImageView android:id="@+id/pix_qr_channel_img" android:clickable="true" android:layout_width="@dimen/wallet_dp_70" android:layout_height="@dimen/wallet_dp_70" android:layout_marginTop="@dimen/wallet_dp_20" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/layout_title_bar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/pix_qr_recyclerview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ggk_dimen_25dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/pix_qr_channel_img"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didichuxing.security.cardverify.globalpay.view.GlobalPayShadowLayout android:layout_gravity="center" android:id="@+id/loading_view_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="124dp" app:rf_shadow_color="#0d000000" app:rf_shadow_corner_radius="5dp" app:rf_shadow_elevation="40dp">
+        <FrameLayout android:background="@drawable/didi_security_card_verify_global_pay_light" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="20dp" android:paddingEnd="20dp">
+            <com.didichuxing.security.cardverify.globalpay.view.GlobalPayLottieLoadingView android:layout_gravity="center" android:id="@+id/loading_view" android:layout_width="wrap_content" android:layout_height="13dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/didi_security_card_verify_global_pay_color_loading"/>
+        </FrameLayout>
+    </com.didichuxing.security.cardverify.globalpay.view.GlobalPayShadowLayout>
+</FrameLayout>

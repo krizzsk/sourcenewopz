@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="38dp" android:layout_marginTop="20dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+    <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/invite_track_title_tv" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <View android:id="@+id/invite_track_divide_line" android:background="@color/g_color_F2F2F2" android:layout_width="match_parent" android:layout_height="1dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

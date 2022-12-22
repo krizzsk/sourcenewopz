@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/new_sidebar_head_gradient_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/new_sidebar_head_info_layout" android:paddingTop="32dp" android:layout_width="match_parent" android:layout_height="114dp" android:layout_marginLeft="30dp">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:id="@+id/sidebar_head_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toStartOf="@+id/sidebar_head_avatar"/>
+        <TextView android:textSize="12sp" android:textColor="#ff919599" android:id="@+id/sidebar_head_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/GRider_Homepage0714_Personal_data_WZdp" android:drawableRight="@drawable/new_sidebar_head_arrow" android:drawablePadding="@dimen/_6dp" android:layout_below="@+id/sidebar_head_name"/>
+        <ImageView android:id="@+id/sidebar_head_avatar" android:layout_width="54dp" android:layout_height="54dp" android:layout_marginRight="30dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ViewStub android:gravity="center_vertical" android:id="@+id/new_ui_sidebar_didi_pass_info_layout_viewstub" android:layout="@layout/new_ui_sidebar_didi_pass_info_layout_viewstub" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_below="@+id/new_sidebar_head_info_layout"/>
+    <View android:id="@+id/new_sidebar_bottom_view_shadow" android:background="@drawable/sidebar_items_head_bg" android:layout_width="match_parent" android:layout_height="16dp" android:layout_marginTop="114dp"/>
+    <View android:id="@+id/new_sidebar_bottom_view" android:background="@drawable/sidebar_corner_new_bg" android:layout_width="match_parent" android:layout_height="16dp" android:layout_marginTop="114dp"/>
+</RelativeLayout>

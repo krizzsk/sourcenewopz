@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.didi.component.common.view.GlobalTipsView android:id="@+id/global_tips_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.5dp"/>
+    <TextView android:textSize="14sp" android:textColor="#ff7f41" android:gravity="center" android:layout_gravity="center" android:id="@+id/message" android:background="@drawable/global_mapflow_pop_bg_update_pickup" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="41dp" android:maxLines="1" android:contentDescription="@string/map_flow_edit_pick_up_desc"/>
+</LinearLayout>

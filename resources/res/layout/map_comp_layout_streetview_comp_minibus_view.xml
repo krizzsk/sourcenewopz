@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/map_mini_bus_street_bubble_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="6dp">
+        <com.didi.map.global.component.streetview.widget.RoundImageView android:id="@+id/vTipsImg" android:layout_width="32dp" android:layout_height="35dp" android:scaleType="centerCrop" app:radius="8dp"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:maxWidth="100dp" android:minWidth="48dp" android:minHeight="42dp" android:maxLines="2" android:layout_toRightOf="@+id/vTipsImg"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/arrow" android:layout_width="wrap_content" android:layout_height="10dp" android:src="@drawable/map_street_arrow" android:layout_toRightOf="@+id/tv_content"/>
+    </LinearLayout>
+</LinearLayout>

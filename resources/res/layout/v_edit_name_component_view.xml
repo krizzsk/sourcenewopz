@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:paddingLeft="@dimen/sidebar_sub_page_item_padding" android:paddingRight="@dimen/sidebar_sub_page_item_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layoutName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13.5dp">
+        <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:textSize="16sp" android:textColor="#000000" android:textColorHint="#adadad" android:id="@+id/name_hint" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:cursorVisible="true" android:singleLine="true" android:textCursorDrawable="@drawable/search_cursor"/>
+    </LinearLayout>
+    <View android:background="@color/setting_item_divider" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_marginTop="13.5dp" android:layout_below="@+id/layoutName"/>
+</RelativeLayout>

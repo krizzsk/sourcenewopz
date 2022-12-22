@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/saving_center_container" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="70dp">
+    <ImageView android:id="@+id/scan" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10dp" android:src="@drawable/global_scan"/>
+    <RelativeLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/saving_center_side_text_layout" android:background="@drawable/saving_center_side_text_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginEnd="10dp">
+        <TextView android:textSize="12sp" android:textColor="#ff000000" android:id="@+id/saving_center_side_text" android:paddingLeft="12dp" android:paddingRight="64dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:maxEms="35" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="end" android:id="@+id/saving_center_icon" android:layout_width="70dp" android:layout_height="70dp"/>
+</FrameLayout>

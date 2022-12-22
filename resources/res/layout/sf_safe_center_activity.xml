@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/sf_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.safetoolkit.widget.SfCommonTitleBar android:id="@+id/center_title_bar" android:layout_width="match_parent" android:layout_height="40dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/center_rv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-5dp"/>
+</LinearLayout>

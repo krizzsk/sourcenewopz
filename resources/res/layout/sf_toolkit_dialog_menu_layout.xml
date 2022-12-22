@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#e9eaeb" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_alignParentTop="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/sf_toolkit_dialog_btn_bg_color_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dp" android:minHeight="80dp" android:layout_alignParentTop="true">
+        <ImageView android:id="@+id/icon" android:layout_width="23dp" android:layout_height="23dp" android:layout_marginLeft="20dp" android:layout_marginRight="15dp" android:scaleType="fitCenter"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:maxLines="2" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="#1478ff" android:gravity="center" android:id="@+id/time" android:visibility="gone" android:layout_width="69dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+        <ImageView android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="10dp" android:layout_marginRight="20dp" android:src="@drawable/sf_toolkit_safe_center_more" android:scaleType="fitCenter"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/icon_new" android:visibility="gone" android:layout_width="30dp" android:layout_height="12dp" android:layout_marginTop="0.5dp" android:src="@drawable/sf_monitor_new_icon" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,97 @@
+{
+  "supportList": {
+    "99": [
+      {
+        "lang": "en-US"
+      },
+      {
+        "lang": "pt-BR"
+      }
+    ],
+    "global": [
+      {
+        "lang": "en-US"
+      },
+      {
+        "lang": "es-MX"
+      },
+      {
+        "lang": "es-CO"
+      },
+      {
+        "lang": "es-419"
+      },
+      {
+        "lang": "ja-JP"
+      }
+    ]
+  },
+  "languageConfig": {
+    "en": {
+      "US": {
+        "lang": "en-US",
+        "locale": "en_US"
+      },
+      "default": {
+        "lang": "en-US",
+        "locale": "en_US"
+      }
+    },
+    "ja": {
+      "JP": {
+        "lang": "ja-JP",
+        "locale": "ja_JP"
+      },
+      "default": {
+        "lang": "ja-JP",
+        "locale": "ja_JP"
+      }
+    },
+    "es": {
+      "MX": {
+        "lang": "es-MX",
+        "locale": "es_MX"
+      },
+      "CO": {
+        "lang": "es-CO",
+        "locale": "es_CO"
+      },
+      "CR": {
+        "lang": "es-419",
+        "locale": "es_CR"
+      },
+      "DO": {
+        "lang": "es-419",
+        "locale": "es_DO"
+      },
+      "CL": {
+        "lang": "es-419",
+        "locale": "es_CL"
+      },
+      "PE": {
+        "lang": "es-419",
+        "locale": "es_PE"
+      },
+      "default": {
+        "lang": "es-419",
+        "locale": "es_CR"
+      }
+    },
+    "pt": {
+      "BR": {
+        "lang": "pt-BR",
+        "locale": "pt_BR"
+      },
+      "default": {
+        "lang": "pt-BR",
+        "locale": "pt_BR"
+      }
+    },
+    "default": {
+      "default": {
+        "lang": "en-US",
+        "locale": "en_US"
+      }
+    }
+  }
+}

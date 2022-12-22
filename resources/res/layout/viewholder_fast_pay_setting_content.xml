@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_title_bar" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_icon" android:visibility="gone" android:layout_width="@dimen/dp_110" android:layout_height="@dimen/dp_110" android:src="?attr/fast_pay_setting_center_icon"/>
+    <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:includeFontPadding="false"/>
+    <TextView android:textSize="14sp" android:gravity="center" android:id="@+id/tv_sub_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:includeFontPadding="false" android:paddingStart="@dimen/dp_30" android:paddingEnd="@dimen/dp_30"/>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/llc_items" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp"/>
+    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:textSize="24px" android:textColor="#ffff6f26" android:layout_gravity="start" android:id="@+id/tv_term" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" android:text="Terms and Conditions" android:layout_marginStart="@dimen/dp_30"/>
+</LinearLayout>

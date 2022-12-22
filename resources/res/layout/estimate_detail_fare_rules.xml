@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/fare_rules_ll" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12dp" android:textColor="@color/estimate_expand_car_desc_color" android:id="@+id/detail_fare_rule_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/detail_fare_rule_ic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="3dp" android:src="@drawable/common_icn_arrow"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/g_color_CC0A121A" android:paddingLeft="42.5dp" android:paddingRight="42.5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.component.common.view.RoundFrameLayout android:id="@+id/rfl_global_lockscreen_container" android:layout_width="match_parent" android:layout_height="@dimen/lock_screen_map_view_height" android:layout_marginTop="136dp" android:layout_centerHorizontal="true" app:rfl_left_top_radius="@dimen/_10dip" app:rfl_right_top_radius="@dimen/_10dip">
+        <fragment android:name="com.didi.lockscreen.view.LockScreenMapFragment" android:id="@+id/lockscreen_map_fragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.didi.component.common.view.RoundFrameLayout>
+    <FrameLayout android:id="@+id/lock_screen_fragment" android:background="@color/trans" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

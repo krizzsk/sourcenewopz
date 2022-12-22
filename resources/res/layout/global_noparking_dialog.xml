@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.didi.component.mapflow.dialog.CustomLottieAnimationView android:id="@+id/global_noparking_image" android:layout_width="match_parent" android:layout_height="wrap_content" app:lottie_autoPlay="true" app:lottie_loop="true"/>
+        <TextView android:textSize="14sp" android:textColor="#666666" android:id="@+id/tv_global_noparking_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp"/>
+        <View android:background="#1a000000" android:layout_width="match_parent" android:layout_height="@dimen/ms_1px"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ff7f41" android:gravity="center" android:id="@+id/tv_global_noparking_confirm" android:background="@drawable/global_no_park_dialog_btn_se" android:layout_width="match_parent" android:layout_height="50dp"/>
+    </LinearLayout>
+</FrameLayout>

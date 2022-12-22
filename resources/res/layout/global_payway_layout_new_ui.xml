@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/pay_way_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="23dp">
+        <LinearLayout android:id="@+id/pay_method_content" android:layout_width="0dp" android:layout_height="match_parent" android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/payway_coupon_layout" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/pay_way_default_lv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/pay_way_default_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_way_add" android:layout_marginEnd="10dp"/>
+                <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@drawable/payway_default_text_color_selector_new" android:id="@+id/pay_way_default_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_way_title" android:maxLines="2"/>
+            </LinearLayout>
+            <com.didi.component.payway.widget.CurrentPaymentsView android:id="@+id/pay_way_select" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/pay_way_title"/>
+            <View android:layout_gravity="center_vertical" android:id="@+id/v_show_new_pay_way" android:background="@drawable/red_circle_bg" android:visibility="gone" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginTop="-6dp" android:layout_marginStart="-4dp" android:layout_toEndOf="@+id/pay_method_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/pay_method_content" app:layout_constraintTop_toTopOf="0"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_img" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/payway_payment_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="14dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <com.didi.component.common.widget.CouponView android:id="@+id/payway_coupon_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="1.5dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/iv_img" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/loading_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.didi.component.common.view.DotLoadingView android:id="@+id/pay_way_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

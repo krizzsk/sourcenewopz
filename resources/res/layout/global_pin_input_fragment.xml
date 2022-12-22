@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/oc_rl_root_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.sdk.view.titlebar.CommonTitleBar android:id="@+id/oc_title_bar" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentTop="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="60dp">
+        <TextView android:textSize="24sp" android:textColor="@color/color_4A4A4A" android:id="@+id/oc_tips_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:text="@string/global_pin_input_create_tips_title"/>
+        <TextView android:textSize="14sp" android:textColor="@color/g_color_666666" android:id="@+id/oc_tips_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="18dp" android:layout_marginRight="18dp" android:text="@string/global_pin_input_create_tips_content"/>
+        <com.didi.component.common.widget.pin.PinInputLayout android:id="@+id/oc_pin_input_layout" android:layout_width="match_parent" android:layout_height="192dp"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="74dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="?attr/submit_btn_text_color_selector" android:gravity="center" android:id="@+id/oc_confirm_btn" android:background="?attr/submit_btn_bg_selector" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" android:text="@string/global_pin_input_finish_confirm"/>
+    </RelativeLayout>
+</RelativeLayout>

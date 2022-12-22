@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:top="4dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <size android:height="16dp" android:width="1dp"/>
+            <solid android:color="@color/lego_color_FF6F26"/>
+        </shape>
+    </item>
+</layer-list>

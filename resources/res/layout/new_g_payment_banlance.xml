@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="52dp" android:paddingStart="30dp" android:paddingEnd="30dp">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="52dp">
+        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/g_payment_balance_label" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="#ff8040" android:id="@+id/g_payment_balance_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginStart="4dp"/>
+        <ImageView android:id="@+id/g_payment_balance_checkbox" android:paddingLeft="4dp" android:paddingTop="4dp" android:paddingRight="0dp" android:paddingBottom="4dp" android:layout_width="20dp" android:layout_height="24dp" android:src="@drawable/oc_pay_channel_selector" android:paddingStart="4dp" android:paddingEnd="0dp"/>
+    </LinearLayout>
+    <View android:id="@+id/g_payment_line" android:background="#0d0a121a" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

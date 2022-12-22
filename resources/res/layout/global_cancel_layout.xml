@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@null">
+    <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/g_cancel_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/cancel_text" android:background="@drawable/se_global_cancel_bg" android:layout_width="match_parent" android:layout_height="57dp"/>
+</FrameLayout>

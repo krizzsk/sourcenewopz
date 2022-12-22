@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/back_layout" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="12dp" android:src="@drawable/icon_back"/>
+    <View android:id="@+id/center_view" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+    <FrameLayout android:layout_width="273dp" android:layout_height="174dp" android:layout_toLeftOf="@+id/center_view" android:layout_centerVertical="true">
+        <RelativeLayout android:background="@drawable/safety_preview_orange_rect" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/card_preview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2px"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/card_gif_replay_iv" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:src="@drawable/safety_god_gif_replay_icon"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/center_view" android:layout_centerVertical="true">
+        <TextView android:textSize="21sp" android:textColor="@color/white" android:id="@+id/card_preview_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/introduction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:lineSpacingExtra="2dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/card_preview_requests" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:lineSpacingExtra="2dp"/>
+        <LinearLayout android:layout_width="266dp" android:layout_height="35dp" android:layout_marginTop="16dp">
+            <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/start_detection" android:background="@drawable/safety_god_global_btn_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/GRider_OCR_Start_shooting_ApGW" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

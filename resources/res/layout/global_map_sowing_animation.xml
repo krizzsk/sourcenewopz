@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/global_map_anim_background" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/global_map_anim_sowing_group" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/global_map_anim_sowing" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/global_map_anim_location" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</merge>

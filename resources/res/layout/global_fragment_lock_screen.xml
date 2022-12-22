@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/oc_root_view" android:background="@color/trans" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.lockscreen.view.LockScreenClock android:id="@+id/lock_screen_clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="31dp" android:layout_centerHorizontal="true"/>
+    <com.didi.component.common.view.RoundFrameLayout android:id="@+id/rfl_global_lockscreen_bottom_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:layout_below="@+id/rfl_global_lockscreen_placeholder_container" android:layout_centerHorizontal="true" app:rfl_left_bottom_radius="@dimen/_10dip" app:rfl_right_bottom_radius="@dimen/_10dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_global_lockscreen_bottom_container" android:background="#ff0a121a" android:paddingTop="18dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/_20dp" android:paddingEnd="@dimen/_20dp">
+            <CheckBox android:id="@+id/cb_lock_screen_info" android:background="@drawable/global_lock_screen_cb_bg" android:layout_width="@dimen/_14dp" android:layout_height="@dimen/_14dp" android:button="@null"/>
+            <TextView android:textSize="10sp" android:textColor="#ffcccccc" android:id="@+id/tv_lock_screen_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Global_Rider_Lock_Screen_fragment_close_info" android:layout_marginStart="@dimen/im_8_sp"/>
+        </LinearLayout>
+    </com.didi.component.common.view.RoundFrameLayout>
+    <com.didi.component.common.view.RoundFrameLayout android:id="@+id/rfl_global_lockscreen_placeholder_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="136dp" android:layout_centerHorizontal="true" app:rfl_radius="@dimen/dp_10">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_global_lockscreen_container" android:tag="@string/fragment_confirm_container_tag" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lock_screen_map_view_height"/>
+    </com.didi.component.common.view.RoundFrameLayout>
+    <ImageView android:id="@+id/iv_lock_screen_bottom_close" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="10dp" android:src="@drawable/global_lock_screen_bottom_close" android:layout_below="@+id/rfl_global_lockscreen_bottom_container" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

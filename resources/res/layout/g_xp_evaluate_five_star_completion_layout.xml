@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.didi.component.common.widget.CircleImageView android:layout_gravity="center_vertical" android:id="@+id/civ_avatar" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="18dp"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="71dp" android:layout_marginTop="24dp" android:layout_marginRight="40dp" android:layout_marginBottom="24dp">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#000000" android:ellipsize="end" android:id="@+id/tv_five_start_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="@string/global_new_evaluate_five_star_complete_title" android:maxLines="2"/>
+        <com.didi.component.evaluateentrance.evaluate.view.FiveStarRenderView android:id="@+id/fsv_evaluate" android:layout_width="wrap_content" android:layout_height="wrap_content" app:five_star_background="@drawable/g_xp_five_star_evauate_big_five_star_selector" app:five_star_height="16dp" app:five_star_margin="4dp" app:five_star_width="16dp"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:layout_marginLeft="@dimen/_4dp" android:layout_marginTop="1dp" android:layout_marginRight="@dimen/_20dp" android:src="@drawable/g_xp_evaluate_tip_angle_icon"/>
+</FrameLayout>

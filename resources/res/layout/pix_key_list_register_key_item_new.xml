@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:background="@drawable/pix_rectangle_white_corner20_bg" android:layout_width="match_parent" android:layout_height="@dimen/wallet_dp_70" android:paddingStart="@dimen/wallet_dp_18" android:paddingEnd="@dimen/wallet_dp_18">
+    <View android:background="@drawable/pix_key_list_plus_btn_new" android:layout_width="@dimen/wallet_dp_14" android:layout_height="@dimen/wallet_dp_14"/>
+    <TextView android:textSize="@dimen/wallet_sp_16" android:textStyle="bold" android:textColor="@color/wallet_color_FF8040" android:id="@+id/pix_key_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GRider_Registration_Register_Key_IHNy" android:layout_toRightOf="@+id/pix_key_item_left_icon" android:layout_centerVertical="true" android:layout_marginStart="@dimen/wallet_dp_8"/>
+</LinearLayout>

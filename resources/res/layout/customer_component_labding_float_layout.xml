@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/customer_ll_landing_binder_float" android:background="@color/rf_color_gery_7_97_F5F5F7" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/rf_dimen_120"/>
+        <View android:id="@+id/customer_ll_landing_float_shadow_view" android:background="@drawable/customer_filter_bar_shadow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/rf_dimen_20" android:alpha="0.5" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/customer_ll_home_binder_float"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/customer_fl_landing_filter_shimmer_container" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/rf_dimen_n20" android:layout_weight="1"/>
+</LinearLayout>

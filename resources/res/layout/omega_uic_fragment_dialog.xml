@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/omega_uic_bg_dialog" android:layout_width="267dp" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/omega_uic_dia_image" android:background="@drawable/icon_smile" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="20dp" android:layout_marginBottom="16dp"/>
+    <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:id="@+id/omega_uic_dia_content" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="5"/>
+    <LinearLayout android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="20dp" android:layout_marginBottom="16dp">
+        <TextView android:textSize="16sp" android:textColor="#666666" android:gravity="center" android:id="@+id/omega_uic_dia_cancel" android:background="@drawable/omega_uic_dia_cancel_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/omega_uic_dia_confirm" android:background="@drawable/omega_uic_dia_confirm_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

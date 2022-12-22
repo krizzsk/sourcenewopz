@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/oc_ll_pay_total_fee" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textSize="12sp" android:textColor="@color/oc_color_333333" android:id="@+id/oc_tv_total_str" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oc_pay_total_str"/>
+        <TextView android:textSize="36sp" android:textColor="@color/oc_color_333333" android:id="@+id/oc_tv_pay_toal_fee" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12sp" android:textColor="@color/oc_color_333333" android:id="@+id/oc_tv_pay_toal_fee_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oc_pay_unit_str"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/oc_color_666666" android:gravity="center" android:id="@+id/oc_tv_pay_total_fee_more" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oc_pay_fee_detail_str" android:includeFontPadding="false" android:drawableRight="@drawable/pay_icon_right_grey" android:layout_below="@+id/oc_ll_pay_total_fee" android:layout_centerHorizontal="true" android:drawableEnd="@drawable/pay_icon_right_grey"/>
+</RelativeLayout>

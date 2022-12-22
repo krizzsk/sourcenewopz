@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/customer_cart_items_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/customer_layout_cart_business_item" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/customer_widget_cart_business_item_view2"/>
+    <com.didi.soda.globalcart.view.VerticalCollapseView android:orientation="vertical" android:id="@+id/customer_scroll_container" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/customer_ll_cart_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.didi.soda.globalcart.view.VerticalCollapseView>
+    <com.didi.soda.globalcart.view.GlobalCartExpandView android:layout_gravity="center_horizontal" android:id="@+id/customer_custom_cart_expand_view" android:paddingLeft="@dimen/customer_40px" android:paddingRight="@dimen/customer_40px" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rf_dimen_17"/>
+</LinearLayout>

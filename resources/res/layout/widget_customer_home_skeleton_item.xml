@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/rf_color_gery_6_90_E3E3E6" android:layout_width="match_parent" android:layout_height="@dimen/customer_200px"/>
+    <View android:background="@color/rf_color_gery_6_90_E3E3E6" android:layout_width="match_parent" android:layout_height="@dimen/customer_20px" android:layout_marginTop="@dimen/customer_30px"/>
+    <View android:background="@color/rf_color_gery_6_90_E3E3E6" android:layout_width="match_parent" android:layout_height="@dimen/customer_20px" android:layout_marginTop="@dimen/customer_20px" android:layout_marginRight="@dimen/customer_30px"/>
+    <View android:background="@color/rf_color_gery_6_90_E3E3E6" android:layout_width="match_parent" android:layout_height="@dimen/customer_20px" android:layout_marginTop="@dimen/customer_20px" android:layout_marginRight="@dimen/customer_60px"/>
+    <View android:background="@color/rf_color_gery_6_90_E3E3E6" android:layout_width="match_parent" android:layout_height="@dimen/customer_20px" android:layout_marginTop="@dimen/customer_20px" android:layout_marginRight="@dimen/customer_90px"/>
+</LinearLayout>

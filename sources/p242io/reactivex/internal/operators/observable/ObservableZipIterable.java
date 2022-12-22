@@ -1,0 +1,129 @@
+package p242io.reactivex.internal.operators.observable;
+
+import java.util.Iterator;
+import p242io.reactivex.Observable;
+import p242io.reactivex.Observer;
+import p242io.reactivex.disposables.Disposable;
+import p242io.reactivex.exceptions.Exceptions;
+import p242io.reactivex.functions.BiFunction;
+import p242io.reactivex.internal.disposables.DisposableHelper;
+import p242io.reactivex.internal.disposables.EmptyDisposable;
+import p242io.reactivex.internal.functions.ObjectHelper;
+import p242io.reactivex.plugins.RxJavaPlugins;
+
+/* renamed from: io.reactivex.internal.operators.observable.ObservableZipIterable */
+public final class ObservableZipIterable<T, U, V> extends Observable<V> {
+
+    /* renamed from: a */
+    final Observable<? extends T> f59025a;
+
+    /* renamed from: b */
+    final Iterable<U> f59026b;
+
+    /* renamed from: c */
+    final BiFunction<? super T, ? super U, ? extends V> f59027c;
+
+    public ObservableZipIterable(Observable<? extends T> observable, Iterable<U> iterable, BiFunction<? super T, ? super U, ? extends V> biFunction) {
+        this.f59025a = observable;
+        this.f59026b = iterable;
+        this.f59027c = biFunction;
+    }
+
+    public void subscribeActual(Observer<? super V> observer) {
+        try {
+            Iterator it = (Iterator) ObjectHelper.requireNonNull(this.f59026b.iterator(), "The iterator returned by other is null");
+            try {
+                if (!it.hasNext()) {
+                    EmptyDisposable.complete((Observer<?>) observer);
+                } else {
+                    this.f59025a.subscribe(new ZipIterableObserver(observer, it, this.f59027c));
+                }
+            } catch (Throwable th) {
+                Exceptions.throwIfFatal(th);
+                EmptyDisposable.error(th, (Observer<?>) observer);
+            }
+        } catch (Throwable th2) {
+            Exceptions.throwIfFatal(th2);
+            EmptyDisposable.error(th2, (Observer<?>) observer);
+        }
+    }
+
+    /* renamed from: io.reactivex.internal.operators.observable.ObservableZipIterable$ZipIterableObserver */
+    static final class ZipIterableObserver<T, U, V> implements Observer<T>, Disposable {
+        boolean done;
+        final Observer<? super V> downstream;
+        final Iterator<U> iterator;
+        Disposable upstream;
+        final BiFunction<? super T, ? super U, ? extends V> zipper;
+
+        ZipIterableObserver(Observer<? super V> observer, Iterator<U> it, BiFunction<? super T, ? super U, ? extends V> biFunction) {
+            this.downstream = observer;
+            this.iterator = it;
+            this.zipper = biFunction;
+        }
+
+        public void onSubscribe(Disposable disposable) {
+            if (DisposableHelper.validate(this.upstream, disposable)) {
+                this.upstream = disposable;
+                this.downstream.onSubscribe(this);
+            }
+        }
+
+        public void dispose() {
+            this.upstream.dispose();
+        }
+
+        public boolean isDisposed() {
+            return this.upstream.isDisposed();
+        }
+
+        public void onNext(T t) {
+            if (!this.done) {
+                try {
+                    try {
+                        this.downstream.onNext(ObjectHelper.requireNonNull(this.zipper.apply(t, ObjectHelper.requireNonNull(this.iterator.next(), "The iterator returned a null value")), "The zipper function returned a null value"));
+                        try {
+                            if (!this.iterator.hasNext()) {
+                                this.done = true;
+                                this.upstream.dispose();
+                                this.downstream.onComplete();
+                            }
+                        } catch (Throwable th) {
+                            Exceptions.throwIfFatal(th);
+                            error(th);
+                        }
+                    } catch (Throwable th2) {
+                        Exceptions.throwIfFatal(th2);
+                        error(th2);
+                    }
+                } catch (Throwable th3) {
+                    Exceptions.throwIfFatal(th3);
+                    error(th3);
+                }
+            }
+        }
+
+        /* access modifiers changed from: package-private */
+        public void error(Throwable th) {
+            this.done = true;
+            this.upstream.dispose();
+            this.downstream.onError(th);
+        }
+
+        public void onError(Throwable th) {
+            if (this.done) {
+                RxJavaPlugins.onError(th);
+                return;
+            }
+            this.done = true;
+            this.downstream.onError(th);
+        }
+
+        public void onComplete() {
+            if (!this.done) {
+                this.done = true;
+                this.downstream.onComplete();
+            }
+        }
+    }
+}

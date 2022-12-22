@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.didi.soda.customer.widget.text.RichTextView android:textSize="@dimen/rf_dimen_font_24" android:textColor="@color/rf_color_v2_brands_1_100" android:ellipsize="end" android:id="@+id/customer_tv_tag_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/rf_dimen_5" android:maxLines="1"/>
+    <com.didi.rfusion.widget.RFIconView android:textSize="@dimen/rf_dimen_font_24" android:textColor="@color/rf_color_v2_brands_1_100" android:gravity="center" android:id="@+id/customer_tv_icon_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</merge>

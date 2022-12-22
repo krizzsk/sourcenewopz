@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/customer_order_history_status_bar_holder" android:background="@color/rf_color_v2_neutral_11_100" android:layout_width="match_parent" android:layout_height="@dimen/rf_dimen_0"/>
+    <FrameLayout android:background="@color/rf_color_v2_neutral_11_100" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.didi.soda.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/rf_dimen_48" android:textColor="@color/rf_color_v2_neutral_1_100" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/rf_dimen_42" android:layout_marginTop="@dimen/rf_dimen_45" android:layout_marginBottom="@dimen/rf_dimen_26" android:text="@string/customer_history_my_order" android:singleLine="true" app:fontFlavor="2"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.didi.app.nova.support.view.pullToRefresh.NovaPullRefreshLayout android:id="@+id/customer_history_prl" android:background="@color/rf_color_v2_grey2_10_a100" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.didi.app.nova.support.view.recyclerview.view.NovaRecyclerView android:id="@+id/customer_order_history_recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/customer_22px" android:layout_marginRight="@dimen/customer_22px"/>
+            </LinearLayout>
+        </com.didi.app.nova.support.view.pullToRefresh.NovaPullRefreshLayout>
+        <com.didi.soda.customer.widget.abnormal.topgun.TopGunAbnormalView android:id="@+id/customer_history_abnormal" android:background="@color/rf_color_v2_grey2_10_a100" android:paddingTop="@dimen/customer_302px" android:paddingBottom="@dimen/rf_dimen_10" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        <com.didi.soda.order.history.HistoryAbnormalView android:id="@+id/customer_history_abnormal_v2" android:background="@color/rf_color_v2_grey2_10_a100" android:paddingTop="@dimen/customer_302px" android:paddingBottom="@dimen/rf_dimen_10" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        <View android:background="@drawable/customer_filter_bar_shadow" android:layout_width="match_parent" android:layout_height="@dimen/rf_dimen_20" android:alpha="0.5" app:layout_constraintBottom_toTopOf="@+id/customer_tabbar_item_layout" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+    </FrameLayout>
+</LinearLayout>

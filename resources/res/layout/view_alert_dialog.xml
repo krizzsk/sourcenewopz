@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/common_dialog_bg_shape" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/image_close" android:visibility="gone" android:layout_width="36dp" android:layout_height="36dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:layout_width="12dp" android:layout_height="12dp" android:layout_margin="10dp" android:src="@drawable/common_dialog_btn_close_selector" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/ll_title_content_area" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/fl_custom_root" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_content_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/image_icon" android:background="@drawable/dialog_info" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="20dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:id="@+id/text_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="18dp" android:layout_marginRight="16dp" android:maxLines="1" android:includeFontPadding="false"/>
+            <TextView android:textSize="14sp" android:textColor="#666666" android:gravity="center" android:id="@+id/text_message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="19dp" android:layout_marginRight="16dp" android:includeFontPadding="false" android:lineSpacingExtra="4dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_below="@+id/content">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/checkbox_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="5dp" android:layout_marginBottom="4dp">
+                    <CheckBox android:layout_gravity="center_vertical" android:id="@+id/checkbox" android:background="@drawable/checkbox_check_status" android:layout_width="12dp" android:layout_height="12dp" android:checked="false" android:button="@null"/>
+                    <TextView android:textSize="12sp" android:textColor="#999999" android:layout_gravity="center_vertical" android:id="@+id/text_checkbox_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:maxLines="1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/link_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="4dp">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/image_link" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginRight="5dp" android:src="@drawable/common_dialog_link_icon"/>
+                    <TextView android:textSize="12sp" android:textColor="#999999" android:layout_gravity="center_vertical" android:id="@+id/text_link_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/link_word" android:maxLines="1"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <View android:id="@+id/line_divider_content" android:background="@color/dark_alpha_10" android:layout_width="match_parent" android:layout_height="@dimen/common_dialog_spilt_line" android:layout_marginTop="14dp" android:layout_below="@+id/ll_title_content_area"/>
+    <FrameLayout android:id="@+id/ll_btn_area_horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_below="@+id/line_divider_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_btn_area_horizontal_2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:textSize="@dimen/font_size_large" android:textColor="@color/dark_gray" android:gravity="center" android:id="@+id/button_left" android:background="@drawable/common_dialog_btn_bg_shape_l_nonrecommend_selector" android:layout_width="0dp" android:layout_height="match_parent" android:text="left" android:includeFontPadding="false" android:layout_weight="1" android:textAllCaps="false"/>
+            <View android:id="@+id/line_divider_horizontal_btn" android:background="@color/dark_alpha_10" android:layout_width="@dimen/common_dialog_spilt_line" android:layout_height="match_parent" android:layout_below="@+id/ll_title_content_area"/>
+            <Button android:textSize="@dimen/font_size_large" android:textColor="@color/dark_gray" android:gravity="center" android:id="@+id/button_right" android:background="@drawable/common_dialog_btn_bg_shape_r_nonrecommend_selector" android:layout_width="0dp" android:layout_height="match_parent" android:text="right" android:includeFontPadding="false" android:layout_weight="1" android:textAllCaps="false"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_btn_area_horizontal_1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:textSize="@dimen/font_size_large" android:textColor="@color/dark_gray" android:gravity="center" android:id="@+id/button_one" android:background="@drawable/common_dialog_btn_bg_shape_lr_nonrecommend_selector" android:layout_width="0dp" android:layout_height="match_parent" android:text="right" android:includeFontPadding="false" android:layout_weight="1" android:textAllCaps="false"/>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_btn_area_vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/line_divider_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/font_size_large" android:textColor="@color/light_gray" android:gravity="center" android:id="@+id/button_top_bottom_1" android:background="@drawable/common_dialog_btn_bg_shape_n_nonrecommend_selector" android:layout_width="match_parent" android:layout_height="50dp" android:includeFontPadding="false" android:textAllCaps="false"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/dark_alpha_10" android:layout_width="match_parent" android:layout_height="1px"/>
+            <Button android:textSize="@dimen/font_size_large" android:textColor="@color/light_gray" android:gravity="center" android:id="@+id/button_top_bottom_2" android:background="@drawable/common_dialog_btn_bg_shape_n_nonrecommend_selector" android:layout_width="match_parent" android:layout_height="50dp" android:includeFontPadding="false" android:textAllCaps="false"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/dark_alpha_10" android:layout_width="match_parent" android:layout_height="1px"/>
+            <Button android:textSize="@dimen/font_size_large" android:textColor="@color/light_gray" android:gravity="center" android:id="@+id/button_top_bottom_3" android:background="@drawable/common_dialog_btn_bg_shape_lr_nonrecommend_selector" android:layout_width="match_parent" android:layout_height="50dp" android:includeFontPadding="false" android:textAllCaps="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

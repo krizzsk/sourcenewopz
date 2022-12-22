@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_button_height">60dp</dimen>
+    <dimen name="login_unify_pre_face_border">20dp</dimen>
+    <dimen name="login_unify_pre_face_img_bottom_margin">20dp</dimen>
+    <dimen name="login_unify_pre_face_img_size">160dp</dimen>
+    <dimen name="login_unify_pre_face_img_top_margin">20dp</dimen>
+    <dimen name="login_unify_pre_face_sub_title_size">14sp</dimen>
+    <dimen name="login_unify_pre_face_title_size">22sp</dimen>
+</resources>

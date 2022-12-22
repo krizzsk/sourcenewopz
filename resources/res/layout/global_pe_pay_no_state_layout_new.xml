@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/oc_pay_no_state_contener" android:paddingLeft="40dp" android:paddingTop="18dp" android:paddingRight="40dp" android:paddingBottom="23dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/customer_shape_bg_shimmer_4corner" android:layout_width="@dimen/customer_180px" android:layout_height="@dimen/customer_56px" android:layout_marginLeft="@dimen/customer_30px"/>
+        <View android:background="@drawable/customer_shape_bg_shimmer_4corner" android:layout_width="@dimen/customer_180px" android:layout_height="@dimen/customer_56px" android:layout_marginLeft="@dimen/customer_20px"/>
+        <View android:background="@drawable/customer_shape_bg_shimmer_4corner" android:layout_width="@dimen/customer_180px" android:layout_height="@dimen/customer_56px" android:layout_marginLeft="@dimen/customer_20px"/>
+        <View android:background="@drawable/customer_shape_bg_shimmer_4corner" android:layout_width="@dimen/customer_180px" android:layout_height="@dimen/customer_56px" android:layout_marginLeft="@dimen/customer_20px"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customer_90px">
+        <View android:background="@drawable/customer_shape_bg_shimmer_4corner" android:layout_width="@dimen/customer_540px" android:layout_height="@dimen/customer_256px" android:layout_marginLeft="@dimen/customer_30px"/>
+        <View android:background="@drawable/customer_shape_bg_shimmer_4corner" android:layout_width="@dimen/customer_540px" android:layout_height="@dimen/customer_256px" android:layout_marginLeft="@dimen/customer_20px"/>
+    </LinearLayout>
+    <View android:background="@drawable/customer_shape_bg_shimmer_4corner" android:layout_width="@dimen/customer_420px" android:layout_height="@dimen/customer_48px" android:layout_marginLeft="@dimen/customer_30px" android:layout_marginTop="@dimen/customer_90px"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_30px" android:layout_marginTop="@dimen/customer_40px" android:layout_marginRight="@dimen/customer_30px">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <View android:background="@drawable/customer_shape_bg_shimmer_4corner" android:layout_width="match_parent" android:layout_height="@dimen/customer_500px"/>
+            <View android:background="@drawable/customer_shape_bg_shimmer_4corner" android:layout_width="match_parent" android:layout_height="@dimen/customer_420px" android:layout_marginTop="@dimen/customer_20px"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_20px" android:layout_weight="1">
+            <View android:background="@drawable/customer_shape_bg_shimmer_4corner" android:layout_width="match_parent" android:layout_height="@dimen/customer_420px"/>
+            <View android:background="@drawable/customer_shape_bg_shimmer_4corner" android:layout_width="match_parent" android:layout_height="@dimen/customer_420px" android:layout_marginTop="@dimen/customer_20px"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

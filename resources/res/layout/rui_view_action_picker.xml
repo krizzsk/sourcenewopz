@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll_action_picker_container" android:background="@color/rui_color_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/fl_action_picker_title" android:layout_width="match_parent" android:layout_height="@dimen/rui_action_picker_title_height">
+        <rui.RUIText android:textColor="@color/rui_color_brands_dark" android:gravity="center" android:id="@+id/rui_t_action_picker_title" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/rui_text_normal"/>
+        <View android:layout_gravity="bottom" android:background="@color/rui_color_grey_5" android:layout_width="match_parent" android:layout_height="@dimen/rui_action_picker_normal_decorator_height"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_action_picker_option_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/rui_color_F5F5F5" android:layout_width="match_parent" android:layout_height="@dimen/rui_action_picker_cancel_option_top_decorator_height"/>
+</LinearLayout>

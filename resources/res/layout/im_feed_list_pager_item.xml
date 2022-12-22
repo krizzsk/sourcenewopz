@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/im_feed_pager_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+    <TextView android:textSize="@dimen/im_12_sp" android:textColor="#fc9153" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/im_feed_pager_tip" android:background="@drawable/im_feed_list_tip" android:paddingLeft="@dimen/im_14_dp" android:paddingRight="@dimen/im_14_dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:drawableRight="@drawable/im_pop_icon_arrow_up" android:drawablePadding="@dimen/im_6_dp" android:drawableEnd="@drawable/im_pop_icon_arrow_up" android:paddingStart="@dimen/im_14_dp" android:paddingEnd="@dimen/im_14_dp"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/im_feed_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_98_dp">
+        <FrameLayout android:layout_width="@dimen/im_126_dp" android:layout_height="@dimen/im_126_dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/im_feed_empty_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null"/>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/im_14_sp" android:textColor="#666666" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/im_feed_empty_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_13_dp"/>
+    </LinearLayout>
+</FrameLayout>

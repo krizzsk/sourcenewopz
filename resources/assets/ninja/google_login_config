@@ -1,0 +1,6 @@
+{
+    "GOOGLE_LOGIN": [
+        "com.didi.googlelogin.GoogleLoginHelper",
+        "com.google.android.gms.auth.api.signin"
+    ]
+}

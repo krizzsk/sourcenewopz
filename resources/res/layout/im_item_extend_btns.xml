@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:background="@drawable/im_extend_btn_back" android:layout_width="@dimen/im_130_dp" android:layout_height="@dimen/im_50_dp">
+    <ImageView android:id="@+id/extend_btn_icon" android:layout_width="@dimen/im_15_dp" android:layout_height="@dimen/im_15_dp" android:layout_marginLeft="@dimen/im_15_dp" android:layout_marginRight="@dimen/im_15_dp" android:layout_marginStart="@dimen/im_15_dp" android:layout_marginEnd="@dimen/im_15_dp"/>
+    <TextView android:textSize="@dimen/im_14_sp" android:textColor="@color/im_op_gray_deep" android:id="@+id/extend_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

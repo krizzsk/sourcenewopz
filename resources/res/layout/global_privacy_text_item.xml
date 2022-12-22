@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:layout_marginStart="18dp" android:layout_marginEnd="18dp"/>
+    <TextView android:textSize="12sp" android:textColor="#6625262d" android:id="@+id/description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="6dp" android:layout_marginRight="18dp" android:layout_marginBottom="2dp" android:layout_marginStart="18dp" android:layout_marginEnd="18dp"/>
+    <View android:id="@+id/bottom" android:layout_width="match_parent" android:layout_height="20dp"/>
+    <View android:id="@+id/divider" android:background="@color/setting_item_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

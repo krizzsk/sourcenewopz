@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/map_setting_nav_day_night_mode_auto" android:layout_marginRight="5dp" android:text="@string/map_setting_nav_mode_auto" android:layout_marginEnd="5dp" style="@style/map_setting_nav_day_night_text_style"/>
+    <TextView android:id="@+id/map_setting_nav_day_night_mode_day" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="@string/map_setting_nav_mode_day" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" style="@style/map_setting_nav_day_night_text_style"/>
+    <TextView android:id="@+id/map_setting_nav_day_night_mode_night" android:layout_marginLeft="5dp" android:text="@string/map_setting_nav_mode_night" android:layout_marginStart="5dp" style="@style/map_setting_nav_day_night_text_style"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/login_unify_dimen_14dp" android:textColor="@color/login_unify_color_item_tag" android:gravity="center" android:id="@+id/tv_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_unify_str_des_pre" android:layout_alignTop="@+id/tv_tag" android:layout_alignBottom="@+id/tv_tag"/>
+    <TextView android:id="@+id/tv_tag" android:layout_toRightOf="@+id/tv_point" android:layout_toEndOf="@+id/tv_point" style="@style/LoginUnifyItemTitleStyle"/>
+    <TextView android:textSize="@dimen/login_unify_dimen_12dp" android:textColor="@color/loginunify_color_item_des" android:id="@+id/tv_des" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_unify_dimen_4dp" android:layout_below="@+id/tv_tag" android:layout_alignLeft="@+id/tv_tag" android:layout_alignStart="@+id/tv_tag"/>
+</RelativeLayout>

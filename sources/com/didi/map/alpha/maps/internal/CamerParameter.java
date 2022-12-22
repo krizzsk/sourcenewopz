@@ -1,0 +1,58 @@
+package com.didi.map.alpha.maps.internal;
+
+import android.graphics.Point;
+import com.didi.map.outer.model.CameraPosition;
+import com.didi.map.outer.model.IMapElement;
+import com.didi.map.outer.model.LatLng;
+import com.didi.map.outer.model.LatLngBounds;
+import java.util.List;
+
+public final class CamerParameter {
+    public static final int FULLVIEW = 16;
+    public static final int NAVIGATE_MAP_CAMERA_POSITION = 14;
+    public static final int NAV_FULLVIEW = 18;
+    public static final int NEWCAMER_POSITION = 6;
+    public static final int NEWCAMER_POSITION_V2 = 17;
+    public static final int NEWLATLNG = 7;
+    public static final int NEWLATLNG_BOUNDS = 9;
+    public static final int NEWLATLNG_BOUNDS_DIMENSION = 10;
+    public static final int NEWLATLNG_BOUNDS_RECT = 11;
+    public static final int NEWLATLNG_BOUNDS_RECT_MOVE_CENTER = 19;
+    public static final int NEWLATLNG_ZOOM = 8;
+    public static final int NEW_ELEMENTS_BOUNDS_RECT = 13;
+    public static final int OVERVIEW = 15;
+    public static final int ROTATETO = 12;
+    public static final int SCROLLBY = 2;
+    public static final int ZOOMBY = 4;
+    public static final int ZOOMBY_POINT = 5;
+    public static final int ZOOMIN = 0;
+    public static final int ZOOMOUT = 1;
+    public static final int ZOOMTO = 3;
+    public boolean alwaysAnimate = false;
+    public float centerOffsetX;
+    public float centerOffsetY;
+    public List<IMapElement> elements;
+    public int iCamerType = -1;
+    public CameraPosition newCameraPosition_cameraPosition = null;
+    public int newLatLngBoundsRects_padBom = 0;
+    public int newLatLngBoundsRects_padLeft = 0;
+    public int newLatLngBoundsRects_padRight = 0;
+    public int newLatLngBoundsRects_padTop = 0;
+    public LatLngBounds newLatLngBounds_bounds = null;
+    public LatLngBounds newLatLngBounds_dimension_bounds = null;
+    public int newLatLngBounds_dimension_height = 0;
+    public int newLatLngBounds_dimension_padding = 0;
+    public int newLatLngBounds_dimension_width = 0;
+    public int newLatLngBounds_padding = 0;
+    public LatLng newLatLngZoom_latLng = null;
+    public float newLatLngZoom_zoom = 0.0f;
+    public LatLng newLatLng_latLng = null;
+    public float rotateto_rotate = 0.0f;
+    public float rotateto_skew = 0.0f;
+    public float scrollBy_xPixel = 0.0f;
+    public float scrollBy_yPixel = 0.0f;
+    public float zoomBy_Point_amount = 0.0f;
+    public Point zoomBy_Point_focus = null;
+    public float zoomBy_amount = 0.0f;
+    public float zoomTo_zoom = 0.0f;
+}

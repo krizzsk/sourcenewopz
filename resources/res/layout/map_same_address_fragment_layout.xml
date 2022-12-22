@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/mapContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/mapViewOverLayer" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/card_mask_bg" android:background="@drawable/shaper_gradient_mask_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:id="@+id/cardViewContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/iv_reset_map" android:visibility="gone" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginRight="-10dp" android:src="@drawable/selector_map_reset_button" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+    <ImageView android:id="@+id/btnNavBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mappoi_select_page_nav_back_bg_selector" android:contentDescription="@string/GRider_0111_Return_rDEY" android:layout_marginStart="-10dp"/>
+    <View android:id="@+id/map_mask" android:background="#ffffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/view_new_hand" android:layout="@layout/map_sug_address_info_new_hand" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

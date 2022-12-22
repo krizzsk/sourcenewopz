@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/bts_upload_rela" android:padding="7dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="18sp" android:textColor="@color/dark_gray" android:gravity="center" android:id="@+id/cancel_text" android:background="@drawable/round_edittext" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/cancel" android:layout_alignParentBottom="true"/>
+        <ListView android:id="@+id/pic_menu_list" android:background="@drawable/round_edittext" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="#000000" android:divider="@color/light_grey_ss_l" android:dividerHeight="1dp" android:layout_above="@+id/cancel_text"/>
+    </RelativeLayout>
+</RelativeLayout>

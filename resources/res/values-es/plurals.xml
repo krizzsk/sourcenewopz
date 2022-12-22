@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="customer_business_exceed_sale_amount">
+        <item quantity="one">En artículos con descuento limitado a 1 artículo, los pedidos adicionales se cobran al precio original</item>
+        <item quantity="other">En productos con descuento limitado a %d artículos, los pedidos adicionales se cobran al precio original</item>
+    </plurals>
+    <plurals name="customer_business_goods_add_num_restriction">
+        <item quantity="one">Sólo se puede pedir 1 unidad más de este artículo</item>
+        <item quantity="other">Se pueden pedir hasta %d unidades de este artículo</item>
+    </plurals>
+    <plurals name="customer_business_goods_sub_item_num_restriction">
+        <item quantity="one">Límite 1</item>
+        <item quantity="other">Límite %d</item>
+    </plurals>
+    <plurals name="customer_business_goods_sub_item_num_restriction_fixed">
+        <item quantity="one">Seleccionar 1</item>
+        <item quantity="other">Seleccionar %d</item>
+    </plurals>
+    <plurals name="customer_goods_buy_gift_amount_tip">
+        <item quantity="one">Agregar 1 más para recibir 1 gratis</item>
+        <item quantity="other">Agregar 1 más para recibir %d gratis</item>
+    </plurals>
+    <plurals name="customer_goods_buy_gift_received_tip">
+        <item quantity="one">Recibirás 1 artículo gratis.</item>
+        <item quantity="other">Recibirás %d artículos gratis.</item>
+    </plurals>
+    <plurals name="customer_goods_purchase_add_num">
+        <item quantity="one">Agregar 1</item>
+        <item quantity="other">Agregar %d</item>
+    </plurals>
+    <plurals name="customer_order_eta">
+        <item quantity="one">1 minuto</item>
+        <item quantity="other">%d minuto(s)</item>
+    </plurals>
+    <plurals name="customer_put_away">
+        <item quantity="one">Contraer todo (1)</item>
+        <item quantity="other">Contraer todo (%d)</item>
+    </plurals>
+    <plurals name="customer_search_out_of_delivery_title">
+        <item quantity="one">&lt;font color=&apos;#FF7A45&apos;&gt;1&lt;/font&gt; de &lt;font color=&apos;#FF7A45&apos;&gt;%2$s&lt;/font&gt; situada fuera de entrega</item>
+        <item quantity="other">&lt;font color=&apos;#FF7A45&apos;&gt;%1$d&lt;/font&gt; de &lt;font color=&apos;#FF7A45&apos;&gt;%2$s&lt;/font&gt; situadas fuera de entrega</item>
+    </plurals>
+    <plurals name="customer_show_all">
+        <item quantity="one">Ver todos (1)</item>
+        <item quantity="other">Ver todos (%d)</item>
+    </plurals>
+    <plurals name="customer_show_all_shop">
+        <item quantity="one">Ver todas las tiendas (1)</item>
+        <item quantity="other">Ver todas las tiendas (%d)</item>
+    </plurals>
+    <plurals name="customer_show_all_sold_out">
+        <item quantity="one">Mostrar todos los productos agotados (1)</item>
+        <item quantity="other">Mostrar todos los productos agotados (%d)</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notificación nueva</item>
+        <item quantity="other">%d notificaciones nuevas</item>
+    </plurals>
+</resources>

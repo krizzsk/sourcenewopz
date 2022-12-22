@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/oc_ll_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.sdk.webview.WebTitleBar android:id="@+id/oc_view_titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <com.didi.sdk.webview.BaseWebView android:id="@+id/oc_view_webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/oc_view_titlebar"/>
+    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/oc_ll_web_error" android:background="@color/white" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/oc_view_titlebar">
+        <ImageView android:id="@+id/oc_iv_web_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp"/>
+        <TextView android:textSize="@dimen/font_size_large" android:textColor="@color/gray" android:gravity="center" android:id="@+id/oc_tv_web_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</LinearLayout>

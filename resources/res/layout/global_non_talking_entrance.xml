@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_global_non_talking_root" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="60dp">
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/iv_global_non_talking_entrance" android:layout_width="53dp" android:layout_height="53dp" android:src="@drawable/global_non_talking_entrance_icon" android:contentDescription="@string/non_talking_desc"/>
+    </FrameLayout>
+</LinearLayout>

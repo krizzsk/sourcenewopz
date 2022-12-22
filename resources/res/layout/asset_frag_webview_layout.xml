@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/main" android:layout_width="267dp" android:layout_height="411dp" android:layout_marginTop="60dp" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/loading" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:id="@+id/wind_loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/asset_loading_wind" android:indeterminateDuration="1000" android:indeterminateBehavior="repeat"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/webview_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/aseet_network_error" android:background="@color/asset_network_error_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/asset_network_error_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/asset_network_error"/>
+                <TextView android:textSize="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/asset_network_reload"/>
+            </LinearLayout>
+            <ImageView android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/asset_gcsdk_icon_webview_error_connectfail" android:layout_above="@+id/asset_network_error_text" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/close_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:src="@drawable/public_service_common_icon_layer_close_2x" android:layout_below="@+id/main" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

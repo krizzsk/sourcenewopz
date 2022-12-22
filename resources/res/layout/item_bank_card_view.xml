@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/wallet_color_FFFFFF" android:layout_width="match_parent" android:layout_height="60dp">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_icon" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginStart="18dp"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="58dp">
+        <TextView android:textSize="16sp" android:textColor="@color/wallet_color_000000" android:id="@+id/tv_card" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12sp" android:textColor="@color/wallet_color_FF4765" android:id="@+id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_bank_card_list_item_next" android:layout_marginEnd="12dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/wallet_color_FF525D" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/tv_expired" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="32dp"/>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/map_setting_window_title" android:layout_width="match_parent" android:layout_height="60dp">
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="60dp">
+        <TextView android:textSize="16dp" android:textColor="#4b4b4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19dp" android:text="@string/map_setting_window_title" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/map_setting_window_close" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="6dp">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/map_setting_close_selected"/>
+    </FrameLayout>
+</RelativeLayout>

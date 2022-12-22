@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:layout_width="match_parent" android:layout_height="6dp"/>
+    <View android:id="@+id/line_seperater" android:background="#0b0a121a" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginBottom="6dp"/>
+    <RelativeLayout android:id="@+id/select_poi_layout" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageView android:id="@+id/selecticon" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/sug_icon_location" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="16dp"/>
+        <TextView android:textSize="14sp" android:textColor="#333333" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GRider_Sug_2020_pin" android:layout_centerVertical="true" android:layout_toEndOf="@+id/selecticon" style="@style/Map.TextViewStyle.TextDirection"/>
+    </RelativeLayout>
+</LinearLayout>

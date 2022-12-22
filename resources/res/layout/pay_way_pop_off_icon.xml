@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="25sp" android:textStyle="bold" android:textColor="#f4d35c" android:layout_gravity="center_vertical" android:id="@+id/tv_payway_pop_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50" android:includeFontPadding="false"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/payway_promotion_icon_suffix" android:layout_width="11dp" android:layout_height="11dp"/>
+        <TextView android:textSize="6sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OFF" android:includeFontPadding="false"/>
+    </LinearLayout>
+</LinearLayout>

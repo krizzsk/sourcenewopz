@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+    <ImageView android:id="@+id/iv_triangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/customer_customer_address_tips_triangle_up" android:layout_centerHorizontal="true"/>
+    <RelativeLayout android:background="@drawable/customer_address_tips_bg" android:paddingLeft="@dimen/customer_60px" android:paddingTop="@dimen/customer_16px" android:paddingRight="@dimen/customer_38px" android:paddingBottom="@dimen/customer_16px" android:layout_width="@dimen/customer_650px" android:layout_height="wrap_content" android:layout_below="@+id/iv_triangle">
+        <ImageView android:id="@+id/customer_iv_tips_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_icon_tip_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="@dimen/customer_text_size_24px" android:textColor="@color/rf_color_white_100_FFFFFF" android:gravity="center" android:id="@+id/customer_tv_address_tips_content" android:background="@drawable/customer_address_tips_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/customer_60px" android:layout_toLeftOf="@+id/customer_iv_tips_close" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

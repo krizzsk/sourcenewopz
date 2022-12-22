@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:paddingTop="30dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/oc_pay_entrance_goto_pay_btn" android:background="@drawable/pe_bg_item_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="42sp" android:textColor="@color/pe_color_FC9153" android:gravity="center" android:layout_gravity="center" android:id="@+id/oc_pay_entrance_goto_pay" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pe_pay_entrance_goto_pay" android:drawableRight="@drawable/global_pe_pay_right_arrow_orange" android:drawablePadding="@dimen/padding_tiny"/>
+    </FrameLayout>
+</FrameLayout>

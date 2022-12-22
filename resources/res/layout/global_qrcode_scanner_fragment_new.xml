@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/g_color_25262d" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.zxing.barcodescanner.DecoratedBarcodeView android:id="@+id/bv_scanner_container" android:layout_width="match_parent" android:layout_height="match_parent" app:zxing_preview_scaling_strategy="3" app:zxing_scanner_layout="@layout/global_barcode_scanner_new" app:zxing_scanner_result_strategy="1" app:zxing_use_texture_view="true"/>
+</RelativeLayout>

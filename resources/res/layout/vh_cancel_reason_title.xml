@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/oc_color_F3F4F5" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_cancel_reason_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+    <TextView android:textSize="16sp" android:textColor="@color/color_999999" android:id="@+id/tv_cancel_reason_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="21dp"/>
+</LinearLayout>

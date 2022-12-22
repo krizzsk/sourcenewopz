@@ -1,0 +1,20 @@
+package com.google.android.gms.internal.ads;
+
+import android.view.View;
+
+/* compiled from: com.google.android.gms:play-services-ads@@19.8.0 */
+public final class zzceg implements zzesa<View> {
+    private final zzced zzghs;
+
+    private zzceg(zzced zzced) {
+        this.zzghs = zzced;
+    }
+
+    public final /* synthetic */ Object get() {
+        return null;
+    }
+
+    public static zzceg zza(zzced zzced) {
+        return new zzceg(zzced);
+    }
+}

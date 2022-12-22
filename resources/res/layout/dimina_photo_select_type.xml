@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="20sp" android:textColor="#2e2e3a" android:gravity="center" android:id="@+id/take_capture" android:layout_width="match_parent" android:layout_height="60dp" android:text="@string/dimina_take_capture"/>
+    <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="20sp" android:textColor="#2e2e3a" android:gravity="center" android:id="@+id/take_pick" android:layout_width="match_parent" android:layout_height="60dp" android:text="@string/dimina_pick_photo"/>
+    <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <TextView android:textSize="20sp" android:textColor="#2e2e3a" android:gravity="center" android:id="@+id/take_cancel" android:layout_width="match_parent" android:layout_height="60dp" android:text="@string/dimina_cancel"/>
+</LinearLayout>

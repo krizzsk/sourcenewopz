@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/im_emoji_item_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.didi.beatles.p099im.views.imageView.IMNetworkImageView android:layout_gravity="center" android:id="@+id/im_emoji_item_iv" android:layout_width="@dimen/im_60_dp" android:layout_height="@dimen/im_60_dp" android:layout_marginTop="@dimen/im_22_dp" android:scaleType="center"/>
+        <TextView android:textSize="@dimen/im_12_sp" android:textColor="@color/im_tv_gray_light" android:layout_gravity="center" android:id="@+id/im_emoji_item_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

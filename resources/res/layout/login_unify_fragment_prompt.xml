@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/login_unify_dimen_20dp" android:paddingRight="@dimen/login_unify_dimen_20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/login_unify_dimen_20dp" android:paddingEnd="@dimen/login_unify_dimen_20dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_next">
+        <TextView android:id="@+id/tv_title" style="@style/LoginUnifyTiTileStyle"/>
+        <TextView android:id="@+id/tv_sub_title" style="@style/LoginUnifySubTiTileStyle"/>
+        <TextView android:id="@+id/tv_sub_sencend_title" android:visibility="gone" android:layout_marginTop="@dimen/login_unify_dimen_10dp" style="@style/LoginUnifySubTiTileStyle"/>
+        <ListView android:id="@+id/lv_des" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/login_unify_dimen_20dp" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="@dimen/login_unify_dimen_20dp"/>
+    </LinearLayout>
+    <com.didi.unifylogin.utils.customview.LoginNextButton android:enabled="true" android:id="@+id/btn_next" android:layout_alignParentBottom="true" style="?attr/login_unify_style_btn_text"/>
+</RelativeLayout>

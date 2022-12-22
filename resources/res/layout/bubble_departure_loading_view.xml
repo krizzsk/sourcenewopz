@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/mappoiselect_map_pop_tworow" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="20dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_content" android:layout_width="wrap_content" android:layout_height="44dp">
+        <com.didi.map.global.component.departure.loading.PointProgress android:layout_width="24dp" android:layout_height="6dp" android:layout_marginStart="9dp" android:layout_marginEnd="8dp"/>
+        <View android:background="#f0f0f0" android:layout_width="0.5dp" android:layout_height="32dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.didi.sdk.view.richtextview.RichTextView android:textSize="@dimen/font_size_small" android:textColor="#333333" android:id="@+id/tv_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/map_departure_go_from_here" android:layout_centerInParent="true"/>
+    </LinearLayout>
+</FrameLayout>

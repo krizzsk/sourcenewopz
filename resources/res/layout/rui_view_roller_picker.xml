@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/rui_color_white" android:paddingBottom="@dimen/rui_roller_picker_container_padding_bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/rui_roller_picker_header_height">
+        <rui.RUIText android:textSize="@dimen/rui_text_icon_small" android:textColor="@color/rui_color_brands_dark" android:layout_gravity="center_vertical" android:id="@+id/rui_ct_roller_picker_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rui_framework_common_container_horizontal_padding" android:text="@string/rui_icon_delete_01" app:rui_text_typefaceType="2"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/rui_ll_roller_picker_tab_container" android:layout_width="@dimen/rui_roller_picker_tab_container_width" android:layout_height="wrap_content"/>
+        <rui.RUIText android:textColor="@color/rui_color_grey_2" android:layout_gravity="center" android:id="@+id/rui_t_roller_picker_title" app:rui_text_maxTextLength="10" style="@style/rui_text_title"/>
+    </FrameLayout>
+    <View android:background="@color/rui_color_grey_5" android:layout_width="match_parent" android:layout_height="@dimen/rui_roller_picker_title_decorator_height"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rui_roller_picker_option_container_top_margin" android:layout_marginBottom="@dimen/rui_roller_picker_option_container_bottom_margin">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/rui_ll_roller_picker_option_container" android:paddingLeft="@dimen/rui_roller_picker_option_container_horizontal_padding" android:paddingRight="@dimen/rui_roller_picker_option_container_horizontal_padding" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:id="@+id/rui_v_lopper_start_decorator" android:background="@color/rui_color_grey_5" android:layout_width="match_parent" android:layout_height="@dimen/rui_roller_picker_option_decorator_height"/>
+        <View android:id="@+id/rui_v_lopper_end_decorator" android:background="@color/rui_color_grey_5" android:layout_width="match_parent" android:layout_height="@dimen/rui_roller_picker_option_decorator_height"/>
+    </FrameLayout>
+    <rui.RUIButton android:id="@+id/rui_b_roller_picker_confirm" style="@style/RUIButton.Main.Dark"/>
+</LinearLayout>

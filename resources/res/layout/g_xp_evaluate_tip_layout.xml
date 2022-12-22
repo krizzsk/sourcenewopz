@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/_12sp" android:textStyle="bold" android:textColor="@color/g_color_000" android:id="@+id/tv_evaluate_tip_paid_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_30dp" android:text="Tips of MXN$5 Paid"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_evaluate_tip_entrance" android:background="#f8f9fa" android:layout_width="match_parent" android:layout_height="@dimen/_50dp">
+        <Space android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_evaluate_tip_icon" android:layout_width="17dp" android:layout_height="17dp" android:src="@drawable/g_xp_evaluate_tip_icon"/>
+        <TextView android:textSize="@dimen/_12sp" android:textStyle="bold" android:textColor="@color/g_color_000" android:id="@+id/tv_evaluate_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_6dp"/>
+        <ImageView android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:layout_marginLeft="@dimen/_4dp" android:layout_marginTop="1dp" android:src="@drawable/g_xp_evaluate_tip_angle_icon"/>
+        <Space android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

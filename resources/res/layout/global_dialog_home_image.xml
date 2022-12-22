@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/g_color_6625262D" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/global_home_image_content" android:layout_width="267dp" android:layout_height="356dp" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/global_image_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/global_loading_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_animation_loading" android:layout_centerInParent="true"/>
+        <TextView android:textSize="13sp" android:textColor="#ff3b3e45" android:gravity="center" android:id="@+id/global_member_level_prompt_tv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="38dp" android:layout_marginTop="115dp" android:layout_marginRight="38dp" android:maxLines="3"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/global_home_image_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/global_image_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/public_service_common_icon_layer_close_2x" android:layout_centerInParent="true" android:contentDescription="@string/asset_close_popupwindow"/>
+    </RelativeLayout>
+</RelativeLayout>

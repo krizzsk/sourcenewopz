@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/rui_counter_button_corner_radius"/>
+            <stroke android:width="@dimen/rui_counter_button_border_width" android:color="@color/rui_color_grey_4"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/rui_counter_small_button_line_margin" android:right="@dimen/rui_counter_small_button_line_margin">
+        <shape android:shape="line">
+            <stroke android:width="@dimen/rui_counter_button_line_height" android:color="@color/rui_color_grey_4"/>
+            <size android:height="@dimen/rui_counter_button_line_height"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/rui_counter_small_button_line_margin" android:right="@dimen/rui_counter_small_button_line_margin">
+        <rotate android:fromDegrees="90" android:toDegrees="90" android:pivotX="50%" android:pivotY="50%">
+            <shape android:shape="line">
+                <stroke android:width="@dimen/rui_counter_button_line_height" android:color="@color/rui_color_grey_4"/>
+                <size android:height="@dimen/rui_counter_button_line_height"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

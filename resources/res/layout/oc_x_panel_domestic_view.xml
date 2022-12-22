@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.didichuxing.xpanel.base.BaseXpanelView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/oc_x_panel_bg" android:background="@color/oc_color_25262D_40" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.didichuxing.xpanel.channel.domestic.widget.XPanelRecyclerView android:id="@+id/oc_x_panel_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="always" android:splitMotionEvents="false"/>
+    <ImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/oc_x_panel_down" android:visibility="gone" android:layout_width="@dimen/oc_x_panel_down_image" android:layout_height="@dimen/oc_x_panel_down_image" android:layout_marginLeft="@dimen/oc_x_panel_margin_left_right" android:layout_marginTop="@dimen/_20dp" android:src="@drawable/oc_x_panel_down"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/oc_x_panel_tip" android:background="@drawable/oc_tip_bg" android:paddingLeft="@dimen/_10dip" android:paddingTop="@dimen/_5dp" android:paddingRight="@dimen/_10dip" android:paddingBottom="@dimen/_5dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10dip">
+        <TextView android:textSize="@dimen/_12sp" android:textColor="@color/oc_color_FFFFFF" android:id="@+id/oc_x_panel_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/oc_x_panel_tip_mark" android:scaleType="fitXY"/>
+    </LinearLayout>
+</com.didichuxing.xpanel.base.BaseXpanelView>

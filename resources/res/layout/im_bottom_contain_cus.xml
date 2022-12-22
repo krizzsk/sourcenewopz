@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/im_btm_cus_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/im_btm_cus_back" android:background="@drawable/im_detail_func_back" android:padding="2dp" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="18dp" android:layout_marginTop="24dp" android:src="@drawable/im_list_icon_arrow" android:scaleType="fitCenter" android:rotation="90" android:layout_marginStart="18dp"/>
+</FrameLayout>

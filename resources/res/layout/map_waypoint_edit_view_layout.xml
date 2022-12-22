@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rlBgLayer" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="@color/confirm_departure_point_color" android:gravity="center_vertical" android:id="@+id/tvEditAddress" android:background="@drawable/report_submit_more_button_selector" android:focusable="true" android:focusableInTouchMode="false" android:clickable="true" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="48dp" android:singleLine="true" android:includeFontPadding="false" android:layout_centerVertical="true" android:paddingStart="48dp" android:paddingEnd="30dp" android:layout_marginEnd="2dp" android:layout_toStartOf="@+id/wayPointActionContainer" style="@style/Map.TextViewStyle.TextDirection"/>
+    <ImageView android:id="@+id/global_waypoint_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="11dp" android:layout_alignStart="@+id/tvEditAddress"/>
+    <RelativeLayout android:id="@+id/wayPointDragContainer" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerVertical="true" android:layout_alignEnd="@+id/tvEditAddress">
+        <ImageView android:id="@+id/imgWayPointDrag" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/waypoint_icon_drag" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/wayPointActionContainer" android:layout_width="48dp" android:layout_height="40dp" android:layout_centerVertical="true" android:contentDescription="@string/GRider_0111_Delete_transit_KwNL" android:layout_alignParentEnd="true">
+        <ImageView android:id="@+id/imgWayPointAction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

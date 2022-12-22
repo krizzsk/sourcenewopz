@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="@dimen/sf_dimen_16_sp" android:textColor="@color/sf_color_333333" android:gravity="center" android:background="@drawable/sf_delete_tip_bg" android:layout_width="116dp" android:layout_height="56dp" android:text="@string/sf_delete"/>

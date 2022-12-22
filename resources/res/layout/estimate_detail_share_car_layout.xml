@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/estimate_detail_F8F9FA_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout android:id="@+id/estimate_detail_pager_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tabContentStart="30dp" app:tabIndicatorColor="@color/estimate_tab_indicator_select" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="2dp" app:tabMode="0" app:tabRippleColor="@android:color/transparent" app:tabSelectedTextColor="@color/estimate_tab_indicator_select" app:tabTextColor="@color/estimate_tab_indicator_not_select"/>
+    <View android:background="@color/estimate_list_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="30dp" android:layout_marginRight="30dp"/>
+    <com.didi.component.common.view.CustomeViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent" app:isScroll="false" app:isWrapContent="false"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:id="@+id/new_ui_sidebar_didi_pass_info_layout" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:elevation="9dp">
+    <ImageView android:id="@+id/new_ui_didi_pass_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginStart="15dp"/>
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ff3c2307" android:id="@+id/new_ui_didi_pass_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="41dp"/>
+    <TextView android:textSize="12sp" android:textColor="#ff3c2307" android:id="@+id/new_ui_didi_pass_subtitle" android:layout_width="wrap_content" android:layout_height="15dp" android:layout_marginTop="5dp" android:layout_below="@+id/new_ui_didi_pass_icon" android:layout_marginStart="15dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/new_ui_didi_pass_guid_fl" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true">
+        <TextView android:textSize="12sp" android:textColor="#ff3c2307" android:layout_gravity="center_vertical" android:id="@+id/new_ui_didi_pass_guid_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/new_ui_didi_pass_guid_arrow" android:layout_width="16dp" android:layout_height="10dp" android:layout_marginEnd="5dp"/>
+    </LinearLayout>
+</RelativeLayout>

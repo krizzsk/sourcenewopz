@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:drawable="@drawable/old_poi_one_address_item_header_right_selector_border"/>
+    <item android:drawable="@drawable/old_poi_one_address_item_header_right_selector_inner" android:top="1px" android:bottom="1px" android:start="0px" android:end="1px"/>
+</layer-list>

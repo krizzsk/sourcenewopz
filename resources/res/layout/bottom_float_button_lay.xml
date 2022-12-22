@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/page_bottom_floating_btn_lay" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+    <TextView android:textSize="@dimen/wallet_sp_22" android:textStyle="bold" android:textColor="?attr/submit_btn_text_color_selector" android:gravity="center" android:id="@+id/retry_btn_tv" android:background="?attr/submit_btn_bg_selector" android:layout_width="match_parent" android:layout_height="@dimen/wallet_dp_52" android:layout_marginLeft="@dimen/wallet_dp_24" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/wallet_dp_24" android:layout_marginBottom="20dp" android:text="GRider_payment_Try_again_BEvR"/>
+</LinearLayout>

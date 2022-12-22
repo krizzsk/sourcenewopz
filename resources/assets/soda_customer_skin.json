@@ -1,0 +1,51 @@
+{
+  "meta": {},
+  "theme": [
+    {
+      "type": "color",
+      "name": "customer_brand_primary_color",
+      "value": "#FEA32F"
+    },
+    {
+      "type": "color",
+      "name": "customer_upon_brand_primary_text_color",
+      "value": "#000000"
+    },
+    {
+      "type": "color",
+      "name": "customer_dot_loading_highlight_color",
+      "value": "#FEA32F"
+    },
+    {
+      "type": "color",
+      "name": "customer_dot_loading_normal_color",
+      "value": "#FFE1A5"
+    },
+    {
+      "type": "color",
+      "name": "customer_main_button_side_text_color",
+      "value": "#000000"
+    },
+    {
+      "type": "color",
+      "name": "customer_main_button_side_num_text_color",
+      "value": "#000000"
+    },
+    {
+      "type": "color",
+      "name": "customer_tag_background_color",
+      "value": "#FFF4E6"
+    },
+    {
+      "type": "color",
+      "name": "customer_tag_stroke_color",
+      "value": "#FFBF6E"
+    },
+    {
+      "type": "color",
+      "name": "customer_dialog_main_action_color",
+      "value": "#FEA32F"
+    }
+  ]
+}
+

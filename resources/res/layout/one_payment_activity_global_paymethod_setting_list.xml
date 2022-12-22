@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/one_payment_wallet_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/one_payment_activity_global_paymethod_list_top"/>
+    <com.didi.sdk.global.sign.view.PayMethodSettingFragmentView android:id="@+id/v_pay_setting_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

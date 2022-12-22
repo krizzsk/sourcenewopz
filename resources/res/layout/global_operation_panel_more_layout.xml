@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="#6625262d" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="50dp" android:layout_above="@+id/rv_global_operation_panel_more_content">
+        <ImageView android:id="@+id/iv_global_operation_panel_more_close" android:background="@drawable/global_operation_panel_icon_close_selector" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/ms_18sp" android:textColor="#333333" android:gravity="center" android:id="@+id/tv_global_operation_panel_more_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/global_operation_panel_more_title" android:layout_centerVertical="true"/>
+        <View android:background="#25000000" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_global_operation_panel_more_content" android:background="@color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:overScrollMode="never"/>
+</RelativeLayout>

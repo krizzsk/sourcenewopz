@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/sf_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.safetoolkit.widget.SfCommonTitleBar android:id="@+id/sf_manage_contacts_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/sf_added_trusted_contact_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include layout="@layout/sf_layout_trusted_contact_guide_view"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/sf_trusted_contact_error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="@dimen/sf_dimen_126_dp" android:layout_height="@dimen/sf_dimen_126_dp" android:layout_marginTop="100dp" android:src="@drawable/sf_error_image"/>
+        <LinearLayout android:gravity="center_horizontal" android:id="@+id/sf_error_try_again" android:paddingTop="@dimen/sf_dimen_32_dp" android:paddingBottom="@dimen/sf_dimen_32_dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/sf_dimen_16_dp" android:layout_height="@dimen/sf_dimen_16_dp" android:layout_marginRight="@dimen/sf_dimen_10_dp" android:src="@drawable/sf_error_refresh"/>
+            <TextView android:textSize="@dimen/sf_dimen_16_sp" android:textColor="@color/sf_color_666666" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/sf_error_again_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

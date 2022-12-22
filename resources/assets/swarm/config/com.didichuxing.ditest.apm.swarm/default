@@ -1,0 +1,6 @@
+{
+    "toggles": {
+        "didiapm-ui": "ditest-ui-apm",
+        "didiapm-net": "ditest-net-apm"
+    }
+}

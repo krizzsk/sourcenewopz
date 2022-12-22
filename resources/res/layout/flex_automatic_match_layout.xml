@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/flex_automatic_match_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="20dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="86dp">
+        <TextView android:textColor="#ff000000" android:ellipsize="end" android:gravity="start" android:id="@+id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_toLeftOf="@+id/automatic_match_switcher" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+        <androidx.appcompat.widget.SwitchCompat android:id="@+id/automatic_match_switcher" android:layout_width="50dp" android:layout_height="30dp" android:thumb="@drawable/switch_didi_thumb" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_alignParentEnd="true" app:track="@drawable/switch_didi_track_selector"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll_item_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/btn_back" android:padding="16dp" android:layout_width="52dp" android:layout_height="52dp" android:src="@drawable/icon_minibus_back"/>
+    <TextView android:textSize="28sp" android:textStyle="bold" android:textColor="@color/title_text" android:id="@+id/tv_mainTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+    <TextView android:id="@+id/tv_subTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+    <RelativeLayout android:id="@+id/rl_seat_select_content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_select_seat" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="30dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+        <View android:id="@+id/v_slideBg" android:background="@drawable/minibus_seat_select_slide_bg" android:layout_width="match_parent" android:layout_height="121dp" android:layout_marginLeft="-5dp" android:layout_marginTop="11dp" android:layout_marginRight="-5dp"/>
+    </RelativeLayout>
+    <Button android:textSize="20sp" android:textStyle="bold" android:textColor="?attr/global_main_button_text_color_selector" android:id="@+id/btn_next" android:background="?attr/global_overall_main_button_selector" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="10dp" android:layout_marginBottom="24dp" android:text="@string/GRider_page_Next_step_eUhZ" android:textAllCaps="false" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" style="?android:attr/borderlessButtonStyle"/>
+    <include android:id="@+id/ll_net_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/seat_select_load_timeout_layout"/>
+</LinearLayout>

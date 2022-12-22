@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="@color/rf_color_white_100_FFFFFF" android:layout_width="match_parent" android:layout_height="@dimen/customer_104px">
+        <RelativeLayout android:id="@+id/rl_home_sort_recommend" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/customer_text_size_32px" android:textColor="@drawable/customer_selector_home_classify_text_color" android:id="@+id/tv_home_sort_recommend" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/customer_32px" android:text="@string/customer_global_home_sort_recommend" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+            <View android:id="@+id/v_home_sort_recommend" android:background="@color/rf_color_gery_1_0_000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/customer_4px" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_home_sort_price" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/customer_text_size_32px" android:textColor="@drawable/customer_selector_home_classify_text_color" android:id="@+id/tv_home_sort_price" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/customer_32px" android:text="@string/customer_global_home_sort_price" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+            <View android:id="@+id/v_home_sort_price" android:background="@color/rf_color_gery_1_0_000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/customer_4px" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_home_sort_time" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/customer_text_size_32px" android:textColor="@drawable/customer_selector_home_classify_text_color" android:id="@+id/tv_home_sort_time" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/customer_32px" android:text="@string/customer_global_home_sort_time" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+            <View android:id="@+id/v_home_sort_time" android:background="@color/rf_color_gery_1_0_000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/customer_4px" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@drawable/shape_home_sort_shadow" android:layout_width="match_parent" android:layout_height="@dimen/customer_8px"/>
+</LinearLayout>

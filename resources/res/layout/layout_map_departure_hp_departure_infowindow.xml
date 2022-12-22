@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/mappoiselect_map_pop_onerow" android:paddingLeft="16dp" android:paddingRight="16dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/simple_layout" android:layout_width="wrap_content" android:layout_height="32dp">
+        <com.didi.sdk.view.richtextview.RichTextView android:textSize="@dimen/font_size_small" android:textColor="#333333" android:id="@+id/simple_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/left_right_layout" android:layout_width="wrap_content" android:layout_height="44dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/left_data" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="#fc9153" android:id="@+id/left_data_item1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:includeFontPadding="false"/>
+            <TextView android:textSize="@dimen/font_size_small_s" android:textColor="#fc9153" android:id="@+id/left_data_item2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/mappoiselect_minute" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/left_loading" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/mappoiselect_common_loading_animation_1"/>
+        <View android:background="#f0f0f0" android:layout_width="1dp" android:layout_height="32dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+        <com.didi.sdk.view.richtextview.RichTextView android:textSize="@dimen/font_size_small" android:textColor="#333333" android:id="@+id/right_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mappoiselect_go_from_here" android:layout_centerInParent="true"/>
+    </LinearLayout>
+</FrameLayout>

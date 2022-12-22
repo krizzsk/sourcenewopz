@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/shape_solid_white_r_20" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/image_close" android:visibility="gone" android:layout_width="36dp" android:layout_height="36dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+        <ImageView android:layout_width="12dp" android:layout_height="12dp" android:layout_margin="10dp" android:src="@drawable/common_dialog_btn_close_selector" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/ll_title_content_area" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_content_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@+id/text_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/ggk_color_000000" android:gravity="center" android:id="@+id/text_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:includeFontPadding="false" android:lineSpacingExtra="4dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <View android:gravity="start" android:id="@+id/line_divider_content" android:background="@color/dark_alpha_10" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/ll_title_content_area"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_btn_area_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/line_divider_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_size_large" android:textStyle="bold" android:textColor="@color/common_dialog_recommend_option_txt_color" android:gravity="center" android:id="@+id/button_top_bottom_1" android:layout_width="match_parent" android:layout_height="50dp" android:includeFontPadding="false" android:textAllCaps="false"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:gravity="start" android:background="@color/dark_alpha_10" android:layout_width="match_parent" android:layout_height="1px"/>
+            <TextView android:textSize="@dimen/font_size_large" android:textColor="@color/wallet_color_5C6166" android:gravity="center" android:id="@+id/button_top_bottom_2" android:layout_width="match_parent" android:layout_height="50dp" android:includeFontPadding="false" android:textAllCaps="false"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:gravity="start" android:background="@color/dark_alpha_10" android:layout_width="match_parent" android:layout_height="1px"/>
+            <TextView android:textSize="@dimen/font_size_large" android:textColor="@color/wallet_color_5C6166" android:gravity="center" android:id="@+id/button_top_bottom_3" android:layout_width="match_parent" android:layout_height="50dp" android:includeFontPadding="false" android:textAllCaps="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

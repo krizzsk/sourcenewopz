@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/trans_history_add_account_entrance_view" android:background="@drawable/trans_roundcornor_bg_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="18dp" android:layout_marginTop="14dp" android:layout_marginRight="18dp">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GRider_PAX_Add_a_ptQC" android:layout_weight="1" android:layout_centerVertical="true" style="@style/trans_page_inner_title_text_style_withmargin"/>
+        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:layout_marginRight="20dp" android:src="@drawable/trans_item_arrow" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/trans_history_records_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/GRider_PAX_Recent_transfer_DBqn" style="@style/trans_page_inner_title_text_style_withmargin"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/trans_history_record_lv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+</LinearLayout>

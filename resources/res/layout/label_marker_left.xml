@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.didi.map.global.flow.scene.order.serving.components.MapStrokeTextView android:textSize="@dimen/label_marker_text" android:textStyle="bold" android:textColor="@color/label_marker_text" android:gravity="center" android:id="@+id/label_marker_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerVertical="true" android:lineSpacingExtra="2dp" app:stroke_color="@color/map_stroke_text_view_color" app:stroke_width="@dimen/map_stroke_text_view_width"/>
+    <ImageView android:id="@+id/label_marker_anchor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_4" android:layout_toEndOf="@+id/label_marker_text"/>
+</RelativeLayout>

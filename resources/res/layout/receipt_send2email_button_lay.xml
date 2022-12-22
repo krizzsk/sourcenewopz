@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/send_via_email_parent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@drawable/rus_estimate_navi_shadow" android:layout_width="match_parent" android:layout_height="10dp" android:rotation="180"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="82dp">
+        <TextView android:enabled="false" android:textSize="18sp" android:textStyle="bold" android:gravity="center" android:id="@+id/send_via_email_tvbtn" android:background="@drawable/login_unify_selector_next_btn_orange" android:layout_width="match_parent" android:layout_height="46dp" android:text="@string/Global_Rider_0417_GlobalRider_RU_Send_Receipt_After_the_Trip_mail_send_ZDbF"/>
+    </LinearLayout>
+</LinearLayout>

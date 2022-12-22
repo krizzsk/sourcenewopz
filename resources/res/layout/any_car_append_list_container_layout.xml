@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/any_car_bg_white_corners_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/any_car_append_list_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="19dp" android:maxLines="2"/>
+    <FrameLayout android:id="@+id/any_car_append_model_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/any_car_append_message_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="6dp" android:layout_marginRight="20dp" android:layout_marginBottom="6dp">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="15.5dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/any_car_append_message_icon" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginTop="1dp"/>
+        </FrameLayout>
+        <TextView android:textSize="12sp" android:textColor="#ff8040" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/any_car_append_message_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:minHeight="15.5dp" android:maxLines="2"/>
+    </LinearLayout>
+    <com.didi.global.globaluikit.button.LEGOLoadingButton android:id="@+id/any_car_append_submit_btn_view" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginTop="15dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" app:button_background="?attr/global_overall_main_button_selector" app:button_loading_lottie_name="@string/_global_button_loading_main_json" app:button_text_color="?attr/global_main_button_text_color_selector" app:button_text_size="14sp"/>
+</LinearLayout>

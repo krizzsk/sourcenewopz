@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="60dp">
+    <TextView android:textSize="14sp" android:textColor="@drawable/common_popup_press_txt_cancel_color_selector" android:gravity="center" android:id="@+id/tv_cancel" android:paddingLeft="16dp" android:paddingRight="16dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancel" android:layout_alignParentLeft="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tv_confirm" android:layout_toRightOf="@+id/tv_cancel" android:layout_centerInParent="true">
+        <TextView android:textSize="18sp" android:textColor="#333333" android:gravity="center" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center" android:id="@+id/tv_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@drawable/common_popup_press_txt_confirm_color_selector" android:gravity="center" android:id="@+id/tv_confirm" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/confirm" android:layout_alignParentRight="true"/>
+    <View android:background="@color/dark_alpha_10" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

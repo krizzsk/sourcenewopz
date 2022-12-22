@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.sdk.webview.WebTitleBar android:id="@+id/center_title_bar" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignParentTop="true"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/global_promo_share_rv" android:background="@color/oc_color_F3F4F5" android:paddingLeft="18dp" android:paddingTop="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/global_promo_bottom_share" android:layout_below="@+id/center_title_bar"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/global_promo_bottom_share" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="106dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageButton android:id="@+id/global_promo_share_ll" android:background="@drawable/global_promo_share_btn_bg" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginBottom="10dp" android:scaleType="fitCenter" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/pudo_select_point_text_color" android:id="@+id/global_promo_share_ll_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/global_promo_share_ll" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageButton android:id="@+id/global_promo_share_lm" android:background="@drawable/global_promo_share_btn_bg" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginBottom="10dp" android:scaleType="fitCenter" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/pudo_select_point_text_color" android:id="@+id/global_promo_share_lm_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/global_promo_share_lm" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageButton android:id="@+id/global_promo_share_mr" android:background="@drawable/global_promo_share_btn_bg" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginBottom="10dp" android:scaleType="fitCenter" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/pudo_select_point_text_color" android:id="@+id/global_promo_share_mr_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/global_promo_share_mr" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageButton android:id="@+id/global_promo_share_rr" android:background="@drawable/global_promo_share_btn_bg" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginBottom="10dp" android:src="@drawable/global_promo_share_more" android:scaleType="fitCenter" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/pudo_select_point_text_color" android:id="@+id/global_promo_share_rr_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/global_promo_code_more" android:layout_below="@+id/global_promo_share_rr" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

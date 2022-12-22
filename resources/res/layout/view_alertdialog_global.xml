@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="324dp" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/lLayout_bg" android:background="@mipmap/alert_bg" android:padding="10dp" android:layout_width="324dp" android:layout_height="wrap_content">
+        <TextView android:textSize="18dp" android:textColor="@color/alert_text_color" android:gravity="center" android:id="@+id/txt_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="28dp" android:layout_marginRight="15dp" android:text="位置确认" android:singleLine="true"/>
+        <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16dp" android:textColor="@color/alert_text_color" android:gravity="left" android:id="@+id/txt_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginTop="22dp" android:layout_marginRight="22dp" android:minHeight="48dp" android:text="请确认你处在五彩城一层，否则将无法引导您到达上车点" android:lineSpacingExtra="2dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="24dp" android:layout_marginTop="20dp" android:layout_marginRight="24dp" android:layout_marginBottom="24dp">
+            <Button android:textSize="14dp" android:textColor="@color/alert_text_color" android:gravity="center" android:id="@+id/btn_neg" android:background="@drawable/alertdialog_left_selector" android:layout_width="126dp" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1" android:textAllCaps="false"/>
+            <TextView android:id="@+id/img_line" android:layout_width="14dp" android:layout_height="wrap_content"/>
+            <RelativeLayout android:gravity="center" android:id="@+id/btn_pos" android:background="@drawable/alertdialog_left_selector" android:layout_width="126dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="14dp" android:textColor="@color/alert_text_color" android:gravity="center" android:id="@+id/btn" android:layout_width="wrap_content" android:layout_height="40dp" android:text="@string/i_can" android:layout_weight="1"/>
+                <TextView android:textSize="14dp" android:textColor="@color/alert_text_color" android:gravity="center" android:id="@+id/jishi" android:layout_width="wrap_content" android:layout_height="40dp" android:text="（15s）" android:layout_toRightOf="@+id/btn"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.didi.hawaii.p118ar.view.GirdBackGround android:padding="10dp" android:layout_width="0dp" android:layout_height="0dp" android:layout_alignLeft="@+id/lLayout_bg" android:layout_alignTop="@+id/lLayout_bg" android:layout_alignRight="@+id/lLayout_bg" android:layout_alignBottom="@+id/lLayout_bg"/>
+</RelativeLayout>

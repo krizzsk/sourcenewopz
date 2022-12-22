@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="180dp" android:layout_height="138dp">
+    <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:background="@drawable/wallet_global_home_consume_item_bg" android:layout_width="180dp" android:layout_height="138dp">
+        <ImageView android:id="@+id/wallet_consume_enter_item_icon_iv" android:layout_width="80dp" android:layout_height="55dp" android:layout_marginTop="6dp" android:scaleType="centerCrop" android:adjustViewBounds="true" android:maxWidth="80dp" android:maxHeight="300dp"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/pay_base_black" android:gravity="start" android:id="@+id/wallet_consume_enter_item_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp"/>
+        <View android:gravity="start" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:id="@+id/view_shadow" android:background="#99ffffff" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

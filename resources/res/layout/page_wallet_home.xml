@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/fl_root_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_content" android:background="@color/white" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/fl_bar" android:layout_width="match_parent" android:layout_height="94dp">
+        <View android:id="@+id/v_bar" android:background="?attr/wallet_home_title_bar_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/fl_back" android:visibility="gone" android:layout_width="40dp" android:layout_height="53dp" android:layout_marginTop="34dp" android:layout_marginStart="16dp">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/common_title_back_arrow"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:id="@+id/ll_bar" android:layout_width="match_parent" android:layout_height="53dp" android:layout_marginTop="34dp"/>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/float_view" android:visibility="gone" android:layout_width="@dimen/wallet_dp_70" android:layout_height="@dimen/wallet_dp_70" android:layout_marginBottom="90dp">
+        <ImageView android:id="@+id/float_view_res" android:layout_width="@dimen/wallet_dp_70" android:layout_height="@dimen/wallet_dp_70" android:scaleType="centerCrop"/>
+        <ImageView android:layout_gravity="end" android:id="@+id/btn_close" android:layout_width="@dimen/wallet_dp_15" android:layout_height="@dimen/wallet_dp_15" android:src="@drawable/icon_float_window_close" android:layout_marginEnd="@dimen/wallet_dp_6"/>
+    </FrameLayout>
+    <FrameLayout android:orientation="vertical" android:id="@+id/ll_wallet_page_loading" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</merge>

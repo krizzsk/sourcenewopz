@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="#6625262d" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/g_new_coupon_dialog_ll" android:background="@drawable/g_new_coupon_dialog_orange_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="111.5dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/g_new_coupon_rv" android:scrollbars="vertical" android:layout_width="267dp" android:layout_height="294dp" android:layout_marginTop="12dp"/>
+        <LinearLayout android:gravity="center" android:layout_width="267dp" android:layout_height="50dp">
+            <TextView android:textSize="@dimen/_14dp" android:textColor="@color/oc_color_FFFFFF" android:gravity="center" android:id="@+id/g_new_coupon_dialog_btn" android:background="@drawable/global_new_coupon_btm_btn" android:paddingLeft="34dp" android:paddingRight="34dp" android:layout_width="wrap_content" android:layout_height="34dp" android:textAllCaps="false"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:id="@+id/g_new_coupon_bottom" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:paddingTop="68dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/global_newbee_coupon_close_icon" android:scaleType="centerInside"/>
+    </LinearLayout>
+</LinearLayout>

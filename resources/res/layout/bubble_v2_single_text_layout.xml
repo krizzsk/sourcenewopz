@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/bubble_round_bg_green" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="20dp">
+    <RelativeLayout android:id="@+id/layout_content" android:layout_width="wrap_content" android:layout_height="32dp">
+        <com.didi.sdk.view.richtextview.RichTextView android:textSize="@dimen/font_size_small" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</FrameLayout>

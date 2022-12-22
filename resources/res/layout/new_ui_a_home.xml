@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.didi.sdk.view.GlobalDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/drawer_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/home_entrance_view_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <fragment android:name="com.didi.sdk.map.MapFragment" android:id="@+id/home_map_fragment" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <FrameLayout android:id="@+id/home_entrance_view_below" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/home_entrance_view_new" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+            <fragment android:name="com.didi.sdk.home.bizbar.HomeBizNavBarFragment" android:id="@+id/biz_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <fragment android:name="com.didi.sdk.home.view.HomeNewTitleBarFragment" android:id="@+id/title_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:id="@+id/home_entrance_view_above" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/viewVirtualStatus" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <fragment android:name="com.didi.sdk.sidebar.fragment.HomeNavDrawerFragmentV2" android:layout_gravity="start" android:id="@+id/navigation_drawer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.didi.sdk.view.GlobalDrawerLayout>

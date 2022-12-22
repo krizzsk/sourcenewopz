@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/progress_bar" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="22dp" android:indeterminateDrawable="@drawable/dimina_app_loading_progress_bar"/>
+    <TextView android:textSize="14sp" android:textColor="@color/dimina_color_CD000000" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginTop="22dp" android:layout_marginRight="32dp" android:layout_marginBottom="32dp" android:text="@string/dimina_launch_loading_process_tip" android:maxLines="2"/>
+</LinearLayout>

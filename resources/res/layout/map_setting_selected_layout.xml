@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/map_setting_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/map_setting_title_view"/>
+    <View android:layout_marginTop="16dp" style="@style/map_setting_item_line_style"/>
+    <RelativeLayout style="@style/map_setting_item_style">
+        <ImageView android:id="@+id/map_setting_remember_nav" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/map_setting_on_off_selected" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="16dp" android:textColor="@color/map_setting_item_text" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/map_setting_remember_my_choice" android:singleLine="true" android:textDirection="locale" android:textAlignment="viewStart" android:layout_toStartOf="@+id/map_setting_remember_nav" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+    <View style="@style/map_setting_item_line_style"/>
+    <com.didi.map.setting.global.MapSettingSelectedView android:id="@+id/map_setting_nav_selected_group" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

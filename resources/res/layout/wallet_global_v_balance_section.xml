@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="18dp" android:paddingTop="15dp" android:paddingRight="0dp" android:layout_width="match_parent" android:layout_height="125dp" android:paddingStart="18dp" android:paddingEnd="0dp">
+            <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16dp" android:textColor="#666666" android:gravity="start" android:id="@+id/tv_balance_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <ImageView android:id="@+id/iv_balance_help" android:paddingLeft="10dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wallet_global_main_list_help_icon" android:paddingStart="10dp" android:paddingEnd="20dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@+id/ll_balance_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr">
+                    <TextView android:textSize="24dp" android:textColor="@drawable/wallet_global_paymethod_titlecolor_selector" android:gravity="start" android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:id="@+id/tv_balance_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp"/>
+                    <TextView android:textSize="40dp" android:textColor="@drawable/wallet_global_paymethod_titlecolor_selector" android:gravity="start" android:id="@+id/tv_balance_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/tv_balance_value_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginTop="2dp" android:src="@drawable/wallet_global_balance_value_arrow_selector" android:layout_marginStart="7dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:gravity="start" android:background="#0a000000" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="16dp" android:layout_marginTop="125dp" android:layout_marginRight="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <LinearLayout android:gravity="top|left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@+id/ll_balance_entry_container" android:paddingTop="25dp" android:layout_width="match_parent" android:layout_height="112dp" android:layout_marginTop="125dp"/>
+        <com.didi.sdk.view.tips.TipsView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:id="@+id/v_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="90dp"/>
+    </FrameLayout>
+    <TextView android:gravity="start" android:id="@+id/tv_tips" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:layout_marginStart="18dp" android:layout_marginEnd="18dp"/>
+    <ImageView android:id="@+id/iv_banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:layout_marginStart="18dp" android:layout_marginEnd="18dp"/>
+</LinearLayout>

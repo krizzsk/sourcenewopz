@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/common_error_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/error_img" android:layout_width="@dimen/rf_dimen_312" android:layout_height="@dimen/rf_dimen_312" android:layout_centerHorizontal="true"/>
+        <com.didi.entrega.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/rf_dimen_44" android:textColor="@color/rf_color_gery_1_0_000000" android:gravity="center" android:id="@+id/error_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rf_dimen_56" android:layout_below="@+id/error_img" android:layout_centerHorizontal="true"/>
+        <com.didi.entrega.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/rf_dimen_24" android:textColor="@color/rf_color_gery_1_0_000000" android:gravity="center" android:id="@+id/error_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rf_dimen_96" android:layout_marginTop="@dimen/rf_dimen_7" android:layout_marginRight="@dimen/rf_dimen_96" android:layout_below="@+id/error_title" android:layout_centerHorizontal="true"/>
+        <com.didi.rfusion.widget.button.RFGhostButton android:id="@+id/customer_bt_retry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rf_dimen_40" android:layout_below="@+id/error_detail" android:layout_centerHorizontal="true" app:rf_btn_spec="1"/>
+    </RelativeLayout>
+</RelativeLayout>

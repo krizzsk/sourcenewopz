@@ -1,0 +1,695 @@
+{
+  "componentsTree": {
+    "componentName": "View",
+    "children": [
+      {
+        "componentName": "View",
+        "style": {
+          "justifyContent": "center",
+          "position": "absolute",
+          "left": "0px",
+          "top": "0px",
+          "right": "0px",
+          "bottom": "0px",
+          "backgroundColor": "#00000099",
+          "borderTopLeftRadius": "40px",
+          "borderTopRightRadius": "40px"
+        }
+      },
+      {
+        "componentName": "View",
+        "children": [
+          {
+            "componentName": "Text",
+            "props": {
+              "textLineClamp": 2,
+              "fontSize": "28px",
+              "fontFamily": "{{$local.font.bold}}",
+              "color": "#FFFFFF",
+              "textOverflow": "ellipsis",
+              "text": "{{($store.statusDesc || \"\") + (($store.statusDesc.__length > 0 && $store.bizTimeDesc.__length > 0) ? \":\" : \"\") + ($store.bizTimeDesc || \"\")}}"
+            },
+            "style": {
+              "alignSelf": "center",
+              "marginLeft": "32px",
+              "marginRight": "32px"
+            }
+          }
+        ],
+        "style": {
+          "justifyContent": "center",
+          "height": "73px"
+        },
+        "condition": "{{$store.statusDesc.__length > 0 || $store.bizTimeDesc.__length > 0}}"
+      },
+      {
+        "componentName": "View",
+        "children": [
+          {
+            "componentName": "View",
+            "children": [
+              {
+                "componentName": "ImageTailText",
+                "props": {
+                  "textLineClamp": 2,
+                  "fontSize": "48px",
+                  "fontFamily": "{{$local.font.bold}}",
+                  "color": "#000000",
+                  "textOverflow": "ellipsis",
+                  "src": "{{$local.image.blackArrow}}",
+                  "imageWidth": "28px",
+                  "imageHeight": "28px",
+                  "imageBaselineOffset": "0px",
+                  "text": "{{$store.shopName}}"
+                },
+                "style": {
+                  "flex": 1,
+                  "marginLeft": "32px",
+                  "marginRight": "32px"
+                }
+              },
+              {
+                "componentName": "Image",
+                "props": {
+                  "src": "{{$store.honorInfo.iconUrl}}",
+                  "resize": "cover"
+                },
+                "style": {
+                  "marginLeft": "16px",
+                  "marginRight": "24px",
+                  "width": "72px",
+                  "height": "72px"
+                },
+                "condition": "{{$store.honorInfo.iconUrl}}"
+              }
+            ],
+            "style": {
+              "paddingTop": "48px"
+            },
+            "actions": [
+              {
+                "event": "onClick",
+                "logics": [
+                  {
+                    "method": "openShopDetail",
+                    "params": {
+                      "shopId": "$store.shopId"
+                    }
+                  },
+                  {
+                    "method": "trace",
+                    "params": {
+                      "key": "sailing_c_x_shop_title_ck",
+                      "attr": {
+                        "shop_id": "{{$store.shopId}}",
+                        "shop_biz_status": "{{$store.cShopStatus}}",
+                        "delivery_fee": "{{($store.currency || \"\") + \"_\" + ($store.deliveryPriceOri || \"\") + \"_\" + ($store.deliveryPriceAct || \"\")}}",
+                        "delivery_type": "{{$store.deliveryType}}",
+                        "distance": "{{$store.distance}}",
+                        "delivery_time": "{{$store.deliveryTime}}"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "componentName": "View",
+            "children": [
+              {
+                "componentName": "View",
+                "componentId": "rating",
+                "children": [
+                  {
+                    "componentName": "View",
+                    "children": [
+                      {
+                        "componentName": "View",
+                        "children": [
+                          {
+                            "componentName": "Text",
+                            "props": {
+                              "textLineClamp": 1,
+                              "fontSize": "22px",
+                              "fontFamily": "{{$local.font.regular}}",
+                              "textOverflow": "ellipsis",
+                              "color": "#00000099",
+                              "text": "{{$item.title}}"
+                            },
+                            "style": {
+                              "flexShrink": 1
+                            }
+                          },
+                          {
+                            "componentName": "IconText",
+                            "props": {
+                              "color": "#00000099",
+                              "fontSize": "24px",
+                              "textLineClamp": 1,
+                              "text": "rf_icon_v3_outlined_information"
+                            },
+                            "style": {
+                              "marginLeft": "4px"
+                            },
+                            "actions": [
+                              {
+                                "event": "onClick",
+                                "logics": [
+                                  {
+                                    "method": "showTips",
+                                    "params": {
+                                      "content": "{{$item.rules.text}}",
+                                      "duration": 5,
+                                      "maxLine": 2
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "condition": "{{$item.rules.text}}"
+                          }
+                        ],
+                        "style": {
+                          "flexDirection": "row",
+                          "alignItems": "center"
+                        }
+                      },
+                      {
+                        "componentName": "View",
+                        "children": [
+                          {
+                            "componentName": "IconText",
+                            "props": {
+                              "textLineClamp": 1,
+                              "textAlign": "left",
+                              "fontFamily": "{{$local.font.bold}}",
+                              "textOverflow": "ellipsis",
+                              "text": "{{$item.icon}}"
+                            },
+                            "condition": "{{$item.icon}}"
+                          },
+                          {
+                            "componentName": "SodaText",
+                            "props": {
+                              "textLineClamp": 1,
+                              "textAlign": "left",
+                              "fontFamily": "{{$local.font.bold}}",
+                              "textOverflow": "ellipsis",
+                              "inlineTextAlignMiddle": 1,
+                              "text": "{{$item.content}}"
+                            },
+                            "style": {
+                              "marginLeft": "{{$item.icon.__length == 0 ? \"0px\" : \"4px\"}}"
+                            },
+                            "condition": "{{$item.content}}"
+                          }
+                        ],
+                        "style": {
+                          "alignItems": "center",
+                          "flexShrink": "{{($store.rating.__length + $store.fulfillment.__length) == 1 ? 1 : 0}}",
+                          "marginLeft": "{{($store.rating.__length + $store.fulfillment.__length) == 1 ? \"9px\" : \"0px\"}}",
+                          "marginTop": "{{($store.rating.__length + $store.fulfillment.__length) == 1 ? \"0px\" : \"8px\"}}"
+                        }
+                      }
+                    ],
+                    "style": {
+                      "flexDirection": "{{($store.rating.__length + $store.fulfillment.__length) == 1 ? \"row\" : \"column\"}}",
+                      "flexShrink": "{{($store.rating.__length + $store.fulfillment.__length) == 1 ? 1 : 0}}",
+                      "paddingLeft": "{{$index == 0 ? \"0px\" : \"46px\"}}",
+                      "paddingRight": "{{($store.rating.__length - 1 == $index && $store.fulfillment.__length == 0 && $item.rules.text.__length == 0) ? \"0px\": \"46px\"}}",
+                      "maxWidth": "{{($store.rating.__length - 1 == $index && $store.fulfillment.__length == 0) ? \"auto\": ($index == 0 ? \"206px\" : \"252px\")}}"
+                    }
+                  },
+                  {
+                    "componentName": "View",
+                    "style": {
+                      "alignSelf": "center",
+                      "width": "1px",
+                      "height": "56px",
+                      "backgroundColor": "#00000014"
+                    },
+                    "condition": "{{$index != $store.rating.__length - 1 || $store.fulfillment.__length != 0}}"
+                  }
+                ],
+                "style": {
+                  "flexDirection": "row",
+                  "flex": "{{$store.rating.__length - 1 == $index && $store.fulfillment.__length == 0 ? 1: 0}}"
+                },
+                "loop": "{{$store.rating}}"
+              },
+              {
+                "componentName": "View",
+                "componentId": "fulfillment",
+                "children": [
+                  {
+                    "componentName": "View",
+                    "children": [
+                      {
+                        "componentName": "View",
+                        "children": [
+                          {
+                            "componentName": "Text",
+                            "props": {
+                              "textLineClamp": 1,
+                              "fontSize": "22px",
+                              "fontFamily": "{{$local.font.regular}}",
+                              "textOverflow": "ellipsis",
+                              "color": "#00000099",
+                              "text": "{{$item.title}}"
+                            },
+                            "style": {
+                              "flexShrink": 1
+                            }
+                          },
+                          {
+                            "componentName": "IconText",
+                            "props": {
+                              "color": "#00000066",
+                              "fontSize": "24px",
+                              "textLineClamp": 1,
+                              "text": "rf_icon_v3_outlined_information"
+                            },
+                            "style": {
+                              "marginLeft": "4px"
+                            },
+                            "actions": [
+                              {
+                                "event": "onClick",
+                                "logics": [
+                                  {
+                                    "method": "showTips",
+                                    "params": {
+                                      "content": "{{$item.rules.text}}",
+                                      "duration": 5,
+                                      "maxLine": 2
+                                    }
+                                  },
+                                  {
+                                    "method": "{{$item.type == 1 ? \"trace\" : \"placeholderAction\"}}",
+                                    "params": {
+                                      "key": "sailing_c_x_shop_delivery_activity_ck",
+                                      "attr": {
+                                        "shop_id": "{{$store.shopId}}",
+                                        "shop_biz_status": "{{$store.cShopStatus}}"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "condition": "{{$item.rules.text}}"
+                          }
+                        ],
+                        "style": {
+                          "flexDirection": "row",
+                          "alignItems": "center"
+                        }
+                      },
+                      {
+                        "componentName": "View",
+                        "children": [
+                          {
+                            "componentName": "IconText",
+                            "props": {
+                              "textLineClamp": 1,
+                              "textAlign": "left",
+                              "fontFamily": "{{$local.font.bold}}",
+                              "textOverflow": "ellipsis",
+                              "text": "{{$item.icon}}"
+                            },
+                            "condition": "{{$item.icon}}"
+                          },
+                          {
+                            "componentName": "SodaText",
+                            "props": {
+                              "textLineClamp": 1,
+                              "textAlign": "left",
+                              "fontFamily": "{{$local.font.bold}}",
+                              "textOverflow": "ellipsis",
+                              "inlineTextAlignMiddle": 1,
+                              "text": "{{$item.content}}"
+                            },
+                            "style": {
+                              "marginLeft": "{{$item.icon.__length == 0 ? \"0px\" : \"4px\"}}"
+                            },
+                            "condition": "{{$item.content}}"
+                          }
+                        ],
+                        "style": {
+                          "marginLeft": "{{($store.rating.__length + $store.fulfillment.__length) == 1 ? \"9px\" : \"0px\"}}",
+                          "marginTop": "{{($store.rating.__length + $store.fulfillment.__length) == 1 ? \"0px\" : \"8px\"}}"
+                        }
+                      }
+                    ],
+                    "style": {
+                      "flexDirection": "{{($store.rating.__length + $store.fulfillment.__length) == 1 ? \"row\" : \"column\"}}",
+                      "paddingLeft": "{{$store.rating.__length == 0 && $index == 0 ? \"0px\" : \"46px\"}}",
+                      "paddingRight": "{{($store.fulfillment.__length - 1 == $index && $item.rules.text.__length == 0) ? \"0px\": \"46px\"}}",
+                      "maxWidth": "{{$store.fulfillment.__length - 1 == $index? \"auto\" : ($store.rating.__length == 0 ? \"206px\" : \"252px\")}}"
+                    },
+                    "actions": [
+                      {
+                        "event": "onShow",
+                        "logics": [
+                          {
+                            "method": "{{$item.type == 1 ? \"trace\" : \"\"}}",
+                            "params": {
+                              "key": "sailing_c_x_shop_delivery_activity_sw",
+                              "attr": {
+                                "shop_id": "{{$store.shopId}}",
+                                "shop_biz_status": "{{$store.cShopStatus}}",
+                                "is_available": "{{$item.rules.text.__length > 0 ? 1 : 0}}"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "componentName": "View",
+                    "style": {
+                      "alignSelf": "center",
+                      "width": "1px",
+                      "height": "56px",
+                      "backgroundColor": "#00000014"
+                    },
+                    "condition": "{{$index != $store.fulfillment.__length -1}}"
+                  }
+                ],
+                "style": {
+                  "flexDirection": "row",
+                  "flex": "{{$store.fulfillment.__length - 1 == $index? 1: 0}}"
+                },
+                "loop": "{{$store.fulfillment}}"
+              }
+            ],
+            "style": {
+              "marginLeft": "32px",
+              "marginTop": "{{($store.rating.__length + $store.fulfillment.__length) == 1 ? \"24px\" : \"32px\"}}",
+              "marginRight": "32px"
+            },
+            "condition": "{{$store.rating.__length > 0 || $store.fulfillment.__length > 0}}"
+          },
+          {
+            "componentName": "View",
+            "children": [
+              {
+                "componentName": "ChevronHorizontalScroller",
+                "props": {
+                  "contentInset": "2px 108px 2px 32px",
+                  "arrowWidth": "100px",
+                  "showArrow": "{{($store.couponTags.__length <= 1 && $store.tags.__length <= 1) ? 0 : 1}}",
+                  "appearThreshold": "170px",
+                  "arrowIconSize": "28px",
+                  "showScrollBar": 0,
+                  "bounces": 1,
+                  "offsetAccuracy": 0
+                },
+                "children": [
+                  {
+                    "componentName": "View",
+                    "children": [
+                      {
+                        "componentName": "View",
+                        "children": [
+                          {
+                            "componentName": "View",
+                            "componentId": "coupon",
+                            "children": [
+                              {
+                                "componentName": "Image",
+                                "props": {
+                                  "src": "{{$item.imgUrl}}",
+                                  "resize": "cover"
+                                },
+                                "style": {
+                                  "position": "absolute",
+                                  "left": "0px",
+                                  "top": "0px",
+                                  "width": "68px",
+                                  "height": "68px",
+                                  "borderTopLeftRadius": "12px",
+                                  "borderBottomLeftRadius": "12px"
+                                },
+                                "condition": "{{$item.imgUrl}}"
+                              },
+                              {
+                                "componentName": "SodaText",
+                                "props": {
+                                  "textLineClamp": 1,
+                                  "textAlign": "left",
+                                  "fontFamily": "{{$local.font.bold}}",
+                                  "textOverflow": "ellipsis",
+                                  "inlineTextAlignMiddle": 1,
+                                  "text": "{{$item.content}}"
+                                },
+                                "style": {
+                                  "marginLeft": "20px",
+                                  "marginRight": "14px"
+                                },
+                                "condition": "{{$item.content}}"
+                              },
+                              {
+                                "componentName": "Image",
+                                "props": {
+                                  "src": "{{$local.image.dottedLine}}",
+                                  "resize": "stretch"
+                                },
+                                "style": {
+                                  "alignSelf": "center",
+                                  "width": "1px",
+                                  "height": "36px"
+                                }
+                              },
+                              {
+                                "componentName": "View",
+                                "children": [
+                                  {
+                                    "componentName": "Text",
+                                    "props": {
+                                      "color": "#FFFFFF",
+                                      "textLineClamp": 1,
+                                      "textAlign": "left",
+                                      "fontFamily": "{{$local.font.bold}}",
+                                      "fontSize": "20px",
+                                      "textOverflow": "ellipsis",
+                                      "text": "{{$item.title}}"
+                                    },
+                                    "condition": "{{$item.title}}"
+                                  },
+                                  {
+                                    "componentName": "Text",
+                                    "props": {
+                                      "color": "#FFFFFF",
+                                      "textLineClamp": 1,
+                                      "textAlign": "left",
+                                      "fontFamily": "{{$local.font.regular}}",
+                                      "fontSize": "20px",
+                                      "textOverflow": "ellipsis",
+                                      "text": "{{$item.subTitle}}"
+                                    },
+                                    "condition": "{{$item.subTitle}}"
+                                  }
+                                ],
+                                "style": {
+                                  "flexDirection": "column",
+                                  "justifyContent": "center",
+                                  "marginLeft": "14px",
+                                  "marginRight": "20px",
+                                  "maxWidth": "210px"
+                                }
+                              },
+                              {
+                                "componentName": "View",
+                                "style": {
+                                  "position": "absolute",
+                                  "left": "-11px",
+                                  "top": "26px",
+                                  "width": "16px",
+                                  "height": "16px",
+                                  "backgroundColor": "#FFFFFF",
+                                  "borderRadius": "16px"
+                                }
+                              },
+                              {
+                                "componentName": "View",
+                                "style": {
+                                  "position": "absolute",
+                                  "top": "26px",
+                                  "right": "-11px",
+                                  "width": "16px",
+                                  "height": "16px",
+                                  "backgroundColor": "#FFFFFF",
+                                  "borderRadius": "16px"
+                                }
+                              }
+                            ],
+                            "style": {
+                              "overflow": "hidden",
+                              "marginRight": "{{$store.couponTags.__length - 1 == $index ? \"0\" : \"20px\"}}",
+                              "marginBottom": "{{$store.tags.__length > 0 ? \"20px\" : \"0px\"}}",
+                              "height": "68px",
+                              "backgroundColor": "{{\"linear-gradient(90deg \" + $item.bgColor[0] + \" \" + $item.bgColor[1] + \")\"}}",
+                              "borderRadius": "12px"
+                            },
+                            "loop": "{{$store.couponTags}}"
+                          }
+                        ],
+                        "style": {
+                          "flexDirection": "row"
+                        },
+                        "condition": "{{$store.couponTags}}"
+                      },
+                      {
+                        "componentName": "View",
+                        "children": [
+                          {
+                            "componentName": "View",
+                            "componentId": "tags",
+                            "children": [
+                              {
+                                "componentName": "Image",
+                                "props": {
+                                  "src": "{{$item.imgUrl}}",
+                                  "resize": "cover"
+                                },
+                                "style": {
+                                  "position": "absolute",
+                                  "left": "0px",
+                                  "top": "0px",
+                                  "width": "42px",
+                                  "height": "42px",
+                                  "borderTopLeftRadius": "12px",
+                                  "borderBottomLeftRadius": "12px"
+                                },
+                                "condition": "{{$item.imgUrl}}"
+                              },
+                              {
+                                "componentName": "IconText",
+                                "props": {
+                                  "textLineClamp": 1,
+                                  "textAlign": "left",
+                                  "fontSize": "24px",
+                                  "fontFamily": "{{$local.font.regular}}",
+                                  "color": "{{$item.fontColor}}",
+                                  "text": "{{$item.icon}}"
+                                },
+                                "style": {
+                                  "marginRight": "5px"
+                                },
+                                "condition": "{{$item.icon}}"
+                              },
+                              {
+                                "componentName": "Text",
+                                "props": {
+                                  "textLineClamp": 1,
+                                  "textAlign": "left",
+                                  "fontSize": "24px",
+                                  "fontFamily": "{{$local.font.regular}}",
+                                  "color": "{{$item.fontColor}}",
+                                  "text": "{{$item.content}}"
+                                },
+                                "condition": "{{$item.content}}"
+                              }
+                            ],
+                            "style": {
+                              "overflow": "hidden",
+                              "marginRight": "{{$store.tags.__length - 1 == $index ? \"0\" : \"20px\"}}",
+                              "paddingLeft": "16px",
+                              "paddingRight": "16px",
+                              "height": "42px",
+                              "backgroundColor": "{{$item.backColor}}",
+                              "borderRadius": "12px"
+                            },
+                            "loop": "{{$store.tags}}"
+                          }
+                        ],
+                        "style": {
+                          "flexDirection": "row"
+                        },
+                        "condition": "{{$store.tags}}"
+                      }
+                    ],
+                    "style": {
+                      "flexDirection": "column"
+                    }
+                  },
+                  {
+                    "componentName": "View",
+                    "style": {
+                      "position": "absolute",
+                      "left": "0px",
+                      "top": "0px",
+                      "right": "0px",
+                      "bottom": "0px",
+                      "backgroundColor": "#FFFFFF66"
+                    },
+                    "condition": "{{$store.statusDesc.__length > 0 || $store.bizTimeDesc.__length > 0}}"
+                  }
+                ],
+                "actions": [
+                  {
+                    "event": "onClick",
+                    "logics": [
+                      {
+                        "method": "trace",
+                        "params": {
+                          "key": "sailing_c_x_shop_coupon_activity_ck",
+                          "attr": {
+                            "shop_id": "{{$store.shopId}}",
+                            "shop_biz_status": "{{$store.cShopStatus}}"
+                          }
+                        }
+                      },
+                      {
+                        "method": "{{$store.action == 2 ? \"openShopDetail\" : \"openPage\"}}",
+                        "params": {
+                          "url": "{{($global.brand == 2 ? \"https://c-h5.didi-food.com/${locale}/merchantCouponInfo\" : \"https://food-c-h5.99app.com/${locale}/merchantCouponInfo\") + \"?backbuttonshow=0\" + \"&shopId=\" + $store.shopId + \"&shop_biz_status=\" + $store.cShopStatus}}"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "event": "onDragEnd",
+                    "logics": [
+                      {
+                        "method": "trace",
+                        "params": {
+                          "key": "sailing_c_x_shop_tab_slide_ck",
+                          "attr": {
+                            "shop_id": "{{$store.shopId}}",
+                            "shop_biz_status": "{{$store.cShopStatus}}",
+                            "slide_type": "{{$invoke.dragDirection == 0 ? 3 : ($invoke.dragDirection == 1 ? 4 : $invoke.dragDirection)}}",
+                            "slide_scene": 2
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "style": {
+              "flexDirection": "column",
+              "paddingTop": "46px"
+            },
+            "condition": "{{$store.couponTags.__length > 0 || $store.tags.__length > 0}}"
+          }
+        ],
+        "style": {
+          "flexDirection": "column",
+          "paddingBottom": "56px",
+          "backgroundColor": "#FFFFFF",
+          "borderTopLeftRadius": "40px",
+          "borderTopRightRadius": "40px"
+        }
+      }
+    ],
+    "style": {
+      "flexDirection": "column"
+    }
+  },
+  "version": "2"
+}

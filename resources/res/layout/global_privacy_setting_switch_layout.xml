@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@color/white" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.SwitchCompat android:id="@+id/switcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="12dp" android:layout_marginRight="18dp" android:checked="true" android:thumb="@drawable/global_privacy_switch_didi_thumb" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="15dp" android:layout_marginEnd="18dp" android:layout_alignParentEnd="true" app:track="@drawable/global_privacy_switch_didi_track_selector"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/switcher" android:layout_centerVertical="true" android:layout_toStartOf="@+id/switcher">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginStart="18dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@+id/divider" android:background="#0a000000" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="18dp" android:layout_marginStart="18dp"/>
+    <TextView android:textSize="12sp" android:textColor="#6625262d" android:id="@+id/description" android:background="#f3f4f5" android:paddingLeft="18dp" android:paddingTop="6dp" android:paddingRight="18dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="18dp" android:paddingEnd="18dp"/>
+</LinearLayout>

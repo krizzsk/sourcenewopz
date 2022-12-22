@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@drawable/global_cashier_loading_background" android:padding="24dp" android:paddingLeft="22dp" android:paddingTop="37dp" android:paddingRight="22dp" android:paddingBottom="37dp" android:layout_width="115dp" android:layout_height="115dp">
+    <ImageView android:id="@+id/merchant_sdk_loading_view_iv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp"/>
+    <ImageView android:id="@+id/merchant_sdk_loading_view_iv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

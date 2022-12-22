@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/outline" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="20dp">
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/layout_content" android:layout_width="wrap_content" android:layout_height="32dp">
+        <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/tvBubbleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Meeting driver here" android:includeFontPadding="false" style="@style/Map.TextViewStyle.TextDirection"/>
+    </RelativeLayout>
+</FrameLayout>

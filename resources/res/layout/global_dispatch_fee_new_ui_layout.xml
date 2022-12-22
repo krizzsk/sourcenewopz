@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:background="@drawable/touched_drawable" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_dispatch_fee" android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/global_dispatchfee_service_icon_dispatching_fee"/>
+    <TextView android:textSize="12sp" android:textColor="#ff000000" android:gravity="center" android:id="@+id/tv_dispatch_fee_msg" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp"/>
+    <ImageView android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/global_dispatchfee_icon_more" android:layout_marginStart="4dp"/>
+</LinearLayout>

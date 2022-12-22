@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/xp_template_biz_layout_left_img" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/ggk_color_000000" android:ellipsize="end" android:id="@+id/xp_template_biz_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="24dp" android:layout_marginRight="20dp" android:maxLines="2"/>
+            <TextView android:textSize="12sp" android:textColor="#919599" android:ellipsize="end" android:id="@+id/xp_template_biz_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="6dp" android:layout_marginRight="20dp" android:maxLines="3"/>
+            <LinearLayout android:id="@+id/xp_template_biz_btn_horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp">
+                <TextView android:textSize="12sp" android:textColor="@color/ggk_color_000000" android:gravity="center" android:id="@+id/xp_template_biz_btn_left" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:textColor="@color/ggk_color_000000" android:gravity="center" android:id="@+id/xp_template_biz_btn_right" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="16dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/xp_template_biz_btn_vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp">
+                <TextView android:textSize="12sp" android:textColor="@color/ggk_color_000000" android:gravity="center" android:id="@+id/xp_template_biz_btn_up" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp"/>
+                <TextView android:textSize="12sp" android:textColor="@color/ggk_color_000000" android:gravity="center" android:id="@+id/xp_template_biz_btn_bottom" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="16dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/xp_template_biz_image" android:visibility="visible" android:layout_width="120dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+</FrameLayout>

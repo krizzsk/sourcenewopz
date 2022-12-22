@@ -1,0 +1,10 @@
+{
+    "FACEBOOK_SHARE":[
+        "com.didi.onekeyshare.wrapper.FacebookPlatform",
+        "com.didi.onekeyshare.wrapper.DispatchFacebookShareCbActivity",
+        "com.facebook.share.widget.ShareDialog",
+        "com.facebook.internal.FacebookDialogBase",
+        "com.didi.sharesdk.ShareApi",
+        "com.facebook.FacebookSdk"
+    ]
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/global_pe_order_record_view_bg" android:layout_width="match_parent" android:layout_height="215dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="42dp">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/business_name_tv" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:maxLines="1" android:layout_weight="1" android:textAllCaps="true"/>
+        <TextView android:textSize="12sp" android:textColor="#333333" android:id="@+id/price_unit_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="5dp"/>
+        <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <ImageView android:id="@+id/time_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/history_record_time_icon"/>
+        <TextView android:textSize="14sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/date_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:maxLines="1"/>
+        <TextView android:textSize="14sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="15dp" android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <ImageView android:id="@+id/start_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="?attr/dot_pickup_icon"/>
+        <TextView android:textSize="14sp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/start_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="15dp" android:maxLines="1" style="@style/TextView.Gray.Medium"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="15dp">
+        <ImageView android:id="@+id/end_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="?attr/dot_dropoff_icon"/>
+        <TextView android:textSize="14sp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/end_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="15dp" android:maxLines="1"/>
+    </LinearLayout>
+    <View android:background="#1a000000" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="70dp">
+        <com.didi.component.payentrance.view.DriverIconImageView android:id="@+id/driver_bar_circle_image" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="16dp" android:layout_marginRight="6dp" android:src="@drawable/global_pe_order_record_view_driver_head" app:driver_border_color="#14000000" app:driver_border_width="1px"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="12dp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/diver_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false"/>
+            <TextView android:textSize="12dp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/car_info_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:maxLines="1" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:id="@+id/plate_data_tv" android:background="@drawable/global_driver_bar_default_plate_num_bg" android:paddingLeft="12dp" android:paddingTop="5dp" android:paddingRight="12dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="15dp" android:maxLines="1"/>
+    </LinearLayout>
+</LinearLayout>

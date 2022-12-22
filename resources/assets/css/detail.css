@@ -1,0 +1,40 @@
+#total-info {
+    background: #F0EFF5;
+    padding: 15px;
+}
+#total-info > span {
+    margin-right: 10px;
+}
+.reason-container {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #858687;
+    padding-top: 15px;
+}
+#item-container > center {
+    margin-top: 80px;
+}
+.reason-container > div {
+    border: 3px solid #f00;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    position: relative;
+    top: -2px;
+
+}
+.deal-info {
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+.date-info {
+    float: left;
+    color: #AAABAC;
+    padding-left: 15px;
+}
+.deal-status {
+    float: right;
+    color: #313233;
+    padding-right: 15px;
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/biz_bar_item" android:layout_width="wrap_content" android:layout_height="70dp">
+        <ImageView android:id="@+id/biz_bar_item_icon" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/biz_bar_nav_icon_default"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="10sp" android:textColor="#ff919599" android:ellipsize="end" android:id="@+id/biz_bar_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Ride" android:maxLines="1" app:autoSizeMaxTextSize="10sp" app:autoSizeMinTextSize="9sp" app:autoSizeTextType="1"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/biz_bar_item_red_point" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="14dp" android:layout_marginLeft="14dp" android:layout_marginBottom="22dp"/>
+</FrameLayout>

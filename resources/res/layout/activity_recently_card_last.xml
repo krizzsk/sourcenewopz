@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/pass_content" android:background="#f5f6fa" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/business_image" android:layout_width="39dp" android:layout_height="39dp" android:src="@mipmap/ic_launcher" android:layout_marginStart="14dp"/>
+        <TextView android:textSize="16sp" android:textColor="#000" android:ellipsize="end" android:id="@+id/order_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@+id/business_image" android:layout_marginStart="14dp"/>
+        <TextView android:textSize="14sp" android:textColor="#ff5c6166" android:ellipsize="end" android:id="@+id/order_flag_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:singleLine="true" android:layout_below="@+id/order_flag" android:layout_alignStart="@+id/order_flag"/>
+        <TextView android:textSize="14sp" android:textColor="#ff5c6166" android:ellipsize="end" android:id="@+id/order_status_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:singleLine="true" android:layout_below="@+id/order_flag_tips" android:layout_alignStart="@+id/order_flag"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/order_status_detail" android:layout_alignStart="@+id/order_flag">
+            <TextView android:textSize="14sp" android:textColor="#ff5c6166" android:id="@+id/order_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:layout_marginBottom="27dp" android:layout_centerVertical="true"/>
+            <TextView android:gravity="center" android:id="@+id/pass_card_btn" android:background="@drawable/activity_card_pass_btn_bg" android:layout_width="80dp" android:layout_height="30dp" android:layout_centerVertical="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

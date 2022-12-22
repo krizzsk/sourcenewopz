@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/pix_order_status_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_dp_22" android:layout_marginRight="@dimen/wallet_dp_22">
+        <TextView android:textSize="@dimen/wallet_sp_20" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/pix_order_status_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_dp_10"/>
+        <TextView android:textSize="@dimen/wallet_dp_40" android:textStyle="bold" android:id="@+id/pix_order_amount_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_below="@+id/pix_order_status_tv"/>
+        <ImageView android:id="@+id/order_status_icon_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gua_dialog_icon_success" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/section_container_Ll" android:background="@drawable/pix_rectangle_white_corner20_bg" android:paddingTop="@dimen/wallet_dp_10" android:paddingBottom="@dimen/wallet_dp_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/page_level_margin" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/page_level_margin" android:minHeight="10dp"/>
+    <ImageView android:textSize="@dimen/wallet_sp_20" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/orderdetail_99logo_img" android:visibility="gone" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginTop="12dp" android:src="@drawable/w_common_99logo"/>
+    <Space android:layout_width="match_parent" android:layout_height="@dimen/wallet_dp_10"/>
+</LinearLayout>

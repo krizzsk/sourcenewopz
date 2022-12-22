@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/pix_rectangle_white_corner20_bg" android:layout_width="match_parent" android:layout_height="@dimen/wallet_dp_70" android:paddingStart="@dimen/wallet_dp_18" android:paddingEnd="@dimen/wallet_dp_18">
+    <ImageView android:id="@+id/pix_key_item_left_icon" android:layout_width="@dimen/wallet_dp_30" android:layout_height="@dimen/wallet_dp_30" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wallet_dp_10" android:layout_toRightOf="@+id/pix_key_item_left_icon" android:layout_centerVertical="true" android:layout_marginStart="@dimen/wallet_dp_8">
+        <TextView android:textSize="@dimen/wallet_sp_16" android:textStyle="bold" android:textColor="@color/wallet_color_919599" android:id="@+id/pix_key_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/wallet_sp_10" android:textColor="@color/wallet_color_FF4060" android:id="@+id/pix_key_item_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_dp_2"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/pix_key_item_right_arrow" android:layout_width="@dimen/wallet_dp_12" android:layout_height="@dimen/wallet_dp_12" android:src="@drawable/pix_key_list_arrow_right_icon" android:scaleType="center" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

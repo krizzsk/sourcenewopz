@@ -1,0 +1,128 @@
+.dropdown {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    line-height: 50px;
+    font-size: 16px;
+    position: relative;
+    margin: 0;
+    padding: 0 34px 0 10px;
+}
+
+.dropdown-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dropdown-chevron-down {
+    position: absolute;
+    top: 21px;
+    right: 10px;
+    border-top: 6px solid #ccc;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    cursor: pointer;
+}
+
+.dropdown-chevron-down-mask {
+    position: absolute;
+    top: 19px;
+    right: 10px;
+    border-top: 6px solid #fff;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    cursor: pointer;
+}
+
+.wheel1 {
+}
+.wheel2 {
+    margin-bottom: 15px;
+}
+.wheel1 .dropdown, .wheel2 .dropdown {
+    border-top: none;
+}
+.desc {
+    margin-bottom: 25px;
+}
+textarea.textarea {
+    resize: none;
+    border: none;
+    box-shadow: none;
+    height: 73px;
+    padding: 0;
+    font-size: 16px;
+}
+
+.textarea:focus {
+    box-shadow: none;
+}
+#add-screenshot {
+    border: 1px dashed #ccc;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.screenshot-cut {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.screenshot {
+    cursor: pointer;
+}
+.screenshot .horizontal {
+    position: absolute;
+    border-top: 2px solid #ccc;
+    top: 49px;
+    left: 25px;
+    width: 50px;
+}
+.screenshot .vertical {
+    position: absolute;
+    border-left: 2px solid #ccc;
+    top: 25px;
+    left: 49px;
+    height: 50px;
+}
+#screenshot-container {
+    display: inline-block;
+}
+.screenshot-item {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+.screenshot-remove {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background: #ccc;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+}
+.screenshot-remove > div {
+    position: absolute;
+    top: 9px;
+    left: 3px;
+    width: 14px;
+    border-top: 2px solid #fff;
+ }
+.send {
+    margin-top: 30px;
+}
+#send:focus {
+    outline: none;
+}

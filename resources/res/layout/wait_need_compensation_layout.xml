@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_fl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="20dp" android:layout_marginEnd="12.5dp">
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/discount_lottie_view" android:visibility="gone" android:layout_width="94dp" android:layout_height="94dp" app:lottie_autoPlay="true" app:lottie_fileName="discount_coupon_bg_anim.json" app:lottie_imageAssetsFolder="images/" app:lottie_loop="true"/>
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progress_bar" android:layout_width="match_parent" android:layout_height="7dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/progress_bar_style" android:layout_marginStart="17.5dp" android:layout_marginEnd="48dp" style="?android:attr/progressBarStyleHorizontal"/>
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/thumb_layout_fl" android:layout_width="40dp" android:layout_height="40dp">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/thumb_lottie_view" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/thumb_image" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp"/>
+    </FrameLayout>
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/discount_lottie_view_translate" android:visibility="gone" android:layout_width="94dp" android:layout_height="94dp" app:lottie_autoPlay="true" app:lottie_fileName="discount_coupon_bg_anim.json" app:lottie_imageAssetsFolder="images/" app:lottie_loop="true"/>
+    <FrameLayout android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/gift_box_layout_fl" android:layout_width="100dp" android:layout_height="100dp">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/gift_lottie_view" android:visibility="gone" android:layout_width="100dp" android:layout_height="100dp"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/discount_coupon_image" android:visibility="gone" android:layout_width="56dp" android:layout_height="34.5dp" android:src="@drawable/coupon_bg"/>
+        <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@+id/discount_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rotation="-8" android:layout_marginEnd="5dp"/>
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/start_bg_lottie_view" android:layout_width="100dp" android:layout_height="100dp" app:lottie_autoPlay="true" app:lottie_fileName="start_bg.json" app:lottie_loop="true"/>
+    </FrameLayout>
+</FrameLayout>

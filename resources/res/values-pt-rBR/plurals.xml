@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="customer_business_exceed_sale_amount">
+        <item quantity="one">Pedidos adicionais de itens com quantidade limitada são cobrados pelo preço original</item>
+        <item quantity="other">Pedidos %d adicionais de itens com quantidade limitada são cobrados pelo preço original</item>
+    </plurals>
+    <plurals name="customer_business_goods_add_num_restriction">
+        <item quantity="one">Somente mais 1 unidade do mesmo item pode ser pedida</item>
+        <item quantity="other">É possível pedir até %d unidades desse item</item>
+    </plurals>
+    <plurals name="customer_business_goods_sub_item_num_restriction">
+        <item quantity="one">Limite: 1</item>
+        <item quantity="other">Limite: %d</item>
+    </plurals>
+    <plurals name="customer_business_goods_sub_item_num_restriction_fixed">
+        <item quantity="one">Selecionar 1</item>
+        <item quantity="other">Selecionar %d</item>
+    </plurals>
+    <plurals name="customer_goods_buy_gift_amount_tip">
+        <item quantity="one">Adicione 1 para ganhar 1 de graça</item>
+        <item quantity="other">Adicione 1 para ganhar %d de graça</item>
+    </plurals>
+    <plurals name="customer_goods_buy_gift_received_tip">
+        <item quantity="one">Ganhou 1 item gratuito</item>
+        <item quantity="other">Ganhou %d item(ns) gratuito(s)</item>
+    </plurals>
+    <plurals name="customer_goods_purchase_add_num">
+        <item quantity="one">Adicione 1</item>
+        <item quantity="other">Adicione %d</item>
+    </plurals>
+    <plurals name="customer_order_eta">
+        <item quantity="one">1 minuto</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <plurals name="customer_put_away">
+        <item quantity="one">Ocultar tudo (1)</item>
+        <item quantity="other">Ocultar tudo (%d)</item>
+    </plurals>
+    <plurals name="customer_show_all">
+        <item quantity="one">Ver tudo (1)</item>
+        <item quantity="other">Ver tudo (%d)</item>
+    </plurals>
+    <plurals name="customer_show_all_shop">
+        <item quantity="one">Ver todos os estabelecimentos (1)</item>
+        <item quantity="other">Ver todos os estabelecimentos (%d)</item>
+    </plurals>
+    <plurals name="customer_show_all_sold_out">
+        <item quantity="one">Mostrar todos os itens esgotados (1)</item>
+        <item quantity="other">Mostrar todos os itens esgotados (%d)</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nova notificação</item>
+        <item quantity="other">%d novas notificações</item>
+    </plurals>
+</resources>

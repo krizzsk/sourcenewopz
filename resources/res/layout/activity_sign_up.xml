@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/wallet_color_F3F4F5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/space_view" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/_52dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/containerView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/space_view">
+        <com.didi.payment.kycservice.kyc.view.widget.StepProgressBar android:id="@+id/step_progress_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_dp_10"/>
+        <FrameLayout android:id="@+id/pix_sign_up_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <include android:id="@+id/pix_net_error_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/wallet_dp_52" layout="@layout/w_common_sdk_net_error_view"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/pix_toolbar" android:background="@color/trans" android:layout_width="match_parent" android:layout_height="@dimen/wallet_dp_52">
+        <ImageView android:layout_gravity="center" android:id="@+id/pix_toolbar_left_back_iv" android:padding="@dimen/wallet_dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/w_common_sdk_back_icon"/>
+    </LinearLayout>
+</RelativeLayout>

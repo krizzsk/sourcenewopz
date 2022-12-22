@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/global_promo_code_dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16sp" android:textColor="@color/g_color_333333" android:gravity="center" android:id="@+id/global_promo_code_dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginBottom="10dp" android:text="@string/global_promo_code_error"/>
+    <TextView android:textSize="14sp" android:textColor="@color/g_color_666666" android:id="@+id/global_promo_code_dialog_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:maxLines="10" android:lineSpacingExtra="2dp"/>
+    <View android:background="@color/pe_color_19000000" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <Button android:textSize="16sp" android:textStyle="bold" android:textColor="@color/g_color_FEA330" android:gravity="center" android:id="@+id/global_promo_code_dialog_btn_ok" android:background="@null" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/global_dispatch_fee_confirm_btn"/>
+</LinearLayout>

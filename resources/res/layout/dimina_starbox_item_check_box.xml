@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/dimina_starbox_setting_item_background" android:layout_width="match_parent" android:layout_height="52dp">
+    <TextView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/desc" android:layout_marginLeft="16dp" android:text="@string/dm_kit_app_name" style="@style/DK.TextBig.Dark"/>
+    <CheckBox android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/menu_switch" android:layout_marginRight="16dp" style="@style/DK.CheckBox"/>
+    <View android:layout_gravity="bottom" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" style="@style/DK.Divider"/>
+</FrameLayout>

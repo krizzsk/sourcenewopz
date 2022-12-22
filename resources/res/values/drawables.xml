@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="activity_background_drawable">@color/white</drawable>
+    <drawable name="global_newbie_guide_content">@drawable/global_newbie_guide_content_en</drawable>
+    <drawable name="grade_default_bg">#4a4c5b</drawable>
+    <drawable name="item_selected">#f0f0f0</drawable>
+    <drawable name="material_ic_keyboard_arrow_next_black_24dp">@drawable/material_ic_keyboard_arrow_right_black_24dp</drawable>
+    <drawable name="material_ic_keyboard_arrow_previous_black_24dp">@drawable/material_ic_keyboard_arrow_left_black_24dp</drawable>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <drawable name="pin_input_layout_edit_text_editable_bg">#ffffffff</drawable>
+    <drawable name="pin_input_layout_edit_text_uneditable_bg">#00000000</drawable>
+    <drawable name="pop_back_trans">#b30a121a</drawable>
+    <drawable name="transparent">#00000000</drawable>
+</resources>

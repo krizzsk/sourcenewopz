@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/customer_60px">
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/customer_ll_bad_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="@dimen/rf_dimen_72" android:layout_height="@dimen/rf_dimen_72">
+                <com.didi.rfusion.widget.RFIconView android:textSize="@dimen/rf_dimen_72" android:textColor="@color/rf_color_v2_grey1_9_a4" android:id="@+id/customer_iv_bad_bg" android:layout_width="@dimen/rf_dimen_72" android:layout_height="@dimen/rf_dimen_72" android:text="@string/rf_icon_v3_outlined_poor"/>
+            </FrameLayout>
+            <com.didi.soda.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/customer_text_size_32px" android:textColor="@color/rf_color_gery_1_0_000000" android:ellipsize="end" android:gravity="center" android:id="@+id/customer_bad_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customer_24px" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/customer_ll_good_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_244px">
+            <FrameLayout android:layout_width="@dimen/rf_dimen_72" android:layout_height="@dimen/rf_dimen_72">
+                <com.didi.rfusion.widget.RFIconView android:textSize="@dimen/rf_dimen_72" android:textColor="@color/rf_color_v2_grey1_9_a4" android:id="@+id/customer_iv_good_bg" android:layout_width="@dimen/rf_dimen_72" android:layout_height="@dimen/rf_dimen_72" android:text="@string/rf_icon_v3_outlined_praise"/>
+            </FrameLayout>
+            <com.didi.soda.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/customer_text_size_32px" android:textColor="@color/rf_color_gery_1_0_000000" android:ellipsize="end" android:gravity="center" android:id="@+id/customer_good_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customer_24px" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

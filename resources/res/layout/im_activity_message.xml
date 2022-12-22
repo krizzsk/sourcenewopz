@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/bts_im_layout_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/bts_im_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.didi.beatles.p099im.views.titlebar.CommonTitleBar android:id="@+id/im_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.didi.beatles.p099im.views.buttonView.IMTopOperationView android:id="@+id/im_top_operation_view" android:background="@drawable/im_nomix_titlebar_bg" android:paddingBottom="@dimen/im_2_dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/im_60_dp"/>
+        <RelativeLayout android:id="@+id/im_content_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:id="@+id/im_no_msg_iv" android:visibility="gone" android:layout_width="@dimen/im_100_dp" android:layout_height="@dimen/im_100_dp"/>
+                <TextView android:textSize="@dimen/im_13_sp" android:textColor="@color/im_no_msg_color" android:layout_gravity="center" android:id="@+id/im_no_msg_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_20_dp"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/im_conversation_recyclerview" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:cacheColorHint="@null" android:divider="@null"/>
+            <com.didi.beatles.p099im.views.eggs.IMEggsLayout android:id="@+id/im_eggs_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.didi.beatles.p099im.views.IMRecommendEmojiView android:id="@+id/im_conversation_recommond_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/im_10_dp" android:layout_marginBottom="@dimen/im_10_dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/im_10_dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/im_detailes_loading_view" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/im_55_dp">
+            <com.didi.beatles.p099im.views.widget.IMLoadingView android:id="@+id/im_detailes_loading_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <TextView android:textSize="@dimen/im_14_sp" android:textColor="@color/im_color_333" android:id="@+id/im_detailes_loading_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/im_loading_failed_text" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include android:id="@+id/im_guide_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/im_private_order_guide_layout"/>
+</FrameLayout>

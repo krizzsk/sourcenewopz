@@ -1,0 +1,200 @@
+{
+		"levels": {
+			"level0": {
+				"root": {
+					"subLevel": "level1",
+					"groupList": [
+						[{
+							"id": 1,
+							"componentType": "nav_to_edit_account",
+							"traceEvent": "pas_sidebar_profile_ck",
+							"url": "GuaranaOneTravel://one/editProfile",
+							"name": "",
+							"subPage": "account",
+							"des": ""
+						}, {
+							"id": 3,
+							"componentType": "menu_common_link",
+							"traceEvent": "pas_sidebar_mytrip_ck",
+							"iconUrl": "https://img0.didiglobal.com/static/zhuancheimg/38752e01710c8c1a5133c21c4bc63814.png",
+							"url": "GuaranaOneTravel://one/history",
+							"name": "Corridas",
+							"des": ""
+						}, {
+							"id": 2,
+							"componentType": "menu_common_link",
+							"traceEvent": "pas_sidebar_payment_ck",
+							"iconUrl": "https://img0.didiglobal.com/static/zhuancheimg/439015c677e288b52728f1505721acbf.png",
+							"url": "GuaranaOneTravel://one/nativeWallet",
+							"name": "Pagamento",
+							"des": ""
+						}, {
+							"id": 4,
+							"componentType": "menu_common_link",
+							"traceEvent": "pas_sidebar_help_ck",
+							"iconUrl": "https://img0.didiglobal.com/static/zhuancheimg/b1bea5dd6ed137f6bf3fcd2ab0aaad67.png",
+							"url": "https://help.didiglobal.com/passenger-index.html",
+							"name": "Ajuda",
+							"des": ""
+						}, {
+							"id": 5,
+							"componentType": "menu_common_link",
+							"traceEvent": "pas_sidebar_setting_ck",
+							"iconUrl": "https://img0.didiglobal.com/static/zhuancheimg/418fc8a5be35228a17757cec8c96e3b5.png",
+							"url": "GuaranaOneTravel://one/settings",
+							"subPage": "setting",
+							"name": "Configurações",
+							"des": ""
+						}],
+						[{
+							"id": 7,
+							"componentType": "menu_common_link",
+							"traceEvent": "pas_sidebar_invite_ck",
+							"iconUrl": "https://img0.didiglobal.com/static/zhuancheimg/3a99330dc973616939c98c82b82263ae.png",
+							"url": "https://static-dorado.99taxis.mobi/vue/dist/index.html?c=20000&d=301&cId=94&a=12739&b=120070",
+							"name": "Corridas Grátis",
+							"des": ""
+						}, {
+							"id": 6,
+							"componentType": "menu_common_link",
+							"traceEvent": "pas_sidebar_bedriver_ck",
+							"iconUrl": "https://img0.didiglobal.com/static/zhuancheimg/576ead83279122ed5ac731fe20cfa957.png",
+							"url": "https://page.99taxis.mobi/common/register?lang=pt-BR#/",
+							"name": "Seja Motorista",
+							"des": ""
+						}, {
+							"id": 8,
+							"componentType": "menu_common_link",
+							"traceEvent": "pas_sidebar_promos_ck",
+							"iconUrl": "https://img0.didiglobal.com/static/zhuancheimg/b1b722b0083560c102c748fc77da2dc5.png",
+							"url": "https://page.99app.com/global/passenger/apps/redeem/get-coupon/index.html?a=11720&b=20003&c=20001&s=15161790265593483112608&m=&ts=1516179026&fc=a13035b6818bbf70d57abeea290146f4&t=QR&d=330&fromChanel=sidebar",
+							"name": "Cupom de Desconto",
+							"des": ""
+						}]
+					]
+				}
+			},
+			"level1": {
+				"setting": {
+					"subLevel": "level2",
+					"title": "Configurações",
+					"groupList": [
+						[{
+							"id": 9,
+							"componentType": "menu_setting_common_link",
+							"name": "Perfil",
+							"subPage": "account",
+							"url": "GuaranaOneTravel://one/editProfile"
+						}, {
+							"id": 8,
+							"componentType": "menu_setting_language_switch",
+							"name": "Idioma",
+							"url": "GuaranaOneTravel://one/language"
+						}, {
+							"id": 28,
+							"componentType": "menu_setting_common_link",
+							"name": "Meus endereços",
+							"url": "GuaranaOneTravel://one/address"
+						}, {
+							"id": 10,
+							"componentType": "menu_setting_hide_number",
+							"name": "Ocultar telefone",
+							"url": "GuaranaOneTravel://one/hidenumber"
+						}],
+						[{
+							"id": 12,
+							"componentType": "menu_setting_common_link",
+							"name": "Termos de Uso",
+							"url": "https://common.didiglobal.com/icmc/pmc/lawUrl"
+						}, {
+							"id": 11,
+							"componentType": "menu_setting_common_link",
+							"name": "Sobre",
+							"subPage": "about",
+							"url": "GlobalCommon://one/about"
+						}, {
+							"id": 13,
+							"componentType": "menu_setting_logout",
+							"name": "Sair"
+						}]
+					]
+				},
+				"account": {
+					"subLevel": "level2",
+					"title": "Perfil",
+					"groupList": [
+						[{
+							"id": 14,
+							"componentType": "account_edit_avatar",
+							"des": "Trocar a imagem de perfil"
+						}, {
+							"id": 15,
+							"componentType": "account_edit_firt_name",
+							"des": "Nome",
+							"name": "Insira seu primeiro nome"
+						}, {
+							"id": 16,
+							"componentType": "account_edit_last_name",
+							"des": "Sobrenome",
+							"name": "Insira seu sobrenome"
+						}],
+						[{
+							"id": 17,
+							"componentType": "account_modfy_phone",
+							"name": "Alterar telefone",
+							"url": "GuaranaOneTravel://one/modifyPhoneNum"
+						}, {
+							"id": 26,
+							"componentType": "account_modify_email",
+							"name": "Alterar email",
+							"url": "GuaranaOneTravel://one/modifyEmail"
+						}, {
+							"id": 18,
+							"componentType": "menu_setting_common_link",
+							"name": "Alterar senha",
+							"url": "GuaranaOneTravel://one/modifyPassword"
+						}]
+					]
+				}
+			},
+			"level2": {
+				"account": {
+					"subLevel": "level1",
+					"title": "Perfil",
+					"groupList": [
+						[{
+							"id": 20,
+							"componentType": "account_edit_avatar",
+							"des": "Trocar a imagem de perfil"
+						}, {
+							"id": 21,
+							"componentType": "account_edit_firt_name",
+							"des": "Nome",
+							"name": "Insira seu primeiro nome"
+						}, {
+							"id": 22,
+							"componentType": "account_edit_last_name",
+							"des": "Sobrenome",
+							"name": "Insira seu sobrenome"
+						}],
+						[{
+							"id": 23,
+							"componentType": "account_modfy_phone",
+							"name": "Alterar telefone",
+							"url": "GuaranaOneTravel://one/modifyPhoneNum"
+						}, {
+							"id": 26,
+							"componentType": "account_modify_email",
+							"name": "Alterar email",
+							"url": "GuaranaOneTravel://one/modifyEmail"
+						}, {
+							"id": 24,
+							"componentType": "menu_setting_common_link",
+							"name": "Alterar senha",
+							"url": "GuaranaOneTravel://one/modifyPassword"
+						}]
+					]
+				}
+			}
+		}
+	}

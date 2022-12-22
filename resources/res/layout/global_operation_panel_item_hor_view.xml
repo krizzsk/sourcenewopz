@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/global_operation_panel_item_bg_selector" android:layout_width="match_parent" android:layout_height="46dp">
+    <TextView android:textSize="@dimen/ms_14sp" android:textColor="@color/global_operation_item_text_color" android:gravity="center" android:id="@+id/tv_operationpanel_item_name" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerInParent="true"/>
+</RelativeLayout>

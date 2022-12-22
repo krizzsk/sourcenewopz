@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="18dp" android:layout_width="match_parent" android:layout_height="61dp">
+    <ImageView android:id="@+id/g_contact_head_img" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="10dp" android:src="@drawable/g_contact_head_img"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="14sp" android:textColor="@color/g_color_333333" android:gravity="center" android:id="@+id/g_contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="12sp" android:textColor="@color/g_color_999999" android:gravity="center" android:id="@+id/g_contact_phone_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="1"/>
+    </LinearLayout>
+    <CheckBox android:gravity="center" android:id="@+id/g_contact_select_btn" android:padding="18dp" android:visibility="visible" android:layout_width="54dp" android:layout_height="54dp" android:button="@null" android:drawableLeft="@drawable/split_fare_checkbox_multiple_selector"/>
+</LinearLayout>

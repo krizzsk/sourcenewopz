@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/tv_left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/old_poi_one_address_sub_poi_item_global"/>
+    <include android:id="@+id/tv_middle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/old_poi_one_address_sub_poi_item_global"/>
+    <include android:id="@+id/tv_right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/old_poi_one_address_sub_poi_item_global"/>
+    <include android:id="@+id/tv_backup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/old_poi_one_address_sub_poi_item_global"/>
+</LinearLayout>

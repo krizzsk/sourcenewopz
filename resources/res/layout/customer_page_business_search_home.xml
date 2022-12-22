@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/customer_fl_business_parent" android:background="@color/rf_color_v2_grey2_10_a100" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.soda.customer.widget.StatusBarView android:id="@+id/customer_custom_status_bar" android:background="@color/customer_color_transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0"/>
+    <FrameLayout android:id="@+id/customer_fl_business_search_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/customer_custom_status_bar"/>
+    <FrameLayout android:id="@+id/customer_fl_business_cart_container" android:tag="@string/customer_cart_container_tag" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/customer_fl_business_words_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/rf_dimen_124" android:layout_below="@+id/customer_custom_status_bar"/>
+    <FrameLayout android:id="@+id/customer_add_cart_animation_container" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+</RelativeLayout>

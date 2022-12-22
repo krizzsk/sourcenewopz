@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/customer_cl_order_page_map" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.entrega.customer.widget.map.SodaMapView android:id="@+id/customer_custom_map_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.didi.entrega.order.widgets.SpreadView android:id="@+id/customer_custom_spreed_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:count_down_color="@color/rf_color_white_100_FFFFFF" app:ring_color="@color/rf_color_jianbian_4_31B77E" app:spread_center_color="@color/rf_color_white_100_FFFFFF" app:spread_delay_milliseconds="35" app:spread_spread_color="@color/rf_color_white_100_FFFFFF"/>
+    <com.didi.entrega.order.widgets.MarkerInfoWindowView android:id="@+id/customer_custom_info_view" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/customer_40px" android:paddingRight="@dimen/customer_40px" android:paddingBottom="@dimen/customer_77px" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/customer_text_size_48px" android:textColor="@color/rf_color_gery_1_0_000000" android:id="@+id/customer_tv_send_receipt" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/customer_order_send_receipts"/>
+</FrameLayout>

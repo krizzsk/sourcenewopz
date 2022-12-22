@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/login_unify_dimen_20dp" android:paddingRight="@dimen/login_unify_dimen_52dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/login_unify_dimen_20dp" android:paddingEnd="@dimen/login_unify_dimen_52dp">
+    <TextView android:id="@+id/tv_title" android:text="@string/login_unify_forget_cell" android:layout_below="@+id/iv_back" style="@style/LoginUnifyTiTileStyle"/>
+    <TextView android:id="@+id/tv_sub_title" android:text="@string/login_unify_forget_cell_tips_1" android:layout_below="@+id/tv_title" style="@style/LoginUnifySubTiTileStyle"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/login_unify_forget_cell_tip_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_unify_dimen_20dp" android:layout_below="@+id/tv_sub_title">
+        <TextView android:textSize="@dimen/login_unify_dimen_14dp" android:textColor="@color/login_unify_color_common_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_unify_forget_cell_tips_no_1"/>
+        <TextView android:textSize="@dimen/login_unify_dimen_14dp" android:textColor="@color/login_unify_color_common_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_unify_dimen_14dp" android:text="@string/login_unify_forget_cell_tips_2" android:layout_marginStart="@dimen/login_unify_dimen_14dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/login_unify_forget_cell_tip_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_unify_dimen_10dp" android:layout_below="@+id/login_unify_forget_cell_tip_2">
+        <TextView android:textSize="@dimen/login_unify_dimen_14dp" android:textColor="@color/login_unify_color_common_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_unify_forget_cell_tips_no_2"/>
+        <TextView android:textSize="@dimen/login_unify_dimen_14dp" android:textColor="@color/login_unify_color_common_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_unify_dimen_14dp" android:text="@string/login_unify_forget_cell_tips_3" android:layout_marginStart="@dimen/login_unify_dimen_14dp"/>
+    </LinearLayout>
+</RelativeLayout>

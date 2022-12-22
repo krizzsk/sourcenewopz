@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="60dp" android:minHeight="60dp">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/oc_home_destination_item_icon" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="18dp" android:layout_marginRight="4dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/global_where_to_go_new_ui_recommend_address_text_color_selector" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/oc_home_destination_item_title" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:lines="1"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <color android:color="@color/wallet_color_FFFFFF"/>
+    </item>
+    <item>
+        <color android:color="@color/wallet_frozen_bg_color_light"/>
+    </item>
+</layer-list>

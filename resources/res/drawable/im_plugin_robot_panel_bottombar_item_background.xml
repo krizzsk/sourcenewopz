@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#f0f1f6" android:endColor="#d2d5dd" android:angle="270"/>
+        </shape>
+    </item>
+    <item android:state_selected="false">
+        <shape android:shape="rectangle">
+            <solid android:color="#fbfbfd"/>
+        </shape>
+    </item>
+</selector>

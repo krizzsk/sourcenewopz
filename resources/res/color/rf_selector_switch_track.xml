@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_enabled="false" android:state_checked="true" android:color="@color/rf_color_disable_1_100"/>
+    <item android:state_enabled="false" android:state_checked="false" android:color="@color/rf_color_gery_1_0_000000" android:alpha="0.3"/>
+    <item android:state_checked="true" android:color="@color/rf_color_brands_1_100" android:alpha="0.3"/>
+    <item android:color="@color/rf_color_gery_1_0_000000" android:alpha="0.3"/>
+</selector>

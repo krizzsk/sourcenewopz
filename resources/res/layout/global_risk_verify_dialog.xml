@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+        <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@+id/tv_verify_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/risk_page_title" android:includeFontPadding="false"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@+id/tv_verify_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/risk_page_dialog_msg_alert" android:includeFontPadding="false"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="?attr/submit_btn_text_color_selector" android:gravity="center" android:id="@+id/tv_verify_btn" android:background="?attr/submit_btn_bg_selector" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="42dp" android:text="@string/risk_page_dialog_msg_alert_confirm"/>
+    </LinearLayout>
+    <View android:id="@+id/risk_verify_fallback" android:layout_width="match_parent" android:layout_height="0dp"/>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100dp">
+    <FrameLayout android:id="@+id/driver_card_message_container" android:background="@drawable/global_round_40dp_bg" android:clipChildren="false" android:layout_width="255dp" android:layout_height="40dp" android:contentDescription="@string/GRider_0111_Contact_the_YEhX" android:backgroundTint="#e9eaeb">
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/im_entrance_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/global_im_entrance_ic_v2_small_selector"/>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@+id/im_entrance_icon">
+                <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/im_entrance_msg" android:background="@drawable/global_im_entrance_count_bg_v3" android:visibility="gone" android:clipChildren="false" android:layout_width="15dp" android:layout_height="15dp"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/g_color_000" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/im_entrance_default_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="39dp" android:text="@string/GR_Pick_and_OnTrip_2020_drvCard_im_placeholder" android:maxLines="1"/>
+    </FrameLayout>
+    <FrameLayout android:orientation="horizontal" android:id="@+id/im_bubble_msg_container" android:background="@drawable/driver_bar_v2_near_msg_bg" android:visibility="gone" android:layout_width="209dp" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginRight="60dp">
+        <TextView android:textSize="12dp" android:textColor="@color/g_color_white" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/im_bubble_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxLines="1"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/im_bubble_ic_right"/>
+    </FrameLayout>
+</RelativeLayout>

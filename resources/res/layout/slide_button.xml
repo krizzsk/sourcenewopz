@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/background_view" android:background="@drawable/slide_button_background_orange" android:layout_width="match_parent" android:layout_height="60dp">
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/loading_view" android:layout_width="24dp" android:layout_height="18dp" android:scaleType="fitCenter" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/slide_button_loading"/>
+    <RelativeLayout android:id="@+id/foreground_view" android:background="@drawable/slide_button_foreground_orange" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/icon_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/nova_assembly_12dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/nova_assembly_12dp"/>
+        <com.didi.nova.assembly.p127ui.shimmer.ShimmerTextView android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/shimmer_text_view" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="1" android:textAllCaps="false"/>
+    </RelativeLayout>
+</merge>

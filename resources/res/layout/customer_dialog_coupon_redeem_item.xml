@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/customer_24px" android:paddingRight="@dimen/customer_24px" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.didi.soda.customer.component.redeem.CouponRedeemItemView android:id="@+id/customer_pop_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customer_20px"/>
+</LinearLayout>

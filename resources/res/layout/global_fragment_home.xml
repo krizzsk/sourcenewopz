@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/oc_root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_global_home_content_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.didi.component.Component android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:name="@string/component_reset_location"/>
+        <com.didi.component.Component android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:name="@string/component_safe_toolkit"/>
+        <com.didi.component.Component android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:name="@string/component_open_ride"/>
+        <com.didi.component.Component android:layout_width="match_parent" android:layout_height="match_parent" app:name="@string/component_newbee_coupon"/>
+        <com.didi.component.Component android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/home_template_home_destination_margin_left" android:layout_marginTop="@dimen/home_template_home_destination_margin_top" android:layout_marginRight="@dimen/home_template_home_destination_margin_right" android:layout_alignParentTop="true" app:name="@string/component_home_destination"/>
+        <com.didi.component.Component android:layout_width="match_parent" android:layout_height="match_parent" app:name="@string/component_xpanel"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_global_home_popup_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/r_global_home_popup_mask" android:background="@color/g_color_6625262D" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.didi.component.ComponentStub android:id="@+id/component_stub" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

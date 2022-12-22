@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#666666" android:ellipsize="end" android:gravity="center" android:id="@+id/ggk_dialog_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ggk_dimen_18dp" android:layout_marginTop="5dp" android:layout_marginRight="@dimen/ggk_dimen_18dp" android:maxLines="1"/>
+</LinearLayout>

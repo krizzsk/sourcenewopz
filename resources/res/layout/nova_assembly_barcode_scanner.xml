@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.didi.zxing.barcodescanner.BarcodeView android:id="@+id/zxing_barcode_surface" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/zxing_rl_surface_loading" android:background="@color/assembly_unit_color_666666" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/qr_code_scanner_barcode_loading_margin_top" android:layout_centerHorizontal="true">
+            <ProgressBar android:layout_gravity="center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:indeterminate="false" android:indeterminateDrawable="@drawable/qr_code_scanner_loading_anim"/>
+            <TextView android:textSize="@dimen/nova_assembly_font_14sp" android:textColor="@color/assembly_unit_color_cc" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/qr_code_scanner_loading_txt"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.didi.zxing.barcodescanner.ViewfinderView android:id="@+id/zxing_viewfinder_view" android:layout_width="match_parent" android:layout_height="match_parent" app:zxing_finder_height="@dimen/qr_code_scanner_barcode_viewfinder_size" app:zxing_finder_margin_top="@dimen/qr_code_scanner_barcode_viewfinder_margin_top" app:zxing_finder_width="@dimen/qr_code_scanner_barcode_viewfinder_size" app:zxing_scan_style="2" app:zxing_viewfinder_laser="#fc9153" app:zxing_viewfinder_laser_gradient_rect_height="40dp" app:zxing_viewfinder_mask="@color/assembly_unit_color_CC25262D"/>
+    <TextView android:textSize="@dimen/qr_code_scanner_barcode_status_label_size" android:textColor="@color/assembly_unit_color_cc" android:gravity="center" android:id="@+id/zxing_status_view" android:background="@color/zxing_transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/qr_code_scanner_barcode_status_label_margin_top" android:text="@string/qr_code_scanner_tip_text"/>
+</merge>

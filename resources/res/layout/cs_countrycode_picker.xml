@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.didi.consume.phone.view.picker.WheelView android:id="@+id/wv_phone_num_countrycode" android:layout_width="match_parent" android:layout_height="150dp"/>
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="?attr/submit_btn_text_color_selector" android:gravity="center" android:id="@+id/btn_phone_num_countrycode_picker_ok" android:background="?attr/submit_btn_bg_selector" android:layout_width="match_parent" android:layout_height="46dp" android:layout_margin="18dp" android:text="@string/pay_base_confirm"/>
+</LinearLayout>

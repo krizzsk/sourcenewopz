@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/where2go_view" android:background="@drawable/drawable_where2go_outer_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/where2_top_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/top_bar_text" android:background="@drawable/drawable_where2go_top_bar_bg" android:paddingLeft="40dp" android:layout_width="match_parent" android:layout_height="24dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/top_bar_left_icon" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="4dp" android:layout_marginTop="4dp" android:layout_marginBottom="5dp" android:src="@drawable/_99_add_icon"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/where_2_main_layout" android:background="@drawable/drawable_where2go_text_bg" android:layout_width="match_parent" android:layout_height="70dp" android:layout_margin="10dp">
+            <ImageView android:id="@+id/where2go_icon" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="15dp" android:src="@drawable/_99_add_icon"/>
+            <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/where2go_text" android:layout_width="match_parent" android:layout_height="29dp" android:layout_marginLeft="8dp" android:layout_marginRight="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

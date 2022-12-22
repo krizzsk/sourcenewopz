@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/trans_pageerr_retry2load_rl_root" android:padding="@dimen/wallet_topup_error_ll_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/trans_pic_service_waiting" android:scaleType="center"/>
+    <TextView android:textSize="@dimen/wallet_topup_error_tv_font_size" android:textColor="@color/wallet_global_top_up_channel_error_tv_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_topup_error_tv_margin_top" android:text="@string/w_common_sdk_retry_title"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_topup_error_refresh_ll_margin_top">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_loaddata_fail_refresh_icon"/>
+        <TextView android:textSize="@dimen/wallet_topup_error_refresh_tv_font_size" android:textColor="@color/wallet_global_top_up_channel_error_refresh_tv_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_topup_error_refresh_tv_margin_left" android:text="@string/w_common_sdk_retry" android:layout_marginStart="@dimen/wallet_topup_error_refresh_tv_margin_left"/>
+    </LinearLayout>
+</LinearLayout>

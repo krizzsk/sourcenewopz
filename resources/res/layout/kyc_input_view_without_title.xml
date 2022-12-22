@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:textSize="@dimen/wallet_sp_24" android:textColor="@color/oc_color_000000" android:id="@+id/pix_input_view_et" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_dp_3" android:inputType="textEmailAddress"/>
+    <ImageView android:id="@+id/pix_input_view_delete_btn" android:padding="@dimen/wallet_dp_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/w_common_sdk_delete_icon" android:layout_alignBottom="@+id/pix_input_view_et" android:layout_alignParentRight="true"/>
+    <View android:id="@+id/pix_input_view_bottom_line" android:background="@color/pix_item_divider" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="8dp" android:layout_below="@+id/pix_input_view_et"/>
+</merge>

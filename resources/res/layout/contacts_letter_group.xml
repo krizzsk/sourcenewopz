@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="@dimen/wallet_sp_12" android:textStyle="bold" android:gravity="center_vertical" android:id="@+id/contact_group_letter_tv" android:background="#f3f4f5" android:paddingLeft="@dimen/wallet_dp_22" android:layout_width="match_parent" android:layout_height="25dp"/>

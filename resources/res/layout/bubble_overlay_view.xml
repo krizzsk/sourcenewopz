@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="87.5dp" android:layout_alignParentBottom="true">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="18dp" android:textStyle="bold" android:textColor="?attr/submit_btn_text_color_selector" android:gravity="center" android:id="@+id/form_btn" android:background="?attr/submit_btn_bg_new_selector" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="46dp" android:layout_marginTop="18dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

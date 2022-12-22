@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/ggk_drawer_up_img" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/ggk_dimen_120dp" android:scaleType="centerCrop"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ggk_drawer_title_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ggk_dimen_18dp" android:layout_marginRight="@dimen/ggk_dimen_18dp">
+        <TextView android:textSize="@dimen/ggk_dimen_24sp" android:textStyle="bold" android:textColor="@color/ggk_color_000000" android:ellipsize="end" android:id="@+id/ggk_drawer_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ggk_dimen_22dp" android:maxLines="3" android:includeFontPadding="false"/>
+        <TextView android:textSize="@dimen/ggk_dimen_16sp" android:textColor="@color/ggk_color_333333" android:ellipsize="end" android:id="@+id/ggk_drawer_sub_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ggk_dimen_10dp" android:includeFontPadding="false"/>
+    </LinearLayout>
+</LinearLayout>

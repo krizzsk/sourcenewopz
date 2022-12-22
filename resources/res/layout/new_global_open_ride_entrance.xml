@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="right|center_vertical|center_horizontal|center|end" android:background="@color/transparent" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="90dp">
+    <ImageView android:layout_gravity="end" android:layout_width="90dp" android:layout_height="90dp" android:layout_marginTop="-5dp" android:layout_marginRight="-10dp" android:src="@drawable/menu_shadow"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/open_ride_entrance" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:src="@drawable/new_global_openride_bg" android:contentDescription="@string/global_open_ride_entrance_desc" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <FrameLayout android:id="@+id/open_ride_bubble_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" app:layout_constraintBottom_toBottomOf="@+id/open_ride_entrance" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/open_ride_entrance" app:layout_constraintTop_toTopOf="@+id/open_ride_entrance"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

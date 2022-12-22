@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.didi.beatles.p099im.views.titlebar.CommonTitleBar android:id="@+id/im_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/im_empty_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/im_title_bar">
+        <ImageView android:id="@+id/empty_icon" android:background="@drawable/im_common_graph_nothing" android:layout_width="@dimen/im_90_dp" android:layout_height="@dimen/im_90_dp" android:layout_centerInParent="true"/>
+        <TextView android:textSize="@dimen/im_16_sp" android:textColor="@color/bts_im_color_dark_gray" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_15_dp" android:text="@string/im_remind_network_unusable"/>
+    </LinearLayout>
+    <ScrollView android:orientation="vertical" android:id="@+id/profile_content" android:background="@color/im_nomix_activity_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/im_title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/im_1_dp">
+            <com.didi.beatles.p099im.views.IMProfileHeaderView android:id="@+id/profile_header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/im_16_sp" android:textColor="@color/im_tv_gray_deep" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/aciton_title" android:paddingLeft="0dp" android:paddingRight="@dimen/im_16_dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_16_dp" android:layout_marginTop="@dimen/im_16_dp" android:text="@string/bts_im_title_history" android:paddingStart="0dp" android:paddingEnd="@dimen/im_16_dp" android:layout_marginStart="@dimen/im_16_dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/profile_history_contain" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/im_20_dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/bts_im_loading_anim" android:indeterminateDuration="4000" android:layout_centerInParent="true"/>
+</RelativeLayout>

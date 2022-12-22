@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/tb" android:layout_width="match_parent" android:layout_height="50dp" layout="@layout/view_title_bar"/>
+    <RelativeLayout android:id="@+id/rl_timer_container" android:background="#55000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/shape_round_red_solid" android:layout_width="15dp" android:layout_height="15dp"/>
+            <TextView android:textSize="20sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/tv_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="00:15" android:layout_marginStart="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <SurfaceView android:id="@+id/sv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/iv_take_video" android:background="@drawable/ic_take_video_start" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginBottom="60dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" android:layout_above="@+id/iv_take_video" android:layout_centerHorizontal="true" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+            <ImageView android:id="@+id/iv_exclamation" android:background="@drawable/ic_exclamation1" android:visibility="gone" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginTop="5dp"/>
+            <TextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/tv_take_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/take_view_hint" android:layout_toRightOf="@+id/iv_exclamation" android:layout_marginStart="5dp" android:layout_toEndOf="@+id/iv_exclamation"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

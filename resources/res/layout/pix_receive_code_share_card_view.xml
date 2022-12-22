@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/light_gray_ss" android:paddingLeft="@dimen/page_level_margin" android:paddingTop="@dimen/page_level_margin" android:paddingRight="@dimen/page_level_margin" android:paddingBottom="@dimen/page_level_margin" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/container" android:background="@drawable/white_bg_with_roundcornor20" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/main_title_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_dp_20"/>
+        <TextView android:textSize="@dimen/wallet_sp_14" android:textColor="@color/black" android:gravity="center" android:id="@+id/desc_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/GRider_payment_You_can_upze"/>
+        <RelativeLayout android:layout_gravity="center_horizontal" android:background="@drawable/pix_green_bg_with_roundcornor_5" android:padding="12dp" android:layout_width="300dp" android:layout_height="300dp" android:layout_marginTop="20dp" android:layout_marginBottom="40dp">
+            <com.didi.payment.commonsdk.view.RoundedImageView android:id="@+id/receive_code_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/append_info_items_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_dp_10"/>
+</LinearLayout>

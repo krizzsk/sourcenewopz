@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="24dp" android:textStyle="bold" android:textColor="#333333" android:id="@+id/sf_toolkit_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="30dp" android:text="@string/sf_toolkit_dialog_title_text"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="52dp" android:paddingBottom="59dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:paddingLeft="@dimen/sf_dimen_20_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/sf_toolkit_dialog_share_btn" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sf_share_btn_selector"/>
+                <TextView android:textSize="@dimen/sf_dimen_18_sp" android:textStyle="bold" android:textColor="@drawable/sf_toolkit_dialog_btn_text_color_selector" android:gravity="center" android:id="@+id/sf_toolkit_dialog_share_btn_text" android:duplicateParentState="true" android:layout_width="121dp" android:layout_height="wrap_content" android:text="@string/sf_toolkit_dialog_share_btn_text"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:paddingRight="@dimen/sf_dimen_20_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/sf_toolkit_dialog_alert_btn" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sf_alert_btn_selector"/>
+                <TextView android:textSize="@dimen/sf_dimen_18_sp" android:textStyle="bold" android:textColor="@drawable/sf_toolkit_dialog_btn_text_color_selector" android:gravity="center" android:id="@+id/sf_toolkit_dialog_alert_btn_text" android:duplicateParentState="true" android:layout_width="121dp" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/sf_toolkit_dialog_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="df_appeal_additional_docs">
+        <item>Carteira de identidade (RG)</item>
+        <item>@string/df_appeal_additional_doc_option2</item>
+        <item>@string/df_appeal_additional_doc_option3</item>
+        <item>@string/df_appeal_additional_doc_option4</item>
+    </array>
+    <array name="df_appeal_doc_type_RG">
+        <item>Tire fotos da frente e verso do seu documento de identidade (RG). As fotos devem ser:</item>
+        <item>@string/df_appeal_doc_photo_common_req1</item>
+        <item>@string/df_appeal_doc_photo_common_req2</item>
+        <item>@string/df_appeal_doc_photo_common_req3</item>
+    </array>
+    <array name="df_appeal_doc_type_cdr">
+        <item>Tire uma foto do seu certificado de reservista. A foto deve ser:</item>
+        <item>@string/df_appeal_doc_photo_common_req1</item>
+        <item>@string/df_appeal_doc_photo_common_req2</item>
+        <item>@string/df_appeal_doc_photo_common_req3</item>
+    </array>
+    <array name="df_appeal_doc_type_cdt">
+        <item>Tire uma foto da sua carteira de trabalho (CTPS). A foto deve ser:</item>
+        <item>@string/df_appeal_doc_photo_common_req1</item>
+        <item>@string/df_appeal_doc_photo_common_req2</item>
+        <item>@string/df_appeal_doc_photo_common_req3</item>
+    </array>
+    <array name="df_appeal_doc_type_passport">
+        <item>Tire uma foto de seu passaporte. A foto deve ser:</item>
+        <item>@string/df_appeal_doc_photo_common_req1</item>
+        <item>@string/df_appeal_doc_photo_common_req2</item>
+        <item>@string/df_appeal_doc_photo_common_req3</item>
+    </array>
+    <array name="df_appeal_driver_license_g1">
+        <item>Envie uma foto de sua carteira de motorista (CHN). A foto deve ser:</item>
+        <item>Clara e mostrar todas as informações, incluindo sua foto</item>
+        <item>Bem iluminada e não ter brilho ou reflexos</item>
+        <item />
+    </array>
+    <array name="df_appeal_driver_license_g2_qr">
+        <item>Envie uma foto do código QR na parte de trás de sua habilitação (CHN). Por favor, certifique-se de que:</item>
+        <item>O código QR esteja claro e não embaçado</item>
+        <item>A foto esteja bem iluminada e não tenha brilho ou reflexos</item>
+        <item />
+    </array>
+    <array name="df_appeal_self_photo">
+        <item>Tire uma foto nítida dá cintura para cima:</item>
+        <item>Tire acessórios como óculos e bonés</item>
+        <item>A foto deve ser clara, mostrar seu rosto todo e não ser uma foto de outra foto</item>
+        <item>A foto deve ser tirada em um lugar bem iluminado</item>
+    </array>
+    <array name="df_take_photo_act_confirm_notes">
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+        <item>@string/df_take_photo_act_confirm_note</item>
+    </array>
+</resources>

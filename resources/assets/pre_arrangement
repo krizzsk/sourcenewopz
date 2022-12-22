@@ -1,0 +1,146 @@
+{
+    "com_type": 2,
+    "data": {
+        "list": [{
+            "group_type": "bus",
+            "biz_config": {
+                "start_node": "bus_home"
+            },
+            "node_config": [{
+                "scene": "bus_home",
+                "element_list": [{
+                        "id": "eevee_template_container_mew"
+                    },
+                    {
+                        "id": "eevee_xengine"
+                    },
+                    {
+                        "id": "eevee_where_to_go"
+                    },
+                    {
+                        "id": "eevee_sug"
+                    },
+                    {
+                        "id": "eevee_mew"
+                    },
+                    {
+                        "id": "eevee_top_banner"
+                    },
+                    {
+                        "id": "eevee_top_banner_item"
+                    },
+                    {
+                        "id": "eevee_enable_location"
+                    },
+                    {
+                        "id": "eevee_data_arrangement"
+                    },
+                    {
+                        "id": "eevee_scene"
+                    },
+                    {
+                        "id": "eevee_service"
+                    },
+                    {
+                        "id": "eevee_top_bar"
+                    }
+                ],
+                "scene_cache": {
+                    "eevee_mew": {
+                        "com_type": 1,
+                        "ui_config": {
+                            "reversed": 0,
+                            "balcony_item": {
+                                "index": 1,
+                                "elevation": 5
+                            },
+                            "background_item": {
+                                "index": 0,
+                                "translation_y": -200
+                            }
+                        },
+                        "component_attribute": {
+                            "com_type": 1,
+                            "update_mode": 0,
+                            "is_multi_com": 1
+                        },
+                        "list": [{
+                                "id": "eevee_top_banner",
+                                "template": "template_biz_card",
+                                "normal": {
+                                    "data": {
+                                        "title": {
+                                            "default": {
+                                                "id": "GRider_page_Mexico_minibus_MmSa"
+                                            }
+                                        }
+                                    }
+                                },
+                                "list": [{
+                                    "id": "eevee_top_banner_item",
+                                    "template": "eevee_template_top_banner_item",
+                                    "normal": {
+                                        "data": {
+                                            "background": "https://img0.didiglobal.com/static/globalxpanel/do1_eBXdB6dxDUfRw5I2iQdJ"
+                                        }
+                                    },
+                                    "extension": {
+                                        "cache": {
+                                            "storage_mode": 1,
+                                            "cache_strategy": 10000,
+                                            "md5": "53EB1F5B2363156E00DC982881FDA751"
+                                        }
+                                    }
+                                }],
+                                "extension": {
+                                    "cache": {
+                                        "storage_mode": 1,
+                                        "cache_strategy": 10000,
+                                        "md5": "53EB1F5B2363156E00DC982881FDA751"
+                                    }
+                                }
+                            },
+                            {
+                                "id": "eevee_where_to_go",
+                                "template": "template_biz_card",
+                                "normal": {
+                                    "data": {
+                                        "title": {
+                                            "default": {
+                                                "id": "GRider_Sug_2020_placeholder_whereTo"
+                                            }
+                                        },
+                                        "icon": "https://img0.didiglobal.com/static/quickbolt/LMXavCjNuSGLA2xq.png",
+                                        "link": "globalOneTravel://eevee/opensug?grouptype=bus&source=where_to_go"
+                                    }
+                                },
+                                "extension": {
+                                    "cache": {
+                                        "storage_mode": 1,
+                                        "cache_strategy": 10000,
+                                        "md5": "FB911F69A91662F3601622302E166F96"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "eevee_sug": {
+                        "com_type": 2,
+                        "data": {
+                            "enable_via_point": 0,
+                            "select_address_link": "globalOneTravel://eevee/sugroute?routeto=estimate",
+                            "cancel_link": "globalOneTravel://eevee/sugroute?routeto=back"
+                        },
+                        "extension": {
+                            "cache": {
+                                "storage_mode": 1,
+                                "cache_strategy": 10000,
+                                "md5": "BCC6F30AB79AEEB76F28C124269891DE"
+                            }
+                        }
+                    }
+                }
+            }]
+        }]
+    }
+}

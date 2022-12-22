@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/g_pay_item_height">
+    <TextView android:textSize="14sp" android:textColor="@color/oc_color_333333" android:gravity="start" android:id="@+id/g_payment_balance_label" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/g_payment_label" android:layout_weight="1"/>
+    <TextView android:textSize="12sp" android:textColor="@color/orange" android:id="@+id/g_payment_balance_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="5dp"/>
+    <ImageView android:id="@+id/g_payment_balance_checkbox" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="10dp" android:src="@drawable/oc_pay_channel_selector" android:layout_marginStart="10dp"/>
+</LinearLayout>

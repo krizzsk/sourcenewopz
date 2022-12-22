@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.didiglobal.p205sa.biz.component.drainageguide.DrainageCornerRelative android:layout_width="280dp" android:layout_height="wrap_content" app:round_corner="20dp">
+        <ImageView android:id="@+id/bgimg" android:background="@drawable/drainagebg" android:layout_width="match_parent" android:layout_height="240dp"/>
+        <ImageView android:id="@+id/img" android:layout_width="match_parent" android:layout_height="120dp"/>
+        <ImageView android:id="@+id/close" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/drainage_close" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#333333" android:gravity="center" android:id="@+id/drainage_tips" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:maxLines="3" android:layout_below="@+id/img"/>
+    </com.didiglobal.p205sa.biz.component.drainageguide.DrainageCornerRelative>
+</FrameLayout>

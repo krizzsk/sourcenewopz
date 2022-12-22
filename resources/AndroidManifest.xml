@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1106280203" android:versionName="6.28.2" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.taxis99" platformBuildVersionCode="31" platformBuildVersionName="12">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="31"/>
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+        </intent>
+        <package android:name="com.google.ar.core"/>
+        <package android:name="com.google.android.gms"/>
+        <package android:name="com.waze"/>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.whatsapp.w4b"/>
+        <package android:name="jp.naver.line.android"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.vkontakte.android"/>
+        <package android:name="org.telegram.messenger"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.facebook.orca"/>
+        <package android:name="com.facebook.wakizashi"/>
+        <package android:name="com.facebook.lite"/>
+        <package android:name="com.facebook.arstudio.player"/>
+        <package android:name="jp.ne.paypay.android.app"/>
+        <package android:name="com.pay99.wallet"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30"/>
+    <uses-permission android:name="com.didi.passenger.sdk.login.permission.broadcast.com.taxis99"/>
+    <permission android:label="access permission" android:name="com.didi.passenger.sdk.login.permission.broadcast.com.taxis99" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="Manifest.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-feature android:name="android.hardware.camera.front.autofocus" android:required="false"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name_99" android:icon="@drawable/ic_launcher_99new" android:name="com.didi.app.DIDIApplicationWithHotPatch" android:allowBackup="false" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="true" android:extractNativeLibs="true" android:fullBackupContent="@xml/appsflyer_backup_rules" android:usesCleartextTraffic="true" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@drawable/ic_launcher_99new" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:requestLegacyExternalStorage="true">
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notification_small_icon_99"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/ms_push_color_transparent"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didiglobal.vamos.comp.operationpanel.cancelreason.CancelReasonActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/WebActivity99" android:name="com.didiglobal.oasis.common.webpage.OasWebActivity"/>
+        <meta-data android:name="flavor_region" android:value="brazil"/>
+        <meta-data android:name="flavor_mobile_service" android:value="gms"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="issue" android:value="6.28.2.22112919182201"/>
+        <meta-data android:name="origin_id" android:value="5"/>
+        <meta-data android:name="COUNTRY" android:value=""/>
+        <meta-data android:name="brand" android:value="99"/>
+        <meta-data android:name="ua" android:value="didi.passenger.guarana"/>
+        <meta-data android:name="deeplink_scheme" android:value="taxis99"/>
+        <meta-data android:name="appsflyer_id" android:value="H2yBp2yFwcnUHCwQdPEWc7"/>
+        <meta-data android:name="AF_STORE" android:value="googleplay"/>
+        <activity android:theme="@style/BrazilLaunchActivityTheme" android:label="@string/app_name_99" android:icon="@drawable/ic_launcher_99new" android:name="com.didi.sdk.app.DidiLoadDexActivity" android:exported="true" android:process=":loaddex" android:screenOrientation="portrait" android:roundIcon="@mipmap/ic_product_brazil_launcher_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.action.launch.DidiLoadDexActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/BrazilLaunchActivityTheme" android:name="com.didi.sdk.app.SchemeDispatcher" android:exported="true">
+            <intent-filter>
+                <data android:scheme="taxis99"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/BrazilLaunchActivityTheme" android:name="com.didi.app.SchemeDispatcherImpl" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <data android:scheme="taxis99didipasnger" android:host="didi_apk_intalled_scheme"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="taxis99didipasnger" android:host="common_marketing_host"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="taxis99OneTravel" android:host="merchantpay"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.didi.global.pay.merchant.action"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="cashierNewSDK99" android:host="pay" android:path="/pullup"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="cashiernewsdk99" android:host="pay" android:path="/pullup"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="taxis99didipasnger" android:host="didi_apk_installed_scheme_extend"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="taxis99didipasnger" android:host="nova"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="taxis99didipasnger" android:host="alipay_sign_back"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="taxis99didipasnger" android:host="alipay_bind_back"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="taxis99didipasnger" android:host="didi_o2o_host"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="taxis99diditripcard"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="taxis99didicommon" android:host="didi_common_url"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="taxis99OneTravel" android:host="pay" android:path="/payagent_settting"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="taxis99OneTravel" android:host="pay" android:path="/payment_method"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="taxis99OneTravel"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="taxis99onetravel"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.didi.push"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="taxis99didipasnger" android:host="alipay_pay_back"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="taxis99didipasnger" android:host="qqpay_sign_back"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.didi.global.fcm.msg.click"/>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.didi.br.fcm.msg.click"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:name="com.didi.sdk.app.SchemeDispatcher" android:targetActivity="com.didi.app.SchemeDispatcherImpl"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.taxis99.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <provider android:name="com.facebook.FacebookContentProvider" android:exported="true" android:authorities="com.facebook.app.FacebookContentProvider366097026765782"/>
+        <provider android:name="com.facebook.internal.FacebookInitProvider" android:enabled="true" android:exported="false" android:authorities="com.taxis99.FacebookInitProvider"/>
+        <provider android:name="com.didi.sdk.p150db.DIDIContentProvider" android:authorities="com.taxis99.passenger.sideprovider"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebookeid_brazil"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token_brazil"/>
+        <meta-data android:name="terminal_id" android:value="5"/>
+        <meta-data android:name="fcm_app_type" android:value="1005"/>
+        <meta-data android:name="dynamic_domain" android:value="false"/>
+        <meta-data android:name="dynamic_domain_for_idc" android:value="false"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-2953451961573180~5521419522"/>
+        <activity android:theme="@style/BrazilLaunchActivityTheme" android:name="com.didi.sdk.splash.SplashActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:scheme="omega8744c5dc0b"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.wallet.view.activity.WalletMainListActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.creditcard.global.activity.GlobalCreditCardAddOptActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.creditcard.global.p130v2.activity.GlobalCreditCardAddOptV2Activity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.creditcard.global.activity.GlobalCreditCardAddActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.wallet.view.activity.WalletTopUpAmountActivityOldServer" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.wallet.view.activity.WalletTopUpAmountActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99.Transparent" android:name="com.didi.payment.wallet.global.wallet.view.activity.WalletTopUpUniPayActivity" android:exported="false"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.transfer.channels.TransChannelActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.transfer.fillphone.TransTo99AccountActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.transfer.orderdetail.TransOrderDetailActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.transfer.accounts.TransAccountRecordActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.transfer.records.TransOrderRecordsActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99.Transparent" android:name="com.didi.payment.transfer.cashier.TransferCashierActivity" android:exported="false" android:launchMode="singleTop"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.creditcard.global.activity.GlobalCreditCardDetailActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.wallet.view.activity.WalletTopUpChannelActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.consume.channels.view.CsTopUpChannelActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.wallet.view.activity.WalletTopUpPayResultActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.creditcard.global.activity.GlobalCreditCardVerificationActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.sdk.global.enterprise.activity.EnterprisePaymentActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.sdk.global.sign.activity.GlobalPayMethodSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.safetoolkit.business.safeCenter.SfSafeCenterActivity" android:exported="true" android:launchMode="singleTop" android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.didi.safetoolkit.safecenter"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.safetoolkit.business.contacts.SfContactsManageActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.safetoolkit.business.share.SfContactsActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.safetoolkit.business.emergency.SfEmergencyAssistanceActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.safetoolkit.business.triprecording.TripRecordingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.sdk.global.sign.activity.GlobalPayMethodSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99.Transparent" android:name="com.didi.component.payentrance.activity.UnipayEntranceActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale">
+            <intent-filter>
+                <action android:name="com.didi.global.unifiedPay.entrance"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99.Transparent" android:name="global.didi.pay.UniCancelFeePayActivity" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.openride.newscan.GlobalQRScanActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.Global" android:name="com.didi.component.openride.newscan.GlobalOpenRideCodeInputActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99.Transparent" android:name="com.didi.component.openride.newscan.GlobalOpenRideDriverInfoConfirmActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didiglobal.scan.view.activity.GlobalScanActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.addressold.view.SugContainerActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.addressold.view.EditFavoritePlaceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.sdk.app.MainActivityImpl" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:label="@string/label_product_name" android:name="com.didi.sdk.app.MainActivityImplV2" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|uiMode|screenSize|fontScale" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:label="@string/label_product_name" android:name="com.didiglobal.p205sa.biz.activity.SuperAppMainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|uiMode|screenSize|fontScale"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99.Transparent" android:label="@string/label_product_name" android:name="com.didi.sdk.app.MainActivityDispatcher" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|uiMode|screenSize|fontScale" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.didi.home"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:theme="@style/GlobalMainActivityTheme" android:label="@string/label_product_name" android:name="com.didi.sdk.app.MainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="mcc|mnc|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:targetActivity="com.didi.sdk.app.MainActivityDispatcher" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99.Transparent" android:name="global.didi.pay.select.activity.PayMethodSelectActivity" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.service.cancelreason.CancelReasonActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.service.cancelreason.newcr.NewCancelReasonActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.payentrance.activity.confirmfare.ConfirmFareActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.squareup.leakcanary.internal.DisplayLeakActivity" android:enabled="true" android:exported="true" android:taskAffinity="com.squareup.leakcanary">
+            <intent-filter>
+                <action android:name="com.didi.component.framework.leakcanary.ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.payentrance.activity.FareDetailsActivity" android:launchMode="singleTop"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.splitfare.contactmanage.GlobalContactsActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.splitfare.areacode.AreaCodeMandatoryGuideActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.splitfare.areacode.AreaCodeManuallyActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.common.pininput.PinInputActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.framework.pages.promo.PromoCodeActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.didi.component.framework.coupon.PROMO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.framework.pages.invitation.InvitationPageActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.framework.pages.carcheck.CarCheckActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/WebActivity99" android:name="com.didi.sdk.webview.WebActivity" android:exported="false" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale">
+            <intent-filter>
+                <action android:name="didi.passenger.intent.action.WebActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:name="com.didi.sdk.webview.BaseWebActivity" android:targetActivity="com.didi.sdk.webview.WebActivity"/>
+        <activity-alias android:name="com.didi.sdk.fusionbridge.FusionWebActivity" android:screenOrientation="portrait" android:targetActivity="com.didi.sdk.webview.WebActivity"/>
+        <activity android:theme="@style/WebActivity99" android:name="com.didi.component.common.GlobalWebActivity" android:exported="false" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|screenSize|fontScale"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99.Transparent" android:name="com.didi.addressnew.framework.SugMainDialogActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.addressnew.framework.SugMainFullScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.didi.lockscreen.framework.LockScreenActivity" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.comp_selectseat.activity.ShiftSelectActivity" android:screenOrientation="portrait" android:resizeableActivity="false"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.comp_selectseat.activity.SeatSelectActivity" android:screenOrientation="portrait" android:resizeableActivity="false"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.comp_selectseat.ticket.TicketActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.substitute.call.addPassenger.AddPassengerActivity" android:screenOrientation="portrait" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|screenSize|fontScale" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" android:resizeableActivity="false"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.common.contacts.GCommonGetContactsActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didichuxing.comp.telecom.biz.p176ui.voipcall.VoipBusinessActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ThreeDS2Theme.Internal" android:name="com.adyen.threeds2.internal.p059ui.activity.ChallengeActivity" android:exported="true" android:launchMode="singleTask" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="adyen3ds2" android:host="com.didiglobal.passenger"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="adyen3ds2" android:host="com.taxis99"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.adyen.threeds2.internal.AppUpgradeBroadcastReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.didi.lockscreen.framework.LockScreenService"/>
+        <receiver android:name="com.didi.lockscreen.framework.LockScreenReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="flutterEmbedding" android:value="2"/>
+        <activity android:theme="@style/EntregaCustomerAppTheme.Transparent" android:name="com.didi.entrega.security.FacebookMiddleActivity"/>
+        <activity android:theme="@style/SodaTranslucentTheme" android:name="com.didi.soda.customer.p165h5.CustomerWebActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/SodaCustomerAppTheme.Transparent" android:name="com.didi.soda.security.FacebookMiddleActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99.Transparent" android:name="com.didi.soda.pay.activity.CustomerUniPayEntranceActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale">
+            <intent-filter>
+                <action android:name="com.didi.global.soda.unifiedPay.entrance"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.didi.component.framework.leak.LeakUploadService"/>
+        <activity android:name="com.didi.component.operationpanel.impl.view.ReceiptReceiveEmailActivity" android:launchMode="singleTop"/>
+        <meta-data android:name="flutterProjectType" android:value="module"/>
+        <activity android:theme="@style/GlobalActivityTheme" android:name="com.didi.component.company.select.view.GlobalCompanySelectActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.didi.component.company_select"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/OnePassengerTheme.NoTitle" android:name="com.didi.component.estimate.dynamicprice.DynamicOnceWebActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.Global" android:name="com.didi.component.comp_flex.offer_price.FlexOfferPriceActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/GlobalActivityTheme" android:name="com.didi.component.notalk.info.NonTalkingMeetCardActivity" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99.Transparent" android:name="com.didi.component.payment.activity.UnipaymentActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale">
+            <intent-filter>
+                <action android:name="com.didi.global.unifiedPay.payment"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/dialogTransparent" android:name="com.didi.component.payway.PaywayGuidanceActivity" android:screenOrientation="portrait" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|screenSize|fontScale" android:resizeableActivity="false"/>
+        <activity android:theme="@style/GlobalWebActivity" android:name="com.didi.component.service.activity.CancelTripConfirmWebActivity" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/GlobalWebActivity" android:name="com.didi.component.service.activity.DashCamAgreementWebActivity" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/GlobalWebActivity" android:name="com.didi.component.service.activity.CancelTripSelectReasonActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/GlobalActivityTheme" android:name="com.didi.component.service.activity.rgltaxiguide.RegularTaxiGuideActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/GlobalWebActivity" android:name="com.didi.component.business.cpf.CPFAuthWebActivity" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|screenSize|fontScale" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/GlobalWebActivity" android:name="com.didi.component.service.activity.MexicoCurpAuthWebActivity" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|screenSize|fontScale" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/GlobalWebActivity" android:name="com.didi.component.service.activity.DynamicWebActivity" android:launchMode="singleTop"/>
+        <activity android:theme="@style/GlobalActivityTheme" android:name="com.didi.component.service.activity.risk.RiskUserActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/com_facebook_activity_theme" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="fbconnect" android:host="cct.com.taxis99"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/GlobalWebActivity" android:name="com.didi.component.service.activity.CommonVerifyWebActivity" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/dialogTransparent" android:name="com.didi.component.substitute.call.ScNoviceGuidanceActivity" android:screenOrientation="portrait" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|screenSize|fontScale" android:resizeableActivity="false"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.component.splitfare.contactmanage.newui.SplitFareContactsActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/OnePassengerTheme.NoTitle" android:name="com.didi.component.common.p101h5.PriceDetailWebActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <service android:name="com.didi.component.business.job.GlobalJobDispatcher" android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="android.allow_multiple_resumed_activities" android:value="true"/>
+        <meta-data android:name="android.max_aspect" android:value="2.34"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="8aff7b9984a349028fd67c6ff42c8c305d3aa85c"/>
+        <meta-data android:name="Wechat.ApplicationId" android:value="wx8d273f50278e5f1b"/>
+        <activity android:theme="@style/PermissionTranslucent" android:name="com.didi.sdk.util.permission.PermissionActivity"/>
+        <activity android:theme="@style/GlobalLaunchActivityTheme" android:name="com.didi.sdk.guide.GuideActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/OnePassengerTheme.NoTitle" android:name="com.didi.sdk.payment.activity.PayPalActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/OnePassengerTheme.NoTitle" android:name="com.didi.sdk.payment.activity.CreditCardWebActivity"/>
+        <activity android:theme="@style/OnePassengerTheme.NoTitle" android:name="com.didi.sdk.payment.activity.SignIntroActivity"/>
+        <activity android:theme="@style/OnePassengerTheme.NoTitle" android:name="com.didi.sdk.payment.activity.SignWebActivity"/>
+        <activity android:theme="@style/OnePassengerTheme.NoTitle" android:name="com.didi.sdk.webview.PassengerProxyWebActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|screenSize|fontScale">
+            <intent-filter>
+                <action android:name="didi.passenger.intent.action.PlatformProxyWebActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/GlobalWebActivity" android:name="com.didi.sdk.lawpop.LawPreposeWebActivity" android:exported="false" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"/>
+        <activity android:theme="@style/GlobalWebActivity" android:name="com.didi.sdk.lawpop.SimpleWebActivity" android:exported="false" android:process=":loaddex" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"/>
+        <service android:name="com.didi.sdk.service.ForegroundService"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.Global" android:name="com.didi.sdk.guide.CardsBindGuideActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.Global" android:name="com.didi.sdk.debug.language.LanguageDebugSettingActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.brazil.language"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="com.didichuxing.comp.telecom.biz.util.VoipContentProvider" android:exported="false" android:multiprocess="false" android:authorities="com.taxis99.VoipContentProvider"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.utilities.details.CsBillDetailActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.utilities.scan.CsScanActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.utilities.input.CsManualInputActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.utilities.entrance.CsUtilitiesEntranceActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.utilities.photo.CsPhotoInputActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.utilities.editAmount.CsEditAmountActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.pix.signup.ContactPermissionActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.pix.home.PixChannelHomeActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.pix.qrcode.PixQrChannelActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.pix.qrcode.PixQrScanActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.pix.qrcode.PixPhotoInputActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.pix.qrcode.PixQrInputActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.pix.contacts.PixTransferMainEntranceActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.pix.orderdetail.PixOrderDetailActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.pix.orderhistory.PixOrderHistoryActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.pix.qrpayee.QRPayeeMainActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.pix.refund.PixOrderRefundActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.pix.topup.TopUpByPixActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.kycservice.kyc.ContactPermissionActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.kycservice.key.create.PixKeyCreateActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.kycservice.key.migrateout.PixKeyMigrateOutActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.kycservice.key.detail.PixKeyDetailActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.kycservice.key.list.PixKeyListActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.kycservice.kyc.SignUpActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.nova.kyc.jumio.DDCustomActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|layoutDirection" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.consume.phone.view.activities.CsPhoneRefillActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.consume.orderdetail.view.CsTopupOrderDetailActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.consume.history.view.CsTopupHistoryActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.sdk.global.sign.payselect.PayMethodSelActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.sdk.global.balance.activity.GlobalBalanceDetailActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.sdk.global.paypal.activity.GlobalPayPalDetailActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.sdk.global.enterprise.activity.EnterprisePaymentListActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.wallet.view.activity.WalletFaultLandingActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.wallet.view.activity.WalletCertificationCenterActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.prepaidcard.PrepaidSettingActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.riskcontrol.sms.SmsVerifyActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.wallet.view.view.home.p142v2.WalletSideBarActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.wallet.view.view.home.p142v2.credit.BankCardListActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.useraccount.topup.boleto.regular.view.activities.WalletBoletoHistoryActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.useraccount.topup.boleto.regular.view.activities.WalletViewBoletoActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.useraccount.topup.boleto.addresspatch.view.activities.WalletBoletoPatchAddressActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.useraccount.topup.boleto.addresspatch.view.activities.WalletAddressListActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.useraccount.topup.boleto.regular.view.activities.WalletBoletoCashinActivity" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.useraccount.topup.banktransfer.view.activity.WalletBankTransferActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.useraccount.balance.view.WalletBalanceActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.wallet.view.activity.WalletNewBalanceActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.wallet.view.activity.WalletTopUpChannelActivityOldServer" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.wallet.view.activity.WalletTopupHistoryActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.wallet.view.activity.WalletStatusHistoryActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.account.common.view.WalletCommonStatusPageActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.wallet.view.activity.WalletMainListSettingActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.wallet.view.activity.WalletNightlyLimitActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.wallet.global.wallet.view.activity.WalletChangeLimitResultActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/transparent_activity" android:name="com.didi.payment.wallet.password.TransparentActivity" android:exported="false"/>
+        <activity android:name="com.didi.universal.pay.sdk.method.bankPay.SchemeActivity" android:exported="true">
+            <intent-filter>
+                <data android:scheme="diditaxi" android:host="didipay" android:path="/callback"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.didi.universal.pay.sdk.web.WebProxyActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="com.didi.universal.pay.sdk.web.WebProxyActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/GlobalActivityTheme" android:name="com.didi.payment.paymethod.sign.channel.paypay.activity.PayPaySignWebActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:theme="@style/GlobalActivityTheme" android:name="com.didi.payment.paymethod.sign.channel.paypay.activity.PayPaySignDetailActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:theme="@style/GlobalActivityTheme" android:name="com.didi.payment.paymethod.sign.channel.paypal.activity.PayPalSignWebActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:theme="@style/GlobalActivityTheme" android:name="com.didi.payment.paymethod.sign.channel.paypal.activity.PayPalSignDetailActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:theme="@style/ActivityDialog" android:name="com.didi.sdk.webview.image.PicUploadActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/OnePassengerTheme.NoTitle" android:name="com.didi.sdk.webview.image.CropActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.didi.map.global.flow.toolkit.nav.VamosNavSelectActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.didi.map.global.flow.utils.SettingsActivity" android:exported="true"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.safetoolkit.business.contacts.SfContactsManageOptActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.safetoolkit.business.areaCode.MandatoryGuideActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.safetoolkit.business.areaCode.ManuallyAddCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99.Transparent" android:name="com.didi.safetoolkit.business.triprecording.SfPermissionActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.safetoolkit.business.monitor.MonitorActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.wallet.dimina.view.WalletDiminaActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.Global.Transparent" android:name="com.didi.wallet.dimina.pay.InternationalIntermediaryActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.Global.Transparent" android:name="com.didi.wallet.dimina.pay.InternationalPaymentActivity"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.didi.onekeyshare.wrapper.DispatchFacebookShareCbActivity"/>
+        <provider android:name="com.didi.onekeyshare.callback.intercept.ShareFileProvider" android:exported="false" android:authorities="com.taxis99.share.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/share_file_paths"/>
+        </provider>
+        <activity android:name="com.didi.global.ninja.SafeModeActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|screenSize|fontScale">
+            <intent-filter>
+                <action android:name="com.didi.global.ninja.safemode"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.didi.sdk.apm.ApmJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.didi.sdk.apm.service.NetworkChangedService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.didi.sdk.apm.service.FirebaseInstanceIdService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.Global" android:name="com.didi.addressnew.framework.SugMainBaseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.didi.addressold.view.CommonAddressActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ProviderTheme.Activity" android:name="com.rider.rlab_im_map_plugin.ImMapActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.didi.hawaii.p118ar.DiARNavActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.didi.hawaii.p118ar.core.p119zg.DiARZGNavActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.google.ar.core" android:value="optional"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.didi.map.global.component.streetview.StreetViewFeedbackActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="TencentGeoLocationSDK" android:value="xiaojukeji_passenger,KKLW3-C6XNR-YLWE7-W7652-GQAY7"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:name="com.didi.map.setting.global.MapSettingNavigationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.didi.map.setting.global.MapSettingSelectedActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.didi.map.setting.global.MapSettingWindowActivity"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.didi.map.setting.global.MapSettingTipActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99.Transparent" android:name="com.wallet.flutter.wallet_flutter.base.FlutterProxyActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/NachoFlutterTheme" android:name="com.didi.flutter.nacho.NachoFlutterActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.didichuxing.upgrade.UpgradeActivity"/>
+        <provider android:name="com.didi.soda.web.WebFileProvider" android:exported="false" android:authorities="com.taxis99.web.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths_web"/>
+        </provider>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.didi.soda.web.activity.SodaWebActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.Global" android:name="com.didichuxing.security.cardverify.activity.CardVerificationActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.Global.Transparent" android:name="com.didichuxing.security.cardverify.activity.RandomPayTransActivity" android:exported="false" android:launchMode="singleTask" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.Global" android:name="com.didichuxing.security.cardverify.globalpay.activity.GlobalPayCardVerificationActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:name="com.didichuxing.security.cardverify.globalpay.activity.GlobalRandomPayConfirmActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.Global.Transparent" android:name="com.didichuxing.security.cardverify.globalpay.activity.GlobalPayLoading"/>
+        <activity android:theme="@style/transparent_activity" android:name="com.didi.payment.base.view.activity.FinTechResourcesActivity" android:exported="false" android:launchMode="singleTop"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.payment.base.view.webview.WalletWebActivity" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.didi.payment.base.view.webview.util.image.CropActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/transparent_activity" android:name="com.didi.payment.base.utils.ktx.RequestActivity" android:screenOrientation="portrait"/>
+        <provider android:name="com.didi.payment.base.exts.ApplicationContextProvider" android:exported="false" android:authorities="com.taxis99.ApplicationContextProvider"/>
+        <activity android:name="com.didiglobal.privacysdk.PrivacyActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <meta-data android:name="global.didi.unifiedPay.virtualSdkVersion" android:value="0.0.5"/>
+        <meta-data android:name="paypayScheme" android:value="globaldidicommon"/>
+        <activity android:name="com.didi.unifiedPay.component.activity.SchemeActivity" android:exported="true">
+            <intent-filter>
+                <data android:scheme="globaldidicommon" android:host="unipay" android:path="/callback"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.didi.unifiedPay.UniPrePayActivity" android:exported="false" android:launchMode="singleTask" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/GlobalActivityTheme" android:name="global.didi.pay.GlobalConfirmActivity" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/GlobalActivityTheme" android:name="global.didi.pay.web.UniPayWebActivity" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/GlobalActivityTheme" android:name="global.didi.pay.installment.InstallmentActivity" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/GlobalMerchantActivityTheme" android:name="global.didi.pay.merchant.GlobalMerchantUniPayActivity" android:excludeFromRecents="true" android:launchMode="singleTask" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/GlobalMerchantActivityTheme" android:name="global.didi.pay.merchant.GlobalMerchantUniPayStatusActivity" android:excludeFromRecents="true" android:launchMode="singleTask" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.Didi.Activity.99" android:name="com.didi.dcrypto.DCryptoMainActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/OneLoginStyle" android:name="com.didi.unifylogin.entrance.OneLoginActivity" android:exported="false" android:taskAffinity="com.taxis99" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/OneLoginStyle" android:name="com.didi.unifylogin.entrance.SetPwdActivity" android:exported="false" android:taskAffinity="com.taxis99" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/OneLoginStyle" android:name="com.didi.unifylogin.entrance.SetPhoneActivity" android:exported="false" android:taskAffinity="com.taxis99" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/OneLoginStyle" android:name="com.didi.unifylogin.entrance.VerifyCodeActivity" android:exported="false" android:taskAffinity="com.taxis99" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/OneLoginStyle" android:name="com.didi.unifylogin.entrance.CancelActivity" android:exported="false" android:taskAffinity="com.taxis99" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/OneLoginStyle" android:name="com.didi.unifylogin.entrance.DeleteAccountActivity" android:exported="false" android:taskAffinity="com.taxis99" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/OneLoginStyle" android:name="com.didi.unifylogin.country.CountryListActivity" android:exported="false" android:taskAffinity="com.taxis99" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/OneLoginStyle" android:name="com.didi.unifylogin.entrance.SetEmailActivity" android:exported="false" android:taskAffinity="com.taxis99" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/OneLoginStyle" android:name="com.didi.unifylogin.entrance.ThirdPartySetActivity" android:exported="false" android:taskAffinity="com.taxis99" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.didi.global.fintech.cashier.pix.GlobalCashierPixPrepayActivity" android:exported="false"/>
+        <activity android:theme="@style/GlobalCashierActivityTheme_for_99" android:name="com.didi.global.fintech.cashier.threeds.cvv.GlobalCashierCVVActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/GlobalCashierActivityTheme_for_99" android:name="com.didi.global.fintech.cashier.fastpay.FastPaySettingActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/GlobalCashierActivityTheme_for_99" android:name="com.didi.global.fintech.cashier.fastpay.FastPayOrderActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/GlobalCashierActivityTheme_for_99_transparent" android:name="com.didi.global.fintech.cashier.fastpay.FastPaySyncActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <meta-data android:name="com.didi.global.fintech.cashier.version" android:value="1.7.0"/>
+        <activity android:theme="@style/GlobalCashierActivityTheme_for_99" android:name="com.didi.global.fintech.cashier.core.GlobalCashierResultActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/GlobalCashierActivityTheme_for_99" android:name="com.didi.global.fintech.cashier.core.GlobalCashierMainActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/GlobalCashierActivityTheme_for_99" android:name="com.didi.global.fintech.cashier.core.GlobalCashierConfirmPayActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/GlobalCashierActivityTheme_for_99" android:name="com.didi.global.fintech.cashier.core.GlobalCashierWebActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/GlobalCashierActivityTheme_for_99" android:name="com.didi.global.fintech.cashier.core.GlobalCashierPlansInfoActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:theme="@style/GlobalCashierActivityTheme_for_99" android:name="com.didi.global.fintech.cashier.core.GlobalCashierPolicyActivity" android:exported="false" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|fontScale"/>
+        <activity android:name="com.didiglobal.pay.paysecure.prepaidcard.CardPwdManagerActivity" android:exported="false" android:launchMode="singleTop"/>
+        <activity android:theme="@style/PaySecureStyle" android:name="com.didiglobal.pay.paysecure.p204ui.PaySecureActivity" android:taskAffinity="com.taxis99" android:launchMode="singleTop"/>
+        <activity android:name="com.didi.safety.god2020.p145ui.GlobalCardDetectionAct2" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.biz.permission.PermissionActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.biz.guide.DiFaceGuideActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.biz.guide.p184br.BRDiFaceGuideActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.biz.guide.DFUserAgreementAct" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/PreGuideAct_Style" android:name="com.didichuxing.diface.biz.preguide.DFPreGuideAct" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.biz.bioassay.fpp.DiFaceFppBioassayActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.biz.bioassay.alpha.DiFaceBioassayActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.biz.bioassay.self_liveness.DiFaceSelfLivenessActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.biz.bioassay.alpha.DFBioassayFailedAct" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.biz.bioassay.alpha.p181br.BRDFBioassayFailedAct" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.appeal.brazil.SelectDriverLicenseAct" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.appeal.brazil.AdditionalDocAct" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.appeal.brazil.MaterialsSubmitAct" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.appeal.mexico.DocSelectAct" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.appeal.mexico.MaterialsSubmitAct" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.appeal.TakePhotoGuideAct" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.appeal.brazil.BRTakePhotoGuideAct" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.appeal.TakePhotoAct" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.appeal.brazil.BRTakePhotoAct" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.appeal.ViewPhotoAct" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.appeal.AppealResultAct" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.appeal.video.DiFaceVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.appeal.video.DiFaceVideoConfirmActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.appeal.video.DiFaceVideoDisposeActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DfGlobalTheme" android:name="com.didichuxing.diface.appeal.video.DiFaceVideoExampleActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/PreGuideAct_Style" android:name="com.didichuxing.diface.appeal.mexico.PreDocSelectAct" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.didichuxing.gbankcard.ocr.act.GBankcardOcrAct" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true"/>
+        <service android:name="com.didichuxing.dfbasesdk.crash.UploadService" android:process="com.didichuxing.uploadservice"/>
+        <activity android:name="com.didichuxing.dfbasesdk.webview.DFWebviewAct" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="diface" android:host="viewwebpage"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="dfglobal" android:host="viewwebpage"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.didichuxing.dfbasesdk.webview.DFBaseWebViewActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.didichuxing.dfbasesdk.act.DFPermissionActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/access_transparent_activity_style" android:name="com.didichuxing.dfbasesdk.view.ProgressbarActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/access_transparent_activity_style" android:name="com.didichuxing.dfbasesdk.utils.DfLoading"/>
+        <activity android:theme="@style/access_transparent_activity_style" android:name="com.didichuxing.dfbasesdk.utils.DiSafetyLoading$DfLoadingActivity"/>
+        <activity android:theme="@style/access_transparent_activity_style" android:name="com.didichuxing.dfbasesdk.camera2.CameraPermissionAct2" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Asset_Transparent" android:name="com.didichuxing.publicservice.resourcecontrol.activities.RControlActivity" android:launchMode="standard" android:screenOrientation="nosensor"/>
+        <activity android:name="com.didi.onehybrid.log.FusionDebugActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity android:name="com.didi.onehybrid.devmode.DevHomeActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.didi.onehybrid.devmode.DevRenderInfoActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity android:name="com.didi.onehybrid.devmode.DevBridgeInfoActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity android:name="com.didi.onehybrid.devmode.OfflineDetailActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.didi.onehybrid.devmode.CacheDetailActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.didi.onehybrid.devmode.DevBridgeDetailActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity android:name="com.didi.onehybrid.devmode.TotalOfflineActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.didi.onehybrid.container.FusionWebActivityInternal" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity-alias android:name="com.didi.onehybrid.FusionWebActivity" android:targetActivity="com.didi.onehybrid.container.FusionWebActivityInternal"/>
+        <activity android:theme="@style/Theme.DeviceDefault.Light" android:name="com.didichuxing.xpanel.debug.p199ui.DebugActivity"/>
+        <activity android:theme="@style/Theme.DeviceDefault.Light" android:name="com.didichuxing.xpanel.debug.p199ui.DetailActivity"/>
+        <activity android:theme="@style/BtsIMTheme.ImMessage" android:name="com.didi.beatles.p099im.activity.IMMessageActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="behind" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/BtsIMTheme.Im" android:name="com.didi.beatles.p099im.activity.IMValidMessageListActivity" android:launchMode="singleTask" android:screenOrientation="behind" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/BtsIMTheme.Im" android:name="com.didi.beatles.p099im.activity.IMOverDueMessageListActivity" android:launchMode="singleTask" android:screenOrientation="behind" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/BtsIMTheme.Im" android:name="com.didi.beatles.p099im.activity.IMFeedMsgListActivity" android:launchMode="singleTask" android:screenOrientation="behind" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/BtsIMTheme.Im" android:name="com.didi.beatles.p099im.activity.IMUserProfileActivity" android:launchMode="singleTask" android:screenOrientation="behind" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/BtsIMTheme.Im" android:name="com.didi.beatles.p099im.activity.IMGroupProfileActivity" android:launchMode="singleTask" android:screenOrientation="behind" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/IMTheme.Dialog" android:name="com.didi.beatles.p099im.views.dialog.IMAddCommonWordDialog" android:launchMode="singleTask" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/BtsIMTheme.Im" android:name="com.didi.beatles.p099im.activity.IMSettingsActivity" android:launchMode="singleTask" android:screenOrientation="behind" android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/BtsIMTheme.Im" android:name="com.didi.beatles.p099im.activity.IMPictureSelectorActivity" android:launchMode="singleTask" android:screenOrientation="behind" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:theme="@style/BtsIMTheme.Im" android:name="com.didi.beatles.p099im.activity.IMPictureGalleryPreviewActivity" android:launchMode="singleTask" android:screenOrientation="behind" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:theme="@style/BtsIMTheme.NoTitleFullScreen" android:name="com.didi.beatles.p099im.activity.IMPictureExternalPreviewActivity" android:launchMode="singleTask" android:screenOrientation="behind" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <service android:name="com.didi.beatles.p099im.common.IMPollingService" android:exported="false">
+            <intent-filter>
+                <action android:name="im.service.PollingService"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.didi.beatles.p099im.access.notify.IMDispatcherActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|uiMode|screenSize|fontScale">
+            <intent-filter>
+                <action android:name="com.didi.im.action.PUSH_DISPATCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="com.didi.beatles.p099im.picture.IMPictureFileProvider" android:exported="false" android:authorities="com.taxis99.com.didi.beatles.im.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/im_file_paths"/>
+        </provider>
+        <provider android:name="com.didi.dimina.starbox.StarBoxFileProvider" android:exported="false" android:authorities="com.taxis99.diminastarboxfileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/dimina_starbox_provider_paths"/>
+        </provider>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.didi.dimina.starbox.module.UniversalActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.didi.dimina.starbox.module.jsbridge.scancode.ScanActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.didi.dimina.starbox.module.StarBoxDockerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.didi.dimina.starbox.module.DiminaDemoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified"/>
+        <activity android:name="com.didi.dimina.starbox.StarBoxActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.didi.dimina.container.secondparty.jsmodule.jsbridge.scan.ScanActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DiminaPermissionTheme" android:name="com.didi.dimina.container.secondparty.jsmodule.jsbridge.photo.JumpPhotoActivity"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.didi.dimina.container.secondparty.jsmodule.jsbridge.photo.TakePhotoActivity" android:launchMode="singleTop" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.didi.dimina.container.secondparty.Dimina4DiContainerActivity" android:windowSoftInputMode="adjustUnspecified"/>
+        <activity android:theme="@style/DiminaPermissionTheme" android:name="com.didi.dimina.container.secondparty.permission.bridge.BridgeActivity"/>
+        <provider android:name="com.didi.dimina.container.secondparty.jsmodule.jsbridge.photo.PhotoFileProvider" android:exported="false" android:authorities="com.taxis99.dimina.file.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/dimina_file_provider"/>
+        </provider>
+        <activity android:name="com.didi.dimina.webview.container.FusionWebActivityInternal" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity-alias android:name="com.didi.dimina.webview.FusionWebActivity" android:targetActivity="com.didi.dimina.webview.container.FusionWebActivityInternal"/>
+        <provider android:name="com.didi.dimina.webview.FusionInitializerProvider" android:exported="false" android:authorities="com.taxis99.FusionProvider" android:initOrder="100"/>
+        <receiver android:name="com.didi.sdk.connectivity.NetworkChangedReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.didi.sdk.p154ms.gms.push.DdFirebaseMessagingService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/AdyenCheckout.Translucent" android:name="global.didi.pay.threeds.method.adyen.AdyenActionActivity" android:exported="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="adyencheckout" android:host="com.taxis99"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="global.didi.pay.threeds.method.cybs.CybsWebActivity" android:exported="false"/>
+        <meta-data android:name="global.didi.pay.threeds.sdk.version" android:value="1.1.1"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.didi.component.core.FragmentContainerActivity" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <provider android:name="com.didi.sdk.logging.InitProvider" android:exported="false" android:authorities="com.taxis99.LoggerInitProvider"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.didichuxing.cardscan.view.CardScanActivity"/>
+        <activity android:name="com.didichuxing.omega.sdk.feedback.activity.FeedbackWebviewActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.didichuxing.omega.sdk.feedback.activity.FeedbackListWebviewActivity"/>
+        <activity android:name="com.didichuxing.omega.sdk.feedback.activity.FeedbackDetailWebActivity"/>
+        <activity android:name="com.didichuxing.omega.sdk.feedback.webview.neweb.AfantyWebActivity"/>
+        <activity android:name="com.didichuxing.omega.sdk.feedback.activity.TestOOMActivity"/>
+        <activity android:name="com.didichuxing.omega.sdk.feedback.leaked.ActivityLeakMaker$LeakedActivity"/>
+        <provider android:name="com.didichuxing.omega.sdk.feedback.webview.fileprovider.AfantyFileProvider" android:exported="false" android:authorities="com.taxis99.fileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:theme="@style/Theme.Holo.Light" android:label="@string/label_of_swarm_launcher_bundle_list_activity" android:icon="@drawable/swarm" android:name="com.didichuxing.swarm.launcher.BundleListActivity"/>
+        <activity android:theme="@style/Theme.Holo.Light" android:label="@string/label_of_swarm_launcher_bundle_activity" android:icon="@drawable/swarm" android:name="com.didichuxing.swarm.launcher.BundleActivity"/>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.taxis99.firebaseinitprovider" android:initOrder="100" android:directBootAware="true"/>
+        <activity android:theme="@style/DiminaBridgeSheetTheme" android:name="com.didi.dimina.container.p106ui.dialog.DiminaBridgeSheetActivity"/>
+        <service android:name="com.didichuxing.alpha.crash.UploadDumpService" android:process=":special"/>
+        <provider android:name="com.didichuxing.omega.sdk.common.perforence.ConfigProvider" android:exported="false" android:authorities="com.taxis99.omegaconfigprovider"/>
+        <provider android:name="com.didi.security.uuid.share.ShareProvider" android:enabled="true" android:exported="true" android:authorities="com.taxis99.share"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="p242io.flutter.plugins.urllauncher.WebViewActivity" android:exported="false"/>
+        <provider android:name="com.didichuxing.mas.sdk.quality.report.perforence.ConfigProvider" android:exported="false" android:authorities="com.taxis99.configprovider"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:exported="false" android:authorities="com.taxis99.mobileadsinitprovider" android:initOrder="100"/>
+        <service android:name="com.google.android.gms.ads.AdService" android:enabled="true" android:exported="false"/>
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.taxis99.androidx-startup">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true" android:visibleToInstantApps="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <activity android:theme="@style/Permission.Theme" android:name="com.yanzhenjie.permission.bridge.BridgeActivity"/>
+        <provider android:name="com.yanzhenjie.permission.FileProvider" android:exported="false" android:authorities="com.taxis99.file.path.share" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/permission_file_paths"/>
+        </provider>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false" android:directBootAware="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <service android:name="com.kwai.koom.javaoom.analysis.HeapAnalyzeService" android:process=":heap_analysis"/>
+        <receiver android:name="com.appsflyer.MultipleInstallBroadcastReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.didiglobal.font.decorator.DecoratorProvider" android:exported="false" android:multiprocess="true" android:authorities="com.taxis99.decorator"/>
+        <provider android:name="com.didi.drouter.store.LoadProvider" android:exported="false" android:multiprocess="true" android:authorities="com.taxis99.drouter.init.provider"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="com.bumptech.glide.integration.webp.WebpGlideModule" android:value="GlideModule"/>
+        <service android:name="com.adyen.checkout.components.analytics.AnalyticsDispatcher" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.firebase.jobdispatcher.GooglePlayReceiver" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <receiver android:name="com.didi.sdk.push.PushNetReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.didi.sdk.push.p160ui.PushStateDisplayService" android:exported="false"/>
+        <activity android:name="com.didi.sdk.push.p160ui.LogPrinterActivity" android:exported="false"/>
+        <activity android:name="com.didi.sdk.push.p160ui.CheckStateActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.taxis99.com.didi.sdk.push.ui.check"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.didi.sdk.push.proxy.DispatcherActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:scheme="didipush"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.didi.sdk.audiorecorder.service.multiprocess.service.MultiProcessRecordService" android:exported="false" android:process=":didi_recorder"/>
+        <activity android:theme="@style/iproov__AppTheme" android:name="com.iproov.sdk.p223ui.activity.IProovPortraitActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="locale|screenSize" android:keepScreenOn="true" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/iproov__AppTheme" android:name="com.iproov.sdk.p223ui.activity.IProovLandscapeActivity" android:exported="false" android:screenOrientation="landscape" android:configChanges="locale|screenSize" android:keepScreenOn="true" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/iproov__AppTheme" android:name="com.iproov.sdk.p223ui.activity.IProovReversePortraitActivity" android:exported="false" android:screenOrientation="reversePortrait" android:configChanges="locale|screenSize" android:keepScreenOn="true" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/iproov__AppTheme" android:name="com.iproov.sdk.p223ui.activity.IProovReverseLandscapeActivity" android:exported="false" android:screenOrientation="reverseLandscape" android:configChanges="locale|screenSize" android:keepScreenOn="true" android:hardwareAccelerated="true"/>
+        <service android:name="com.didi.aoe.library.core.AoeProcessService" android:exported="false" android:process=":aoeProcessor"/>
+        <activity android:name="com.didi.sdk.onehotpatch.DebugActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="com.didi.sdk.onehotpatch.debug"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.didi.sdk.onehotpatch.installer.merge.MergePatchService" android:exported="false" android:process=":hotpatch"/>
+        <service android:name="com.didi.sdk.onehotpatch.installer.dexopt.DexOptService" android:exported="false"/>
+        <provider android:name="com.didi.sdk.onehotpatch.PatchManagerProvider" android:exported="false" android:authorities="com.taxis99.hotpatch.provider"/>
+        <activity android:name="com.didi.jacoco.runtime.activity.ChooseRoleActivity" android:exported="false"/>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+        <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+        <provider android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.taxis99.lifecycle-process"/>
+        <activity android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:enabled="false" android:exported="false" android:process=":playcore_missing_splits_activity" android:stateNotNeeded="true" android:launchMode="singleInstance"/>
+        <activity android:theme="@style/Theme.PlayCore.Transparent" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:enabled="false" android:exported="false" android:stateNotNeeded="true"/>
+        <service android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" android:enabled="false" android:exported="true"/>
+        <activity android:theme="@style/Theme.Jumio" android:name="com.jumio.defaultui.JumioActivity" android:exported="false"/>
+        <meta-data android:name="com.google.ar.core.min_apk_version" android:value="190412000"/>
+        <activity android:theme="@style/Theme.Material.Light.Dialog.Alert" android:name="com.google.p217ar.core.InstallActivity" android:exported="false" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <provider android:name="com.cardinalcommerce.p060a.setShadowLayer" android:enabled="true" android:exported="true" android:authorities="com.taxis99.CCInitProvider"/>
+        <activity android:theme="@style/CardinalSDKTheme.ActionBar" android:name="com.cardinalcommerce.p060a.setTextLocale" android:exported="false"/>
+        <activity android:theme="@style/CardinalSDKTheme.ActionBar" android:name="com.cardinalcommerce.p060a.setTextLocales" android:exported="false" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <meta-data android:name="hotpatch_insert_hack" android:value="false"/>
+        <meta-data android:name="hotpatch_host" android:value="https://dynamicmodule.didiglobal.com"/>
+        <meta-data android:name="hotpatch_app_key" android:value="d1b868135943faa986863210e8991815"/>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:value="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+    </application>
+</manifest>

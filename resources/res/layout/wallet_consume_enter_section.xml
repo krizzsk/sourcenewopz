@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="19dp" android:textStyle="bold" android:textColor="@color/black" android:gravity="start" android:id="@+id/wallet_consume_enter_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginStart="18dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/wallet_consume_enter_rl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_consume_enter_card_margin" android:layout_marginTop="7dp" android:layout_marginRight="@dimen/wallet_consume_enter_card_margin" android:layout_marginStart="@dimen/wallet_consume_enter_card_margin" android:layout_marginEnd="@dimen/wallet_consume_enter_card_margin"/>
+</LinearLayout>

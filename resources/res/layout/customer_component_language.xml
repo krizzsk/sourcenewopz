@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.soda.customer.widget.titlebar.TitleBarView android:id="@+id/customer_tbv_title_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:titleLeftText="@string/customer_common_icon_back" app:titleRightText="@string/customer_common_setting_confirm" app:titleText="@string/customer_setting_language"/>
+    <com.didi.app.nova.support.view.recyclerview.view.NovaRecyclerView android:id="@+id/customer_custom_language" android:background="@color/rf_color_gery_7_97_F5F5F7" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+</LinearLayout>

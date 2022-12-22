@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/sa_activity_bgcolor" android:paddingTop="10dp" android:paddingBottom="36dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="#ffd4d7d9" android:gravity="center_horizontal" android:id="@+id/foot_des" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/GRider_batch1__PsJO"/>
+</FrameLayout>

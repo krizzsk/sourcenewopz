@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/bg" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Map.TextViewStyle.TextDirection"/>
+    <TextView android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/text" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" android:singleLine="true" style="@style/Map.TextViewStyle.TextDirection"/>
+    <com.didi.addressnew.framework.widget.DotLoader android:layout_gravity="center" android:id="@+id/text_dot_loader" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" app:color_array="@array/colors" app:number_of_dots="3"/>
+</FrameLayout>

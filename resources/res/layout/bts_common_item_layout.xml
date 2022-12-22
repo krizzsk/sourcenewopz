@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/bts_im_common_word_default_selector" android:layout_width="match_parent" android:layout_height="@dimen/im_56_dp">
+    <TextView android:textSize="@dimen/im_16_dp" android:textColor="#000000" android:ellipsize="end" android:gravity="center" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/common_text" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/im_18_dp" android:layout_marginRight="@dimen/im_18_dp" android:maxLines="2" android:layout_weight="1" android:layout_marginStart="@dimen/im_18_dp" android:layout_marginEnd="@dimen/im_18_dp"/>
+    <View android:id="@+id/im_common_text_line" android:background="@drawable/im_custom_word_divider_line" android:layout_width="match_parent" android:layout_height="@dimen/im_0.5_dp"/>
+</LinearLayout>

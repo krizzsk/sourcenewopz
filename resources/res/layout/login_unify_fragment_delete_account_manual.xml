@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/login_unify_color_delete_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_container">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/login_unify_dimen_20dp" android:layout_marginRight="@dimen/login_unify_dimen_20dp" android:layout_marginStart="@dimen/login_unify_dimen_20dp" android:layout_marginEnd="@dimen/login_unify_dimen_20dp">
+            <TextView android:id="@+id/tv_title" android:layout_marginTop="@dimen/login_unify_dimen_30dp" style="@style/LoginUnifyDeleteAccountTitleStyle"/>
+            <TextView android:id="@+id/tv_sub_title" android:layout_marginTop="@dimen/login_unify_dimen_20dp" style="@style/LoginUnifyDeleteAccountSubTitleStyle"/>
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/rv_cancel_warning" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_unify_dimen_10dp"/>
+            <TextView android:id="@+id/tv_warn" android:layout_marginTop="@dimen/login_unify_dimen_20dp" android:layout_marginBottom="@dimen/login_unify_dimen_20dp" style="@style/LoginUnifyDeleteAccountColorWarningStyle"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/btn_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@+id/agreement_container" android:paddingTop="@dimen/login_unify_dimen_10dp" android:paddingBottom="@dimen/login_unify_dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_unify_dimen_7dp" android:layout_above="@+id/btn_next">
+            <FrameLayout android:id="@+id/btn_agree" android:layout_width="@dimen/login_unify_dimen_36dp" android:layout_height="@dimen/login_unify_dimen_40dp" android:layout_marginLeft="@dimen/login_unify_dimen_10dp" android:layout_marginStart="@dimen/login_unify_dimen_10dp">
+                <CheckBox android:layout_gravity="center" android:id="@+id/cb_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?attr/login_unify_selector_law_checkbox"/>
+            </FrameLayout>
+            <TextView android:text="@string/login_unify_delete_account_Agree_read" style="@style/LoginUnifyDeleteAccountGrayWarningStyle"/>
+        </LinearLayout>
+        <com.didi.unifylogin.utils.customview.LoginNextButton android:enabled="true" android:id="@+id/btn_next" android:layout_marginLeft="@dimen/login_unify_dimen_20dp" android:layout_marginTop="@dimen/login_unify_dimen_7dp" android:layout_marginRight="@dimen/login_unify_dimen_20dp" android:text="@string/login_unify_next_step" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/login_unify_dimen_20dp" android:layout_marginEnd="@dimen/login_unify_dimen_20dp" style="?attr/login_unify_style_btn_text"/>
+    </LinearLayout>
+    <View android:id="@+id/shadow" android:background="@drawable/login_unify_bg_delete_account_shadow" android:layout_width="match_parent" android:layout_height="@dimen/login_unify_dimen_21dp" android:layout_above="@+id/btn_container"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#fafbfc" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#f2f3f3" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <FrameLayout android:id="@+id/payway_container" android:layout_width="match_parent" android:layout_height="40dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/global_form_option_container" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="69dp" android:overScrollMode="never"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/anycar_form_btn_layout" android:background="?attr/global_overall_main_button_selector" android:layout_width="0dp" android:layout_height="52dp" android:layout_marginTop="8.5dp" android:layout_marginBottom="8.5dp" android:layout_weight="1" android:layout_marginStart="15dp" android:layout_marginEnd="18dp">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="?attr/global_main_button_text_color_selector" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/form_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:contentDescription="@string/global_confirm_btn" android:paddingStart="24dp" android:paddingEnd="24dp"/>
+            <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="?attr/global_main_button_text_color_selector" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/form_btn_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:includeFontPadding="false" android:paddingStart="24dp" android:paddingEnd="24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

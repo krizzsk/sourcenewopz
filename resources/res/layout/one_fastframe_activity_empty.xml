@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout_empty" android:background="@color/one_fastframe_background_common" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image_empty" android:layout_width="@dimen/one_fastframe_image_error" android:layout_height="@dimen/one_fastframe_image_error" android:src="@drawable/one_fastframe_empty_icon"/>
+        <TextView android:textSize="@dimen/one_fastframe_txt_middle" android:id="@+id/text_line_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/one_fastframe_clickme_retry" android:singleLine="true"/>
+    </LinearLayout>
+</FrameLayout>

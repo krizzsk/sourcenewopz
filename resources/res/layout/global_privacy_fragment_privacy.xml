@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didiglobal.privacysdk.view.GlobalPrivacyTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:background="#f3f4f5" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/progressbar_layout" android:layout_width="match_parent" android:layout_height="3dp" android:layout_marginBottom="7dp"/>
+            <include android:id="@+id/item_download_data" layout="@layout/global_privacy_sidebar_nav_item"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/discount_items_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <com.didiglobal.privacysdk.view.SettingsSwitchView android:id="@+id/item_discount" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.didiglobal.privacysdk.view.SettingsSwitchView android:id="@+id/sms_switch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                <com.didiglobal.privacysdk.view.SettingsSwitchView android:id="@+id/email_switch" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.didiglobal.privacysdk.view.SettingsSwitchView android:id="@+id/push_switch" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <com.didiglobal.privacysdk.view.SettingsSwitchView android:id="@+id/location_share_switch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+            <include android:id="@+id/item_system_permission" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" layout="@layout/global_privacy_sidebar_nav_item"/>
+            <include android:id="@+id/item_delete_account" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" layout="@layout/global_privacy_sidebar_nav_item"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

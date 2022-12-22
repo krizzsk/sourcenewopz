@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/customer_custom_pay_method_rv" android:background="@color/rf_color_gery_7_97_F5F5F7" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/rf_color_gery_7_97_F5F5F7" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.didi.soda.customer.widget.StatusBarView android:id="@+id/customer_custom_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.didi.soda.customer.widget.text.IconTextView android:textColor="@color/customer_selector_33_to_99" android:id="@+id/customer_iv_close" android:text="@string/customer_common_icon_back" style="@style/IconFountTitleBar"/>
+        <TextView android:textSize="@dimen/customer_text_size_48px" android:textStyle="bold" android:textColor="@color/rf_color_gery_1_0_000000" android:paddingLeft="@dimen/customer_32px" android:paddingRight="@dimen/customer_40px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customer_10px" android:text="@string/customer_name_select_pay_method"/>
+    </LinearLayout>
+    <ScrollView android:paddingTop="@dimen/customer_24px" android:paddingBottom="@dimen/customer_40px" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/customer_30px" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:id="@+id/customer_ll_item_group" android:paddingLeft="@dimen/customer_24px" android:paddingRight="@dimen/customer_24px" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ScrollView>
+</LinearLayout>

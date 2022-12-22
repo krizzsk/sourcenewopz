@@ -1,0 +1,6 @@
+{
+    "FACEBOOK_LOGIN": [
+        "com.facebook.login.LoginManager",
+        "com.facebook.FacebookSdk"
+    ]
+}

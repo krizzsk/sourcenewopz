@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.didi.sdk.view.wheel.Wheel android:id="@+id/day_picker" android:background="#ffffff" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" app:textColor="#000000" app:textSize="20sp"/>
+    <com.didi.sdk.view.wheel.Wheel android:id="@+id/hour_picker" android:background="#ffffff" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:textColor="#000000" app:textSize="20sp"/>
+    <com.didi.sdk.view.wheel.Wheel android:id="@+id/minute_picker" android:background="#ffffff" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:textColor="#000000" app:textSize="20sp"/>
+</merge>

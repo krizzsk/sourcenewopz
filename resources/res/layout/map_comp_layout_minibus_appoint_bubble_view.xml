@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/map_mini_bus_bubble_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="8dp">
+        <com.didi.map.global.component.streetview.widget.RoundImageView android:id="@+id/vTipsImg" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/map_minibus_bubble_default" android:scaleType="centerCrop" app:radius="8dp"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:maxWidth="110dp" android:minWidth="50dp" android:minHeight="45dp" android:maxLines="2" android:layout_toLeftOf="@+id/arrow" android:layout_toRightOf="@+id/vTipsImg"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/sf_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.didi.sdk.webview.WebTitleBar android:id="@+id/center_title_bar" android:layout_width="match_parent" android:layout_height="44dp" app:layout_constraintTop_toTopOf="0"/>
+        <View android:id="@+id/v_divider" android:background="@color/pe_color_19000000" android:layout_width="match_parent" android:layout_height="0.5dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/center_title_bar"/>
+        <TextView android:textColor="@color/pe_pay_selector_fare_doubt_color" android:gravity="center" android:id="@+id/tv_fare_doubt_entry" android:background="@drawable/pe_pay_selector_bg_fare_doubt_entry" android:visibility="gone" android:layout_width="0dp" android:layout_height="45.5dp" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:layout_marginBottom="18.5dp" android:text="@string/Global_Rider_Fare_Detail_Page_Self_Help_Scenario_Entrance_doubt_cost_Ksjc" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/center_rv" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginLeft="38dp" android:layout_marginRight="38dp" android:layout_marginBottom="30dp" app:layout_constraintBottom_toTopOf="@+id/tv_fare_doubt_entry" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/v_divider"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/pe_pay_fare_error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="102dp">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="126dp" android:layout_height="126dp" android:src="@drawable/global_pe_pay_fare_error" android:scaleType="fitCenter"/>
+            <TextView android:textSize="14sp" android:textColor="@color/pe_color_999999" android:gravity="center" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pe_pay_fare_details_error"/>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.5dp">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="5.3dp" android:src="@drawable/global_pe_pay_fare_refresh" android:scaleType="fitCenter"/>
+            <TextView android:textSize="18sp" android:textColor="@color/pe_color_666666" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/pe_pay_fare_details_reload" android:paddingBottom="4dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

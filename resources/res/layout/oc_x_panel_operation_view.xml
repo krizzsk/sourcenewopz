@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/oc_color_FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/oc_x_panel_operation_text_layout" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/oc_color_000000" android:gravity="center_vertical" android:id="@+id/oc_x_panel_operation_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="13dp" android:layout_marginRight="18dp"/>
+        <TextView android:textSize="14sp" android:textColor="@color/oc_color_666666" android:ellipsize="end" android:id="@+id/oc_x_panel_operation_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="10dp" android:layout_marginRight="18dp"/>
+    </LinearLayout>
+    <com.didichuxing.xpanel.global.models.misoperation.MisOperationImageView android:id="@+id/oc_x_panel_operation_image" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/oc_x_panel_operation_bottombar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/bottombar0" android:visibility="gone" android:layout_width="0dp" android:layout_height="46dp" android:layout_weight="1">
+            <ImageView android:id="@+id/image0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside"/>
+            <TextView android:textSize="16sp" android:textColor="@color/oc_color_000000" android:ellipsize="end" android:id="@+id/txt0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+        <View android:id="@+id/divider0" android:background="@color/line_dark_gray" android:visibility="gone" android:layout_width="1px" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/bottombar1" android:visibility="gone" android:layout_width="0dp" android:layout_height="46dp" android:layout_weight="1">
+            <ImageView android:id="@+id/image1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside"/>
+            <TextView android:textSize="16sp" android:textColor="@color/oc_color_000000" android:ellipsize="end" android:id="@+id/txt1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+        <View android:id="@+id/divider1" android:background="@color/line_dark_gray" android:visibility="gone" android:layout_width="1px" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/bottombar2" android:visibility="gone" android:layout_width="0dp" android:layout_height="46dp" android:layout_weight="1">
+            <ImageView android:id="@+id/image2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside"/>
+            <TextView android:textSize="16sp" android:textColor="@color/oc_color_000000" android:ellipsize="end" android:id="@+id/txt2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

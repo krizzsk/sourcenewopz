@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="104dp" android:width="104dp" android:autoMirrored="true" android:viewportWidth="104" android:viewportHeight="104">
+    <path android:fillColor="?attr/jumio_scanview_animation_background" android:pathData="M16,0L88,0A16,16 0,0 1,104 16L104,88A16,16 0,0 1,88 104L16,104A16,16 0,0 1,0 88L0,16A16,16 0,0 1,16 0z"/>
+</vector>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root" android:background="@color/one_payment_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/one_payment_layout_title_bar"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:paddingLeft="20dp" android:paddingRight="20dp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="150dp" android:overScrollMode="never" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+        <com.didi.sdk.global.balance.widget.BalanceTopUpView android:id="@+id/ll_topup_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="-3dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_empty" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/font_size_small" android:textColor="@color/light_gray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/one_payment_global_net_toast_serverbusy" android:singleLine="false" android:drawableTop="@drawable/one_payment_network_error" android:drawablePadding="50px" android:contentDescription="@string/one_payment_global_net_toast_serverbusy"/>
+    </LinearLayout>
+</LinearLayout>

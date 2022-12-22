@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/oc_rl_root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/oc_title_bar" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="26dp" android:layout_marginRight="26dp" android:text="@string/pe_pay_confirm_fare_title" android:layout_alignParentTop="true"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="40dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="17dp" android:textColor="#666666" android:id="@+id/oc_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_marginTop="10dp" android:layout_marginRight="26dp" android:layout_marginBottom="20dp" android:text="@string/pe_pay_confirm_fare_tips"/>
+            <com.didi.component.payentrance.view.OrderRecordView android:id="@+id/oc_order_record" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="?attr/submit_btn_text_color_selector" android:gravity="center" android:id="@+id/oc_confirm_button" android:background="?attr/submit_btn_bg_selector" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:text="@string/pe_pay_confirm_fare_confirm_to_pay"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#666666" android:gravity="center" android:id="@+id/oc_not_me_button" android:background="@drawable/global_pe_confirm_fare_not_me_button_bg_selector" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:text="@string/pe_pay_confirm_fare_not_me_button"/>
+    </LinearLayout>
+</RelativeLayout>

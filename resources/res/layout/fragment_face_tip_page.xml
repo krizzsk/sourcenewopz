@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/wallet_color_000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="45dp" android:layout_marginEnd="45dp">
+        <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/wallet_color_D4D7D9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Need you to complete some facial gesture"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/wallet_color_D4D7D9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="This is to confirm that you are the same person as the RG"/>
+    </LinearLayout>
+    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/wallet_color_000000" android:gravity="center" android:layout_gravity="bottom" android:background="@drawable/w_common_bottom_confirm_btn_bg" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginBottom="@dimen/wallet_dp_20" android:text="@string/GRider_Registration_Continue_kdHI" android:layout_marginStart="@dimen/wallet_dp_16" android:layout_marginEnd="@dimen/wallet_dp_16"/>
+</FrameLayout>

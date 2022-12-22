@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/oc_color_25262D_40" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_g_close_dialog_container" android:background="@color/white" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/g_color_000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/global_new_evaluate_cancel_dialog_title"/>
+        <TextView android:textSize="16sp" android:textColor="@color/color_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/global_new_evaluate_cancel_dialog_subtitle"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="25dp">
+            <TextView android:textSize="16sp" android:textColor="@color/g_color_666666" android:gravity="center" android:id="@+id/cancel_button" android:background="@drawable/global_new_evaluate_cancel_dialog_button_cancel_bg" android:layout_width="0dp" android:layout_height="46dp" android:layout_marginRight="15dp" android:text="@string/global_new_evaluate_cancel_dialog_button_cancel" android:layout_weight="1"/>
+            <TextView android:textSize="16sp" android:textColor="?attr/new_evaluate_cancel_dialog_button_ok_text_color" android:gravity="center" android:id="@+id/ok_button" android:background="?attr/new_evaluate_cancel_dialog_button_ok_bg" android:layout_width="0dp" android:layout_height="46dp" android:text="@string/global_new_evaluate_cancel_dialog_button_ok" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

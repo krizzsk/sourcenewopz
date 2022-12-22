@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/customer_filter_text_num_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:id="@+id/customer_tv_home_filter_image" android:visibility="gone" android:layout_width="@dimen/customer_32px" android:layout_height="@dimen/customer_32px" android:layout_marginEnd="@dimen/customer_8px"/>
+        <com.didi.soda.home.topgun.widget.ExpandTextView android:textSize="@dimen/customer_24px" android:textColor="@drawable/customer_skin_selector_home_filter_text" android:ellipsize="none" android:gravity="center_vertical" android:id="@+id/customer_tv_home_filter_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+    <com.didi.rfusion.widget.RFIconView android:textSize="@dimen/rf_dimen_24" android:textColor="@drawable/customer_skin_selector_home_filter_text" android:id="@+id/customer_tv_home_filter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_6px" android:text="@string/rf_icon_v3_small_outlined_pickup"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/login_unify_dimen_20dp" android:layout_marginRight="@dimen/login_unify_dimen_20dp" android:layout_below="@+id/iv_back" android:layout_marginStart="@dimen/login_unify_dimen_20dp" android:layout_marginEnd="@dimen/login_unify_dimen_20dp">
+        <TextView android:text="@string/login_unify_captcha_title" style="@style/LoginUnifyTiTileStyle"/>
+        <com.didi.unifylogin.utils.customview.CaptchaImageView android:id="@+id/login_unify_captcha_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_unify_dimen_10dp"/>
+        <TextView android:textSize="@dimen/login_unify_dimen_14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_unify_dimen_24dp" android:text="@string/login_unify_str_captcha_tips"/>
+        <com.didi.unifylogin.utils.customview.CodeInputView android:id="@+id/login_unify_captcha_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/login_unify_dimen_13dp" android:layout_marginBottom="@dimen/login_unify_dimen_20dp" app:CodeLength="4"/>
+    </LinearLayout>
+</RelativeLayout>

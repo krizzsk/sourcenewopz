@@ -1,0 +1,25 @@
+### AppCompat不需要
+!appcompat-
+
+###地图
+!global-sug-new-
+!global-sug-old-
+
+###im sdl
+!im-sdk-
+
+###钱包
+!wallet-service-consume-
+!wallet-service-transfer-
+!wallet-services-
+!wallet-theme-99-
+!wallet-theme-99driver-
+!wallet-theme-base-
+!payment-base-
+!payment-creditcard-
+!payment-paymethod-
+!payment-wallet-
+!the-one-payment-
+
+#!consume-
+!consume-common-

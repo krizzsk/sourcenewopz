@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/wallet_sp_16" android:textColor="@color/wallet_color_919599" android:id="@+id/tv_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_amount" android:background="@drawable/pay_edittext_bottomline_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="32sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$"/>
+        <androidx.appcompat.widget.AppCompatEditText android:textSize="32sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/et_amount" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:digits="0123456789" android:inputType="none|text|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textPassword|textVisiblePassword|textWebEditText|textFilter|number|numberPassword|phone" android:textCursorDrawable="@drawable/w_common_edittext_cursor_drawable" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@+id/current_balance_tv"/>
+    </LinearLayout>
+    <TextView android:textColor="@color/global_red" android:id="@+id/tv_extra" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</merge>

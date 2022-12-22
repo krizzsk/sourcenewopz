@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="80dp">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/tap_here_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+        <TextView android:textSize="20sp" android:textStyle="normal|bold|italic" android:textColor="#ffffffff" android:id="@+id/guide_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:layout_weight="1" android:layout_marginStart="24dp"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#ffff8040" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tv_get" android:background="@drawable/tap_here_get_bg" android:layout_width="70dp" android:layout_height="30dp" android:text="@string/GRider_call_well_RsMj" android:layout_marginStart="10dp" android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+    <View android:id="@+id/v_triangle" android:background="@drawable/triangle_bg" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginBottom="-4dp" android:layout_marginStart="85dp"/>
+    <FrameLayout android:layout_gravity="center_vertical" android:background="@drawable/payway_default_guide_bg" android:layout_width="match_parent" android:layout_height="45dp" android:paddingStart="5dp" android:paddingEnd="2dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+        <include android:id="@+id/payway_default_layout" layout="@layout/payway_default_guide_ui"/>
+    </FrameLayout>
+</LinearLayout>

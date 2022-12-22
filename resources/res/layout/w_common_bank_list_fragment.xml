@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.sdk.view.titlebar.CommonTitleBar android:id="@+id/bank_list_page_titlebar" android:tag="@string/common_titlebar_id" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/w_common_bank_list_options_lv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/page_level_margin" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/page_level_margin"/>
+</LinearLayout>

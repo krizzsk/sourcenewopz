@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="250dp">
+    <TextView android:textColor="@color/g_color_white" android:gravity="center" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/driver_card_car_label" android:background="@drawable/global_round_8dp_bg" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:backgroundTint="@color/g_color_919599"/>
+    <FrameLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/driver_card_avatar_near_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4dp">
+        <ImageView android:id="@+id/driver_card_car_image" android:layout_width="133dp" android:layout_height="66dp" android:layout_marginLeft="-8dp" android:layout_marginTop="13dp"/>
+        <View android:background="@drawable/driver_near_card_avatar_bg" android:layout_width="85dp" android:layout_height="77dp" android:layout_marginLeft="78dp"/>
+        <com.didi.component.common.widget.CircleImageView android:id="@+id/driver_card_person_image" android:layout_width="65dp" android:layout_height="65dp" android:layout_marginLeft="84dp" android:layout_marginTop="4dp" app:civ_border_color="#0d0a121a" app:civ_border_width="1dp"/>
+    </FrameLayout>
+    <TextView android:textSize="34sp" android:textStyle="bold" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/driver_card_car_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="-4dp" android:layout_marginRight="20dp" android:maxLines="1"/>
+    <TextView android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/driver_card_car_info" android:layout_width="wrap_content" android:layout_height="17dp" android:layout_marginTop="1dp" android:maxLines="1"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/driver_card_person_info_ll" android:layout_width="wrap_content" android:layout_height="17dp" android:layout_marginLeft="20dp" android:layout_marginTop="6dp" android:layout_marginRight="20dp">
+        <TextView android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@+id/driver_card_person_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="175dp" android:maxLines="1"/>
+        <TextView android:textSize="14dp" android:textColor="#5c6166" android:id="@+id/dot_text1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" · "/>
+        <ImageView android:id="@+id/driver_card_near_star_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="4dp" android:src="@drawable/driver_card_icon_star"/>
+        <TextView android:id="@+id/driver_card_near_star_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="14dp" android:textColor="#5c6166" android:id="@+id/dot_text2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" · "/>
+        <TextView android:id="@+id/driver_card_near_trip_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="13dp" android:layout_marginRight="20dp">
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:id="@+id/driver_card_im_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@+id/driver_card_phone_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RelativeLayout android:layout_gravity="right" android:id="@+id/driver_card_buleTooth_container" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/bluetooth_meet_entrance_icon" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/global_bluetooth_meet_entrance_ic_selector" android:layout_alignParentRight="true"/>
+            <FrameLayout android:gravity="center_vertical" android:id="@+id/bluetooth_meet_bubble_msg_container" android:visibility="gone" android:clipChildren="false" android:layout_width="274dp" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

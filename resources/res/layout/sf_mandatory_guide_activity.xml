@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/title_layout" android:layout_width="match_parent" android:layout_height="44dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/sf_left_btn" android:padding="6dp" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:layout_marginTop="7dp" android:src="@drawable/sf_common_titlebar_close_icon"/>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_contacts_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/st_area_guide_margin_dp" android:layout_marginRight="@dimen/st_area_guide_margin_dp" android:layout_above="@+id/bottom_button" android:layout_below="@+id/title_layout"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-8dp" android:layout_alignParentBottom="true">
+        <View android:background="@drawable/shadow_base_popup_bg" android:layout_width="match_parent" android:layout_height="37dp" android:layout_marginBottom="-29dp"/>
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/st_area_guide_margin_dp" android:paddingTop="16dp" android:paddingRight="@dimen/st_area_guide_margin_dp" android:paddingBottom="@dimen/st_area_guide_margin_dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/bts_font_size_medium" android:textStyle="bold" android:textColor="@color/mandatory_guide_button_txt_color" android:ellipsize="end" android:gravity="center" android:id="@+id/auto_add_button" android:background="@drawable/sf_brazil_confirm_selector" android:layout_width="match_parent" android:layout_height="@dimen/st_area_icon_height" android:text="@string/sf_add_automatic" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/bts_font_size_medium" android:textStyle="bold" android:textColor="@color/mandatory_guide_button_txt_color" android:ellipsize="end" android:gravity="center" android:id="@+id/manually_add_button" android:background="@drawable/sf_gray_hollow_rect_bg_selector" android:layout_width="match_parent" android:layout_height="@dimen/st_area_icon_height" android:layout_marginTop="@dimen/sf_mandatory_guide_button_margin_top" android:text="@string/sf_add_manually" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

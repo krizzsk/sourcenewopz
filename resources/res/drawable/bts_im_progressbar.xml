@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <rotate android:fromDegrees="0" android:toDegrees="360" android:pivotX="50%" android:pivotY="50%">
+            <bitmap android:src="@drawable/bts_im_loading_circle" android:antialias="true" android:filter="true"/>
+        </rotate>
+    </item>
+</layer-list>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/ride_card_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/map_rl" android:layout_width="match_parent" android:layout_height="130dp">
+            <com.didiglobal.p205sa.biz.component.ridecard.widget.MapMaskView android:id="@+id/map_mask" android:layout_width="match_parent" android:layout_height="130dp"/>
+            <FrameLayout android:id="@+id/safttool_fl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true" android:layout_marginStart="10dp"/>
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/white" app:cardCornerRadius="20dp" app:cardElevation="0dp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ride_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@+id/message_ll" android:layout_width="match_parent" android:layout_height="40dp">
+                    <ImageView android:id="@+id/msgbg_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+                    <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/msg_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="20dp"/>
+                    <ImageView android:layout_gravity="end" android:id="@+id/msg_iv" android:layout_width="69dp" android:layout_height="match_parent" android:layout_marginEnd="2dp"/>
+                </FrameLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/where_to_ll_b" android:background="@drawable/sa_where_to_bg_selector" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="70dp" android:layout_margin="10dp">
+                    <ImageView android:id="@+id/oc_home_where_to_dot_b" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/global_home_where_to_search" android:scaleType="fitXY" android:layout_marginStart="8dp"/>
+                    <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="#ff151515" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_destination_enable" android:contentDescription="@string/home_destination_accessibility" android:layout_marginStart="4dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/destination_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_marginBottom="9dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/oc_home_destination_item_icon" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/global_home_guess_icon_new_default" android:layout_marginStart="8dp" android:layout_marginEnd="4dp"/>
+                    <TextView android:textSize="12sp" android:textColor="#ff000000" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/sa_destination_tv" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

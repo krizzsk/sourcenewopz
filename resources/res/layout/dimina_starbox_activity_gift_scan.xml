@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.dimina.starbox.p107ui.widget.TitleView android:id="@+id/title_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:title="@string/dm_kit_gift_scan"/>
+    <ProgressBar android:id="@+id/pbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/title_view" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyleSmall"/>
+    <include android:id="@+id/layout_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/pbar" layout="@layout/dimina_starbox_activity_gift_scan_item"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/pbar"/>
+    <TextView android:textSize="17sp" android:textColor="#333" android:gravity="center" android:id="@+id/tv_scan" android:background="#fff" android:layout_width="match_parent" android:layout_height="48dp" android:text="扫码" android:layout_alignParentBottom="true"/>
+    <View android:background="#dedede" android:layout_width="match_parent" android:layout_height="0.6dp" android:layout_above="@+id/tv_scan"/>
+</RelativeLayout>

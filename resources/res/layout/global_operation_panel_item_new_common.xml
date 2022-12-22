@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="62dp">
+    <ImageView android:id="@+id/iv_operationpanel_item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+    <TextView android:textSize="12dp" android:textColor="@color/global_operation_item_text_new_color" android:gravity="center" android:id="@+id/tv_operationpanel_item_name" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:includeFontPadding="false" android:layout_centerInParent="true"/>
+    <TextView android:textSize="8dp" android:textColor="@color/afanty_orange" android:gravity="center" android:id="@+id/tv_operationpanel_item_subtitle" android:background="@drawable/global_operation_panel_item_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+</LinearLayout>

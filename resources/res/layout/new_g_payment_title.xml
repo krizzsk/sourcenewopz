@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="30dp" android:paddingTop="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/g_payment_title_close_layout" android:paddingStart="30dp" android:paddingEnd="30dp" android:layout_toStartOf="@+id/g_payment_title_close_layout">
+        <TextView android:textSize="24dp" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/g_payment_title_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Payment Failed" android:maxLines="1"/>
+        <TextView android:textSize="14dp" android:textColor="#000000" android:ellipsize="end" android:id="@+id/g_payment_title_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Connection error, please try again later"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/g_payment_title_close_layout" android:paddingLeft="0dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:contentDescription="@string/oc_close_button" android:paddingStart="0dp" android:paddingEnd="10dp" android:layout_alignParentEnd="true">
+        <ImageView android:background="@drawable/new_g_title_close_selector" android:layout_width="30dp" android:layout_height="30dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/g_payment_title_pix_close_layout" android:paddingLeft="0dp" android:paddingTop="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:contentDescription="@string/oc_close_button" android:paddingStart="0dp" android:paddingEnd="10dp" android:layout_alignParentEnd="true">
+        <ImageView android:background="@drawable/new_g_title_close_selector" android:layout_width="30dp" android:layout_height="30dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.sdk.view.titlebar.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="44dp"/>
+    <FrameLayout android:id="@+id/fl_discount" android:background="#bdf3a6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="36dp">
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#008c57" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/tv_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="30dp"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/wallet_creditcard_bind_card_discount" android:layout_marginEnd="30dp"/>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

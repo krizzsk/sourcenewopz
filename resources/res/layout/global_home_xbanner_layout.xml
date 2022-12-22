@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.global.xbanner.view.base.XBannerView android:id="@+id/xbanner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:background="@color/df_act_window_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/next_btn">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <TextView android:textSize="@dimen/df_main_text_size_small" android:textColor="@color/df_main_text_color2" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="2dp" android:layout_marginRight="8dp" android:text="@string/df_appeal_select_driver_title" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+            <FrameLayout android:background="@drawable/df_white_rounded_corner_bg" android:layout_width="match_parent" android:layout_height="210dp" android:layout_marginTop="10dp">
+                <RadioButton android:textSize="@dimen/df_main_text_size_medium" android:textColor="@color/df_main_text_color1" android:id="@+id/rb_btn1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="28dp" android:checked="true" android:button="@drawable/df_select_driver_checkbox_indicator" android:text="@string/df_appeal_select_driver_desc1"/>
+                <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:src="@drawable/df_driver_license_with_qr"/>
+            </FrameLayout>
+            <FrameLayout android:background="@drawable/df_white_rounded_corner_bg" android:layout_width="match_parent" android:layout_height="210dp" android:layout_marginTop="6dp">
+                <RadioButton android:textSize="@dimen/df_main_text_size_medium" android:textColor="@color/df_main_text_color1" android:id="@+id/rb_btn2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="28dp" android:button="@drawable/df_select_driver_checkbox_indicator" android:text="@string/df_appeal_select_driver_desc2"/>
+                <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:src="@drawable/df_driver_license_without_qr"/>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="@dimen/df_main_text_size_normal" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/next_btn" android:background="@drawable/br_df_appeal_btn_with_white_bg" android:layout_width="match_parent" android:layout_height="@dimen/df_btn_with_white_bg_height" android:text="@string/df_next" android:layout_alignParentBottom="true" android:textAllCaps="false"/>
+</RelativeLayout>

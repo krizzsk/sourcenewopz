@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale android:interpolator="@android:anim/linear_interpolator" android:duration="@integer/tips_anim_out_duration_1" android:pivotX="100%" android:pivotY="0%" android:fillAfter="true" android:fromXScale="@dimen/tips_anim_out_scale_1" android:toXScale="@dimen/tips_anim_out_scale_2" android:fromYScale="@dimen/tips_anim_out_scale_1" android:toYScale="@dimen/tips_anim_out_scale_2"/>
+    <scale android:interpolator="@android:anim/linear_interpolator" android:duration="@integer/tips_anim_out_duration_2" android:pivotX="100%" android:pivotY="0%" android:fillAfter="true" android:startOffset="@integer/tips_anim_out_duration_1" android:fromXScale="@dimen/tips_anim_out_scale_2" android:toXScale="@dimen/tips_anim_out_scale_3" android:fromYScale="@dimen/tips_anim_out_scale_2" android:toYScale="@dimen/tips_anim_out_scale_3"/>
+</set>

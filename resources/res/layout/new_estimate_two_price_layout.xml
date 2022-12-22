@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/new_estimate_two_price_check_box" android:paddingLeft="20dp" android:paddingRight="10dp" android:layout_width="46dp" android:layout_height="match_parent" android:src="@drawable/checkbox_check_status" android:scaleType="center"/>
+    <TextView android:textSize="12dp" android:textStyle="bold" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/new_estimate_two_price_tv" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="2" android:drawableRight="@drawable/common_icon_arrow" android:drawablePadding="8dp"/>
+    <View android:id="@+id/new_estimate_two_price_blank" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:layout_centerInParent="true">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="32dp">
+        <ImageView android:id="@+id/ll_balance_entry_image" android:layout_width="28dp" android:layout_height="28dp" android:scaleType="fitCenter" android:layout_centerInParent="true"/>
+        <TextView android:textSize="9dp" android:textColor="#ffffff" android:gravity="start" android:id="@+id/tv_sale_tip" android:background="@drawable/wallet_global_balance_entry_saletip_shape" android:paddingLeft="3dp" android:paddingRight="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ll_balance_entry_image" android:paddingStart="3dp" android:paddingEnd="3dp" android:layout_toEndOf="@+id/ll_balance_entry_image"/>
+    </RelativeLayout>
+    <TextView android:textSize="14dp" android:textColor="@drawable/wallet_global_paymethod_titlecolor_light_selector" android:gravity="center" android:id="@+id/ll_balance_entry_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+</LinearLayout>

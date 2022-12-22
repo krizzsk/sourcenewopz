@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/customer_selector_category_item" android:paddingLeft="@dimen/customer_48px" android:paddingRight="@dimen/customer_48px" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customer_35px" android:layout_marginBottom="@dimen/customer_35px">
+        <com.didi.soda.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/customer_32px" android:textColor="@color/rf_color_gery_1_0_000000" android:ellipsize="end" android:id="@+id/customer_tv_business_classify_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" app:fontFlavor="3"/>
+        <com.didi.soda.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/customer_32px" android:textColor="@color/rf_color_gery_3_60_999999" android:id="@+id/customer_tv_business_classify_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_8px" app:fontFlavor="3"/>
+    </LinearLayout>
+    <View android:id="@+id/customer_v_business_category_divider" android:background="@color/rf_color_gery_5_90_E5E5E5" android:layout_width="match_parent" android:layout_height="@dimen/customer_1px"/>
+</RelativeLayout>

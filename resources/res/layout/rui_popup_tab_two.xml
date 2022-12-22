@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="60dp">
+    <rui.RUIText android:textSize="@dimen/rui_text_icon_small" android:textColor="@color/rui_color_brands_dark" android:layout_gravity="center_vertical" android:id="@+id/rui_ct_roller_picker_close" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rui_icon_delete_01" app:rui_text_typefaceType="2"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/rui_ll_roller_picker_tab_container" android:layout_width="@dimen/rui_roller_picker_tab_container_width" android:layout_height="wrap_content">
+        <Button android:textSize="14sp" android:textColor="@color/rui_selector_roller_picker_tab_text" android:id="@+id/tv_left_tab" android:background="@drawable/rui_selector_roller_picker_left_tab" android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" style="@style/RUIButton"/>
+        <Button android:textSize="14sp" android:textColor="@color/rui_selector_roller_picker_tab_text" android:id="@+id/tv_right_tab" android:background="@drawable/rui_selector_roller_picker_right_tab" android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" style="@style/RUIButton"/>
+    </LinearLayout>
+</FrameLayout>

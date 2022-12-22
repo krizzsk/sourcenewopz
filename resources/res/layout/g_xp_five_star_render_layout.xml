@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <CheckBox android:background="@drawable/g_xp_five_star_evauate_big_five_star_selector" android:layout_width="18dp" android:layout_height="18dp" android:button="@null"/>
+    <CheckBox android:background="@drawable/g_xp_five_star_evauate_big_five_star_selector" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="3dp" android:button="@null"/>
+    <CheckBox android:background="@drawable/g_xp_five_star_evauate_big_five_star_selector" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="3dp" android:button="@null"/>
+    <CheckBox android:background="@drawable/g_xp_five_star_evauate_big_five_star_selector" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="3dp" android:button="@null"/>
+    <CheckBox android:background="@drawable/g_xp_five_star_evauate_big_five_star_selector" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="3dp" android:button="@null"/>
+</merge>

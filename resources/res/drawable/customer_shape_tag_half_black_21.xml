@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <corners android:radius="@dimen/customer_21px"/>
+    <solid android:color="@color/rf_color_gery_18_0_66000000"/>
+    <padding android:left="@dimen/customer_16px" android:top="@dimen/customer_9px" android:right="@dimen/customer_16px" android:bottom="@dimen/customer_9px"/>
+</shape>

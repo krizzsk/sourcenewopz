@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:oneshot="false">
+    <item android:duration="300" android:drawable="@drawable/common_animation_loading_normal_2x"/>
+    <item android:duration="300" android:drawable="@drawable/common_animation_loading_left_2x"/>
+    <item android:duration="300" android:drawable="@drawable/common_animation_loading_middle_2x"/>
+    <item android:duration="300" android:drawable="@drawable/common_animation_loading_right_2x"/>
+</animation-list>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:paddingTop="23dp" android:paddingBottom="23dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="23dp">
+            <ImageView android:id="@+id/favorite_back" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/selector_title_bar_back" android:layout_centerVertical="true"/>
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GRider_Sug_2020_favorite" android:lines="1" android:layout_centerInParent="true" style="@style/Map.TextViewStyle.TextDirection"/>
+        </RelativeLayout>
+        <View android:background="#0d0a121a" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/favorite_title_container"/>
+        <com.didi.addressnew.framework.fragmentmarket.favorite.FavoriteListView android:id="@+id/favorite_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6dp"/>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/favorite_add_btn" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginBottom="20dp" android:layout_marginEnd="20dp">
+        <TextView android:id="@+id/favorite_add_btn_bg" android:background="@drawable/favorite_list_add_btn_bg_selector" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Map.TextViewStyle.TextDirection"/>
+        <ImageView android:layout_gravity="center" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/icon_plus_white"/>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/lego_color_FFFFFF" android:layout_width="match_parent" android:layout_height="61dp" android:paddingStart="20dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="@dimen/lego_dimen_14sp" android:textColor="@color/lego_color_000000" android:gravity="center" android:id="@+id/g_contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/lego_dimen_12sp" android:textColor="@color/lego_color_919599" android:gravity="center" android:id="@+id/g_contact_phone_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lego_dimen_2dp" android:maxLines="1"/>
+    </LinearLayout>
+    <CheckBox android:gravity="center" android:id="@+id/g_contact_select_btn" android:padding="20dp" android:layout_width="61dp" android:layout_height="match_parent" android:button="@null" android:drawableStart="?attr/checkbox_multiple_selector"/>
+</LinearLayout>

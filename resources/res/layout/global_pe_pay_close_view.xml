@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/oc_pay_entrance_detail" android:paddingTop="30dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/oc_pay_entrance_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:src="@drawable/global_pe_canceltrip_icon"/>
+        <TextView android:textSize="@dimen/ms_12sp" android:textColor="@color/pe_color_333333" android:id="@+id/oc_tv_pay_entrance_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pe_pay_entrance_money"/>
+        <TextView android:textSize="@dimen/ms_10sp" android:textColor="@color/pe_color_999999" android:id="@+id/oc_pay_entrance_money_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_tiny" android:text="@string/pe_pay_closed"/>
+    </LinearLayout>
+</FrameLayout>

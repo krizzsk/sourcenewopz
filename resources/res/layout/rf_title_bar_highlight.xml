@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.didi.rfusion.widget.titlebar.tools.RFCollapsingTitleBarLayout android:id="@+id/rf_ctl_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:layout_scrollFlags="13">
+        <com.didi.rfusion.widget.titlebar.RFStandardTitleBar android:id="@+id/rf_stb_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1"/>
+    </com.didi.rfusion.widget.titlebar.tools.RFCollapsingTitleBarLayout>
+    <View android:id="@+id/rf_view_divider" android:background="@color/rf_color_gery_6_90_E3E3E6" android:layout_width="match_parent" android:layout_height="@dimen/rf_dimen_1"/>
+</merge>

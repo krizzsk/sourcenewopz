@@ -1,0 +1,19 @@
+{
+  "native_version": "",
+  "app_id": "dimina",
+  "version": "2.0.0",
+  "channel": "mini-app-international-assets",
+  "modules": [
+    {
+      "module_id": "2",
+      "module_name": "DIMINA_JSSDK",
+      "md5": "4b43e754a6ba7323a481e68d1b9afd42",
+      "key": "DIMINA_JSSDK-1667899807529.zip",
+      "version": "2.0.0"
+    }
+  ],
+  "sdk_version_code": "68",
+  "sdk_version_name": "2.0.0",
+  "dmcc_group_id": "12",
+  "dmcc_version_id": "30"
+}

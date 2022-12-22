@@ -1,0 +1,16 @@
+[
+  {
+    "featureType": "transit.line",
+    "stylers": [
+      {
+        "saturation": -40
+      },
+      {
+        "lightness": 45
+      },
+      {
+        "weight": 1.5
+      }
+    ]
+  }
+]

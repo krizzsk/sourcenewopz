@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.didi.soda.customer.widget.StatusBarView android:id="@+id/customer_custom_status_bar" android:background="@color/customer_color_transparent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:id="@+id/customer_custom_tips_top_margin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/customer_topgun_home_embed_address_offset"/>
+    <com.didi.rfusion.widget.tips.RFTips android:layout_gravity="center_horizontal" android:id="@+id/customer_custom_address_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customer_30px"/>
+</LinearLayout>

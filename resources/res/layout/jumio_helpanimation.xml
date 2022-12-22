@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/help_animation_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_help_overlay_hor" android:layout_width="283dp" android:layout_height="wrap_content" android:tint="?attr/netverify_helpImage" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/iv_help_overlay_vert" android:layout_width="283dp" android:layout_height="wrap_content" android:tint="?attr/netverify_helpImage" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/iv_help_doc" android:layout_width="260dp" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/iv_help_overlay_body" android:layout_width="260dp" android:layout_height="wrap_content" android:scaleType="centerInside" android:tint="?attr/netverify_helpImage" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

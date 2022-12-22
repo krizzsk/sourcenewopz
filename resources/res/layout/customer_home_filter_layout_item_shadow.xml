@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.didi.soda.customer.widget.extra.CustomerShadowConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/rf_dimen_10" android:paddingTop="@dimen/rf_dimen_10" android:paddingRight="@dimen/rf_dimen_10" android:paddingBottom="@dimen/rf_dimen_10" android:layout_width="wrap_content" android:layout_height="wrap_content" app:customer_shadow_inset_padding="@dimen/rf_dimen_4" style="@style/ShadowHome">
+    <com.didi.soda.home.topgun.widget.HomeFilterItem android:id="@+id/customer_home_filter_item" android:layout_width="wrap_content" android:layout_height="@dimen/rf_dimen_72"/>
+</com.didi.soda.customer.widget.extra.CustomerShadowConstraintLayout>

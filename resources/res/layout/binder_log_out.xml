@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/rf_color_white_100_FFFFFF" android:layout_width="match_parent" android:layout_height="@dimen/customer_100px">
+    <TextView android:textSize="@dimen/text_size_28px" android:textColor="@color/customer_color_FC9153" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/customer_setting_home_log_out"/>
+</FrameLayout>

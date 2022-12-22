@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="top" android:id="@+id/phone_entrance_icon" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/global_phone_entrance_icon_v2_selector" android:contentDescription="@string/GRider_0111_Phone_driver_wfIg"/>
+</FrameLayout>

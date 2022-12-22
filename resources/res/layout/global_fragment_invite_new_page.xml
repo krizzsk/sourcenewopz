@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/ggk_color_FFFFFF" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/invite_head_module_layout" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/global_invitation_head_layout"/>
+        <include android:id="@+id/invite_share_module_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" layout="@layout/global_invitation_share_layout"/>
+        <include android:id="@+id/invite_reward_module_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" layout="@layout/global_invitation_reward_layout"/>
+        <include android:id="@+id/invite_introduction_module_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" layout="@layout/global_invitation_introduction_layout"/>
+        <include android:id="@+id/invite_terms_module_layout" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/global_invitation_terms_layout"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

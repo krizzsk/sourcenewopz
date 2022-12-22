@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/lv_root" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.didi.addressold.view.SugListView android:id="@+id/lv" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp"/>
+        <com.didi.addressold.widget.EmptyView android:id="@+id/empty_view_error" android:background="@color/poi_one_address_view_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/layout_map_ctrl" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:gravity="center" android:id="@+id/tv_confirm" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="8dp" android:layout_marginBottom="@dimen/common_margin" android:text="@string/global_sug_confirm" android:layout_alignParentBottom="true" android:textAllCaps="false" android:layout_marginStart="18dp" android:layout_marginEnd="18dp" style="@style/Map.TextViewStyle.TextDirection"/>
+        <ImageView android:id="@+id/iv_reset_map" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginBottom="-25dp" android:src="@drawable/old_selector_map_reset_button" android:layout_above="@+id/tv_confirm" android:layout_marginEnd="-10dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</FrameLayout>

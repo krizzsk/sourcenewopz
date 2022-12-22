@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/assetbackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/topRelativeLayout" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="18sp" android:textColor="@color/assetactive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/asset_activity_center" android:layout_centerInParent="true"/>
+        <ImageButton android:id="@+id/activeCloseImg" android:background="@drawable/titlebar_button_close_selector" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginRight="10dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/assetListview" android:background="@color/assetbackground" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:listSelector="@color/assetbackground" android:cacheColorHint="#00000000" android:divider="@color/assetbackground" android:dividerHeight="10dp" android:layout_below="@+id/topRelativeLayout"/>
+</RelativeLayout>

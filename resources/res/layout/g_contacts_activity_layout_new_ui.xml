@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/sf_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="52dp">
+        <com.didi.safetoolkit.widget.SfCommonTitleBar android:id="@+id/share_title_bar" android:layout_width="match_parent" android:layout_height="52dp"/>
+        <TextView android:enabled="false" android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/global_main_button_text_color_selector" android:gravity="center" android:layout_gravity="end" android:id="@+id/share_bottom_btn" android:background="?attr/global_section_main_button_selector" android:layout_width="70dp" android:layout_height="30dp" android:layout_marginTop="10.5dp" android:layout_marginBottom="11.5dp" android:includeFontPadding="false" android:layout_marginEnd="16dp"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/list_layout" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <EditText android:textSize="12dp" android:id="@+id/search_et" android:background="@null" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="18dp" android:singleLine="true" android:maxLength="20" android:textCursorDrawable="@drawable/sf_cursor_drawable"/>
+            <View android:background="@color/sf_black_0B" android:layout_width="match_parent" android:layout_height="1px"/>
+            <View android:background="@color/sf_black_0B" android:layout_width="match_parent" android:layout_height="1px"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/no_permission_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/big_icon" android:layout_width="160dp" android:layout_height="160dp" android:layout_marginTop="26dp" android:src="@drawable/sf_no_perssion" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/sf_color_333333" android:id="@+id/no_permission_main_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_marginTop="30dp" android:layout_marginRight="26dp" android:layout_below="@+id/big_icon"/>
+            <TextView android:textSize="14sp" android:id="@+id/no_permission_sub_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_marginTop="10dp" android:layout_marginRight="26dp" android:layout_below="@+id/no_permission_main_title"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="?attr/submit_btn_text_color_selector" android:gravity="center" android:id="@+id/request_per_btn" android:background="?attr/submit_btn_bg_selector" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:layout_marginBottom="18dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

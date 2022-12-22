@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/oc_color_F3F4F5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/title_layout" android:background="@color/oc_color_F3F4F5" android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/cr_left_btn" android:padding="6dp" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:src="@drawable/sf_common_titlebar_close_icon"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/fallback_view_layout" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_cancel_reason" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

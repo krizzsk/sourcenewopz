@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/afanty_webview_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didichuxing.omega.sdk.feedback.webview.TitleBar android:id="@+id/afanty_web_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <com.didichuxing.omega.sdk.feedback.webview.neweb.BaseWebView android:id="@+id/afanty_web_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/afanty_web_title_bar"/>
+    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/afanty_web_error_view" android:background="@color/afanty_white" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/afanty_web_title_bar">
+        <ImageView android:id="@+id/afanty_web_error_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/afanty_gray" android:gravity="center" android:id="@+id/afanty_web_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

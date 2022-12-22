@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:background="@drawable/map_comp_custom_toast_bg" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="62dp">
+    <TextView android:textSize="14dp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/toast_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="16dp" android:drawableStart="@drawable/map_comp_toast_icon_suc" style="@style/Map.TextViewStyle.TextDirection"/>
+</FrameLayout>

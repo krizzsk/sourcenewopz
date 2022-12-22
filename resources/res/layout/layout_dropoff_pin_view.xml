@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.didi.map.global.component.dropoff.pin.PinView android:id="@+id/pin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/container" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_alignTop="@+id/pin" android:layout_centerHorizontal="true">
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/loading_lottie" android:visibility="invisible" android:layout_width="50dp" android:layout_height="25dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/no_parking_lottie" android:visibility="invisible" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginBottom="26dp" android:layout_alignBottom="@+id/pin" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

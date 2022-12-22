@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:top="@dimen/customer_188px">
+        <shape>
+            <gradient android:startColor="@color/rf_color_white_100_alpha_0" android:endColor="@color/rf_color_gery_7_97_F5F5F7" android:angle="-90" android:centerY="0.9"/>
+        </shape>
+    </item>
+</layer-list>

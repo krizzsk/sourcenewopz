@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/wallet_white_top_r20" android:layout_width="match_parent" android:layout_height="516dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/ggk_dimen_24sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_dp_30" android:layout_marginTop="@dimen/wallet_dp_30" android:text="@string/GRider_product_Rules_notes_uMCh" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+        <ImageView android:id="@+id/btn_closeImg" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="@dimen/wallet_dp_10" android:layout_marginRight="@dimen/wallet_dp_10" android:src="@drawable/popup_icon_close_def" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/web_view_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_above="@+id/LLayout_btn_agree" android:layout_below="@+id/dialog_title" android:layout_marginStart="@dimen/wallet_dp_30" android:layout_marginEnd="@dimen/wallet_dp_30"/>
+        <LinearLayout android:id="@+id/LLayout_btn_agree" android:background="@drawable/wallet_terms_and_conditions_shadow" android:layout_width="match_parent" android:layout_height="100dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/btn_agree" android:background="@drawable/wallet_btn_terms_and_conditions_agree" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/wallet_dp_24" android:text="@string/Others_optimization_Agree_nQGV"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

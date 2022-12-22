@@ -1,0 +1,10 @@
+{
+  "bundle-name": "omega-swarm",
+  "bundle-description": "OmegaSDK for Swarm",
+  "bundle-symbolicName": "com.didichuxing.omega.swarm",
+  "bundle-activator": "com.didichuxing.omega.swarm.OmegaActivator",
+  "bundle-version": "0.0.1",
+  "bundle-dependencies": {
+    "com.didichuxing.apollo.sdk.swarm": "0.0.3"
+  }
+}

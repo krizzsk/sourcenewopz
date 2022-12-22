@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="52dp">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="52dp">
+        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="#000000" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GRider_Interest_Transaction_charges_Nuds"/>
+        <ImageView android:id="@+id/img_trans_fee_question_mark" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="6dp" android:src="@drawable/g_ic_payment_question_mark" android:layout_marginStart="6dp"/>
+        <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/tv_trans_fee_display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:includeFontPadding="false" android:layout_marginStart="10dp"/>
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#919599" android:id="@+id/tv_trans_fee_slash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="3.5dp" android:includeFontPadding="false" android:layout_marginStart="10dp"/>
+        </LinearLayout>
+        <Space android:layout_width="16dp" android:layout_height="0dp"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:background="#0d0a121a" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_alignParentBottom="true" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"/>
+</FrameLayout>

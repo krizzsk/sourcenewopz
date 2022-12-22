@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.didi.payment.wallet.global.wallet.view.view.WalletTriangleView android:id="@+id/wtv_setting_popup_arrow" android:layout_width="12dp" android:layout_height="8dp" android:layout_alignRight="@+id/ll_setting_popup_content" android:layout_marginEnd="17dp" android:layout_alignEnd="@+id/ll_setting_popup_content"/>
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@+id/ll_setting_popup_content" android:background="@drawable/wallet_mainlist_setting_popup_bg" android:paddingTop="12dp" android:paddingBottom="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dp" android:paddingStart="16dp" android:paddingEnd="17dp">
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/wallet_color_FFFFFF" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GRider_Cognition_Click_here_lrrA" android:includeFontPadding="false" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_marginEnd="13dp"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tips_icon_close"/>
+    </LinearLayout>
+</RelativeLayout>

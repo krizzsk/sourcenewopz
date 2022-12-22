@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="user"/>
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+    <domain-config>
+        <domain includeSubdomains="true">conf.didiglobal.com
+        </domain>
+        <domain includeSubdomains="true">common.didiglobal.com
+        </domain>
+        <domain includeSubdomains="true">api.didiglobal.com
+        </domain>
+        <domain includeSubdomains="true">cashier.didiglobal.com
+        </domain>
+        <domain includeSubdomains="true">pay.didiglobal.com
+        </domain>
+        <domain includeSubdomains="true">epassport.didiglobal.com
+        </domain>
+        <domain includeSubdomains="true">as.didiglobal.com
+        </domain>
+        <domain includeSubdomains="true">poimap.didiglobal.com
+        </domain>
+        <domain includeSubdomains="true">ct.didiglobal.com
+        </domain>
+        <domain includeSubdomains="true">ctv3.didiglobal.com
+        </domain>
+        <domain includeSubdomains="true">lion.didiglobal.com
+        </domain>
+    </domain-config>
+</network-security-config>

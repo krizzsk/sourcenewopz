@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="#9925262d" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/sf_loading" android:layout_width="match_parent" android:layout_height="1dp" android:layout_above="@+id/dialog_layout"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/dialog_layout" android:background="@color/white" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="@color/sf_color_333333" android:id="@+id/guide_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+            <TextView android:textSize="@dimen/sf_dimen_16_sp" android:textStyle="bold" android:textColor="@color/sf_color_666666" android:gravity="center" android:id="@+id/sf_dialog_cancel" android:background="@drawable/sf_gray_hollow_rect_bg_selector" android:layout_width="0dp" android:layout_height="50dp" android:text="@string/sf_add_area_code_sec_confirm_no" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/sf_dimen_16_sp" android:textStyle="bold" android:textColor="@color/sf_brazil_confirm_text_selector" android:gravity="center" android:id="@+id/sf_dialog_confirm" android:background="@drawable/sf_brazil_confirm_selector" android:layout_width="0dp" android:layout_height="50dp" android:layout_marginLeft="15dp" android:text="@string/sf_add_area_code_sec_confirm_yes" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

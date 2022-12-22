@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="168dp" android:layout_height="139dp">
+    <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:background="@drawable/wallet_global_home_consume_item_bg" android:layout_width="168dp" android:layout_height="139dp">
+        <ImageView android:id="@+id/iv_consume_item_icon" android:layout_width="80dp" android:layout_height="55dp" android:layout_marginTop="6dp" android:scaleType="centerCrop" android:adjustViewBounds="true" android:maxWidth="80dp" android:maxHeight="300dp"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/pay_base_black" android:gravity="start" android:id="@+id/tv_consume_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:id="@+id/tv_consume_item_tag" android:background="@drawable/wallet_global_home_consume_item_tag_bg" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="19dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/view_shadow" android:background="#99ffffff" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

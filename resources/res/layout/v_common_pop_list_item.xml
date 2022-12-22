@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/common_press_dark_alpha_4_selector" android:layout_width="match_parent" android:layout_height="50dp">
+    <LinearLayout android:layout_gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/ll_root" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_icon" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginRight="6dp"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@color/dark_gray" android:ellipsize="end" android:id="@+id/tv_content" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/light_gray" android:ellipsize="end" android:id="@+id/tv_min_content" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

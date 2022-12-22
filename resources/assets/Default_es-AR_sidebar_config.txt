@@ -1,0 +1,225 @@
+{
+    "levels":{
+        "level0": {
+            "root": {
+                "subLevel": "level1",
+                "groupList": [
+                    [
+                        {
+                            "id": 1,
+                            "componentType": "nav_to_edit_account",
+                            "url": "GlobalOneTravel://one/editProfile",
+                            "name": "",
+                            "subPage": "account",
+                            "des": ""
+                        },
+                        {
+                            "id": 2,
+                            "componentType": "menu_common_link",
+                            "iconUrl": "android.resource://sidebar_icon_payment",
+                            "url": "GlobalOneTravel://one/nativeWallet",
+                            "name": "Pago",
+                            "des": ""
+                        },
+                        {
+                            "id": 3,
+                            "componentType": "menu_common_link",
+                            "iconUrl": "android.resource://sidebar_icon_trips",
+                            "url": "GlobalOneTravel://one/history",
+                            "name": "Mis viajes",
+                            "des": ""
+                        },
+                        {
+                            "id": 4,
+                            "componentType": "menu_common_link",
+                            "iconUrl": "android.resource://sidebar_icon_settings",
+                            "url": "GlobalOneTravel://one/settings",
+                            "subPage": "setting",
+                            "name": "Configuración",
+                            "des": ""
+                        }
+                    ],
+                    [
+                        {
+                            "id": 5,
+                            "componentType": "menu_common_link",
+                            "iconUrl": "android.resource://sidebar_icon_promos",
+                            "url": "https://couponcode.didiglobal.com/code/index?a=11720&b=20003&c=20001&s=15161790265593483112608&m=&ts=1516179026&fc=a13035b6818bbf70d57abeea290146f4&t=QR&d=330&fromChanel=sidebar",
+                            "name": "Promociones",
+                            "des": ""
+                        }
+                    ]
+                ]
+            }
+        },
+        "level1": {
+            "setting": {
+                "subLevel": "level2",
+                "title": "Configuración",
+                "groupList": [
+                    [
+                        {
+                            "id": 6,
+                            "componentType": "menu_setting_common_link",
+                            "name": "Mi perfil",
+                            "subPage":"account",
+                            "url": "GlobalOneTravel://one/editProfile"
+                        },
+                        {
+                            "id": 7,
+                            "componentType": "menu_setting_language_switch",
+                            "name": "Idioma",
+                            "url": "GlobalOneTravel://one/language"
+                        },
+                        {
+                            "id": 8,
+                            "componentType": "menu_setting_common_link",
+                            "name": "Mis lugares favoritos",
+                            "url": "GlobalOneTravel://one/address"
+                        }
+                    ],
+                    [
+                        {
+                            "id": 9,
+                            "componentType": "menu_setting_common_link",
+                            "name": "Acerca de Didi",
+                            "subPage":"about",
+                            "url": "GlobalCommon://one/about"
+                        },
+                        {
+                            "id": 10,
+                            "componentType": "menu_setting_common_link",
+                            "name": "Términos y condiciones",
+                            "url": "https://common.didiglobal.com/icmc/pmc/lawUrl"
+                        }
+                    ],
+                    [
+                         {
+                             "id": 11,
+                             "componentType": "menu_setting_logout",
+                             "name": "Cerrar sesión"
+                         }
+                    ]
+                ]
+        },
+        "account": {
+                "subLevel": "level2",
+                "title": "Mi perfil",
+                "groupList": [
+                    [
+                        {
+                            "id": 12,
+                            "componentType": "account_edit_avatar",
+                            "des": "Editar mi foto de perfil"
+
+                        },
+                        {
+                            "id": 13,
+                            "componentType": "account_edit_firt_name",
+                            "des": "Nombre",
+                            "name": "Ingresa tu nombre"
+                        },
+                        {
+                            "id": 14,
+                            "componentType": "account_edit_last_name",
+                            "des": "Apellido",
+                            "name": "Ingresa tu apellido"
+                        }
+                    ],
+                    [
+                        {
+                            "id": 15,
+                            "componentType": "account_modfy_phone",
+                            "name": "Número de teléfono",
+                            "url": "GlobalOneTravel://one/modifyPhoneNum"
+                        },
+                        {
+                            "id": 16,
+                            "componentType": "menu_setting_common_link",
+                            "name": "Cambiar mi contraseña",
+                            "url": "GlobalOneTravel://one/modifyPassword"
+                         },
+                        {
+                            "id":17,
+                            "componentType":"account_modify_email",
+                            "name":"Correo electrónico",
+                            "url":"GlobalOneTravel://one/modifyEmail"
+                        },
+                        {
+                            "id":18,
+                            "componentType":"account_settings",
+                            "name":"Cuentas de tercera parte",
+                            "url":"GlobalOneTravel://one/accountSettings"
+                        },
+                        {
+                            "id": 19,
+                            "componentType": "menu_setting_common_link",
+                            "name": "Eliminar mi cuenta",
+                            "url": "GlobalOneTravel://one/deleteAccount"
+                        }
+                    ]
+                ]
+            }
+        },
+        "level2":{
+            "account": {
+                "subLevel": "level1",
+                "title": "Mi perfil",
+                "groupList": [
+                    [
+                        {
+                            "id": 20,
+                            "componentType": "account_edit_avatar",
+                            "des": "Editar mi foto de perfil"
+
+                        },
+                        {
+                            "id": 21,
+                            "componentType": "account_edit_firt_name",
+                            "des": "Nombre",
+                            "name": "Ingresa tu nombre"
+                        },
+                        {
+                            "id": 22,
+                            "componentType": "account_edit_last_name",
+                            "des": "Apellido",
+                            "name": "Ingresa tu apellido"
+                        }
+                    ],
+                    [
+                        {
+                            "id": 23,
+                            "componentType": "account_modfy_phone",
+                            "name": "Número de teléfono",
+                            "url": "GlobalOneTravel://one/modifyPhoneNum"
+                        },
+                        {
+                            "id": 24,
+                            "componentType": "menu_setting_common_link",
+                            "name": "Cambiar mi contraseña",
+                            "url": "GlobalOneTravel://one/modifyPassword"
+                        },
+                        {
+                            "id":26,
+                            "componentType":"account_modify_email",
+                            "name":"Correo electrónico",
+                            "url":"GlobalOneTravel://one/modifyEmail"
+                        },
+                        {
+                            "id":27,
+                            "componentType":"account_settings",
+                            "name":"Cuentas de tercera parte",
+                            "url":"GlobalOneTravel://one/accountSettings"
+                        },
+                        {
+                            "id": 25,
+                            "componentType": "menu_setting_common_link",
+                            "name": "Eliminar mi cuenta",
+                            "url": "GlobalOneTravel://one/deleteAccount"
+                        }
+                    ]
+                ]
+            }
+        }
+    }
+}

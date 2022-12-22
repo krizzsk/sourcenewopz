@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/oc_color_FFFFFF" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.sdk.view.titlebar.CommonTitleBar android:id="@+id/common_title_bar" android:tag="@string/common_titlebar_id" android:layout_width="match_parent" android:layout_height="46dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/oc_color_000000" android:gravity="start" android:id="@+id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:text="@string/Finance_Brazil_Use_PIX_NQtn" android:layout_marginStart="18dp"/>
+        <com.didi.payment.commonsdk.widget.WalletAmountEditText android:id="@+id/aet_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_dp_24" android:layout_marginRight="@dimen/wallet_dp_24" android:layout_marginHorizontal="@dimen/wallet_dp_24" app:enableExceed="false" app:labelText="@string/wallet_boleto_cashin_amount_title"/>
+        <TextView android:enabled="false" android:textSize="16sp" android:textStyle="bold" android:textColor="?attr/submit_btn_text_color_selector" android:gravity="center" android:id="@+id/btn_topup" android:background="?attr/submit_btn_round_corner_bg_selector" android:layout_width="match_parent" android:layout_height="46dp" android:layout_margin="18dp" android:text="@string/confirm"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_empty" android:padding="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="150dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wallet_pic_service_waiting" android:scaleType="center"/>
+        <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/wallet_global_topup_retry_title"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+            <ImageView android:id="@+id/g_payment_error_icon" android:background="@drawable/w_common_sdk_net_refresh_icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="18sp" android:textColor="#666666" android:gravity="start" android:id="@+id/g_payment_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/wallet_global_topup_retry" android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

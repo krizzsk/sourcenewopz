@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rider_root_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.app.nova.skeleton.conductor.ChangeHandlerFrameLayout android:id="@+id/rider_map_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.didi.app.nova.skeleton.conductor.ChangeHandlerFrameLayout android:id="@+id/rider_business_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.didi.app.nova.skeleton.dialog.DialogFrameLayout android:id="@+id/rider_popup_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

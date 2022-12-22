@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/estimate_pass_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/estimate_pass_check_iv" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginTop="6dp" android:src="@drawable/checkbox_check_status" android:scaleType="center" android:layout_marginStart="9dp"/>
+    <TextView android:textSize="12sp" android:gravity="start" android:id="@+id/estimate_pass_info_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.5dp" android:layout_marginBottom="6dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/estimate_pass_more_iv" android:visibility="gone" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/anycar_estimate_pass_icon_more" android:layout_marginStart="10dp"/>
+</LinearLayout>

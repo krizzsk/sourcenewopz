@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="52dp">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="#000000" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GRider_Interest_Order_Amount_lPAn"/>
+        <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/tv_bill_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:includeFontPadding="false" android:layout_marginStart="10dp"/>
+        <Space android:layout_width="16dp" android:layout_height="0dp"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:background="#0d0a121a" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_alignParentBottom="true" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"/>
+</FrameLayout>

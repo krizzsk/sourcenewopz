@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/customer_fl_purchase_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/customer_fl_purchase_rv_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/customer_144px">
+            <com.didi.app.nova.support.view.recyclerview.view.NovaRecyclerView android:theme="@style/Theme.AppCompat.NoActionBar" android:id="@+id/customer_custom_goods_purchase" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </FrameLayout>
+    <com.didi.soda.customer.widget.StatusBarView android:id="@+id/customer_custom_goods_purchase_bar" android:background="@color/customer_color_transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0"/>
+    <FrameLayout android:id="@+id/customer_tbv_title_view" android:layout_width="match_parent" android:layout_height="@dimen/customer_112px" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.didi.soda.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/customer_text_size_36px" android:textColor="@color/rf_color_gery_1_0_000000" android:ellipsize="end" android:gravity="center" android:id="@+id/customer_tv_title_label" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="1" android:layout_marginStart="@dimen/customer_120px" android:layout_marginEnd="@dimen/customer_120px" app:fontFlavor="1"/>
+        <com.didi.soda.customer.widget.text.IconTextView android:textSize="@dimen/customer_text_size_48px" android:textColor="@color/customer_selector_icon_text_black_to_trans" android:gravity="center" android:id="@+id/customer_iv_page_back" android:layout_width="@dimen/customer_112px" android:layout_height="match_parent" android:text="@string/customer_common_icon_closed" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </FrameLayout>
+    <com.didi.soda.customer.widget.abnormal.topgun.TopGunAbnormalView android:id="@+id/customer_custom_abnormal_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/customer_tbv_title_view"/>
+    <com.didi.soda.customer.widget.goods.purchase.GoodsPurchaseBottomButton android:id="@+id/customer_custom_bottom_button" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

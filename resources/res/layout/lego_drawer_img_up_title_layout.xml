@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/lego_drawer_up_img" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/lego_dimen_120dp" android:scaleType="centerCrop"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/lego_drawer_title_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lego_dimen_30dp" android:layout_marginRight="@dimen/lego_dimen_30dp">
+        <TextView android:textSize="@dimen/lego_dimen_24sp" android:textStyle="bold" android:textColor="@color/lego_color_000000" android:ellipsize="end" android:id="@+id/lego_drawer_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lego_dimen_30dp" android:maxLines="3"/>
+        <TextView android:textSize="@dimen/lego_dimen_14sp" android:textColor="@color/lego_color_000000" android:ellipsize="end" android:id="@+id/lego_drawer_sub_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lego_dimen_10dp" android:maxLines="6"/>
+    </LinearLayout>
+</LinearLayout>

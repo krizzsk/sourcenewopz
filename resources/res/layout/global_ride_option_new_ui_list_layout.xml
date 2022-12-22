@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="24sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:maxLines="1" android:layout_marginStart="30dp"/>
+    <com.didi.sdk.view.popup.PopupSelectRecyclerView android:id="@+id/recycler_view" android:scrollbars="none" android:fadingEdge="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#19000000" android:dividerHeight="0.3dp"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="60dp" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20">
+    <TextView android:textSize="12sp" android:textColor="#ff999999" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/tv_item_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="You can move your card to this area if you don&apos;t want to participate in automatic debit" android:lines="2"/>
+</FrameLayout>

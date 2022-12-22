@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f3f4f5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="54dp">
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="start" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Fintech_Payment_mgmt__Arfd" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_left" android:padding="5dp" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="11dp" android:src="@drawable/wallet_title_bar_back_icon" android:layout_centerVertical="true" android:layout_marginStart="11dp"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_certification_center_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

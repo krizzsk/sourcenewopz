@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/customer_cart_item_container" android:background="@drawable/customer_shape_cart_business_container_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_24px" android:layout_marginRight="@dimen/customer_24px">
+    <com.didi.soda.globalcart.view.GlobalCartHeaderInfoLayout android:id="@+id/customer_cart_header_info" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/customer_cart_ll_content" android:background="@drawable/customer_shape_cart_container_card" android:paddingTop="@dimen/customer_20px" android:paddingBottom="@dimen/customer_20px" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/customer_cart_header_info"/>
+    <View android:id="@+id/customer_cart_mask_view" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

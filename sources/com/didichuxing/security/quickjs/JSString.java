@@ -1,0 +1,14 @@
+package com.didichuxing.security.quickjs;
+
+public final class JSString extends JSValue {
+    private final String value;
+
+    JSString(long j, JSContext jSContext, String str) {
+        super(j, jSContext);
+        this.value = str;
+    }
+
+    public String getString() {
+        return this.value;
+    }
+}

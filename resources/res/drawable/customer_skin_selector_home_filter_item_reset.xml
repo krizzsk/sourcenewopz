@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="@dimen/customer_28px"/>
+            <stroke android:width="@dimen/customer_1px" android:color="@color/rf_color_v2_disable_1_100"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="@dimen/customer_28px"/>
+            <stroke android:width="@dimen/customer_1px" android:color="@color/rf_color_v2_brands_1_100"/>
+            <solid android:color="@color/rf_color_press_1_100"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/customer_28px"/>
+            <stroke android:width="@dimen/customer_1px" android:color="@color/rf_color_v2_brands_1_100"/>
+        </shape>
+    </item>
+</selector>

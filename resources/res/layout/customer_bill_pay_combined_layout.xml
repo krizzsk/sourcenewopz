@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/customer_pay_combined_card_bottom" android:layout_width="@dimen/customer_54px" android:layout_height="@dimen/customer_34px" android:layout_marginLeft="@dimen/rf_dimen_10" android:layout_marginTop="@dimen/rf_dimen_12" android:scaleType="fitXY"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/customer_pay_combined_card_border" android:background="@drawable/customer_pay_combined_card_border_bg" android:layout_width="@dimen/customer_56px" android:layout_height="@dimen/customer_36px"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/customer_pay_combined_card_top" android:layout_width="@dimen/customer_54px" android:layout_height="@dimen/customer_34px" android:scaleType="fitXY"/>
+</merge>

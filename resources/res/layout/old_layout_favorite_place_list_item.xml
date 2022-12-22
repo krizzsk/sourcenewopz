@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.didi.addressold.view.CommonAddressItemView android:id="@+id/item_view" android:clickable="true" android:layout_width="match_parent" android:layout_height="60dp"/>
+    <View android:background="#0c000000" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="18dp" android:layout_marginEnd="18dp"/>
+</LinearLayout>

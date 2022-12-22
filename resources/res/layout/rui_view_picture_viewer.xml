@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <rui.internal.pictureview.RUIPictureViewerViewPager android:id="@+id/rui_pvvp_viewer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <rui.RUIIndicatorImage android:layout_gravity="bottom" android:id="@+id/rui_iil_viewer" android:layout_marginBottom="@dimen/rui_picture_viewer_indicator_image_bottom_margin" style="@style/RUIIndicatorImage"/>
+</merge>

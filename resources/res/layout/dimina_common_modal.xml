@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/dialog_layout" android:background="@drawable/dimina_common_modal_box" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="36dp" android:layout_marginRight="36dp">
+    <FrameLayout android:id="@+id/iconTitleLayout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/iconTitlebg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="20dp"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/ivIconTitle" android:padding="6dp" android:visibility="gone" android:layout_width="80dp" android:layout_height="80dp"/>
+        <ImageView android:id="@+id/imgTitleBg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/msg_layout" android:paddingTop="32dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/layout_title" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#333333" android:gravity="center" android:id="@+id/title_tv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+            <View android:id="@+id/title_line" android:background="#d9d9d9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:layout_gravity="center_horizontal" android:id="@+id/ivIcon" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="20dp" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="24dp">
+            <RelativeLayout android:id="@+id/layout_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="36dp" android:layout_marginRight="30dp"/>
+            <EditText android:textSize="16sp" android:textColor="#666666" android:id="@+id/content_et" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="16dp" android:layout_marginRight="30dp" android:layout_marginBottom="32dp"/>
+        </LinearLayout>
+        <View android:background="#c8c8c8" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="54dp">
+            <Button android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:gravity="center" android:id="@+id/cancel_btn" android:background="@null" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/dimina_cancel" android:layout_weight="1"/>
+            <View android:id="@+id/item_btn_sep" android:background="#c8c8c8" android:visibility="gone" android:layout_width="1px" android:layout_height="match_parent"/>
+            <Button android:textSize="16sp" android:textStyle="bold" android:textColor="#07c160" android:gravity="center" android:id="@+id/submit_btn" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/dimina_confirm" android:includeFontPadding="false" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

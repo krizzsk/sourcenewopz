@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:background="@android:color/transparent" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/g_payment_title_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="12sp" android:textColor="@color/oc_color_666666" android:ellipsize="end" android:id="@+id/g_payment_title_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/g_payment_title_close_layout" android:paddingLeft="5dp" android:paddingRight="0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:contentDescription="@string/oc_close_button" android:paddingStart="5dp" android:paddingEnd="0dp">
+        <ImageView android:background="@drawable/g_payment_icon_close" android:layout_width="20dp" android:layout_height="20dp"/>
+    </LinearLayout>
+</LinearLayout>

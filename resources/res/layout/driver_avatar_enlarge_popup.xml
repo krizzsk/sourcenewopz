@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/bg" android:background="#4025262d" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.component.common.view.RoundFrameLayout android:layout_gravity="center" android:background="#00000000" android:layout_width="260dp" android:layout_height="260dp" app:rfl_radius="20dp">
+        <ImageView android:id="@+id/enlarge_popup_img" android:background="@color/g_color_000" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/driver_card_default_avatar_v2_big" android:scaleType="centerCrop"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/enlarge_popup_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="105dp" android:layout_marginTop="-105dp" android:src="@drawable/avatar_pop_close_ic"/>
+    </com.didi.component.common.view.RoundFrameLayout>
+</FrameLayout>

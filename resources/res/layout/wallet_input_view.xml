@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="start" android:layout_width="match_parent" android:layout_height="match_parent" android:textDirection="locale" android:textAlignment="viewStart">
+    <EditText android:textSize="20dp" android:textColor="@color/oc_color_000000" android:gravity="start" android:id="@+id/wallet_input_et" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/wallet_input_title" android:inputType="number" android:textDirection="locale" android:textAlignment="viewStart"/>
+    <ImageView android:id="@+id/wallet_delete_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38dp" android:src="@drawable/w_common_sdk_delete_icon" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+    <TextView android:textSize="12dp" android:textColor="@color/oc_color_999999" android:gravity="start" android:id="@+id/wallet_input_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <View android:gravity="start" android:id="@+id/wallet_input_bottom_line" android:background="@color/oc_color_000000" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="8dp" android:layout_below="@+id/wallet_input_et"/>
+</merge>

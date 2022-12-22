@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/anycar_preference_bg_top" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:id="@+id/status_bar_v" android:layout_width="match_parent" android:layout_height="20dp"/>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="69dp">
+        <ImageView android:id="@+id/anycar_preference_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/anycar_preference_back" android:layout_centerVertical="true" android:layout_marginStart="15dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/anycar_button_top_content" android:layout_width="match_parent" android:layout_height="36dp" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" android:layout_toEndOf="@+id/anycar_preference_back">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/anycar_preference_top_left_ll" android:background="@drawable/anycar_preferencr_item_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginEnd="3dp">
+                <ImageView android:id="@+id/anycar_preference_top_left_button_icon" android:background="@drawable/anycar_preferencr_item_icon_selector" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginEnd="8dp"/>
+                <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@+id/anycar_preference_top_left_button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Faster first"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/anycar_preference_top_right_ll" android:background="@drawable/anycar_preferencr_item_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="3dp">
+                <ImageView android:id="@+id/anycar_preference_top_right_button_icon" android:background="@drawable/anycar_preferencr_item_icon_selector" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginEnd="8dp"/>
+                <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@+id/anycar_preference_top_right_button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cheaper first"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

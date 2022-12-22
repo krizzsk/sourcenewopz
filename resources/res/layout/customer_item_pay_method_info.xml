@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/customer_20px" android:layout_toRightOf="@+id/customer_tv_payment" android:layout_alignParentRight="true">
+        <ImageView android:id="@+id/customer_iv_payment_icon" android:layout_width="@dimen/customer_74px" android:layout_height="@dimen/customer_39px" android:layout_marginRight="@dimen/customer_8px"/>
+        <com.didi.soda.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/customer_32px" android:textColor="@color/rf_color_gery_1_0_000000" android:ellipsize="end" android:gravity="bottom" android:id="@+id/customer_tv_payment_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/customer_14px" android:singleLine="true" app:fontFlavor="1"/>
+    </LinearLayout>
+    <com.didi.soda.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/customer_32px" android:textColor="@color/rf_color_gery_1_0_000000" android:id="@+id/customer_tv_payment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/FoodC_details_Refund_method_PKoD" android:layout_alignParentLeft="true" app:fontFlavor="3"/>
+</RelativeLayout>

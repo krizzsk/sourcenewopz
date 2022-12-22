@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/bluetooth_meet_entrance_icon" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/global_bluetooth_meet_entrance_ic_selector"/>
+</RelativeLayout>

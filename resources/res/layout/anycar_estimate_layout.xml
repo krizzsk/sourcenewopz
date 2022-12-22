@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/preference_top_fl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/anycar_preference_card_top"/>
+    <include android:id="@+id/preference_fl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="80dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" layout="@layout/anycar_preference_card"/>
+    <LinearLayout android:gravity="center_horizontal" android:id="@+id/message_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="-20dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+        <com.didi.component.bubbleLayout.anycar.AnyCarMessageView android:id="@+id/anycar_msg" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/panel_view_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/form_view_content">
+        <View android:id="@+id/baseline_v" android:layout_width="match_parent" android:layout_height="1px"/>
+        <com.didi.component.bubbleLayout.anycar.AnycarEstimatePanelLayout android:id="@+id/wrapper" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="11dp">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/estimate_panel_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:background="@drawable/estimate_content_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+                    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="20dp" app:cardElevation="0dp">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/content_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="center" android:id="@+id/hand_ll" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="17dp">
+                                <View android:id="@+id/hand_mark" android:background="@drawable/estimate_hand_bg" android:layout_width="40dp" android:layout_height="3dp"/>
+                            </LinearLayout>
+                            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@+id/loading_rv" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/estimate_content_ll" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+            </LinearLayout>
+        </com.didi.component.bubbleLayout.anycar.AnycarEstimatePanelLayout>
+        <com.didi.component.bubbleLayout.anycar.AanycarAbnormalView android:layout_gravity="bottom" android:id="@+id/anycar_abnormal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="380dp"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/slide_tips_ll" android:background="@drawable/anycar_swipe_tips_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginBottom="3dp">
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/slide_tips_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GRider_Anycar__jEGf" android:layout_marginStart="12dp" android:layout_marginEnd="5dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/anycar_swipe_icon" android:layout_marginEnd="12dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/form_view_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</merge>

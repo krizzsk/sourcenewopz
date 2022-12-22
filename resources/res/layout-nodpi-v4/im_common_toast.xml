@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layoutRoot" android:background="@drawable/im_common_toast_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="@dimen/im_135_dp" android:layout_height="wrap_content" android:minHeight="@dimen/im_135_dp">
+        <ImageView android:id="@+id/imgViewIcon" android:background="@drawable/im_common_toast_icon_info" android:layout_width="@dimen/im_43_dp" android:layout_height="@dimen/im_43_dp" android:layout_marginTop="@dimen/im_21_dp" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/im_13_sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/txtViewContent" android:layout_width="@dimen/im_134_dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_20_dp" android:layout_marginTop="@dimen/im_20_dp" android:layout_marginRight="@dimen/im_20_dp" android:layout_below="@+id/imgViewIcon" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/im_13_sp" android:id="@+id/subContent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_2_dp" android:layout_below="@+id/txtViewContent" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

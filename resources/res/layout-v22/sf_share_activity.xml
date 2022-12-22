@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/sf_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.safetoolkit.widget.SfCommonTitleBar android:id="@+id/share_title_bar" android:layout_width="match_parent" android:layout_height="40dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/list_layout" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <EditText android:textSize="12dp" android:textColor="@color/sf_color_333333" android:textColorHint="@color/sf_color_999999" android:id="@+id/search_et" android:background="@null" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="20dp" android:singleLine="true" android:maxLength="20" android:textCursorDrawable="@drawable/sf_cursor_drawable"/>
+            <View android:background="@color/sf_black_0B" android:layout_width="match_parent" android:layout_height="1px"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <View android:id="@+id/go_setting_top_divider" android:background="@color/sf_color_f1f2f3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="31dp"/>
+            <FrameLayout android:id="@+id/go_setting_layout" android:background="@color/sf_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="19dp">
+                    <TextView android:textSize="12dp" android:textColor="@color/sf_color_999999" android:gravity="left" android:id="@+id/go_setting_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30dp" android:maxWidth="100dp" android:layout_weight="1"/>
+                    <TextView android:textSize="12dp" android:textColor="?attr/caution_color" android:gravity="center" android:id="@+id/go_setting_btn" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </FrameLayout>
+            <RelativeLayout android:gravity="center" android:layout_gravity="bottom" android:id="@+id/get_layout" android:background="@drawable/sf_bottom_bar_bg" android:paddingTop="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="63dp" android:layout_marginTop="-15dp">
+                <androidx.appcompat.widget.AppCompatTextView android:textStyle="bold" android:textColor="@color/sf_black" android:id="@+id/get_layout_text" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:autoSizeTextType="1" android:autoSizeMinTextSize="12dp" android:autoSizeMaxTextSize="14dp"/>
+                <TextView android:textSize="14sp" android:textColor="?attr/submit_btn_text_color_selector" android:gravity="center" android:id="@+id/get_layout_btn" android:background="?attr/submit_btn_round_corner_bg_selector" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginRight="18dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/share_bottom_layout" android:background="@drawable/sf_bottom_bar_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="82dp">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="?attr/submit_btn_text_color_selector" android:gravity="center" android:id="@+id/share_bottom_btn" android:background="?attr/submit_btn_bg_selector" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="18dp" android:layout_marginTop="14dp" android:layout_marginRight="18dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/sf_layout_no_permission"/>
+    </FrameLayout>
+</LinearLayout>

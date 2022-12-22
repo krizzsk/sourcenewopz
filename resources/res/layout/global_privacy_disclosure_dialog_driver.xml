@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#b30a121a" android:paddingTop="90dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="bottom" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@+id/title" android:background="@drawable/global_privacy_bg_disclosure_driver" android:paddingTop="18dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/permission_info" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+        <RelativeLayout android:id="@+id/permission_info" android:background="@color/white" android:paddingTop="6dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/btn_panel" android:paddingStart="20dp" android:paddingEnd="20dp">
+            <ImageView android:id="@+id/permission_icon" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/global_privacy_location_icon" android:layout_centerVertical="true"/>
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@+id/permission_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Location information" android:layout_marginStart="16dp" android:layout_toEndOf="@+id/permission_icon"/>
+            <ScrollView android:id="@+id/scroll_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/permission_name" android:layout_marginStart="16dp" android:layout_toEndOf="@+id/permission_icon">
+                <TextView android:textSize="14sp" android:textColor="#ff333333" android:id="@+id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This helps you avoid issues like fare miscalculations, inaccurate pickup points, and trip requests that are too far away,the safety of the journey" android:maxLines="6"/>
+            </ScrollView>
+            <View android:id="@+id/bottom_shadow" android:background="@drawable/privacy_disclosure_shadow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="34dp" android:layout_below="@+id/desc"/>
+            <View android:id="@+id/top_shadow" android:background="@drawable/privacy_disclosure_top_shadow_passenger" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/btn_panel" android:background="@color/white" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/btn_positive" android:background="@drawable/global_privacy_btn_disclosure_positive_driver_selector_99" android:layout_width="match_parent" android:layout_height="54dp" android:text="@string/GRider_transformation_Agree_JFdp" android:maxLines="1"/>
+            <Space android:layout_width="0dp" android:layout_height="16dp"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#ff666666" android:gravity="center" android:id="@+id/btn_negative" android:background="@drawable/global_privacy_btn_disclosure_negative_driver_selector" android:layout_width="match_parent" android:layout_height="54dp" android:text="@string/GRider_transformation_Not_yet_rroA" android:maxLines="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

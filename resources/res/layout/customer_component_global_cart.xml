@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/rf_color_gery_7_97_F5F5F7" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.soda.customer.widget.StatusBarView android:id="@+id/customer_custom_status_bar" android:background="@color/customer_color_transparent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include android:id="@+id/customer_custom_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/customer_custom_status_bar" layout="@layout/customer_common_title_bar"/>
+    <androidx.core.widget.NestedScrollView android:id="@+id/customer_global_cart_nest_scroll_view" android:paddingTop="@dimen/customer_20px" android:layout_width="match_parent" android:layout_height="@dimen/customer_0px" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/customer_custom_title_bar">
+        <com.didi.app.nova.support.view.recyclerview.view.NovaRecyclerView android:id="@+id/customer_global_cart_feed_rv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="148dp">
+        <ImageView android:id="@+id/xp_template_operate_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="100dp">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/ggk_color_FFFFFF" android:ellipsize="end" android:id="@+id/xp_template_operate_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="24dp" android:maxLines="3"/>
+            <TextView android:textSize="12sp" android:textColor="#000000" android:gravity="center" android:id="@+id/xp_template_operate_btn" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="20dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

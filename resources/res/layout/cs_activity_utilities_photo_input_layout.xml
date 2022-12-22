@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#181b20" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="52dp">
+        <ImageView android:id="@+id/title_back" android:padding="5dp" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="11dp" android:src="@drawable/cs_photo_input_icon_back_light" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/photo_scan_button" android:background="@drawable/cs_photo_input_upload" android:layout_width="68dp" android:layout_height="29dp" android:layout_marginRight="16dp" android:text="@string/GRider_reminder_Upload_pQjY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/cs_photo_input" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

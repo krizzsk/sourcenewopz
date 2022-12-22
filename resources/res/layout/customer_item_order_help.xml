@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/OrderCardBg">
+    <LinearLayout android:id="@+id/customer_ll_help_title" android:background="@drawable/customer_selector_trans_to_0800" android:paddingLeft="@dimen/customer_40px" android:paddingRight="@dimen/customer_30px" android:layout_width="match_parent" android:layout_height="@dimen/customer_140px">
+        <TextView android:textSize="@dimen/customer_text_size_36px" android:textColor="@color/rf_color_gery_1_0_000000" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/customer_tv_help_title" android:layout_width="@dimen/customer_0px" android:layout_height="match_parent" android:layout_marginRight="@dimen/customer_10px" android:text="@string/customer_order_help_title" android:layout_weight="1"/>
+        <com.didi.soda.customer.widget.text.IconTextView android:textSize="@dimen/customer_text_size_24px" android:textColor="@color/rf_color_gery_3_60_999999" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/customer_iv_order_help_arrow" android:layout_width="@dimen/customer_44px" android:layout_height="@dimen/customer_44px" android:text="@string/customer_common_icon_arrow"/>
+    </LinearLayout>
+</LinearLayout>

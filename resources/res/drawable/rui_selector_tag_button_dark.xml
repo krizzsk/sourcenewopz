@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/rui_button_corner_radius"/>
+            <stroke android:width="@dimen/rui_button_ghost_stroke_width" android:color="@color/rui_color_grey_4"/>
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/rui_button_corner_radius"/>
+            <stroke android:width="@dimen/rui_button_ghost_stroke_width" android:color="@color/rui_color_brands_dark"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/rui_button_corner_radius"/>
+            <stroke android:width="@dimen/rui_button_ghost_stroke_width" android:color="@color/rui_color_grey_3"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/rui_button_corner_radius"/>
+            <stroke android:width="@dimen/rui_button_ghost_stroke_width" android:color="@color/rui_color_grey_3"/>
+        </shape>
+    </item>
+</selector>

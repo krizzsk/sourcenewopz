@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RtlDynamic version="1.0.1">
+
+    <!-- Source 表示需要替换的 ， target表示需要替换为指定的值   -->
+    <!--    替换方法的实现 ， 如果需要替换指定类的方法的话，可以使用<RtlClassMethod> 标签-->
+    <RtlMethod>
+        <Source>setGravity(I)V</Source>
+        <Target>{ $1 = com.didichuxing.drtl.RtlAdapter.fixGravity($1) ; $_ = $proceed($$); }
+        </Target>
+    </RtlMethod>
+    <RtlMethod>
+        <Source>
+            setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+        </Source>
+        <Target>{ $_ = $proceed($$); com.didichuxing.drtl.RtlAdapter.setCompoundDrawables($0,$$);
+            }
+        </Target>
+    </RtlMethod>
+    <RtlMethod>
+        <Source>
+            setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+        </Source>
+        <Target>{ $_ = $proceed($$);
+            com.didichuxing.drtl.RtlAdapter.setCompoundDrawablesWithIntrinsicBounds($0,$$); }
+        </Target>
+    </RtlMethod>
+    <RtlMethod>
+        <Source>setCompoundDrawablesWithIntrinsicBounds(IIII)V</Source>
+        <Target>{ $_ = $proceed($$);
+            com.didichuxing.drtl.RtlAdapter.setCompoundDrawablesWithIntrinsicBounds($0,$$); }
+        </Target>
+    </RtlMethod>
+    <RtlMethod>
+        <Source>setPadding(IIII)V</Source>
+        <Target>{$_ = $proceed($$); com.didichuxing.drtl.RtlAdapter.fixPadding($0,$$); }</Target>
+    </RtlMethod>
+    <RtlMethod>
+        <Source>setMargins(IIII)V</Source>
+        <Target>{$_ = $proceed($$); com.didichuxing.drtl.RtlAdapter.fixMargins($0,$$); }</Target>
+    </RtlMethod>
+    <RtlMethod>
+        <Source>addRule(I)V</Source>
+        <Target>{$_ = $proceed($$); com.didichuxing.drtl.RtlAdapter.fixRule($0,$$); }</Target>
+    </RtlMethod>
+    <RtlMethod>
+        <Source>addRule(II)V</Source>
+        <Target>{$_ = $proceed($$); com.didichuxing.drtl.RtlAdapter.fixRule($0,$$); }</Target>
+    </RtlMethod>
+
+    <!--  替换属性赋值  -->
+    <RtlFiled>
+        <Source>leftMargin(I)</Source>
+        <Target>{ $_ = $proceed($$); com.didichuxing.drtl.RtlAdapter.fixLeftMargin($0); }</Target>
+    </RtlFiled>
+    <RtlFiled>
+        <Source>rightMargin(I)</Source>
+        <Target>{ $_ = $proceed($$); com.didichuxing.drtl.RtlAdapter.fixRightMargin($0); }</Target>
+    </RtlFiled>
+    <RtlFiled>
+        <Source>gravity(I)</Source>
+        <Target>{ $1 = com.didichuxing.drtl.RtlAdapter.fixGravity($1) ; $_ = $proceed($1); }</Target>
+    </RtlFiled>
+
+    <!--  替换实例化  -->
+    <RtlNewExpr>
+        <Source>android.view.animation.TranslateAnimation(FFFF)V</Source>
+        <Target>{ $_ = com.didichuxing.drtl.RtlAdapter.fixNewTranslateAnimation($$); }</Target>
+    </RtlNewExpr>
+    <RtlNewExpr>
+        <Source>android.view.animation.TranslateAnimation(IFIFIFIF)V</Source>
+        <Target>{ $_ = com.didichuxing.drtl.RtlAdapter.fixNewTranslateAnimation($$); }</Target>
+    </RtlNewExpr>
+
+    <!--  替换父类 -->
+    <RtlClassReplace>
+        <Source>androidx.viewpager.widget.ViewPager</Source>
+        <Target>com.duolingo.open.rtlviewpager.RtlViewPager</Target>
+    </RtlClassReplace>
+    <RtlClassReplace>
+        <Source>android.support.v4.view.ViewPager</Source>
+        <Target>com.duolingo.open.rtlviewpager.RtlViewPager</Target>
+    </RtlClassReplace>
+</RtlDynamic>
+

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.Jumio">
+        <item name="android:colorBackground">@color/jumio_gray_11</item>
+        <item name="android:textColorPrimary">?attr/jumio_text_foreground</item>
+        <item name="android:textColor">?attr/jumio_text_foreground</item>
+        <item name="android:textColorHint">?attr/jumio_search_bubble_foreground</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/nav_bar_scrim</item>
+        <item name="bottomSheetDialogTheme">@style/Jumio.BottomSheetDialog</item>
+        <item name="bottomSheetStyle">@style/Jumio.ModalBottomSheet</item>
+        <item name="colorButtonNormal">@color/jumio_gray_11</item>
+        <item name="colorControlActivated">@color/jumio_gray_11</item>
+        <item name="colorControlNormal">?attr/jumio_selection_icon_foreground</item>
+        <item name="colorOnPrimary">@color/jumio_grey200</item>
+        <item name="colorPrimary">@color/jumio_primary</item>
+        <item name="colorPrimaryVariant">@color/jumio_primary_dark</item>
+        <item name="colorSecondary">@color/jumio_gray_12</item>
+        <item name="jumio_background">@color/jumio_gray_12</item>
+        <item name="jumio_bubble_background">@color/jumio_gray_10</item>
+        <item name="jumio_bubble_background_selected">@color/jumio_gray_9</item>
+        <item name="jumio_bubble_foreground">@color/jumio_white</item>
+        <item name="jumio_circle_item_background">@color/jumio_gray_9</item>
+        <item name="jumio_circle_item_foreground">@color/jumio_white</item>
+        <item name="jumio_error_circle_gradient_end">#49a09d</item>
+        <item name="jumio_error_circle_gradient_start">#553dac</item>
+        <item name="jumio_loading_circle_gradient_end">#33b560</item>
+        <item name="jumio_loading_circle_gradient_start">#048581</item>
+        <item name="jumio_loading_circle_icon">@color/jumio_gray_11</item>
+        <item name="jumio_loading_circle_plain">@color/jumio_green_3</item>
+        <item name="jumio_navigation_icon">@color/jumio_white</item>
+        <item name="jumio_primary_button_background">@color/jumio_primary</item>
+        <item name="jumio_primary_button_background_disabled">@color/jumio_green_4</item>
+        <item name="jumio_primary_button_background_pressed">@color/jumio_green_2</item>
+        <item name="jumio_primary_button_foreground">@color/jumio_white</item>
+        <item name="jumio_scanview_animation_background">@color/jumio_scrim_1</item>
+        <item name="jumio_scanview_bubble_background">@color/jumio_scrim_3</item>
+        <item name="jumio_scanview_bubble_foreground">@color/jumio_white</item>
+        <item name="jumio_scanview_foreground">@color/jumio_white</item>
+        <item name="jumio_scanview_shutter">@color/jumio_white</item>
+        <item name="jumio_scanview_shutter_pressed">@color/jumio_scrim_1</item>
+        <item name="jumio_search_bubble_background">@color/jumio_gray_8</item>
+        <item name="jumio_search_bubble_foreground">@color/jumio_gray_7</item>
+        <item name="jumio_secondary_button_background">@color/jumio_gray_10</item>
+        <item name="jumio_secondary_button_background_disabled">@color/jumio_gray_11</item>
+        <item name="jumio_secondary_button_background_pressed">@color/jumio_gray_9</item>
+        <item name="jumio_secondary_button_foreground">@color/jumio_white</item>
+        <item name="jumio_selection_icon_foreground">@color/jumio_gray_6</item>
+        <item name="jumio_text_foreground">@color/jumio_white</item>
+        <item name="materialAlertDialogTheme">@style/Jumio.MaterialAlertDialog</item>
+        <item name="materialButtonStyle">@style/Jumio.MaterialButton</item>
+    </style>
+    <style name="Iproov.Customization">
+        <item name="iproov_animation_background">@color/jumio_gray_12</item>
+        <item name="iproov_animation_foreground">@color/jumio_white</item>
+        <item name="iproov_backgroundColor">@color/iproov_gray_1</item>
+        <item name="iproov_footerBackgroundColor">@color/jumio_black_alpha60</item>
+        <item name="iproov_footerTextColor">@color/jumio_white</item>
+        <item name="iproov_genuinePresenceAssurance_notReadyTintColor">@color/iproov_constant_blue</item>
+        <item name="iproov_genuinePresenceAssurance_progressBarColor">@color/jumio_grey800</item>
+        <item name="iproov_genuinePresenceAssurance_readyTintColor">@color/jumio_primary</item>
+        <item name="iproov_headerBackgroundColor">@color/jumio_black_alpha60</item>
+        <item name="iproov_headerTextColor">@color/jumio_white</item>
+        <item name="iproov_lineColor">@color/jumio_black</item>
+        <item name="iproov_livenessAssurance_primaryTintColor">@color/jumio_primary</item>
+        <item name="iproov_livenessAssurance_secondaryTintColor">@color/jumio_white</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DarkActionBar">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.AppCompat.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.GlobalScan">
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+    </style>
+    <style name="Theme.MaterialComponents.DayNight">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+    </style>
+    <style name="Theme.TheOnePay">
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+    </style>
+    <style name="ThemeOverlay.AppCompat.DayNight">
+    </style>
+    <style name="Widget.MaterialComponents.ActionBar.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.AppBarLayout.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.BottomAppBar.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.BottomNavigationView.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.NavigationRailView.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.TabLayout.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.Toolbar.PrimarySurface">
+    </style>
+</resources>

@@ -1,0 +1,6 @@
+{
+    "nameSpace": "didi_passenger_guarana",
+    "isLoop": false,
+    "interval": 5000,
+    "baseUrl": "https://as.didiglobal.com/"
+}

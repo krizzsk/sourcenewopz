@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" layout="@layout/wallet_title_bar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@+id/tv_pay" android:layout_below="@+id/title_bar">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/wallet_dp_18" android:paddingRight="@dimen/wallet_dp_18" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/wallet_dp_18">
+            <TextView android:textSize="22sp" android:textStyle="normal" android:textColor="@color/black" android:gravity="start" android:id="@+id/tv_main_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/Fintech_Payment_optimization_How_much_tQja"/>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/pay_edittext_bottomline_bg" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="7dp">
+                <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/pay_base_black" android:layout_gravity="center_vertical" android:id="@+id/tv_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$"/>
+                <androidx.appcompat.widget.AppCompatEditText android:textSize="24sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@+id/et_amount" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:inputType="none|text|textCapWords|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textPassword|textVisiblePassword|textWebEditText|textFilter|number|numberDecimal|numberPassword|phone" android:textCursorDrawable="@drawable/w_common_edittext_cursor_drawable" app:layout_constraintLeft_toLeftOf="0"/>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="#ff525d" android:id="@+id/tv_error_info" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="?attr/submit_btn_text_color_selector" android:gravity="center" android:id="@+id/tv_pay" android:background="@drawable/shape_wallet_btn_background" android:layout_width="match_parent" android:layout_height="@dimen/dp_52" android:layout_marginBottom="10dp" android:text="@string/Fintech_Payment_optimization__evor" android:layout_alignParentBottom="true" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+</RelativeLayout>

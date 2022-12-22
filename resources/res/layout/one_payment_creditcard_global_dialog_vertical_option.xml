@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/common_dialog_bg_shape" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16dp" android:textColor="@color/one_payment_creditcard_text_black" android:gravity="center" android:id="@+id/tv_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:includeFontPadding="false" android:lineSpacingExtra="4dp"/>
+    <TextView android:textSize="14dp" android:textColor="@color/one_payment_creditcard_text_xgray" android:gravity="start" android:id="@+id/tv_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="18dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:includeFontPadding="false" android:lineSpacingExtra="4dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_option_1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:gravity="start" android:background="@color/one_payment_creditcard_line_gray" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="16dp" android:textColor="@color/one_payment_creditcard_text_orange" android:gravity="center" android:id="@+id/tv_option_1" android:background="@drawable/common_dialog_btn_bg_shape_n_nonrecommend_selector" android:layout_width="match_parent" android:layout_height="50dp" android:includeFontPadding="false" android:textAllCaps="false"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_option_2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:gravity="start" android:background="@color/one_payment_creditcard_line_gray" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="16dp" android:textColor="@color/one_payment_creditcard_text_xgray" android:gravity="center" android:id="@+id/tv_option_2" android:background="@drawable/one_payment_creditcard_global_dialog_btn_bg_selector_normal_lr" android:layout_width="match_parent" android:layout_height="50dp" android:includeFontPadding="false" android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

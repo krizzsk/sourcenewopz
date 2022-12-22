@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/risk_verify_list_item_click_selector" android:paddingTop="19dp" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/risk_user_item_id" android:paddingLeft="17.5dp" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="25dp" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/risk_user_icon" android:duplicateParentState="true" android:layout_width="22dp" android:layout_height="22dp"/>
+            <TextView android:textSize="16sp" android:textColor="@color/risk_label_text_color_of_state" android:id="@+id/risk_user_title" android:duplicateParentState="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1"/>
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="13dp" android:src="@drawable/page_icon_next"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="#ff5858" android:id="@+id/risk_user_error_label" android:paddingLeft="17.5dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_below="@+id/risk_user_item_id"/>
+    </RelativeLayout>
+    <View android:background="#0b000000" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="19dp"/>
+</LinearLayout>

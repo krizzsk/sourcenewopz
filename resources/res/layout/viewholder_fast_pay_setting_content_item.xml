@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_title_bar" android:background="?attr/fast_pay_setting_item_background" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginBottom="@dimen/dp_10" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20">
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@+id/tv_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Payment order"/>
+    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@+id/tv_item_sub_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_6"/>
+    <ImageView android:layout_width="13dp" android:layout_height="13dp" android:src="@drawable/global_cashier_icon_arrow"/>
+</LinearLayout>

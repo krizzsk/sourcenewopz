@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout_content" android:background="@drawable/outline_white" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="15dp" android:paddingEnd="15dp">
+    <TextView android:textSize="@dimen/font_size_small" android:textColor="#ff584d" android:layout_gravity="center" android:id="@+id/mainBubbleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="No long-time parking point" style="@style/Map.TextViewStyle.TextDirection"/>
+</FrameLayout>

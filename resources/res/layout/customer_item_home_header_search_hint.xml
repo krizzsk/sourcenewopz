@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.soda.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/rf_dimen_font_28" android:textColor="@color/rf_color_v2_neutral_4_40" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/customer_tv_home_search_hint" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/customer_global_home_search_hit" android:singleLine="true" app:fontFlavor="0"/>
+</LinearLayout>

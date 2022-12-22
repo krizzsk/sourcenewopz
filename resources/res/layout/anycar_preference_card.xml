@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="80dp">
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/any_car_preference_card_narrow" android:background="@drawable/anycar_bg_corners_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="13sp" android:textColor="#ff272727" android:gravity="center_vertical" android:id="@+id/anycar_preference_narrow_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_marginStart="15dp"/>
+        <ImageView android:gravity="center_vertical" android:background="@drawable/anycar_icon_right" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginStart="5dp" android:layout_marginEnd="14dp"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@+id/anycar_preference_expand_content" android:background="@drawable/any_car_preference_card_expand_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="80dp">
+        <ImageView android:id="@+id/anycar_preference_card_close" android:background="@drawable/anycar_icon_close" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginTop="4dp" android:layout_alignParentTop="true" android:layout_marginEnd="9dp" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@android:color/black" android:ellipsize="end" android:id="@+id/anycar_preference_expand_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:maxLines="1" android:layout_marginStart="15dp" android:layout_marginEnd="28dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/anycar_button_content" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginTop="9dp" android:layout_marginBottom="12dp" android:layout_below="@+id/anycar_preference_expand_title" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/anycar_preference_left_ll" android:background="@drawable/anycar_preferencr_item_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginEnd="5dp">
+                <ImageView android:id="@+id/anycar_preference_left_button_icon" android:background="@drawable/anycar_preferencr_item_icon_selector" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginEnd="9dp"/>
+                <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/anycar_preference_left_button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Faster first"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/anycar_preference_right_ll" android:background="@drawable/anycar_preferencr_item_bg_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="5dp">
+                <ImageView android:id="@+id/anycar_preference_right_button_icon" android:background="@drawable/anycar_preferencr_item_icon_selector" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginEnd="9dp"/>
+                <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@+id/anycar_preference_right_button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cheaper first"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

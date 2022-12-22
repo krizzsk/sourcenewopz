@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:topLeftRadius="@dimen/customer_12px" android:topRightRadius="@dimen/customer_12px"/>
+                    <solid android:color="@color/rf_color_white_100_FFFFFF"/>
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <corners android:topLeftRadius="@dimen/customer_12px" android:topRightRadius="@dimen/customer_12px"/>
+                    <solid android:color="@color/rf_color_gery_16_93_5C000000"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <shape>
+            <corners android:topLeftRadius="@dimen/customer_12px" android:topRightRadius="@dimen/customer_12px"/>
+            <solid android:color="@color/rf_color_white_100_FFFFFF"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/rf_btn_compound_choice_corner_size"/>
+            <solid android:color="@color/rf_color_disable_1_100"/>
+            <size android:height="@dimen/rf_btn_compound_choice_size" android:width="@dimen/rf_btn_compound_choice_size"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="@dimen/rf_btn_compound_choice_right_size" android:width="@dimen/rf_btn_compound_choice_right_size">
+        <bitmap android:src="@drawable/rf_icon_tick" android:dither="true"/>
+    </item>
+</layer-list>

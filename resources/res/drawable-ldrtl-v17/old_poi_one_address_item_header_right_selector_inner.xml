@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:topLeftRadius="@dimen/report_button_corner" android:bottomLeftRadius="@dimen/report_button_corner"/>
+            <solid android:color="#f5f5f5"/>
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape>
+            <corners android:topLeftRadius="@dimen/report_button_corner" android:bottomLeftRadius="@dimen/report_button_corner"/>
+            <solid android:color="#fff"/>
+        </shape>
+    </item>
+</selector>

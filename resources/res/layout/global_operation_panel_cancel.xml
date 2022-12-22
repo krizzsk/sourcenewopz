@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="60dp">
+    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ffff4060" android:gravity="center" android:id="@+id/global_operation_cancel_btn" android:background="@drawable/global_operation_panel_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

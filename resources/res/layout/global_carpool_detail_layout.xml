@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/global_new_ui_home_card_bg" android:paddingTop="10dp" android:paddingBottom="19dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/global_carpool_detail_fee_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="14dp" android:layout_marginRight="20dp">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/global_carpool_detail_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textColor="@color/g_color_919599" android:id="@+id/global_carpool_detail_payment" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@+id/global_carpool_detail_fee" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="@+id/global_carpool_detail_fee"/>
+        <TextView android:textSize="12sp" android:textColor="@color/lego_color_919599" android:id="@+id/global_carpool_detail_price_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/global_carpool_detail_fee"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:id="@+id/global_carpool_detail_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.didi.component.carpool.info.view.CarpoolDetailViewCanvas android:id="@+id/global_carpool_detail_canvas" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/global_carpool_detail_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20dp"/>
+    </FrameLayout>
+</LinearLayout>

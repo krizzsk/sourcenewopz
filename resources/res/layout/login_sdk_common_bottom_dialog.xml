@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/driver_sdk_shape_bg_common_dialog" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <ImageView android:id="@+id/close_dialog" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/driver_sdk_ic_bottom_dialog_close"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/extra_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="8dp"/>
+    <TextView android:textSize="16sp" android:textColor="#666666" android:layout_gravity="start" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+    <FrameLayout android:id="@+id/ll_btn_area_horizontal" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="33dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_btn_area_horizontal_2" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:textSize="18sp" android:textStyle="bold" android:textColor="@color/dark_gray" android:gravity="center" android:id="@+id/cancel_btn" android:background="@drawable/common_dialog_negative_btn_bg" android:layout_width="0dp" android:layout_height="match_parent" android:includeFontPadding="false" android:layout_weight="1" android:textAllCaps="false"/>
+            <View android:id="@+id/btn_margin" android:layout_width="@dimen/login_unify_dimen_10dp" android:layout_height="match_parent"/>
+            <Button android:textSize="18sp" android:textStyle="bold" android:textColor="@color/dark_gray" android:gravity="center" android:id="@+id/confirm_btn" android:background="@drawable/common_dialog_positive_btn_bg" android:layout_width="0dp" android:layout_height="match_parent" android:includeFontPadding="false" android:layout_weight="1" android:textAllCaps="false"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

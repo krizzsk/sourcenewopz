@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/shape_drawer_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_close" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/selector_drawer_close_btn"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/ll_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:divider="@drawable/global_cashier_card_item_divider" app:dividerPadding="@dimen/dp_20" app:showDividers="none|middle|end"/>
+    <Button android:textSize="@dimen/sp_20" android:textStyle="bold" android:layout_gravity="center" android:id="@+id/btn_confirm" android:layout_width="match_parent" android:layout_height="@dimen/dp_52" android:layout_marginTop="@dimen/dp_24" android:layout_marginBottom="@dimen/dp_24" android:textAllCaps="false" android:layout_marginStart="@dimen/dp_24" android:layout_marginEnd="@dimen/dp_24" android:stateListAnimator="@null" style="@style/btn_theme"/>
+</LinearLayout>

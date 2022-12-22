@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+    <ImageView android:id="@+id/iv_paymethod_icon" android:layout_width="24dp" android:layout_height="15dp" android:layout_marginLeft="18dp" android:scaleType="fitCenter" android:layout_centerVertical="true"/>
+    <Switch android:id="@+id/switch_enterprise_item" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="13dp" android:thumb="@drawable/switch_didi_thumb" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:track="@drawable/switch_didi_track_selector"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_toLeftOf="@+id/switch_enterprise_item" android:layout_toRightOf="@+id/iv_paymethod_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="16sp" android:textColor="@drawable/one_payment_global_paymethod_text_color_selector" android:id="@+id/tv_paymethod_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12sp" android:textColor="@drawable/one_payment_global_paymethod_tip_text_color_selector" android:ellipsize="end" android:id="@+id/tv_paymethod_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+    </LinearLayout>
+</RelativeLayout>

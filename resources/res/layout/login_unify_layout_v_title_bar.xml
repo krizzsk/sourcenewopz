@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/ll_back" android:paddingLeft="@dimen/login_unify_dimen_16dp" android:paddingTop="@dimen/login_unify_dimen_14dp" android:paddingRight="@dimen/login_unify_dimen_16dp" android:paddingBottom="@dimen/login_unify_dimen_14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/login_unify_dimen_16dp" android:paddingEnd="@dimen/login_unify_dimen_16dp">
+        <ImageView android:id="@+id/iv_back" android:layout_centerVertical="true" style="@style/LoginUnifyBackStyle"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/login_unify_dimen_16dp" android:textColor="@color/login_unify_color_title_bar_center" android:id="@+id/tv_center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <TextView android:textSize="@dimen/login_unify_dimen_16dp" android:textColor="@color/login_unify_color_jump_btn" android:id="@+id/tv_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/login_unify_dimen_16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/login_unify_dimen_16dp" android:layout_alignParentEnd="true"/>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/customer_68px">
+    <com.didi.soda.customer.widget.goods.add.BuyGiftDescTextView android:textSize="@dimen/customer_text_size_30px" android:id="@+id/customer_tv_buy_gift_desc" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/customer_rl_buy_gift_price_container" android:background="@drawable/customer_skin_selector_buy_gift_price" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/customer_1px_negative">
+        <com.didi.soda.customer.widget.goods.CustomerPriceView android:gravity="bottom" android:id="@+id/customer_custom_buy_gift_price" android:paddingLeft="@dimen/customer_18px" android:paddingRight="@dimen/customer_22px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:pvOriginPriceSize="@dimen/customer_text_size_20px"/>
+    </RelativeLayout>
+</LinearLayout>

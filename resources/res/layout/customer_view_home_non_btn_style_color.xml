@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.didi.soda.home.widget.SubscribeButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/customer_home_non_subscribe_btn" android:layout_width="match_parent" android:layout_height="@dimen/rf_btn_style_height_large" android:layout_marginBottom="@dimen/customer_32px"/>

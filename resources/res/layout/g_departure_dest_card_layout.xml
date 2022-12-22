@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="18dp" android:paddingEnd="20dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="2dp" android:layout_marginEnd="0dp">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/lego_color_000000" android:ellipsize="end" android:id="@+id/confirm_pickup_dropoff_point_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/operation_container" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="7dp" android:layout_marginStart="2dp" android:layout_marginEnd="0dp"/>
+    <com.didi.component.confirmbroadingpoint.impl.view.StartDestConfirmView android:id="@+id/confirm_pickup_dropoff_point_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginStart="2dp" android:layout_marginEnd="0dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="28dp" android:layout_marginStart="2dp" android:layout_marginEnd="0dp">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="?attr/global_main_button_text_color_selector" android:gravity="center" android:id="@+id/confirm_btn" android:background="?attr/global_overall_main_button_selector" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/animation_view" android:background="?attr/global_overall_main_button_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:lottie_rawRes="?attr/button_loading_json"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+package com.didi.sdk.fusionbridge.module;
+
+public interface ShareModuleDmcProtocol{
+
+    void shareWeixinAppmsg();
+}

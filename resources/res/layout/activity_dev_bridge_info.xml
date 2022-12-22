@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/fusion_dev_title" android:background="#bdbdbd" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="56dp">
+        <TextView android:textSize="20sp" android:textColor="@android:color/black" android:id="@+id/title_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="返回" android:lines="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:textAlignment="center"/>
+        <TextView android:textSize="24sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bridge调用信息" android:lines="1" android:layout_centerInParent="true" android:textAlignment="center"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/bridge_info_list" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textSize="20sp" android:gravity="center" android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="无Bridge调用信息"/>
+</LinearLayout>

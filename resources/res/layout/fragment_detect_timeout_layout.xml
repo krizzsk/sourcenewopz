@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/safety_god_floating_fragment_bg" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="100dp" android:layout_marginRight="100dp" android:layout_centerInParent="true">
+        <ImageView android:textSize="22sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/fail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:src="@drawable/safety_god_big_alert"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/fail_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="30dp" android:text="@string/GRider_OCR_Unable_to_XLAx" android:lineSpacingExtra="5dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/safety_god_common_btn_height">
+            <Button android:textSize="18sp" android:textColor="@color/white" android:id="@+id/recapture_btn" android:background="@drawable/safety_god_global_btn_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="42dp" android:layout_marginRight="42dp" android:text="@string/GRider_OCR_Try_again_wqvh" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

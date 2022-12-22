@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <solid android:color="@color/rui_color_alert_red_1"/>
+    <corners android:radius="@dimen/rui_text_badge_large_min_width"/>
+    <stroke android:width="@dimen/rui_text_badge_border_width" android:color="@color/rui_color_white"/>
+</shape>

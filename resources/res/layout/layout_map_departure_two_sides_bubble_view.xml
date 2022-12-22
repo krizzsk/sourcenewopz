@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/mappoiselect_map_pop_tworow" android:paddingLeft="20dp" android:paddingRight="20dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_content" android:layout_width="wrap_content" android:layout_height="44dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="#fc9153" android:id="@+id/tv_left_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3"/>
+            <TextView android:textSize="@dimen/font_size_small_s" android:textColor="#fc9153" android:id="@+id/tv_left_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:text="@string/mappoiselect_minute"/>
+        </LinearLayout>
+        <View android:background="#f0f0f0" android:layout_width="0.5dp" android:layout_height="32dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+        <com.didi.sdk.view.richtextview.RichTextView android:textSize="@dimen/font_size_small" android:textColor="#333333" android:id="@+id/tv_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mappoiselect_go_from_here" android:layout_centerInParent="true"/>
+    </LinearLayout>
+</FrameLayout>

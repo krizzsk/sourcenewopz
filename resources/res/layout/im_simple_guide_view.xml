@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/im_simple_guide_ll" android:background="@drawable/im_guide_view_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/im_13_sp" android:textColor="@color/white" android:id="@+id/im_simple_guide_tv" android:paddingTop="@dimen/im_11_dp" android:paddingBottom="@dimen/im_11_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_16_dp" android:layout_marginRight="@dimen/im_11_dp" android:lineSpacingExtra="@dimen/im_3_dp" android:layout_marginStart="@dimen/im_16_dp" android:layout_marginEnd="@dimen/im_11_dp"/>
+        <com.didi.beatles.p099im.views.widget.IMForkView android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/im_simple_guide_forkview" android:paddingLeft="@dimen/im_5_dp" android:paddingTop="@dimen/im_14_dp" android:paddingRight="@dimen/im_16_dp" android:paddingBottom="@dimen/im_5_dp" android:layout_width="@dimen/im_31_dp" android:layout_height="@dimen/im_29_dp" android:paddingStart="@dimen/im_5_dp" android:paddingEnd="@dimen/im_16_dp"/>
+    </LinearLayout>
+</RelativeLayout>

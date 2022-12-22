@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <TextView android:textSize="16sp" android:textColor="@color/poi_one_address_text_light" android:gravity="center" android:id="@+id/button_delete" android:background="@drawable/old_poi_one_address_button_delete_selector" android:layout_width="60dp" android:layout_height="match_parent" android:text="@string/global_sug_delete" android:singleLine="true" android:layout_alignParentEnd="true" style="@style/Map.TextViewStyle.TextDirection"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_item" android:background="@drawable/old_poi_one_address_item_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingEnd="16dp">
+        <ImageView android:id="@+id/image_delete" android:visibility="gone" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/poi_one_address_delete" android:layout_marginStart="16dp"/>
+        <ImageView android:id="@+id/image_title" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginStart="18dp"/>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="10dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/text_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/poi_one_address_text_middle" android:textColor="#333333" android:id="@+id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:singleLine="true" android:includeFontPadding="false" style="@style/Map.TextViewStyle.TextDirection"/>
+                <TextView android:textSize="11sp" android:textColor="@color/poi_one_address_text_dark" android:id="@+id/text_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" style="@style/Map.TextViewStyle.TextDirection"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/poi_one_address_text_middle" android:textColor="#333333" android:gravity="center_vertical" android:id="@+id/text_not_set" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:includeFontPadding="false" style="@style/Map.TextViewStyle.TextDirection"/>
+        </FrameLayout>
+        <ImageView android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/poi_one_address_arrow_right"/>
+    </LinearLayout>
+</merge>

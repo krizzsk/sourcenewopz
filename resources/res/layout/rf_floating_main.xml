@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rf_fl_floating" android:background="@color/rf_color_gery_12_0_7F000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.rfusion.widget.floating.RFRoundRelativeLayout android:id="@+id/rf_rrl_frame" android:background="@color/rf_color_white_100_FFFFFF" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/rf_floating_rrl_frame">
+        <com.didi.rfusion.widget.floating.RFExpandRelativeLayout android:id="@+id/rf_erl_frame" style="@style/rf_floating_erl_frame">
+            <FrameLayout android:id="@+id/rf_fl_nav_bar_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignStart="@+id/rf_rl_container" android:layout_alignEnd="@+id/rf_rl_container"/>
+            <RelativeLayout android:gravity="center_horizontal" android:id="@+id/rf_rl_container" android:layout_below="@+id/rf_fl_nav_bar_container" style="@style/rf_floating_rl_container"/>
+            <View android:id="@+id/rf_nav_bar_shadow" android:background="@drawable/rf_gradient_white_vertical_100_0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/rf_floating_nav_bar_shadow_height" android:layout_below="@+id/rf_fl_nav_bar_container" android:layout_alignStart="@+id/rf_rl_container" android:layout_alignEnd="@+id/rf_rl_container"/>
+        </com.didi.rfusion.widget.floating.RFExpandRelativeLayout>
+    </com.didi.rfusion.widget.floating.RFRoundRelativeLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/view_holder_fee" android:background="@android:color/white" android:paddingBottom="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/black" android:id="@+id/tv_merchant_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4">
+        <TextView android:textSize="@dimen/sp_15" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_actually_received_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_3"/>
+        <com.didi.global.fintech.cashier.p117ui.widget.tickerview.TickerView android:textSize="@dimen/sp_30" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_actually_received_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" app:ticker_animationDuration="1000" app:ticker_defaultCharacterList="1"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/oc_color_919599" android:id="@+id/tv_receivable_amount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_fee_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/oc_color_919599" android:id="@+id/tv_fee_desc" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/iv_help" android:focusable="false" android:visibility="gone" android:layout_width="@dimen/dp_13" android:layout_height="@dimen/dp_13" android:src="@drawable/icon_help" android:layout_marginStart="@dimen/dp_8"/>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

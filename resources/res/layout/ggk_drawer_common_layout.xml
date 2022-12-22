@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom" android:orientation="vertical" android:id="@+id/ll_drawer_common_container" android:background="@color/ggk_color_FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/ggk_drawer_title_include" android:visibility="gone" layout="@layout/ggk_drawer_img_up_title_layout"/>
+    <FrameLayout android:id="@+id/ggk_drawer_extended_up_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ggk_dimen_18dp" android:layout_marginRight="@dimen/ggk_dimen_18dp"/>
+    <include android:id="@+id/ggk_drawer_img_right_include" android:visibility="gone" layout="@layout/ggk_drawer_img_right_title_layout"/>
+    <include android:id="@+id/ggk_drawer_selected_include" android:visibility="gone" layout="@layout/ggk_drawer_selected_layout"/>
+    <include android:id="@+id/ggk_drawer_link_include" android:visibility="gone" layout="@layout/ggk_drawer_link_layout"/>
+    <include android:id="@+id/ggk_drawer_checkbox_include" android:visibility="gone" layout="@layout/ggk_drawer_checkbox_layout"/>
+    <include android:id="@+id/ggk_drawer_edit_include" android:visibility="gone" layout="@layout/ggk_drawer_edit_layout"/>
+    <FrameLayout android:id="@+id/ggk_drawer_extended_bottom_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ggk_dimen_18dp" android:layout_marginRight="@dimen/ggk_dimen_18dp"/>
+    <include android:id="@+id/ggk_drawer_btn_horizontal_include" android:visibility="gone" layout="@layout/ggk_drawer_btn_horizontal"/>
+    <include android:id="@+id/ggk_drawer_btn_vertical_include" android:visibility="gone" layout="@layout/ggk_drawer_btn_vertical"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/dev_item_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="19sp" android:textColor="@android:color/background_dark" android:id="@+id/tv_file_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="1024.dat"/>
+    <TextView android:textSize="10sp" android:textColor="@color/darker_gray_font" android:id="@+id/tv_file_path" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="https://www.x1.com/image/sU23.png"/>
+    <TextView android:textSize="10sp" android:textColor="@color/darker_gray_font" android:id="@+id/tv_file_modify_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="01 02月 18 20:33:33"/>
+    <TextView android:textSize="10sp" android:textColor="@color/darker_gray_font" android:id="@+id/tv_file_size" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="1024字节"/>
+    <TextView android:textSize="10sp" android:textColor="@color/darker_gray_font" android:id="@+id/tv_file_url" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="https://www.x1.com/image/sU23.png"/>
+</LinearLayout>

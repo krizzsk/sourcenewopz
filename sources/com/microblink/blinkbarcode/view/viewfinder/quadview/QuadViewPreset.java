@@ -1,0 +1,11 @@
+package com.microblink.blinkbarcode.view.viewfinder.quadview;
+
+/* compiled from: line */
+public enum QuadViewPreset {
+    DEFAULT_CORNERS_FROM_PHOTOPAY_ACTIVITY,
+    DEFAULT_CORNERS_FROM_BARCODE_SCAN_ACTIVITY,
+    DEFAULT_FROM_DOCUMENT_SCAN_ACTIVITY,
+    DEFAULT_FROM_OCR_LINE_SCAN_ACTIVITY,
+    DEFAULT_FROM_OCR_LINE_SCAN_ACTIVITY_WITH_INFO,
+    DEFAULT_DOCUMENT_DETECTION
+}

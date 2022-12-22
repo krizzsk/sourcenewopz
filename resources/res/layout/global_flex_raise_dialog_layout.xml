@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.global.globaluikit.widget.RoundCornerRelativeLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="230dp" app:round_corner_top_left="20dp" app:round_corner_top_right="20dp">
+        <com.didi.component.expectation.view.FlexRaiseSheetView android:id="@+id/flex_bargain_card_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/flex_close_img" android:padding="@dimen/lego_dimen_10dp" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/lego_close_btn_selector" android:layout_alignParentTop="true" android:layout_alignParentEnd="true"/>
+    </com.didi.global.globaluikit.widget.RoundCornerRelativeLayout>
+</LinearLayout>

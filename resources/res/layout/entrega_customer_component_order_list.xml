@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.rfusion.widget.RFIconView android:textSize="@dimen/rf_dimen_font_48" android:textColor="@color/rf_color_gery_1_0_000000" android:gravity="center" android:id="@+id/entrega_iv_page_back" android:layout_width="@dimen/rf_dimen_88" android:layout_height="@dimen/rf_dimen_88" android:text="@string/rf_icon_outlined_back_android" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <com.didi.entrega.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/rf_dimen_48" android:textColor="@color/rf_color_gery_1_0_000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rf_dimen_40" android:layout_marginTop="@dimen/rf_dimen_24" android:layout_marginBottom="@dimen/rf_dimen_36" android:text="@string/FoodC_orderlist_Order_rVtn" app:entregaFontFlavor="2"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.didi.app.nova.support.view.pullToRefresh.NovaPullRefreshLayout android:id="@+id/entrega_customer_order_list_prl" android:background="@color/rf_color_gery_7_97_F5F5F7" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.didi.app.nova.support.view.recyclerview.view.NovaRecyclerView android:id="@+id/entrega_customer_order_list_recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/rf_dimen_24" android:layout_marginRight="@dimen/rf_dimen_24"/>
+            </LinearLayout>
+        </com.didi.app.nova.support.view.pullToRefresh.NovaPullRefreshLayout>
+        <com.didi.entrega.customer.widget.abnormal.AbnormalView android:id="@+id/entrega_customer_order_list_abnormal" android:background="@color/rf_color_gery_7_97_F5F5F7" android:paddingTop="@dimen/rf_dimen_302" android:paddingBottom="@dimen/rf_dimen_200" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    </FrameLayout>
+</LinearLayout>

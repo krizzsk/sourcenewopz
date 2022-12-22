@@ -1,0 +1,85 @@
+package global.didi.pay.merchantcore.model;
+
+import android.os.Parcel;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.jvm.JvmStatic;
+import kotlin.jvm.internal.Intrinsics;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+@Metadata(mo175976bv = {1, 0, 3}, mo175977d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001a\u0010\u0003\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\u00042\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007H\u0007J\u0012\u0010\b\u001a\u0004\u0018\u00010\t2\u0006\u0010\n\u001a\u00020\u000bH\u0007J\u001c\u0010\f\u001a\u0004\u0018\u00010\u00072\u0010\u0010\r\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0018\u00010\u0004H\u0007J\u001a\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\n\u001a\u00020\u000b2\b\u0010\u0010\u001a\u0004\u0018\u00010\tH\u0007¨\u0006\u0011"}, mo175978d2 = {"Lglobal/didi/pay/merchantcore/model/JsonUtils;", "", "()V", "parseOptStringList", "", "", "jsonArray", "Lorg/json/JSONArray;", "readFromParcel", "Lorg/json/JSONObject;", "parcel", "Landroid/os/Parcel;", "serializeOptStringList", "stringList", "writeToParcel", "", "jsonObject", "merchantCore_release"}, mo175979k = 1, mo175980mv = {1, 1, 16})
+/* compiled from: JsonUtils.kt */
+public final class JsonUtils {
+    public static final JsonUtils INSTANCE = new JsonUtils();
+
+    private JsonUtils() {
+    }
+
+    @JvmStatic
+    public static final void writeToParcel(Parcel parcel, JSONObject jSONObject) {
+        Intrinsics.checkParameterIsNotNull(parcel, "parcel");
+        if (jSONObject == null) {
+            parcel.writeInt(0);
+            return;
+        }
+        parcel.writeInt(1);
+        parcel.writeString(jSONObject.toString());
+    }
+
+    @JvmStatic
+    public static final JSONObject readFromParcel(Parcel parcel) throws JSONException {
+        Intrinsics.checkParameterIsNotNull(parcel, "parcel");
+        int readInt = parcel.readInt();
+        if (readInt == 0) {
+            return null;
+        }
+        if (readInt == 1) {
+            String readString = parcel.readString();
+            if (readString == null) {
+                readString = "";
+            }
+            return new JSONObject(readString);
+        }
+        throw new IllegalArgumentException("Invalid flag.");
+    }
+
+    @JvmStatic
+    public static final List<String> parseOptStringList(JSONArray jSONArray) {
+        if (jSONArray == null) {
+            return null;
+        }
+        List arrayList = new ArrayList();
+        int length = jSONArray.length();
+        for (int i = 0; i < length; i++) {
+            String optString = jSONArray.optString(i, (String) null);
+            if (optString != null) {
+                arrayList.add(optString);
+            }
+        }
+        return Collections.unmodifiableList(arrayList);
+    }
+
+    @JvmStatic
+    public static final JSONArray serializeOptStringList(List<String> list) {
+        if (list == null) {
+            return null;
+        }
+        JSONArray jSONArray = new JSONArray();
+        Collection arrayList = new ArrayList();
+        for (Object next : list) {
+            CharSequence charSequence = (String) next;
+            if (!(charSequence == null || charSequence.length() == 0)) {
+                arrayList.add(next);
+            }
+        }
+        for (String put : (List) arrayList) {
+            jSONArray.put(put);
+        }
+        return jSONArray;
+    }
+}

@@ -1,0 +1,8 @@
+R.drawable.sidebar_icon_settings
+R.drawable.sidebar_icon_payment
+R.drawable.sidebar_icon_trips
+R.drawable.sidebar_icon_help
+R.drawable.sidebar_icon_settings
+R.drawable.sidebar_icon_invite
+R.drawable.sidebar_icon_promos
+R.drawable.sidebar_icon_driver

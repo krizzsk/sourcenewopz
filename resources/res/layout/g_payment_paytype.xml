@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/g_pay_item_height">
+    <TextView android:textSize="14sp" android:textColor="@color/oc_color_333333" android:gravity="start" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/g_payment_label" android:layout_weight="1"/>
+    <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/g_payment_paytype_icon" android:layout_width="24dp" android:layout_height="15dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/oc_color_666666" android:id="@+id/g_payment_paytype_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="5dp"/>
+        </LinearLayout>
+        <TextView android:textSize="9sp" android:textColor="#ff4060" android:id="@+id/g_payment_paytype_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/g_payment_red_point" android:background="@drawable/wallet_global_paymethod_bg_red_circle" android:visibility="gone" android:layout_width="7dp" android:layout_height="7dp" android:layout_marginLeft="5dp" android:layout_marginStart="5dp"/>
+    <ImageView android:background="@drawable/common_icon_right" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginLeft="5dp" android:layout_marginStart="5dp"/>
+</LinearLayout>

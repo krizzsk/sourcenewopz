@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/customer_fl_home_feed_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.soda.home.topgun.widget.FeedHeaderLayout android:id="@+id/customer_fl_home_header_bg_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.didi.app.nova.support.view.pullToRefresh.NovaPullRefreshLayout android:id="@+id/customer_prl_pull_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.didi.app.nova.support.view.recyclerview.view.NovaRecyclerView android:id="@+id/customer_rv_home_main" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/customer_ll_shimmer" android:background="@color/rf_color_v2_grey2_10_a100" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@+id/customer_fl_home_shimmer_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <com.didi.soda.home.topgun.widget.HomeAddressTipView android:orientation="vertical" android:id="@+id/customer_fl_home_tip_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </com.didi.app.nova.support.view.pullToRefresh.NovaPullRefreshLayout>
+    <com.didi.soda.home.topgun.widget.floatlayout.FloatLayout android:id="@+id/customer_home_recycle_float" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

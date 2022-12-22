@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/qr_code_rl_form_scanner_view" android:background="@color/assembly_unit_color_25262D" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true">
+    <com.didi.zxing.barcodescanner.DecoratedBarcodeView android:id="@+id/bv_scanner_container" android:layout_width="match_parent" android:layout_height="match_parent" app:zxing_framing_surface_round="2dp" app:zxing_framing_surface_round_color="@color/assembly_unit_color_25262D" app:zxing_preview_scaling_strategy="3" app:zxing_scanner_layout="@layout/nova_assembly_barcode_scanner" app:zxing_scanner_result_strategy="1" app:zxing_use_texture_view="true"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/qr_code_ll_form_scanner_op" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/qr_code_scanner_operation_margin_top" android:layout_marginBottom="@dimen/qr_code_scanner_operation_margin_bottom">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <ImageView android:id="@+id/qr_code_iv_flash_light" android:layout_width="@dimen/qr_code_scanner_operation_icon_size" android:layout_height="@dimen/qr_code_scanner_operation_icon_size" android:src="@drawable/qr_code_flashlight_icon_selector" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="@dimen/qr_code_scanner_operation_label_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/qr_code_scanner_operation_label_margin_top" android:text="@string/qr_code_flash_text" android:includeFontPadding="false" android:layout_below="@+id/qr_code_iv_flash_light" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/qr_code_rl_scanner_title_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/qr_code_scanner_title_margin_top">
+        <TextView android:textSize="@dimen/qr_code_scanner_title_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qr_code_scanner_title_text" android:layout_centerInParent="true"/>
+        <RelativeLayout android:id="@+id/qr_code_iv_scanner_close" android:layout_width="@dimen/qr_code_scanner_close_area_size" android:layout_height="@dimen/qr_code_scanner_close_area_size" android:layout_marginLeft="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:background="@drawable/scan_title_bar_btn_back_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

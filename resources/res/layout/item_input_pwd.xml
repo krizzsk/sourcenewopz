@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/bg_item_input_pwd_nor" android:layout_width="@dimen/input_size" android:layout_height="@dimen/input_size">
+    <ImageView android:layout_gravity="center" android:id="@+id/iv_point_input_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_input_pwd_nor"/>
+</FrameLayout>

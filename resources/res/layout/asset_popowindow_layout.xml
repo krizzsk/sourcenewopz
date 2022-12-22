@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/tone_pubserv_anim_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tunasashimi.tuna.TunaViewPager android:id="@+id/popViewpager" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <com.tunasashimi.tuna.TunaRepeat android:id="@+id/tunaRepeat" android:layout_width="100dp" android:layout_height="20px" android:layout_marginTop="11dp" android:layout_below="@+id/popViewpager" android:layout_centerHorizontal="true" app:ps_tunaRepeatBitmapSrcNormal="@drawable/tunarepeatbartest_relativelayout_tips_1" app:ps_tunaRepeatBitmapSrcSelect="@drawable/tunarepeatbartest_relativelayout_tips_2" app:ps_tunaRepeatCurrentIndex="0" app:ps_tunaRepeatSelectType="1" app:ps_tunaRepeatShapeType="0"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/popViewpager" android:layout_alignParentBottom="true">
+            <ImageView android:id="@+id/popClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/public_service_common_icon_layer_close_2x" android:layout_centerInParent="true" android:contentDescription="@string/asset_close_popupwindow"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

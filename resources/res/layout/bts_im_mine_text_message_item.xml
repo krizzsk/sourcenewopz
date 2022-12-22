@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/im_15_dp" android:textColor="#ffffff" android:textColorLink="@color/white" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/message_content" android:paddingLeft="@dimen/im_12_dp" android:paddingTop="@dimen/im_9_dp" android:paddingRight="@dimen/im_12_dp" android:paddingBottom="@dimen/im_9_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/im_45_dp" android:layout_centerVertical="true" android:lineSpacingExtra="@dimen/im_4_dp" android:paddingStart="@dimen/im_12_dp" android:paddingEnd="@dimen/im_12_dp"/>
+</RelativeLayout>

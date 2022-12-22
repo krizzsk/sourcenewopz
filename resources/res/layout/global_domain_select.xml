@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+        <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@+id/compass_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/login_unify_color_next_btn_text" android:gravity="center" android:id="@+id/compass_confirm_btn" android:background="@drawable/login_unify_selector_next_btn_orange" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="30dp" android:textAllCaps="false"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#666666" android:gravity="center" android:id="@+id/compass_cancel_btn" android:background="@drawable/global_compass_no_bg" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+{
+  "bundle-name": "Apollo",
+  "bundle-description": "Apollo bundle",
+  "bundle-symbolicName": "com.didichuxing.apollo.sdk.swarm",
+  "bundle-activator": "com.didichuxing.apollo.sdk.swarm.ApolloActivator",
+  "bundle-version": "0.0.1"
+}

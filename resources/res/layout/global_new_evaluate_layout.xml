@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.didi.component.evaluate.EvaluateRootContainer xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/global_evaluate" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@drawable/global_evaluate_bg" android:paddingBottom="@dimen/_20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:enabled="false" android:textSize="20dp" android:textStyle="bold" android:textColor="?attr/submit_btn_text_color_selector" android:gravity="center" android:id="@+id/submit_btn" android:background="?attr/submit_btn_bg_new_selector" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="54dp" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp" android:minWidth="116dp" android:text="@string/global_new_evaluate_submit" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/submit_btn">
+                <LinearLayout android:gravity="center_vertical" android:paddingTop="30dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginBottom="10dp">
+                    <ImageView android:id="@+id/close_button" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="8dp" android:src="@drawable/global_evaluate_close_button"/>
+                </LinearLayout>
+                <ScrollView android:id="@+id/evaluate_comment_scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@+id/evaluate_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="18dp">
+                            <ImageView android:id="@+id/driver_image" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/global_driver_car_default_avatar"/>
+                            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp">
+                                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <com.didi.component.evaluate.view.widget.NewFiveStarEvaluatedView android:id="@+id/five_star_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                                    <ImageView android:id="@+id/five_star_mask" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="21dp" android:src="@drawable/evaluate_five_star_mask"/>
+                                </FrameLayout>
+                                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/color_333333" android:id="@+id/evalute_refine_guide" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                                    <View android:id="@+id/evalute_refine_guide_loading" android:background="@color/g_color_F5F5F5" android:layout_width="64dp" android:layout_height="15dp"/>
+                                </FrameLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <com.didi.component.evaluate.view.NewEvaluateScrollView android:layout_gravity="center_horizontal" android:id="@+id/evaluate_tag_scroll_view" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:fillViewport="true" android:overScrollMode="never">
+                            <com.google.android.flexbox.FlexboxLayout android:id="@+id/evaluate_tag_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:alignContent="0" app:alignItems="2" app:flexDirection="0" app:flexWrap="1" app:justifyContent="0" app:showDivider="3"/>
+                        </com.didi.component.evaluate.view.NewEvaluateScrollView>
+                        <FrameLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/edit_content_layout" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="18dp">
+                            <com.didi.component.evaluate.widget.NewCommentView android:layout_gravity="center_horizontal" android:id="@+id/new_evaluate_comment_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+                        </FrameLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/evaluate_tips_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="15dp" android:layout_marginRight="18dp">
+                            <RelativeLayout android:orientation="vertical" android:id="@+id/tip_title_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <ImageView android:layout_gravity="center_vertical" android:id="@+id/dollor_ic" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="2dp" android:src="@drawable/global_new_evaluate_tips_icon"/>
+                                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/oc_color_000000" android:ellipsize="end" android:id="@+id/evaluate_tips_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:maxLines="2" android:layout_toRightOf="@+id/dollor_ic"/>
+                                <TextView android:textSize="12sp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/evaluate_tips_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@+id/dollor_ic" android:layout_below="@+id/evaluate_tips_title" android:layout_alignLeft="@+id/evaluate_tips_title"/>
+                            </RelativeLayout>
+                            <FrameLayout android:id="@+id/tip_container_fl" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp">
+                                <View android:id="@+id/tips_bg" android:background="?attr/new_evaluate_tip_bg_sel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                                <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/tip_edit_icon" android:background="@drawable/top_bg" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/tip_edit_ic" android:scaleType="center" android:backgroundTint="#4dffffff"/>
+                                <LinearLayout android:orientation="horizontal" android:id="@+id/tips_container" android:background="@drawable/global_new_evaluate_tip_bg_normal" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                            </FrameLayout>
+                        </LinearLayout>
+                        <include layout="@layout/global_new_evaluate_unmatch_layout"/>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/load_layout" android:background="#a6ffffff" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/load_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                <RelativeLayout android:id="@+id/load_ing_icon_layout" android:background="@drawable/global_new_evaluate_load_icon_bg_loading" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/load_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_icon" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/load_success_icon_layout" android:background="@drawable/global_new_evaluate_load_icon_bg_success" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/color_333333" android:gravity="center_vertical" android:id="@+id/load_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11dp" android:text="@string/global_new_evaluate_submit_success" android:layout_toLeftOf="@+id/load_icon_layout" android:layout_alignTop="@+id/load_icon_layout" android:layout_alignBottom="@+id/load_icon_layout" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+</com.didi.component.evaluate.EvaluateRootContainer>

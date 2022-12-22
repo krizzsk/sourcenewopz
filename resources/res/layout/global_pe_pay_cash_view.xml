@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:paddingTop="30dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textColor="@color/pe_color_333333" android:id="@+id/oc_pay_title_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="16sp" android:textColor="@color/pe_color_333333" android:id="@+id/oc_pay_message_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/pe_pay_cash_payed"/>
+    <TextView android:textSize="18sp" android:textColor="#fc9529" android:id="@+id/oc_pay_value_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+</LinearLayout>

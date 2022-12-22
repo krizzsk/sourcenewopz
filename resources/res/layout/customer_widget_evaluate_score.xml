@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.didi.soda.customer.widget.CustomerSeekBar android:layout_gravity="center_horizontal" android:id="@+id/customer_v_rate_seek_bar" android:layout_width="wrap_content" android:layout_height="@dimen/customer_80px" app:cs_drawableHeight="@dimen/customer_60px" app:cs_drawableSpace="@dimen/customer_44px" app:cs_drawableWidth="@dimen/customer_66px" app:cs_progress="0" app:cs_progressDrawable="@drawable/customer_rate_seek_bar"/>
+    </FrameLayout>
+    <com.didi.soda.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/customer_text_size_32px" android:ellipsize="end" android:gravity="center" android:id="@+id/customer_star_choose_tip" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customer_22px" android:singleLine="true" app:fontFlavor="1"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/oc_x_panel_item_tag" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/oc_x_panel_item_take_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/oc_x_panel_item_img_dot" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/oc_x_panel_item_ticket_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/rf_ll_frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/rf_fl_input_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="bottom" android:layout_gravity="start" android:orientation="horizontal" android:id="@+id/rf_ll_start_layout" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/rf_fl_start_outer_frame" android:layout_width="wrap_content" android:layout_height="@dimen/rf_dimen_48"/>
+                <com.didi.rfusion.widget.RFTextView android:textSize="@dimen/f_07_app_36_pad_24" android:textColor="@color/rf_color_gery_3_60_999999" android:gravity="center" android:id="@+id/rf_tv_prefix" android:layout_width="wrap_content" android:layout_height="@dimen/rf_dimen_48" android:maxLines="1" app:rf_font_flavor="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:layout_gravity="end" android:orientation="horizontal" android:id="@+id/rf_ll_end_layout" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/rf_fl_inner_end_icon_frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/rf_ll_normal_end_icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.didi.rfusion.material.internal.RFCheckableIconButton android:textColor="@color/rf_color_gery_3_60_999999" android:id="@+id/rf_cib_clear_icon" android:visibility="gone" android:layout_width="@dimen/rf_dimen_48" android:layout_height="@dimen/rf_dimen_48" android:layout_marginLeft="@dimen/rf_dimen_40" android:text="@string/rf_icon_filld_close"/>
+                        <com.didi.rfusion.material.internal.RFCheckableIconButton android:id="@+id/rf_cib_inner_end_icon" android:visibility="gone" android:layout_width="@dimen/rf_dimen_48" android:layout_height="@dimen/rf_dimen_48" android:layout_marginLeft="@dimen/rf_dimen_40"/>
+                    </LinearLayout>
+                    <com.didi.rfusion.material.internal.RFCheckableImageButton android:id="@+id/rf_cib_error_icon" android:background="@color/rf_color_white_100_alpha_0" android:visibility="gone" android:layout_width="@dimen/rf_dimen_48" android:layout_height="@dimen/rf_dimen_48" android:layout_marginLeft="@dimen/rf_dimen_40" android:src="@drawable/rf_icon_warning" android:scaleType="fitXY"/>
+                </FrameLayout>
+                <com.didi.rfusion.widget.RFTextView android:textSize="@dimen/f_07_app_36_pad_24" android:textColor="@color/rf_color_gery_3_60_999999" android:gravity="center" android:id="@+id/rf_tv_suffix" android:layout_width="wrap_content" android:layout_height="@dimen/rf_dimen_48" android:layout_marginLeft="@dimen/rf_dimen_40" android:maxLines="1" app:rf_font_flavor="3"/>
+                <com.didi.rfusion.material.internal.RFCheckableImageButton android:id="@+id/rf_cib_outer_end_icon" android:background="@color/rf_color_white_100_alpha_0" android:visibility="gone" android:layout_width="@dimen/rf_dimen_48" android:layout_height="@dimen/rf_dimen_48" android:layout_marginLeft="@dimen/rf_dimen_40" android:scaleType="fitXY"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</merge>

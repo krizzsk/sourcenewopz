@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/safety_god_floating_fragment_bg" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/close_icon" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/safety_detection_close_icon" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <View android:id="@+id/center_view" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+    <RelativeLayout android:background="@drawable/safety_preview_orange_rect" android:layout_width="273dp" android:layout_height="174dp" android:layout_toLeftOf="@+id/center_view" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/card_preview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2px"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/center_view" android:layout_centerVertical="true">
+        <TextView android:textSize="24sp" android:textColor="@color/white" android:id="@+id/card_preview_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/card_preview_requests" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:lineSpacingExtra="5dp"/>
+    </LinearLayout>
+</RelativeLayout>

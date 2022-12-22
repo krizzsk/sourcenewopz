@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/rf_dimen_40" android:paddingBottom="@dimen/rf_dimen_40" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.didi.entrega.info.widget.EntregaCustomerInfoContactCardView android:id="@+id/contact_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rf_dimen_20" android:layout_marginRight="@dimen/rf_dimen_20" android:layout_marginHorizontal="@dimen/rf_dimen_20" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

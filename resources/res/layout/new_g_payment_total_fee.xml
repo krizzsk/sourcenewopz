@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/tv_fee" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$15.73" android:includeFontPadding="false"/>
+        <ImageView android:id="@+id/iv_fee_arrow" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="4dp" android:src="@drawable/new_g_icon_fee_right_arrow" android:layout_marginStart="4dp"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="#ff919599" android:layout_gravity="center" android:id="@+id/tv_fee_original" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="R$20.00" android:includeFontPadding="false"/>
+    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ff00ccaa" android:layout_gravity="center" android:id="@+id/tv_fee_cashback" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Pay and cashback R$ 5" android:includeFontPadding="false"/>
+</LinearLayout>

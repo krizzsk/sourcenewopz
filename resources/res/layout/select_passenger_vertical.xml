@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="4dp" android:layout_marginBottom="4dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/iv_sp_avatar" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginTop="2.5dp" android:src="@drawable/icon_sc_for_me" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/iv_selectPassenger" android:visibility="gone" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginTop="5.5dp" android:src="@drawable/payway_payment_right_arrow" android:layout_marginStart="7dp" android:layout_toEndOf="@+id/iv_sp_avatar"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/tv_sp_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dp" android:maxLines="2" android:layout_below="@+id/iv_sp_avatar" android:layout_centerHorizontal="true" android:layout_marginStart="5dp" android:layout_marginEnd="5dp"/>
+        <View android:id="@+id/divider" android:background="#050a121a" android:visibility="gone" android:layout_width="1dp" android:layout_height="39dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

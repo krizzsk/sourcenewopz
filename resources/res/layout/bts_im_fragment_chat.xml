@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/im_color_activity_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.didi.beatles.p099im.views.titlebar.CommonTitleBar android:id="@+id/im_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.didi.beatles.p099im.views.IMChoiceTitleBar android:id="@+id/im_choice_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/im_msg_list_header_layout" android:background="#fafafa" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/im_45_dp">
+        <TextView android:textSize="@dimen/im_13_sp" android:textColor="#666666" android:id="@+id/im_msg_list_header_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_10_dp" android:layout_marginRight="@dimen/im_10_dp" android:text="@string/im_overdue_msg_info" android:layout_centerVertical="true" android:layout_marginStart="@dimen/im_10_dp" android:layout_marginEnd="@dimen/im_10_dp"/>
+        <ImageView android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="@dimen/im_1_dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/ContactListView" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@android:color/transparent" android:divider="@null"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_no_chat" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_132_dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/im_no_msg_ll" android:background="@drawable/im_white_circle" android:visibility="invisible" android:layout_width="@dimen/im_50_dp" android:layout_height="@dimen/im_50_dp">
+                <ImageView android:layout_gravity="center" android:id="@+id/tv_im_no_chat_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/im_14_sp" android:textColor="@color/im_color_333" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_im_no_chat_tip1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_15_dp"/>
+            <TextView android:textSize="@dimen/im_14_sp" android:textColor="@color/im_op_gray_light" android:gravity="center" android:id="@+id/empty_check_over_due_view" android:background="@drawable/im_over_due_btn_drawable" android:paddingLeft="@dimen/im_15_dp" android:paddingRight="@dimen/im_15_dp" android:layout_width="wrap_content" android:layout_height="@dimen/im_34_dp" android:layout_marginTop="@dimen/im_30_dp" android:text="@string/im_overdue_btn_info" android:paddingStart="@dimen/im_15_dp" android:paddingEnd="@dimen/im_15_dp"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/im_14_sp" android:textColor="#ff8503" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/layout_no_network" android:background="#fff4da" android:paddingLeft="@dimen/im_10_dp" android:paddingRight="0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/im_38_dp" android:drawableLeft="@drawable/im_send_failed_warm" android:drawablePadding="@dimen/im_12_dp" android:drawableStart="@drawable/im_send_failed_warm" android:paddingStart="@dimen/im_10_dp" android:paddingEnd="0dp"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/bts_im_loading_anim" android:indeterminateDuration="4000"/>
+    </FrameLayout>
+</LinearLayout>

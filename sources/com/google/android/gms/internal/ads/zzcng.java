@@ -1,0 +1,16 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.concurrent.Callable;
+
+/* compiled from: com.google.android.gms:play-services-ads@@19.8.0 */
+final /* synthetic */ class zzcng implements Callable {
+    private final zzcna zzgpl;
+
+    zzcng(zzcna zzcna) {
+        this.zzgpl = zzcna;
+    }
+
+    public final Object call() {
+        return this.zzgpl.zzarz();
+    }
+}

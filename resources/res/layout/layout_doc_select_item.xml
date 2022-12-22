@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_doc_select_root_view" android:background="@color/white" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="76dp">
+    <CheckBox android:id="@+id/cb_select" android:background="?attr/df_appeal_checkbox_background" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="19sp" android:textColor="#666666" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginBottom="3dp" android:textDirection="locale"/>
+        <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="18dp" android:textDirection="locale"/>
+    </LinearLayout>
+</LinearLayout>

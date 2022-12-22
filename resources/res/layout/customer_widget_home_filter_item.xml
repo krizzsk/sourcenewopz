@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/customer_filter_text_num_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/customer_22px" android:textColor="@drawable/customer_skin_selector_home_filter_number" android:gravity="center" android:id="@+id/customer_tv_home_filter_num" android:background="@drawable/customer_skin_shape_home_filter_num" android:visibility="gone" android:layout_width="@dimen/customer_28px" android:layout_height="@dimen/customer_28px" android:layout_marginRight="@dimen/customer_10px"/>
+        <TextView android:textSize="@dimen/customer_28px" android:textColor="@drawable/customer_skin_selector_home_filter_text" android:ellipsize="end" android:id="@+id/customer_tv_home_filter_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+    <com.didi.soda.customer.widget.text.IconTextView android:textSize="@dimen/customer_20px" android:textColor="@drawable/customer_skin_selector_home_filter_text" android:id="@+id/customer_tv_home_filter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_6px" android:text="@string/customer_common_icon_spread"/>
+</merge>

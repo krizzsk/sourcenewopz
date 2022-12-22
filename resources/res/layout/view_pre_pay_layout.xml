@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.didi.unifiedPay.component.widget.RootRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/oc_pay_root" android:background="@color/oc_color_f5ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/oc_ll_pay_biz_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginRight="40dp" android:layout_centerInParent="true" android:layout_marginStart="40dp" android:layout_marginEnd="40dp">
+        <TextView android:textSize="16sp" android:textColor="@color/oc_color_333333" android:id="@+id/tv_main_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oc_uni_pre_pay_part_fee"/>
+        <TextView android:textSize="12sp" android:textColor="@color/oc_color_999999" android:id="@+id/tv_subtitle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="31.5dp" android:layout_marginRight="31.5dp" android:layout_marginStart="31.5dp" android:layout_marginEnd="31.5dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <TextView android:textSize="12sp" android:textColor="@color/oc_color_333333" android:id="@+id/tv_pre_pay_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+            <com.didi.unifiedPay.component.widget.PayMethodView android:id="@+id/oc_paymethod_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/oc_ll_pay_area" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/oc_btn_pay" android:background="@drawable/oc_button_selector" android:layout_width="match_parent" android:layout_height="@dimen/oc_confirm_btn_height"/>
+            <ImageView android:id="@+id/oc_btn_pay_loading" android:background="@drawable/oc_button_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/oc_confirm_btn_height" android:src="@drawable/oc_loading_animation" android:contentDescription="@string/oc_voice_loading"/>
+        </LinearLayout>
+        <TextView android:textSize="10dp" android:textColor="@color/oc_color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/oc_uni_pre_pay_explain"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <ImageView android:id="@+id/iv_protocol_switch" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/oc_pay_protocol_switch_selector"/>
+            <TextView android:textSize="10dp" android:textColor="@color/oc_color_CCCCCC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/oc_uni_pre_pay_protocol_agree" android:layout_marginStart="5dp"/>
+            <TextView android:textSize="10dp" android:textColor="@color/oc_color_FA8919" android:id="@+id/iv_protocol_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oc_uni_pre_pay_protocol_title"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_page_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/iv_page_loading_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_loading_page"/>
+        <TextView android:textSize="12dp" android:textColor="@color/oc_color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/oc_uni_pre_pay_page_loading"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50dp" android:src="@mipmap/btn_page_close" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</com.didi.unifiedPay.component.widget.RootRelativeLayout>

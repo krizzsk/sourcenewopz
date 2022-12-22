@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="192dp">
+    <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <RelativeLayout android:id="@+id/oc_pin_input_edit_text_bg_layout_1" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginRight="50dp">
+        <EditText android:textSize="30sp" android:textColor="@color/g_color_333333" android:gravity="center" android:id="@+id/oc_pin_input_edit_text_1" android:background="@drawable/global_pin_input_digit_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:textCursorDrawable="@drawable/global_pin_input_text_cursor"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/oc_pin_input_edit_text_bg_layout_2" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginRight="50dp">
+        <EditText android:textSize="30sp" android:textColor="@color/g_color_333333" android:gravity="center" android:id="@+id/oc_pin_input_edit_text_2" android:background="@drawable/global_pin_input_digit_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:textCursorDrawable="@drawable/global_pin_input_text_cursor"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/oc_pin_input_edit_text_bg_layout_3" android:layout_width="48dp" android:layout_height="48dp">
+        <EditText android:textSize="30sp" android:textColor="@color/g_color_333333" android:gravity="center" android:id="@+id/oc_pin_input_edit_text_3" android:background="@drawable/global_pin_input_digit_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:textCursorDrawable="@drawable/global_pin_input_text_cursor"/>
+    </RelativeLayout>
+    <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+</LinearLayout>

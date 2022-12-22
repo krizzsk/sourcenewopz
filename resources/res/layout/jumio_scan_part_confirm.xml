@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/inlineConfirmLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/wallet_dp_24" android:layout_marginRight="@dimen/wallet_dp_24" android:layout_marginBottom="@dimen/wallet_dp_24">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="80dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.jumio.sdk.views.JumioConfirmationView android:id="@+id/confirmationView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="148dp"/>
+            <TextView android:textSize="@dimen/wallet_sp_20" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/confirm_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="38dp" android:text="@string/Fintech_Payment_Preview_Please_confirm_asfs"/>
+            <TextView android:textSize="@dimen/wallet_sp_16" android:textColor="@color/black" android:id="@+id/confirm_sub_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_dp_10" android:layout_below="@+id/confirm_title"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:gravity="center" android:id="@+id/retryScan" android:layout_width="match_parent" android:layout_height="52dp" android:text="@string/Global_Rider_Oasis_on_boarding0104_GlobalRider_Shooting_BLyU" android:layout_weight="1" android:layout_toStartOf="@+id/confirmScan" style="@style/wallet_kyc_cancel_button_style"/>
+        <TextView android:gravity="center" android:id="@+id/confirmScan" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginLeft="@dimen/wallet_dp_16" android:text="@string/Fintech_Payment_Integration__xNWJ" android:layout_weight="1" style="@style/wallet_kyc_confirm_button_style"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="37dp" android:layout_height="20dp">
+    <ImageView android:id="@+id/lego_radia_button_icon" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="8dp" android:layout_centerVertical="true"/>
+    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/lego_radia_button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

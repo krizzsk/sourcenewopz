@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:textSize="16sp" android:id="@+id/btn_goback" android:background="@color/afanty_light_gray_s" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="15dp" android:text="返回上一级"/>
+    <Button android:textSize="16sp" android:id="@+id/btn_report_leak" android:background="@color/afanty_light_gray_s" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="15dp" android:text="dump memory leak report"/>
+    <TextView android:textSize="18sp" android:textColor="#f00" android:id="@+id/tv_report_status" android:paddingLeft="60dp" android:paddingRight="60dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="报告生成状态:"/>
+    <TextView android:textSize="18sp" android:textColor="#000" android:paddingLeft="60dp" android:paddingRight="60dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

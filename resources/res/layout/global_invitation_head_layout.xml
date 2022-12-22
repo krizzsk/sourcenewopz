@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/invite_head_module" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/invite_head_module_img" android:layout_width="match_parent" android:layout_height="207dp" android:src="@drawable/global_invite_friends_head_bg" android:scaleType="fitXY"/>
+    <TextView android:textSize="25sp" android:textColor="#ffffffff" android:id="@+id/invite_head_module_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="19dp"/>
+    <TextView android:textSize="15sp" android:textColor="#ffffffff" android:id="@+id/invite_head_module_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="5dp" android:layout_below="@+id/invite_head_module_title"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/invite_banner_module" android:background="@drawable/global_invite_banner_bg" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="16dp" android:layout_marginTop="192dp" android:layout_marginRight="16dp">
+        <ImageView android:id="@+id/invite_banner_module_icon" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/global_invite_friends_banner_coin" android:layout_marginStart="11dp"/>
+        <ViewSwitcher android:id="@+id/invite_banner_module_switcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+</RelativeLayout>

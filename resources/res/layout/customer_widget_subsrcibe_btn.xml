@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/customer_skin_selector_bottom_btn_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.didi.soda.customer.widget.text.IconTextView android:textSize="@dimen/customer_24px" android:textColor="@color/rf_color_white_100_FFFFFF" android:gravity="center" android:id="@+id/customer_tv_select" android:layout_width="@dimen/customer_48px" android:layout_height="@dimen/customer_48px" android:text="@string/customer_common_icon_choose"/>
+        <com.didi.soda.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/customer_28px" android:textColor="@color/rf_color_brands_1_100" android:id="@+id/customer_tv_sub_middle_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/customer_12px" app:fontFlavor="1"/>
+    </LinearLayout>
+    <com.didi.soda.customer.widget.loading.LottieLoadingView android:layout_gravity="center" android:id="@+id/customer_custom_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/customer_26px" android:scaleType="fitCenter" android:layout_centerInParent="true" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/customer_white_loading"/>
+    <com.didi.soda.customer.widget.support.CustomerAppCompatTextView android:textSize="@dimen/customer_32px" android:textColor="@color/rf_color_white_100_FFFFFF" android:id="@+id/customer_tv_middle_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:fontFlavor="1"/>
+</merge>

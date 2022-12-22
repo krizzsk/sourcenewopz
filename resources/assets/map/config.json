@@ -1,0 +1,74 @@
+[{
+  "sourceName": "rtt_config.json",
+  "localName": "rtt_config.json",
+  "version": 0,
+  "shouldUpdate": false
+},
+  {
+    "sourceName": "sdk_config.json",
+    "localName": "sdk_config.json",
+    "version": 0,
+    "shouldUpdate": true
+  },
+  {
+    "sourceName": "map.pak",
+    "localName": "map.pak",
+    "version": 0,
+    "shouldCopy": true,
+    "shouldUpdate": false
+  },
+  {
+    "sourceName": "p_ic_1_driver.dcf",
+    "localName": "p_ic_1.dcf",
+    "version": 0,
+    "shouldUpdate": true
+  },
+  {
+    "sourceName": "p_ic_dk_1_driver.dcf",
+    "localName": "p_ic_dk_1.dcf",
+    "version": 0,
+    "shouldUpdate": true
+  },
+  {
+    "sourceName": "p_ic_nv_1_driver.dcf",
+    "localName": "p_ic_nv_1.dcf",
+    "version": 0,
+    "shouldUpdate": true
+  },
+  {
+    "sourceName": "mpcfpbv2_driver.dt",
+    "localName": "mpcfpbv2.dt",
+    "version": 0,
+    "shouldUpdate": true
+  },
+  {
+    "sourceName": "p_ic_1_1000_passenger.dcf",
+    "localName": "p_ic_1_1000.dcf",
+    "version": 7,
+    "shouldUpdate": true
+  },
+  {
+    "sourceName": "p_ic_dk_1_1000_passenger.dcf",
+    "localName": "p_ic_dk_1_1000.dcf",
+    "version": 7,
+    "shouldUpdate": true
+  },
+  {
+    "sourceName": "p_ic_nv_1_1000_passenger.dcf",
+    "localName": "p_ic_nv_1_1000.dcf",
+    "version": 7,
+    "shouldUpdate": true
+  },
+  {
+    "sourceName": "mpcfpbv2_1000_driver.dt",
+    "localName": "mpcfpbv2_1000.dt",
+    "version": 0,
+    "shouldUpdate": true
+  },
+  {
+    "sourceName": "enlargegraph_style_passenger.dt",
+    "localName": "enlargegraph_style.dt",
+    "version": 1,
+    "shouldUpdate": true
+  }
+]

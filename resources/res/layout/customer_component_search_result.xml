@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/customer_fl_search_result_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.soda.home.topgun.widget.HomeFilterLayout android:gravity="center_vertical" android:id="@+id/customer_fl_search_filter_layout" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/rf_dimen_120" android:layout_marginTop="@dimen/rf_dimen_n16" android:layout_marginBottom="@dimen/customer_home_filter_minus_margin"/>
+    <com.didi.app.nova.support.view.recyclerview.view.NovaRecyclerView android:id="@+id/customer_custom_rv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/customer_fl_search_filter_layout"/>
+    <View android:id="@+id/customer_search_shadow" android:background="@drawable/customer_filter_bar_shadow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/customer_48px"/>
+    <com.didi.soda.customer.widget.abnormal.topgun.TopGunAbnormalView android:id="@+id/customer_custom_search_abnormal_view" android:paddingBottom="@dimen/customer_200px" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/customer_212px"/>
+    <FrameLayout android:id="@+id/customer_search_shimmer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

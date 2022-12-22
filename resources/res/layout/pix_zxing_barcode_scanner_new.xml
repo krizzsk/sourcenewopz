@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.didi.zxing.barcodescanner.BarcodeView android:id="@+id/zxing_barcode_surface" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.didi.payment.pix.qrcode.PixViewfinderView android:id="@+id/zxing_viewfinder_view" android:layout_width="match_parent" android:layout_height="match_parent" app:zxing_finder_height="259dp" app:zxing_finder_margin_top="167dp" app:zxing_finder_width="259dp" app:zxing_possible_result_points="#00000000" app:zxing_scan_style="2" app:zxing_viewfinder_laser="#ff6f26" app:zxing_viewfinder_laser_gradient_rect_height="35dp" app:zxing_viewfinder_mask="@color/transparent" app:zxing_viewfinder_round="0dp" app:zxing_viewfinder_round_color="#00000000"/>
+    <TextView android:textSize="12sp" android:textColor="#cccccc" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/zxing_status_view" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40dp"/>
+</merge>

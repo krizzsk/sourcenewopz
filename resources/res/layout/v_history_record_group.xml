@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@color/history_record_bg" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:id="@+id/status_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:layout_marginBottom="6dp" android:text="@string/history_status_tv" style="@style/TextView.LightGray.Small"/>
+</LinearLayout>

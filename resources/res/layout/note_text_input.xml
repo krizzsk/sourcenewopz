@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/add_a_note_vp" android:background="@drawable/region_gray_light_bg" android:padding="@dimen/wallet_dp_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp">
+        <androidx.appcompat.widget.AppCompatEditText android:textSize="@dimen/wallet_sp_14" android:textColor="@color/wallet_color_919599" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/append_info_et" android:background="@color/transparent" android:padding="5dp" android:paddingLeft="@dimen/wallet_dp_10" android:paddingTop="7dp" android:paddingRight="@dimen/wallet_dp_10" android:paddingBottom="7dp" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="Add note" android:maxLines="5" android:minLines="2" android:maxLength="200" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/wallet_sp_12" android:layout_gravity="center_vertical" android:id="@+id/input_left_number_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0/0"/>
+    </LinearLayout>
+</LinearLayout>

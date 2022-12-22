@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="60dp" android:paddingStart="@dimen/dp_20">
+    <ImageView android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/global_cashier_icon_add_card"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="#ff000000" android:id="@+id/tv_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="Balance" android:includeFontPadding="false"/>
+        <TextView android:textSize="@dimen/sp_12" android:textColor="#ff999999" android:id="@+id/tv_item_sub_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="Visa/MasterCard/Amex/Cup" android:includeFontPadding="false"/>
+    </LinearLayout>
+    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+    <ImageView android:background="@drawable/global_cashier_icon_arrow" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20"/>
+</LinearLayout>

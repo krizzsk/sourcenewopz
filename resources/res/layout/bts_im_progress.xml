@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="start" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:textDirection="locale" android:textAlignment="viewStart">
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/bts_im_progressbar" android:indeterminateDuration="4000"/>
+    <TextView android:textColor="#727272" android:layout_gravity="center_horizontal" android:id="@+id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bts_im_loading"/>
+    <Button android:layout_gravity="center_horizontal" android:id="@+id/refresh_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refresh"/>
+</merge>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.didi.beatles.p099im.views.IMSquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="vertical" android:background="#999999" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/picture_item_iv_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/im_picture_ic_camera" android:layout_centerHorizontal="true"/>
+    <TextView android:textColor="@color/white" android:id="@+id/picture_item_tv_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/picture_item_iv_camera" android:layout_centerHorizontal="true"/>
+</com.didi.beatles.p099im.views.IMSquareRelativeLayout>

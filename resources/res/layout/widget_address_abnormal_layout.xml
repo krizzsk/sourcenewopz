@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.didi.soda.customer.widget.loading.LottieLoadingView android:id="@+id/customer_custom_address_loading" android:layout_width="wrap_content" android:layout_height="@dimen/customer_26px" android:layout_marginTop="@dimen/customer_12px" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/customer_white_loading"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_search_address_fail" android:paddingLeft="@dimen/customer_80px" android:paddingRight="@dimen/customer_80px" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_load_result_fail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customer_150px" android:src="@drawable/common_icon_exclamation"/>
+        <TextView android:textSize="@dimen/customer_text_size_28px" android:textColor="@color/rf_color_gery_2_40_666666" android:gravity="center" android:id="@+id/tv_load_result_fail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customer_25px" android:text="@string/customer_search_address_reload"/>
+    </LinearLayout>
+</RelativeLayout>

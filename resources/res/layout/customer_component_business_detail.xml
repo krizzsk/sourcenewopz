@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/rf_color_white_100_FFFFFF" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.soda.customer.widget.MaxHeightScrollView android:id="@+id/customer_sv_business_detail" android:layout_width="match_parent" android:layout_height="@dimen/customer_0px" app:layout_constraintTop_toBottomOf="@+id/customer_custom_title" app:layout_constraintVertical_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/customer_cl_business_detail_container" android:paddingTop="@dimen/customer_20px" android:paddingBottom="@dimen/customer_200px" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.didi.soda.customer.widget.MaxHeightScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

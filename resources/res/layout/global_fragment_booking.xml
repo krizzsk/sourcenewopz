@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/oc_root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/global_title_back_btn"/>
+    <RelativeLayout android:id="@+id/rl_global_booking_bottom_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.didi.component.Component android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:name="@string/component_reset_location"/>
+        <com.didi.component.Component android:layout_width="match_parent" android:layout_height="match_parent" app:name="@string/component_xpanel"/>
+    </RelativeLayout>
+</FrameLayout>

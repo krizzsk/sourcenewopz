@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <FrameLayout android:id="@+id/layout_error" android:background="#00ffffff" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@+id/image_error" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginTop="24dp" android:src="@drawable/img_noyet_available" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/text_error_title" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="24dp" style="@style/Map.TextViewStyle.TextDirection"/>
+        </LinearLayout>
+    </FrameLayout>
+    <ListView android:id="@+id/list_error" android:background="#00ffffff" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#f5f5f5" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.5dp" android:overScrollMode="never"/>
+</merge>

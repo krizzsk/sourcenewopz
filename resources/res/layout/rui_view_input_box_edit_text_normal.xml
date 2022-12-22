@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rui.RUIEditText xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="@dimen/rui_text_normal" android:id="@+id/rui_et_input_box_content" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1" style="@style/RUIEditText.Normal"/>

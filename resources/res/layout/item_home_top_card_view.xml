@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/fl_root" android:background="?attr/wallet_home_header_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="-20dp">
+    <ImageView android:layout_gravity="end" android:id="@+id/iv_freeze_icon" android:visibility="gone" android:layout_width="128dp" android:layout_height="153dp" android:layout_marginTop="80dp" android:src="@drawable/ic_home_header_freeze"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="99dp" android:layout_marginBottom="28dp">
+        <FrameLayout android:id="@+id/fl_public" android:background="@drawable/shape_home_top_public_notice" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:layout_marginBottom="1dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+            <TextView android:textSize="14sp" android:textColor="@color/black" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/tv_public" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginBottom="7dp" android:maxLines="2" android:layout_marginStart="16dp" android:layout_marginEnd="38dp"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/iv_public_close" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/ic_home_public_notice_close" android:layout_marginEnd="16dp"/>
+        </FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/cl_freeze" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/wallet_color_FF4060" android:id="@+id/tv_freeze_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textSize="14sp" android:textColor="@color/wallet_color_FF4060" android:id="@+id/tv_freeze_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tv_freeze_title"/>
+            <ImageView android:id="@+id/iv_freeze" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_home_freeze_next" app:layout_constraintBottom_toBottomOf="@+id/tv_freeze_title" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="@+id/tv_freeze_title"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" layout="@layout/layout_home_top_card"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_function" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@drawable/shape_home_white_card" android:layout_width="match_parent" android:layout_height="20dp"/>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/map_setting_nav_title" android:background="@color/map_setting_title_bar_bg" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="45dp">
+    <RelativeLayout android:gravity="center" android:id="@+id/map_setting_title_back" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="14dp" android:paddingEnd="14dp">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/map_setting_back_selector"/>
+    </RelativeLayout>
+    <TextView android:textSize="18sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/map_setting_title_text" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:maxWidth="200dp" android:singleLine="true"/>
+</RelativeLayout>

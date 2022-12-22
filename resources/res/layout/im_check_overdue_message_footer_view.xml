@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/im_50_dp">
+    <View android:background="@drawable/bts_im_tt_divider" android:layout_width="match_parent" android:layout_height="@dimen/im_0.5_dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/im_50_dp" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/im_16_sp" android:textColor="@color/over_due_info_textcolor" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/im_history_msg"/>
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="@dimen/im_6_dp" android:layout_height="@dimen/im_12_dp" android:layout_marginLeft="@dimen/im_10_dp" android:src="@drawable/im_over_due_icom" android:layout_marginStart="@dimen/im_10_dp"/>
+    </LinearLayout>
+    <View android:background="@drawable/bts_im_tt_divider" android:layout_width="match_parent" android:layout_height="@dimen/im_0.5_dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

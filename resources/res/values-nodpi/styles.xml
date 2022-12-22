@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BtsBaseTheme">
+    </style>
+    <style name="BtsIMTheme">
+    </style>
+    <style name="BtsIMTheme.Im">
+        <item name="android:windowBackground">@color/im_translunt_light_ss_gray</item>
+    </style>
+    <style name="BtsIMTheme.ImMessage">
+        <item name="android:windowBackground">@color/im_color_message_window_bg</item>
+    </style>
+    <style name="BtsIMTheme.NoTitle">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="BtsIMTheme.NoTitle.Transparent">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+    <style name="BtsIMTheme.NoTitleFullScreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="IMTheme.Dialog">
+        <item name="android:windowBackground">@color/im_color_common_word_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowFixedHeightMajor">100%</item>
+        <item name="windowFixedHeightMinor">100%</item>
+        <item name="windowMinWidthMajor">100%</item>
+        <item name="windowMinWidthMinor">100%</item>
+    </style>
+</resources>

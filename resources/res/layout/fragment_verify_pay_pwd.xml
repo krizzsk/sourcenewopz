@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#b30a121a" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_verify_pwd" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+            <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="#000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/Finance_latour_Enter_the_xESC"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/amount_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/tv_amount_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Finance_latour_Amount_paid_YNcG"/>
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/primary_color_latour" android:id="@+id/tv_amount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5dp"/>
+                <TextView android:textSize="14sp" android:textColor="@android:color/black" android:id="@+id/tv_sub_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textColor="#ff4060" android:id="@+id/tv_verify_pwd_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dp"/>
+            <com.didiglobal.pay.paysecure.p204ui.view.InputPwdView android:layout_gravity="center_horizontal" android:id="@+id/view_input_pwd" android:layout_width="wrap_content" android:layout_height="60dp" android:layout_marginTop="27dp"/>
+            <TextView android:textColor="@color/color_919599" android:id="@+id/view_forgot_pwd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_marginBottom="31dp" android:text="@string/Finance_latour_Forget_the_DmAL"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_verify_pwd_close" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="10dp" android:src="@drawable/ic_pay_secure_close_dialog" android:layout_marginEnd="10dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

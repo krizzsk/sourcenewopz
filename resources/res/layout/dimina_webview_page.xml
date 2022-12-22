@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/page_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/status_bar" android:layout_width="match_parent" android:layout_height="0dp"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.didi.dimina.container.p106ui.title.WebTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="40dp"/>
+                <com.didi.dimina.container.p106ui.webview.DMWebViewContainer android:id="@+id/webview_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/capsule_button" android:layout_width="29dp" android:layout_height="29dp" android:layout_margin="10dp"/>
+</FrameLayout>

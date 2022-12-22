@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/one_payment_creditcard_global_dialog_bg_shape" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/ll_title_content_area" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_content_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/image_icon" android:background="@drawable/common_dialog_icon_info" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="20dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="16dp" android:textColor="@color/one_payment_creditcard_text_black" android:gravity="center" android:id="@+id/tv_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:includeFontPadding="false" android:lineSpacingExtra="4dp"/>
+            <TextView android:textSize="14sp" android:textColor="#666666" android:gravity="start" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="19dp" android:layout_marginRight="16dp" android:includeFontPadding="false" android:lineSpacingExtra="4dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <View android:gravity="start" android:id="@+id/line_divider_content" android:background="@color/dark_alpha_10" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="14dp" android:layout_below="@+id/ll_title_content_area"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_btn_area_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/line_divider_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/font_size_large" android:textColor="@color/common_dialog_recommend_option_txt_color" android:gravity="center" android:id="@+id/btn_confirm" android:background="@drawable/common_dialog_btn_bg_shape_n_nonrecommend_selector" android:layout_width="match_parent" android:layout_height="50dp" android:includeFontPadding="false" android:textAllCaps="false"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:gravity="start" android:background="@color/dark_alpha_10" android:layout_width="match_parent" android:layout_height="1px"/>
+            <Button android:textSize="@dimen/font_size_large" android:textColor="@color/light_gray" android:gravity="center" android:id="@+id/btn_cancel" android:background="@drawable/one_payment_creditcard_global_dialog_bottombtn_selector" android:layout_width="match_parent" android:layout_height="50dp" android:includeFontPadding="false" android:textAllCaps="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

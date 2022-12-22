@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="@dimen/rf_dimen_112">
+    <com.didi.soda.customer.widget.text.RichTextView android:ellipsize="end" android:id="@+id/customer_tv_tab_time_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rf_dimen_22" android:singleLine="true" android:layout_centerHorizontal="true"/>
+    <com.didi.soda.customer.widget.TimerView android:id="@+id/customer_tv_tab_timer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rf_dimen_22" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <com.didi.soda.customer.widget.text.RichTextView android:ellipsize="end" android:id="@+id/customer_tv_tab_tab_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rf_dimen_22" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/customer_iv_tab_selected_triangle" android:layout_width="@dimen/rf_dimen_40" android:layout_height="@dimen/rf_dimen_16" android:src="@drawable/common_icon_triangle_up_white" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</merge>

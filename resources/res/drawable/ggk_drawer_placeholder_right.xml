@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape>
+            <size android:height="@dimen/ggk_dimen_153dp" android:width="@dimen/ggk_dimen_128dp"/>
+            <solid android:color="#edf0f4"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/ggk_right_img_placeholder"/>
+    </item>
+</layer-list>

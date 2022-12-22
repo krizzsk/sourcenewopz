@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:background="@drawable/one_payment_creditcard_global_bg_card_type_select" android:layout_width="match_parent" android:layout_height="44dp">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@+id/layout_card_select_left" android:layout_width="172dp" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_card_select_left" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="8dp" android:src="@drawable/one_payment_creditcard_global_cardtype_unselected" android:layout_marginStart="8dp"/>
+        <TextView android:textSize="14dp" android:textColor="#999999" android:gravity="start" android:id="@+id/tv_card_select_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/one_payment_creditcard_global_credit" android:layout_marginStart="6dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@+id/layout_card_select_right" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_card_select_right" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/one_payment_creditcard_global_cardtype_unselected"/>
+        <TextView android:textSize="14dp" android:textColor="#999999" android:gravity="start" android:id="@+id/tv_card_select_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/one_payment_creditcard_global_debit" android:layout_marginStart="6dp"/>
+    </LinearLayout>
+</LinearLayout>

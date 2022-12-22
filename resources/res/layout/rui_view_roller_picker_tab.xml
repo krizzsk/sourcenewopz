@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rui.RUITagButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="@dimen/rui_text_secondary" android:textColor="@color/rui_selector_roller_picker_tab_text" android:layout_width="0dp" android:layout_height="@dimen/rui_roller_picker_tab_button_height" android:layout_weight="1" style="@style/RUIButton"/>

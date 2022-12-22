@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/im_toast_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_16_dp" android:layout_marginRight="@dimen/im_16_dp" android:minHeight="@dimen/im_50_dp" android:layout_marginStart="@dimen/im_16_dp" android:layout_marginEnd="@dimen/im_16_dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/tips_icon" android:background="@drawable/im_toast_warm" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/im_14_sp" android:textColor="#cccccc" android:gravity="center" android:id="@+id/tips_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_11_dp" android:lineSpacingExtra="@dimen/im_3_dp" android:layout_marginStart="@dimen/im_11_dp"/>
+    </LinearLayout>
+</RelativeLayout>

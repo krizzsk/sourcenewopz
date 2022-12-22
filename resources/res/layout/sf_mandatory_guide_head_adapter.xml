@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/guide_icon" android:layout_width="158dp" android:layout_height="96dp" android:layout_marginLeft="5dp" android:layout_marginTop="15dp" android:src="@drawable/sf_mandatory_guide_icon"/>
+    <TextView android:textSize="22sp" android:textColor="@color/sf_color_333333" android:id="@+id/guide_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="27dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/sf_color_666666" android:id="@+id/area_code_belonging_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="15dp"/>
+</LinearLayout>

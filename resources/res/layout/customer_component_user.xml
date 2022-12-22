@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/rf_color_gery_7_97_F5F5F7" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/customer_custom_title" layout="@layout/customer_common_title_bar_level_first"/>
+    <com.didi.app.nova.support.view.recyclerview.view.NovaRecyclerView android:id="@+id/customer_custom_user_account" android:layout_width="match_parent" android:layout_height="@dimen/customer_0px" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/customer_custom_title" app:layout_constraintVertical_weight="1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/customer_ll_tag_parent" android:paddingLeft="@dimen/customer_16px" android:paddingRight="@dimen/customer_16px" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/customer_info_tag_img" android:layout_width="@dimen/customer_24px" android:layout_height="@dimen/customer_24px" android:layout_marginRight="@dimen/customer_20px"/>
+        <com.didi.soda.customer.widget.text.RichTextView android:textSize="@dimen/customer_22px" android:ellipsize="end" android:id="@+id/customer_info_tag_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:fontFlavor="0"/>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/liveness_layout_rootRel" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextureView android:id="@+id/liveness_layout_textureview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <android.opengl.GLSurfaceView android:id="@+id/liveness_layout_cameraView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/v_mask" android:background="@drawable/bioassay_mask" android:layout_width="match_parent" android:layout_height="80dp"/>
+    <TextView android:textSize="24sp" android:textColor="@color/white" android:id="@+id/liveness_layout_promptText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:text="@string/meglive_prompt" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/iv_back" android:clickable="true" android:layout_width="@dimen/common_title_bar_left_img_width" android:layout_height="@dimen/common_title_bar_left_img_height" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:src="@drawable/ic_close_x2" android:layout_alignParentLeft="true" android:contentDescription="@string/back" android:layout_marginStart="16dp" android:layout_alignParentStart="true"/>
+    <com.didichuxing.diface.biz.bioassay.fpp.view.AutoRatioImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/liveness_layout_camera_mask" android:layout_below="@+id/v_mask"/>
+    <com.didichuxing.diface.biz.bioassay.fpp.view.FaceMask android:id="@+id/liveness_layout_facemask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/v_mask"/>
+    <com.didichuxing.diface.biz.bioassay.fpp.view.AutoRatioImageView android:id="@+id/liveness_layout_head_mask" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bioassay_head_mask" android:layout_below="@+id/v_mask"/>
+    <RelativeLayout android:background="#f6f5f4" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/liveness_layout_head_mask">
+        <include android:id="@+id/liveness_layout_first_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" layout="@layout/liveness_detection_step"/>
+        <include android:id="@+id/liveness_layout_second_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" layout="@layout/liveness_detection_step"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/liveness_layout_bottom_tips_head" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:src="@drawable/liveness_phoneimage"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/detection_step_timeoutRel" android:visibility="invisible" android:layout_width="35dp" android:layout_height="35dp" android:layout_margin="5dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="20sp" android:textColor="@color/blue_bioassay_anim_hint" android:id="@+id/detection_step_timeout_garden" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" android:layout_centerInParent="true"/>
+            <com.didichuxing.diface.biz.bioassay.fpp.view.CircleProgressBar android:id="@+id/detection_step_timeout_progressBar" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ProgressBar android:id="@+id/liveness_layout_progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:indeterminateTint="@color/orange_didi"/>
+</RelativeLayout>

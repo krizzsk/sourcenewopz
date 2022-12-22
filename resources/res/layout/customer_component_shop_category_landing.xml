@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/rf_color_gery_7_97_F5F5F7" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.soda.customer.widget.StatusBarView android:id="@+id/customer_sbv_status_view" android:background="@color/rf_color_white_100_FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.didi.soda.customer.widget.titlebar.TitleBarView android:id="@+id/customer_tbv_title_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0" app:titleLeftText="@string/customer_common_icon_back"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.didi.app.nova.support.view.pullToRefresh.NovaPullRefreshLayout android:id="@+id/customer_prl_refresh_cate_landing" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.didi.app.nova.support.view.recyclerview.view.NovaRecyclerView android:id="@+id/customer_rv_shop_category_landing" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+        </com.didi.app.nova.support.view.pullToRefresh.NovaPullRefreshLayout>
+        <com.didi.soda.home.widget.LandingFloatLayout android:id="@+id/customer_landing_recycle_float" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.didi.zxing.barcodescanner.BarcodeView android:id="@+id/zxing_barcode_surface" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.didi.zxing.barcodescanner.ViewfinderView android:id="@+id/zxing_viewfinder_view" android:layout_width="match_parent" android:layout_height="match_parent" app:zxing_finder_height="259dp" app:zxing_finder_margin_top="133dp" app:zxing_finder_width="259dp" app:zxing_scan_style="2" app:zxing_viewfinder_laser="#fea330" app:zxing_viewfinder_laser_gradient_rect_height="43dp" app:zxing_viewfinder_mask="#9925262d"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/global_code_scanner_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/g_scan_back_img" android:padding="12dp" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/g_back_arrow"/>
+            <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/g_scan_guide_rule_btn" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="44dp" android:layout_marginRight="18dp" android:text="@string/global_open_ride_guide_rule" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/g_view_below_scan" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textSize="14sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/g_scan_intro_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/global_open_ride_scan_intro" android:maxLines="1"/>
+            <Button android:id="@+id/g_scan_torch_img" android:background="@drawable/open_ride_torch_off" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="30dp" android:layout_below="@+id/g_scan_intro_tv"/>
+            <TextView android:textSize="14sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/qr_code_flash_text" android:layout_below="@+id/g_scan_torch_img"/>
+        </LinearLayout>
+        <Button android:textSize="16sp" android:textColor="@color/g_color_999999" android:gravity="center" android:id="@+id/g_pincode_manually_btn" android:background="@drawable/g_pincode_manually_btn_bg" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:layout_marginBottom="18dp" android:text="@string/global_open_ride_enter_pin_btn" android:layout_alignParentBottom="true" android:textAllCaps="false"/>
+    </RelativeLayout>
+</FrameLayout>

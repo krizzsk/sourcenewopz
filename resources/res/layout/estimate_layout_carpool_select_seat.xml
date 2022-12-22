@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#000000" android:gravity="left" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/estimate_select_seat_title"/>
+    <TextView android:textSize="14sp" android:textColor="#666666" android:id="@+id/tv_sub_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+    <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@+id/rg_seat" android:paddingTop="33dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:textColor="@color/estimate_select_seat_button_text_color_selector" android:gravity="center" android:id="@+id/rb_seat_1" android:background="@drawable/estimate_bg_select_seat_button" android:layout_width="100dp" android:layout_height="44dp" android:button="@null" android:text="@string/estimate_select_seat_one_people"/>
+        <RadioButton android:textColor="@color/estimate_select_seat_button_text_color_selector" android:gravity="center" android:id="@+id/rb_seat_2" android:background="@drawable/estimate_bg_select_seat_button" android:layout_width="100dp" android:layout_height="44dp" android:layout_marginLeft="40dp" android:button="@null" android:text="@string/estimate_select_seat_two_people"/>
+    </RadioGroup>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:textColor="#ff767676" android:id="@+id/tv_price_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/estimate_select_seat_fixed_price"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@+id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="?attr/submit_btn_text_color_selector" android:gravity="center" android:id="@+id/tv_submit" android:background="?attr/submit_btn_bg_selector" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="18dp" android:text="@string/estimate_select_seat_submit_btn" android:includeFontPadding="false" android:contentDescription="@string/estimate_select_seat_submit_btn"/>
+</LinearLayout>

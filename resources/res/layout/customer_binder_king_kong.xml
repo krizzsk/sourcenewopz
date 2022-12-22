@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rf_dimen_n10">
+    <com.didi.soda.home.topgun.widget.HorizontalRecyclerView android:id="@+id/customer_rv_scroll_topic" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/rf_dimen_24"/>
+</FrameLayout>

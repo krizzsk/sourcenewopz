@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.didi.global.globaluikit.widget.RoundCornerRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/border_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:round_corner_top_left="20dp" app:round_corner_top_right="20dp">
+    <LinearLayout android:orientation="vertical" android:background="@color/lego_color_FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@+id/lego_drawer_title_include" android:visibility="gone" layout="@layout/lego_drawer_img_up_title_layout"/>
+                <FrameLayout android:id="@+id/lego_drawer_extended_up_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lego_dimen_30dp" android:layout_marginRight="@dimen/lego_dimen_30dp"/>
+                <include android:id="@+id/lego_drawer_selected_include" android:visibility="gone" layout="@layout/lego_drawer_selected_layout"/>
+                <include android:id="@+id/lego_drawer_link_include" android:visibility="gone" layout="@layout/lego_drawer_link_layout"/>
+                <include android:id="@+id/lego_drawer_checkbox_include" android:visibility="gone" layout="@layout/lego_drawer_checkbox_layout"/>
+                <FrameLayout android:id="@+id/lego_drawer_extended_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <FrameLayout android:id="@+id/lego_drawer_extended_bottom_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lego_dimen_30dp" android:layout_marginRight="@dimen/lego_dimen_30dp"/>
+            </LinearLayout>
+        </ScrollView>
+        <include android:id="@+id/lego_drawer_btn_horizontal_include" android:visibility="gone" layout="@layout/lego_drawer_btn_horizontal"/>
+        <include android:id="@+id/lego_drawer_btn_vertical_include" android:visibility="gone" layout="@layout/lego_drawer_btn_vertical"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/lego_drawer_close_img" android:padding="@dimen/lego_dimen_10dp" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/lego_close_btn_selector" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+</com.didi.global.globaluikit.widget.RoundCornerRelativeLayout>
